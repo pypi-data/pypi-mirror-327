@@ -1,0 +1,9 @@
+README.md
+setup.py
+github_push_gui/__init__.py
+github_push_gui/main.py
+github_push_gui.egg-info/PKG-INFO
+github_push_gui.egg-info/SOURCES.txt
+github_push_gui.egg-info/dependency_links.txt
+github_push_gui.egg-info/requires.txt
+github_push_gui.egg-info/top_level.txt
