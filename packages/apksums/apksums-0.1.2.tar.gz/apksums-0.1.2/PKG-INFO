@@ -1,0 +1,138 @@
+Metadata-Version: 2.4
+Name: apksums
+Version: 0.1.2
+Summary: Verify checksums of installed APK package files
+Project-URL: Homepage, https://github.com/jontyms/apksums
+Project-URL: Repository, https://github.com/jontyms/apksums.git
+Project-URL: Bug Tracker, https://github.com/jontyms/apksums/issues
+Author-email: Jstyles <python@styl.dev>
+License: Copyright 2025 Jstyles
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Keywords: alpine,apk,checksums,security,verification
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# APKSums
+
+APKSums is a Python utility for verifying checksums of installed APK files on Alpine Linux systems. It helps ensure the integrity of installed packages by comparing file checksums against the package database.
+
+## Features
+
+- Verify checksums of installed files against the APK database
+- Support for both regular files and symbolic links
+- Various output modes (normal, silent, changed-only)
+- Configurable root directory for checking alternative installations
+- Custom checksums file support
+
+## Installation
+
+```bash
+# From source
+git clone https://github.com/yourusername/apksums.git
+cd apksums
+pip install .
+
+# Or directly via pip (if published)
+pip install apksums
+```
+
+## Usage
+
+Basic usage:
+```bash
+apksums
+```
+
+### Command Line Options
+
+```
+-s, --silent       Only report errors
+-c, --changed      Report changed file list to stdout (implies -s)
+-r, --root DIR     Root directory to check (default /)
+-m, --md5sums FILE Read list of checksums from file (default /lib/apk/db/installed)
+```
+
+### Examples
+
+Check all files with normal output:
+```bash
+apksums
+```
+
+Only show modified files:
+```bash
+apksums -c
+```
+
+Check files in alternative root:
+```bash
+apksums -r /mnt/rootfs
+```
+
+Use custom checksums file:
+```bash
+apksums -m /path/to/checksums
+```
+
+Silent mode (only show errors):
+```bash
+apksums -s
+```
+
+## Output Format
+
+### Normal Mode
+```
+OK: /bin/ls (from coreutils)
+FAILED: /etc/passwd (from shadow)
+  Expected: abc123...
+  Got: def456...
+MISSING: /etc/config (from base-pkg)
+```
+
+### Changed Mode (-c)
+```
+/etc/passwd
+/usr/bin/modified-binary
+```
+
+## Exit Codes
+
+- 0: All checks passed
+- 1: Some files failed verification or are missing
+
+## Development
+
+### Requirements
+
+- Python 3.6+
+- pytest (for running tests)
+
+### Running Tests
+
+```bash
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+```
