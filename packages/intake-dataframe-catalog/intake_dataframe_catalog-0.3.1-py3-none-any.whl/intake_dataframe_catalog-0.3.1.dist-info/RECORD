@@ -1,0 +1,11 @@
+intake_dataframe_catalog/__init__.py,sha256=Lm_s8j3x0E7oLufGdkUdLM60kzNr60dYekJkTG7VOK8,205
+intake_dataframe_catalog/_display.py,sha256=rEXYWVb49uqU4tMjJ7t8ngEXOZ9h5Ff-jTJPiqwD3XE,1671
+intake_dataframe_catalog/_search.py,sha256=v6l08WCwDEG8-cXvkMIwq6effZ9OB82Z-P7TifZJIpA,4475
+intake_dataframe_catalog/_version.py,sha256=f9IR66IqnbJDqViaJMcnUfbZIw4KWAmAFoHAtG5E64M,497
+intake_dataframe_catalog/core.py,sha256=S7BY37CthrALjOZGMmmqZ2UnljfGTEgX0b622b1GGMU,25719
+intake_dataframe_catalog-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+intake_dataframe_catalog-0.3.1.dist-info/METADATA,sha256=xKZHqP5n-FU5MlHpe4XJc5bZCsoEVlt2odBl10d0Z10,4493
+intake_dataframe_catalog-0.3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+intake_dataframe_catalog-0.3.1.dist-info/entry_points.txt,sha256=bMWbnJOeE9pnWPs71_NKm8hkxv1uFo2pIscgJqB-NOw,74
+intake_dataframe_catalog-0.3.1.dist-info/top_level.txt,sha256=wmVXJ0B6n-gWF2saiXLZzB3YPnNwHsO3IjxOk7SobMA,25
+intake_dataframe_catalog-0.3.1.dist-info/RECORD,,
