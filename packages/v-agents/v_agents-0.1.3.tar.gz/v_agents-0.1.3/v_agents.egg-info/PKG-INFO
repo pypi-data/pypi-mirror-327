@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: v-agents
+Version: 0.1.3
+Summary: A tiny agentic AI library.
+Author-email: Xiaozhe Yao <askxzyao@gmail.com>
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: loguru
+Requires-Dist: aiohttp
