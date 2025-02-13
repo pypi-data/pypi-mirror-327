@@ -1,0 +1,4 @@
+[console_scripts]
+vianu_drugsafetycompare_app=vianu.drugsafetycompare.launch_demo_app:main
+vianu_fraudcrawler_app=vianu.fraudcrawler.launch_demo_app:main
+
