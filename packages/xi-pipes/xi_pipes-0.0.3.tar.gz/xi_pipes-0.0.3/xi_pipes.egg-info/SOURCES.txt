@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+xi_pipes/__init__.py
+xi_pipes.egg-info/PKG-INFO
+xi_pipes.egg-info/SOURCES.txt
+xi_pipes.egg-info/dependency_links.txt
+xi_pipes.egg-info/requires.txt
+xi_pipes.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+[project]
+name = "xi-pipes"
+description = "Custom pipes"
+version = "0.0.3"
+readme = "README.md"
+authors = [
+    { name = "Javier Iserte", email = "javiserte@gmail.com" }
+]
+dependencies = [
+    "pipe"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = [
+    "setuptools >= 40.9.0",
+]
+build-backend = "setuptools.build_meta"
