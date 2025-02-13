@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+pyflet/__init__.py
+pyflet/main.py
+pyflet.egg-info/PKG-INFO
+pyflet.egg-info/SOURCES.txt
+pyflet.egg-info/dependency_links.txt
+pyflet.egg-info/entry_points.txt
+pyflet.egg-info/requires.txt
+pyflet.egg-info/top_level.txt
