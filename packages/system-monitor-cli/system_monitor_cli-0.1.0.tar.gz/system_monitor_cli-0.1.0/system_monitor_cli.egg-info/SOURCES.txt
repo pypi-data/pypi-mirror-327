@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+system_monitor_cli.egg-info/PKG-INFO
+system_monitor_cli.egg-info/SOURCES.txt
+system_monitor_cli.egg-info/dependency_links.txt
+system_monitor_cli.egg-info/entry_points.txt
+system_monitor_cli.egg-info/requires.txt
+system_monitor_cli.egg-info/top_level.txt
