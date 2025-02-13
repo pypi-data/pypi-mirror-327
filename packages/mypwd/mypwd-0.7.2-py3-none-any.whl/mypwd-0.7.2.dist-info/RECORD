@@ -1,0 +1,10 @@
+mypwd/__init__.py,sha256=LmwY3ZxI2znUHhJITDdL0F-wimyZUF6qz8gH7qIjh84,1423
+mypwd/__main__.py,sha256=gEIahprsilJLEI-xZ3AlJM6XCRaTl9xIIe67JY-j92Y,66
+mypwd/cli.py,sha256=kI4VbgBfFn48KNaX6akbjTwlvpZTAehUamaOsQ0yAz0,1091
+mypwd/impl.py,sha256=Gw0Aa4j5F4p3JnJmvyRrO6IOChmQvstQ1YpEhOfOeLE,4548
+mypwd/mypwd_error.py,sha256=ZTrQOt5uiA1eX_sWpkXLl3C2dJqe2bKXtfahcYlo6Xo,38
+mypwd-0.7.2.dist-info/METADATA,sha256=mstgq2NpH1s5hIGfxpl4RF7i09WhNtCCv7BHWOsz--I,2290
+mypwd-0.7.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mypwd-0.7.2.dist-info/entry_points.txt,sha256=sAPejYARZsxGtjn_DMu9-k3MazroK5-7dKBfU945ARk,41
+mypwd-0.7.2.dist-info/licenses/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+mypwd-0.7.2.dist-info/RECORD,,
