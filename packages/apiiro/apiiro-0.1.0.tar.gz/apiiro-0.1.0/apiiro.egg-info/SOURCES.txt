@@ -1,0 +1,5 @@
+pyproject.toml
+apiiro.egg-info/PKG-INFO
+apiiro.egg-info/SOURCES.txt
+apiiro.egg-info/dependency_links.txt
+apiiro.egg-info/top_level.txt
