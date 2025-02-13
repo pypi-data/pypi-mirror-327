@@ -1,0 +1,35 @@
+[project]
+name = "mcp-clickhouse"
+version = "0.1.0"
+description = "An MCP server for ClickHouse."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+     "mcp>=1.0.0",
+     "python-dotenv>=1.0.1",
+     "fastmcp>=0.4.0",
+     "uvicorn>=0.34.0",
+     "clickhouse-connect>=0.8.0",
+]
+
+[project.scripts]
+mcp-clickhouse = "mcp_clickhouse.main:main"
+
+[project.urls]
+Home = "https://github.com/iskakaushik/mcp-clickhouse"
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_clickhouse"]
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
