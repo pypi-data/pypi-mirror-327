@@ -1,0 +1,2 @@
+[console_scripts]
+rios-validate = rios.core.scripts:validate
