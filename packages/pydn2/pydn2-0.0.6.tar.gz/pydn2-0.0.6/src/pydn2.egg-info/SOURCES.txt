@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/pydn2/__init__.py
+src/pydn2/pydn2.c
+src/pydn2.egg-info/PKG-INFO
+src/pydn2.egg-info/SOURCES.txt
+src/pydn2.egg-info/dependency_links.txt
+src/pydn2.egg-info/top_level.txt
+tests/test_pydn2.py
