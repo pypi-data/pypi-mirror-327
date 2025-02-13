@@ -1,0 +1,11 @@
+[console_scripts]
+stimulus-check-model = stimulus.cli.check_model:run
+stimulus-predict = stimulus.cli.predict:run
+stimulus-shuffle-csv = stimulus.cli.shuffle_csv:run
+stimulus-split-csv = stimulus.cli.split_csv:run
+stimulus-split-yaml = stimulus.cli.split_yaml:run
+stimulus-transform-csv = stimulus.cli.transform_csv:run
+stimulus-tuning = stimulus.cli.tuning:run
+
+[gui_scripts]
+
