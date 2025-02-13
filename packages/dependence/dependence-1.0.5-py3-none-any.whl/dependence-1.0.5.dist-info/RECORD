@@ -1,0 +1,10 @@
+dependence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dependence/__main__.py,sha256=7CMLje-1PBFD8Wl0Vixx7lYHP213nlhSOExXHB0nuI4,1631
+dependence/_utilities.py,sha256=UARyW3wV3zbMWLwIl3jUvA8aS97wOEi8wDQVLKPksP0,33875
+dependence/freeze.py,sha256=fqx1-pHaly4sxHjArRp0Dltb1fpg3njCNgp9OahwP7w,14877
+dependence/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dependence/update.py,sha256=p6X5748YTN1Nn83WUm73iYpiKhj12JeTTeY6NKbF8ok,20132
+dependence-1.0.5.dist-info/METADATA,sha256=7tlSVTiKDOn1udE-7znCSTOOQ-Kor6IK73JDSYkn_bM,5581
+dependence-1.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dependence-1.0.5.dist-info/entry_points.txt,sha256=NStO_B0D81ObVYr9zDs6LCy0whm0a8KCiiFHMmTwOVE,56
+dependence-1.0.5.dist-info/RECORD,,
