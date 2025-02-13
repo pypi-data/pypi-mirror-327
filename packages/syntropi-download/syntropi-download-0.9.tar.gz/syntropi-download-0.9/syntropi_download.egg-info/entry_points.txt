@@ -1,0 +1,2 @@
+[console_scripts]
+syntropi-download = cli.cli:cli
