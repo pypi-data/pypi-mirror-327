@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: radiocarbon
+Version: 0.2.1
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: requires-dist

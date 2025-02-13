@@ -1,0 +1,15 @@
+radiocarbon/__init__.py,sha256=TFlGsUUQ97Kmw4nhxMyjPwmPBs3_teNQjzmifQbP8J4,212
+radiocarbon/calibration_curves.py,sha256=SZ7Nr-4ew7E-luaokYEszTemmXor0R6P7VX2rfZTX0Y,581
+radiocarbon/date.py,sha256=mg-aKQ1Wi4jr6QM8iRwLB9wDpNUSe8AUfHHB8MNBQgQ,10451
+radiocarbon/spd.py,sha256=3xfhkl2J9AEZTxrVRtzAE-pVkGG_AZFn07VTeG4jryU,18239
+radiocarbon/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+radiocarbon/calcurves/intcal13.14c,sha256=5YHy8E6EYf3UHYk3oLa-Jpu18kizAuunqt_p-w6hUPg,130034
+radiocarbon/calcurves/intcal20.14c,sha256=DFU2hRdumk6ZtRIIsTPICZkT4U8d-P485oTo5ZD71qg,220882
+radiocarbon/calcurves/marine13.14c,sha256=RophMSJbNV0apHA_x2TqZz6wwpavyTBCGlu4Ov13Ots,116945
+radiocarbon/calcurves/marine20.14c,sha256=UpCsEefGV1Zovi3mVwRauvkmAZ_6K94Y9KN5Eoy-UHY,140817
+radiocarbon/calcurves/shcal13.14c,sha256=hsuxWWQPGZFCHwUS8ao0zQYt2cGvhFL7XPa8DQVyoCY,123365
+radiocarbon/calcurves/shcal20.14c,sha256=WFfK3Wisk1Emy896VCOwjX9FSMcOPkw4R1l4d0QqjXM,220772
+radiocarbon-0.2.1.dist-info/METADATA,sha256=E00jkUXJ5xf81uE8ohYI2Mnug-5ttSdbCGQYDTPSHjw,125
+radiocarbon-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+radiocarbon-0.2.1.dist-info/top_level.txt,sha256=YEQs0lBRjMT_KVEScF9otJqhmB9oWQbyOc3GfvRRscA,12
+radiocarbon-0.2.1.dist-info/RECORD,,
