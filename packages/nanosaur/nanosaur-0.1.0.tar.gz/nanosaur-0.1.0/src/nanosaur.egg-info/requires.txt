@@ -1,0 +1,15 @@
+inquirer
+gitpython
+argcomplete
+pyyaml
+pexpect
+requests
+python-on-whales
+jetson-stats
+packaging
+
+[dev]
+catkin_pkg
+empy==3.3.4
+lark
+flake8
