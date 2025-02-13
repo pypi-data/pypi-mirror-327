@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple_gradient"
+version = "1.0.0"
+authors = [
+  { name = "Lucas Baruel", email = "lucasbaruel9@gmail.com" }
+]
+description = "just a simple gradient tool"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = ["colorama"]

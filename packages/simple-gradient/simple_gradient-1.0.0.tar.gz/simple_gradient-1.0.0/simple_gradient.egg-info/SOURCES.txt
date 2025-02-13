@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+simple_gradient/Text_Gradient.py
+simple_gradient.egg-info/PKG-INFO
+simple_gradient.egg-info/SOURCES.txt
+simple_gradient.egg-info/dependency_links.txt
+simple_gradient.egg-info/requires.txt
+simple_gradient.egg-info/top_level.txt

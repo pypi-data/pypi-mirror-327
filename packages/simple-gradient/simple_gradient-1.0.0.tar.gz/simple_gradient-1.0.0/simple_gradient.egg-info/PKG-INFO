@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: simple_gradient
+Version: 1.0.0
+Summary: just a simple gradient tool
+Author-email: Lucas Baruel <lucasbaruel9@gmail.com>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
