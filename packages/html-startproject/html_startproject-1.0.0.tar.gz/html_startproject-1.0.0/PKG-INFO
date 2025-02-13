@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: html_startproject
+Version: 1.0.0
+Author: Your Name
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python

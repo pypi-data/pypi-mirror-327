@@ -1,0 +1,10 @@
+setup.py
+html_startproject/__init__.py
+html_startproject/cli.py
+html_startproject.egg-info/PKG-INFO
+html_startproject.egg-info/SOURCES.txt
+html_startproject.egg-info/dependency_links.txt
+html_startproject.egg-info/entry_points.txt
+html_startproject.egg-info/top_level.txt
+html_startproject/templates/base/index.html
+html_startproject/templates/base/style.css
