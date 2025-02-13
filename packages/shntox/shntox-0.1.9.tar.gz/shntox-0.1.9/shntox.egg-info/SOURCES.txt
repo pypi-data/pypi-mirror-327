@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+shntox/__init__.py
+shntox/x_n_equals .pyx
+shntox/x_n_equals.py
+shntox.egg-info/PKG-INFO
+shntox.egg-info/SOURCES.txt
+shntox.egg-info/dependency_links.txt
+shntox.egg-info/top_level.txt
