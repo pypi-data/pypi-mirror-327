@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+dataxi.egg-info/PKG-INFO
+dataxi.egg-info/SOURCES.txt
+dataxi.egg-info/dependency_links.txt
+dataxi.egg-info/entry_points.txt
+dataxi.egg-info/top_level.txt
+dataxi/connectors/__init__.py
+dataxi/connectors/mysql_connector.py
+dataxi/cred_mgr/__init__.py
+dataxi/cred_mgr/cred_mgr.py
+dataxi/cred_mgr/cred_mgr_cli.py
+dataxi/cred_mgr/cred_sender.py
+dataxi/operators/__init__.py
