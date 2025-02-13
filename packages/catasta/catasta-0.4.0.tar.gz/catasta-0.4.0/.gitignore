@@ -1,0 +1,10 @@
+**/__pycache__/
+/dist
+/build
+*.egg-info
+/tests/data/
+/tests/models/
+**/saved_models/
+/.venv/
+/.venv-test/
+uv.lock
