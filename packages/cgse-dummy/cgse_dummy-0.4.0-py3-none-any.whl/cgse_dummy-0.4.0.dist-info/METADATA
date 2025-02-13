@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: cgse-dummy
+Version: 0.4.0
+Summary: Demonstration of a CGSE package with a dummy device driver
+Author: IVS KU Leuven
+Maintainer-email: Rik Huygen <rik.huygen@kuleuven.be>, Sara Regibo <sara.regibo@kuleuven.be>
+License-Expression: MIT
+Keywords: CGSE,Common-EGSE,dummy,hardware testing,software framework,temperature control
+Requires-Python: >=3.9
+Requires-Dist: cgse-common
+Requires-Dist: cgse-core
+Requires-Dist: cgse-tools

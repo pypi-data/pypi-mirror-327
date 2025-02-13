@@ -1,0 +1,13 @@
+cgse_dummy/__init__.py,sha256=Cbuv8Z9uWzqycRSO6xmubXpheFwUMx5SO8zyOMN2Chw,83
+cgse_dummy/cgse_explore.py,sha256=O3x-AWxXrokU2IYxLhC1XZMTJ3sZ8EUJ2M6ZInQ8Z0c,227
+cgse_dummy/cgse_services.py,sha256=stsRNIWVIFj9TICZQ2Y1xhqlmlLsvAXDkebEtACA3sk,2666
+cgse_dummy/dummy_acs.py,sha256=ChDqzp6yKNc3jyXtbG9HZLlY-VeuPFgrQyKnDS341lo,62
+cgse_dummy/dummy_cs.py,sha256=yDTclhxJAmJ63povCuIXgUrsSwB0Ta6UW0Vw8W_CAOU,10426
+cgse_dummy/dummy_devif.py,sha256=Yo8ASNXiWdF_GhjVm5eLCqsS5LSpsIPzD2BllgaVkDk,10945
+cgse_dummy/dummy_sim.py,sha256=gn8N3HFZR4T1jYXgTk6-pKUj5ANc7kuGZUTYVi466_A,7783
+cgse_dummy/settings.yaml,sha256=rSkw8p0rY7ZZ_7Rh6wgwQdnzWILThMQ5aG0UBsgYfhs,649
+egse/scpi.py,sha256=mJk8l-rjGxULze_05A3zPSzb300Mg-ZV0HYF-ZjN2w4,11817
+cgse_dummy-0.4.0.dist-info/METADATA,sha256=cwEQymYZE-pMyyh4Ae4kPrmZiPTdvoXbp6hN4cVStGs,451
+cgse_dummy-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cgse_dummy-0.4.0.dist-info/entry_points.txt,sha256=EcVtrwF0sqcReWcagym5vZ3v6HfAk0IrzVilWIeUxAA,223
+cgse_dummy-0.4.0.dist-info/RECORD,,
