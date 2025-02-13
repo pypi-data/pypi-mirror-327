@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=70.0.0"]
+
+[project]
+authors = [{name = "Apple"}]
+dependencies = ["simple-parsing"]
+description = "A python package to simplify the creation of text conditioned image diffusion models"
+name = "ml-mdm"
+readme = "README.md"
+requires-python = ">3.8"
+version = "0.1.0"
+
+[project.urls]
+Homepage = "https://github.com/apple/ml-mdm"
+Issues = "https://github.com/apple/ml-mdm"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["."]
