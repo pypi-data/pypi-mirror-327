@@ -1,0 +1,30 @@
+[project]
+name = "tsdataformat"
+version = "3.1.1"
+description = "A Python project to manage time series data"
+authors = [
+    { name = "Chris T. Berthiaume", email = "chrisbee@uw.edu" }
+]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only"
+]
+keywords = ["csv", "command-line", "time series", "tsdata"]
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.8",
+    "pandas>=2.2.3",
+    "rfc3339-validator>=0.1.4",
+]
+[project.scripts]
+tsdataformat = "tsdataformat.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
