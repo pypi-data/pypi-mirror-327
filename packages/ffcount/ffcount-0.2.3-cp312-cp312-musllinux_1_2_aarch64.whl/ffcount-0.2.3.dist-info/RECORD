@@ -1,0 +1,12 @@
+ffcount/__version__.py,sha256=mVxKIGxtrGDxpw1VnIuQjDpDht1bSZNu3msdMzVhIpg,89
+ffcount/__init__.py,sha256=CnlXhPqZ43nguagPqN-OzmC8o-sOsnJ1O4UUNba12Ow,1492
+ffcount/count.cpython-312-aarch64-linux-musl.so,sha256=zWjOmMiNtOGouT2Mv7BEW8z24-bPAjovFQm2wfPzjFY,263216
+ffcount/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcount/__main__.py,sha256=Ha050ki-IMX-Q_IPh2CrDkFiDiPV7Hc7Ro7FpzNvQdU,2007
+ffcount/count.pyi,sha256=4141OfSCBffJDaxelZIQJ4qmdp3qWoPafzWlN_fYEyA,193
+ffcount-0.2.3.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ffcount-0.2.3.dist-info/WHEEL,sha256=PpdAC_u82ZZfnoBRYR2EWV66XvZ87N44YNPPBTE-uok,113
+ffcount-0.2.3.dist-info/METADATA,sha256=scqeqJS27q8mPLLCCOsnwreplUBy5VpyO6BmDyWNlSk,2724
+ffcount-0.2.3.dist-info/top_level.txt,sha256=MuXaiMWmhQn1JRmmIj2FaXUROEAnXYfRYgWvDDecEak,8
+ffcount-0.2.3.dist-info/RECORD,,
+ffcount-0.2.3.dist-info/entry_points.txt,sha256=lW78y5HYXvkbJ-5IAhi526HOY_SoIc9GX4cUAC7iEOw,50
