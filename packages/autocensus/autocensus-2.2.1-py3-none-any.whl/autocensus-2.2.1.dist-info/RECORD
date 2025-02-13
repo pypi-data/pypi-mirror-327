@@ -1,0 +1,11 @@
+autocensus/__init__.py,sha256=j9K3FECXxnFfvrxKeE3qUIF_G3QDTTzTQ8iGk-os0tQ,466
+autocensus/api.py,sha256=Mdi4_sYuPk-7Kl71m4McS9Z5gIBb6u5gvyy_bnkbMOY,9820
+autocensus/constants.py,sha256=FYrvh7yOvjhcYqMEmEsbesYuU8y_LdAmj1RlT611zvk,697
+autocensus/errors.py,sha256=3oLes_pGLPXtgqN_Zb1y8EkLX5_3EqBa7ND0xK3KacY,612
+autocensus/geography.py,sha256=gvKqhlFzqbAo6YOpXt_7QnJ5s0hrwbGufTz_SbrQm3Q,5495
+autocensus/query.py,sha256=Qa_3MVPGxqlqEuJrm7eXcaMOVum8mP9zMwQsrPvxFho,18337
+autocensus/utilities.py,sha256=U0d_OrpETsWZWKbGeMEV6o639G42v-qTxe0R9zz7t84,4715
+autocensus-2.2.1.dist-info/METADATA,sha256=qv7Y4on3CdDPhq-vDX-J8Nc6X5tLamOpRp6wijjP9mg,7525
+autocensus-2.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+autocensus-2.2.1.dist-info/top_level.txt,sha256=2X4BEmRdbveOWOhWwkKjimlt0I5wuEruDodrxjiuF5o,11
+autocensus-2.2.1.dist-info/RECORD,,
