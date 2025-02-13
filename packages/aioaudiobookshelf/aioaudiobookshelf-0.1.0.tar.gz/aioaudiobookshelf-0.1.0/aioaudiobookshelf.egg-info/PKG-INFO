@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: aioaudiobookshelf
+Version: 0.1.0
+Summary: Async library for Audiobookshelf
+Author-email: Fabian Munkes <105975993+fmunkes@users.noreply.github.com>
+License: Apache-2.0
+Platform: any
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: mashumaro
+Requires-Dist: python-socketio>=5.12
+Provides-Extra: test
+Requires-Dist: codespell==2.3.0; extra == "test"
+Requires-Dist: isort==5.13.2; extra == "test"
+Requires-Dist: mypy==1.13.0; extra == "test"
+Requires-Dist: pre-commit==4.0.1; extra == "test"
+Requires-Dist: pre-commit-hooks==5.0.0; extra == "test"
+Requires-Dist: pytest==8.3.4; extra == "test"
+Requires-Dist: pytest-aiohttp==1.0.5; extra == "test"
+Requires-Dist: pytest-cov==5.0.0; extra == "test"
+Requires-Dist: syrupy==4.8.1; extra == "test"
+Requires-Dist: tomli==2.2.1; extra == "test"
+Requires-Dist: ruff==0.9.2; extra == "test"
+Requires-Dist: bumpver; extra == "test"
+
+# aioaudiobookshelf
+Async python library to interact with Audiobookshelf
