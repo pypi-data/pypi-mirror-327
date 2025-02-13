@@ -1,0 +1,17 @@
+incept/.config/folder_templates/default/{course_name}/{##_chapter_name}/lessons/##_lesson_name.ext.txt,sha256=Uy6qvZV0iA2_drm4zACDLCCm7BE9aCKZVQ16bg80XiU,4
+incept/__init__.py,sha256=_zguVVO0D7NWiNCUzAXYVX5rSInRIJbmJ-qACFsdQsA,717
+incept/chapter.py,sha256=mQtChnP1nUjZ2u3doqJJWjP9EgJ28UZiXrJeNGG1dMU,1073
+incept/course.py,sha256=OCqL6Le3NFTkDxqUBDhtbnvHe4aCayTK0UgXHsWoLJ0,1905
+incept/coursemanager.py,sha256=zNX1dCOr3gXcitrF9ofwxPdA51Swy7ak8cQH2uWs1LE,979
+incept/lesson.py,sha256=ETlH76_nmRkb6us7S3E75PWr5r-mpmxsxt5_7xAUDZ4,580
+incept/media/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+incept/media/cover.py,sha256=S1U-URQm8s4vQtya0VoUndMyTJCl6CTom8iXxZ6HTZA,533
+incept/media/icon.py,sha256=PkMxhsMWuPBeYqvMlvmMtDxb6-TmDLDDTD58sR0Avk8,778
+incept/notion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+incept/notion_page.py,sha256=f4t2i2l1iRPKYHRmzkd5s8fNCsFGz6xNCF1klpu8Q3U,2022
+incept/template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+incept/template/manager.py,sha256=P6OICAWsDEVAe7ZVsPVPP13YG0ckKOAjlYCh4rzGMcY,2635
+incept-0.1.3.dist-info/LICENSE,sha256=b08DAlCBtnZmAVmi5kSCDsMHsp4lA8TGtWX5-RC3GFA,1063
+incept-0.1.3.dist-info/METADATA,sha256=OqYhVbedK1XDEuicOubHOH82UiH9ZMtYLTt5l3g7HlY,4684
+incept-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+incept-0.1.3.dist-info/RECORD,,
