@@ -1,0 +1,4 @@
+python-dotenv
+requests
+myllmservice
+beautifulsoup4
