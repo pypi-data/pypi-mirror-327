@@ -1,0 +1,8 @@
+playwright
+pydantic
+json5
+pyyaml
+
+[dev]
+pytest
+pytest-playwright
