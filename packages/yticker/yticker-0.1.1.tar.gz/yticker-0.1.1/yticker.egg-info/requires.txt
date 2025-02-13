@@ -1,0 +1,5 @@
+cython
+picows
+pyrobuf
+orjson
+uvloop
