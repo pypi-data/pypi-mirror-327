@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: zeusai
+Version: 0.1.1
+Summary: Uma biblioteca simples para interagir com a API ZeusAI
+Home-page: 
+Author: Hugo Santos
+Author-email: contato@hugosantos.lol
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ZeusAI
+
+Uma biblioteca simples para interagir com a API ZeusAI.
+
+## Instalação
+
+```bash
+pip install zeusai
+```
+
+## Uso
+
+```python
+import zeusai
+
+zeus_ai = zeusai.ZeusAI(api_key='YOUR_API_KEY')
+response = zeus_ai.send_message(prompt='Olá, Zeus!')
+print(response)
+```

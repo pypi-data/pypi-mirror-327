@@ -1,0 +1,9 @@
+README.md
+setup.py
+zeusai/__init__.py
+zeusai/zeusai.py
+zeusai.egg-info/PKG-INFO
+zeusai.egg-info/SOURCES.txt
+zeusai.egg-info/dependency_links.txt
+zeusai.egg-info/requires.txt
+zeusai.egg-info/top_level.txt
