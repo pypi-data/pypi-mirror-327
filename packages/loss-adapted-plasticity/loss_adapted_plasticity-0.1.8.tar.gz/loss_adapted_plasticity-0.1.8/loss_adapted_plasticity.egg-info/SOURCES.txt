@@ -1,0 +1,9 @@
+README.md
+setup.py
+loss_adapted_plasticity/__init__.py
+loss_adapted_plasticity/lap.py
+loss_adapted_plasticity.egg-info/PKG-INFO
+loss_adapted_plasticity.egg-info/SOURCES.txt
+loss_adapted_plasticity.egg-info/dependency_links.txt
+loss_adapted_plasticity.egg-info/requires.txt
+loss_adapted_plasticity.egg-info/top_level.txt
