@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exposekit"
+version = "1.0.1" 
+description = "A library to expose localhost server to a more wider network. You can utilize this library to host your loopback server to LAN, or even the internet."
+authors = [{name = "Pulse Empire", email = "nerdguy1020@gmail.com"}]
+dependencies = ["requests"]
+license = {text = "MIT"} # Or specify a license file if you have one
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",  # Update if your license is different
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',  # Or appropriate status
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',  # Your license
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Topic :: System :: Networking',  # Corrected classifier
+    'Topic :: Software Development :: Libraries :: Python Modules'
+]
+readme = "README.md"  # If you have a README file
+requires-python = ">=3.7"  # Or specify your minimum Python version
+
+[project.scripts]
+exposekit = "exposekit:main"  # Equivalent to entry_points
+
+# Optional: Dynamic versioning (recommended)
+# If you want to manage the version in a single place (e.g., in __init__.py)
+# and have it automatically included in the build:
+
+# dynamic = ["version"]
+
+# [tool.setuptools.dynamic]
+# version = {attr = "exposekit.__version__"} # Assuming __version__ is in exposekit/__init__.py
+
+# Optional: Add other metadata
+# keywords = ["localhost", "tunnel", "expose", "networking"]
+# project_urls = {
+#     "Bug Tracker": "https://github.com/pulse-empire/exposekit/issues",
+#     "Documentation": "https://your-documentation-url.com",  # If you have docs
+# }
