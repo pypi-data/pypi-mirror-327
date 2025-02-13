@@ -1,0 +1,9 @@
+wmmhr/__init__.py,sha256=XD7YUlgqmG_j_3rLuD0ews4VdrhB-RqcosUpIslgnzs,78
+wmmhr/build.py,sha256=1szhZWDxDR8olDdtmz4_t85WiOi4NxoEF44tMgmaf5c,1329
+wmmhr/uncertainty.py,sha256=wYbz9CTmlzUxBHb4ASYLSBM2eItnaPS27owbJTk0FYg,110
+wmmhr/coefs/WMMHR.cof,sha256=iFHUDleh2UjLVtSbg3YShEiQqUH5OnOEahIrbBGC1QQ,533743
+wmmhr-1.1.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+wmmhr-1.1.3.dist-info/METADATA,sha256=9UvzrcIeFzrdyvZGt1JB9NEvEipeVE_HKQaHzblxXqs,5322
+wmmhr-1.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+wmmhr-1.1.3.dist-info/top_level.txt,sha256=oQqZ4U8Yym14GesQXqKkvZdDObjpRBFzETwea2ePjmI,6
+wmmhr-1.1.3.dist-info/RECORD,,
