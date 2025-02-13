@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+jprcfai/__init__.py
+jprcfai/core.py
+jprcfai.egg-info/PKG-INFO
+jprcfai.egg-info/SOURCES.txt
+jprcfai.egg-info/dependency_links.txt
+jprcfai.egg-info/requires.txt
+jprcfai.egg-info/top_level.txt
+jprcfai/assistants/CodeFixer.txt
+tests/test_dummy.py

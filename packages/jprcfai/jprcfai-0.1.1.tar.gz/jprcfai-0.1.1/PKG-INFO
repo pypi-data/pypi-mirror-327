@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: jprcfai
+Version: 0.1.1
+Summary: A package that provides advanced coding tools using the new openAI reasoning models.
+Home-page: https://github.com/Joaoprcf/jprcfai
+Author: Joao Ferreira
+Author-email: joaoprcf@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: platformdirs
+
+This tool provide advanced coding tools using the new openAI reasoning models
