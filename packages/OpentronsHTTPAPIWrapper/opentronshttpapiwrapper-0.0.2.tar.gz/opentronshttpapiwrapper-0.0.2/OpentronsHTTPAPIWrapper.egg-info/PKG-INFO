@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: OpentronsHTTPAPIWrapper
+Version: 0.0.2
+Summary: Python wrapper for the opentrons http api.
+Home-page: https://github.com/yourusername/my_project
+Author: Daniel Persaud, Nis Fisker-Bødker
+License: CC0-1.0
+Project-URL: Homepage, https://github.com/dpersaud/opentronsHTTPAPI_wrapper
+Project-URL: Repository, https://github.com/dpersaud/opentronsHTTPAPI_wrapper
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: home-page
+Dynamic: requires-python
+
+# opentrons_hTTPAPI_wrapper
+repository for extending the Opentrons HTTP API for more straightforward execution
