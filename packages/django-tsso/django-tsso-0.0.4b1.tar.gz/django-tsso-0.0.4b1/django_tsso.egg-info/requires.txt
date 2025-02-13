@@ -1,0 +1,9 @@
+django
+social-auth-app-django
+
+[dev]
+django-admin-autocomplete-filter
+django-extensions
+djangorestframework
+django-tastypie
+tox
