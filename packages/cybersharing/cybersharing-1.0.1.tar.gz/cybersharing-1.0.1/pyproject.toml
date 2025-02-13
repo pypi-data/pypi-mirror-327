@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cybersharing"
+description = "The official Cybersharing CLI"
+readme = "README.md"
+version = "1.0.1"
+dependencies = [
+  "pycryptodome",
+  "requests",
+  "requests_toolbelt",
+  "typer"
+]
+authors = [
+  {name = "Et3rnos", email = "et3rnos@gmail.com"}
+]
+
+[project.scripts]
+cybersharing = "cybersharing.main:main"
+
+[project.urls]
+Homepage = "https://github.com/Et3rnos/cybersharing-cli"
+Issues = "https://github.com/Et3rnos/cybersharing-cli/issues"
