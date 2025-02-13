@@ -1,0 +1,6 @@
+gias3.common
+gias3.fieldwork
+gias3.learning
+gias3.registration
+numpy
+opensim
