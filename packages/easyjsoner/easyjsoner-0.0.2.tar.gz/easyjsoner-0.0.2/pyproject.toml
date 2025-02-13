@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "easyjsoner"
+version = "0.0.2"
+authors = [
+ { name="qxuwll", email="ivanskarupo23@gmail.com" },
+]
+description = "The simplest module for quick work with json files"
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
