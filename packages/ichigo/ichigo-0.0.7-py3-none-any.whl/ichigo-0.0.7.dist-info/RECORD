@@ -1,0 +1,17 @@
+ichigo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ichigo/asr/__init__.py,sha256=70OiYhYUkqdUdH1IEKUdzoQt1jiaxaHhgW4RNzAPPOg,1027
+ichigo/asr/transcriber.py,sha256=sjvEeT3XGt0Uze1AaZPISk9A25M21D6FwzMjPVdZhIQ,10705
+ichigo/asr/arch/__init__.py,sha256=N1i6xIAXN0Iv73ynEGihrAllAZK427m_ANEzxfeDc7c,138
+ichigo/asr/arch/layers.py,sha256=krcToeK3i7d-_V1O2AvMH2vVCpZpBmdFgfV0FOOTmls,9220
+ichigo/asr/arch/quantizer.py,sha256=m0GHIpRtuLJCkG6xrsPXJbHq1mGiAVNLOVhx6kahbGk,5217
+ichigo/asr/arch/r2t.py,sha256=pgKPSHybITRPlCZUJNeX6FtxElpC1hG0KhZZcc_TO2A,623
+ichigo/asr/arch/s2r.py,sha256=Za_mSFPTegENhSII2AnshDZhClQ2QMIEs_s9Gnu2Umk,868
+ichigo/asr/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ichigo/asr/config/merge-2560d.yaml,sha256=EbYXOaxdKtoXNpVMOwy7XhcFcIXi8DeO4CpN--kefPM,1202
+ichigo/asr/config/whisperspeech-512d.yaml,sha256=yT0F-jx2qcwl0qK7Dk4jkK-zH6UCx9S8mRpJlCl_NXc,615
+ichigo/llm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ichigo/tts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ichigo-0.0.7.dist-info/METADATA,sha256=VbQfVGXUZ-wWGtrzxZG3hnIhT2YtpezbiVO8e5mzbQ8,7270
+ichigo-0.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ichigo-0.0.7.dist-info/top_level.txt,sha256=RzcZAJzZZpquc_3YlxMvDJfRN-oWLhj9RW2dPCEMsfY,7
+ichigo-0.0.7.dist-info/RECORD,,
