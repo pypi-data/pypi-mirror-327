@@ -1,0 +1,3 @@
+[console_scripts]
+arquee = arquee.cli:create_files
+arquee-init-server = arquee.cli:start_server
