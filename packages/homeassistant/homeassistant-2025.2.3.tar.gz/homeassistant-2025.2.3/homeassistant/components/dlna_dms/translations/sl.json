@@ -1,0 +1,13 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "V omre\u017eju ni bilo najdenih naprav"
+        },
+        "step": {
+            "user": {
+                "description": "Izberite napravo, ki jo \u017eelite konfigurirati",
+                "title": "Odkrite naprave DLNA DMA"
+            }
+        }
+    }
+}

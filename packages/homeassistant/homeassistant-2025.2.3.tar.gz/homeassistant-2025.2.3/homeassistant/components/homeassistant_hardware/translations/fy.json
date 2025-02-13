@@ -1,0 +1,20 @@
+{
+    "silabs_multiprotocol_hardware": {
+        "options": {
+            "step": {
+                "change_channel": {
+                    "data": {
+                        "channel": "Kanaal"
+                    },
+                    "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                },
+                "notify_unknown_multipan_user": {
+                    "title": "Mooglik is in h\u00e2nmjittige konfiguraasje nedich."
+                },
+                "reconfigure_addon": {
+                    "title": "Werkonfigurearje IEEE 802.15.4 radio multyprotokol-stipe"
+                }
+            }
+        }
+    }
+}
