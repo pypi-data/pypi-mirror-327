@@ -1,0 +1,5 @@
+tqdm
+httpx
+fastsdk>=00.01.00
+media-toolkit>=00.02.00
+singleton_decorator==1.0.0
