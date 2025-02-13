@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/pyweft/__init__.py
+src/pyweft/example.py
+src/pyweft.egg-info/PKG-INFO
+src/pyweft.egg-info/SOURCES.txt
+src/pyweft.egg-info/dependency_links.txt
+src/pyweft.egg-info/top_level.txt
