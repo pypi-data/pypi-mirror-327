@@ -1,0 +1,10 @@
+sqlplate/__init__.py,sha256=AEV63LM1sVVhriQ1sPvi3TaRicyj6NOZgnlx7pgZX1A,31
+sqlplate/__version__.py,sha256=WxBo38JfTqtiSYDdO1oxqyNsXue7B3YHcv5QWpdoTXQ,86
+sqlplate/conf.py,sha256=9_zNJxKtBhC_reFpzqhiK-BHr7zGo1l-KSZMKD_YyNw,1273
+sqlplate/exceptions.py,sha256=8hlIYZ9el9cQtT1M_f8q_rdOjQDutpOQNZtQL8MxeIA,389
+sqlplate/params.py,sha256=G5I9LbdMWJkhFQYtZFgTl6wKHJeN153X2-oHKxZSqVI,553
+sqlplate/sqlplate.py,sha256=23vqPHqsT3LKChlJHpHGpI9jk4m6fp_poysXsTkeuEQ,4089
+sqlplate/utils.py,sha256=JiOBzmxUuQUfpQruXDE3SauETMTs7V-UUyo9dRplIlI,3160
+sqlplate-0.0.3.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+sqlplate-0.0.3.dist-info/METADATA,sha256=sQ6ibsiuzqbGh8mdyowhUQ_0jljLiAmhLcVkgL3_-n8,4537
+sqlplate-0.0.3.dist-info/RECORD,,
