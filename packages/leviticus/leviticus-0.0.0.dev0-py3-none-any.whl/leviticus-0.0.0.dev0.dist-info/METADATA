@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: leviticus
+Version: 0.0.0.dev0
+Summary: Leviticus
+Author-email: Jackmin801 <ongjackm@gmail.com>
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: fastapi[standard]
+Requires-Dist: uvicorn[standard]
+Description-Content-Type: text/markdown
+
+# Leviticus
+
+## Installation
+
+```bash
+uv venv .venv
+source .venv/bin/activate  # On Unix
+uv pip install -e .
+```
+
+## Usage
+
+To run the web server:
+
+```bash
+python -m leviticus.server
+```
