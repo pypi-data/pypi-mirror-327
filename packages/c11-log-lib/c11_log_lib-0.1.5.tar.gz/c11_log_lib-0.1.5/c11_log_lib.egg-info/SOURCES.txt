@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+c11_log_lib/__init__.py
+c11_log_lib/logger.py
+c11_log_lib.egg-info/PKG-INFO
+c11_log_lib.egg-info/SOURCES.txt
+c11_log_lib.egg-info/dependency_links.txt
+c11_log_lib.egg-info/requires.txt
+c11_log_lib.egg-info/top_level.txt
+test/test.py
