@@ -1,0 +1,67 @@
+[project]
+name = "autocensus"
+version = "2.2.1"
+description = "A tool for collecting ACS and geospatial data from the Census API"
+authors = [{ name = "Christopher Setzer", email = "cmsetzer.github@gmail.com" }]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+keywords = ["census", "acs", "api", "data"]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+]
+dependencies = [
+  "geopandas>=1.0.1",
+  "httpx>=0.28.1",
+  "nest-asyncio>=1.6.0",
+  "pandas>=2.2.3",
+  "platformdirs>=4.3.6",
+  "pyogrio>=0.10.0",
+  "shapely>=2.0.7",
+  "tenacity>=9.0.0",
+  "typing-extensions>=4.12.2",
+  "us>=3.2.0",
+  "yarl>=1.18.3",
+]
+
+[project.urls]
+Repository = "https://github.com/cmsetzer/autocensus"
+
+[dependency-groups]
+dev = [
+  "pyinstrument>=5.0.1",
+  "pytest>=8.3.4",
+  "pytest-cov>=6.0.0",
+  "ruff>=0.9.6",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.pytest.ini_options]
+testpaths = "tests/unit"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 99
+
+[tool.ruff.lint]
+select = ["C90", "D", "E", "F", "I", "PD", "RUF"]
+ignore = ["D105", "D107", "D203", "D213", "RUF001"]
+
+[tool.ruff.format]
+quote-style = "single"
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.setuptools]
+license-files = []
