@@ -1,0 +1,4 @@
+jsonschema>=2.5.1
+mwcli>=0.0.2
+mwtypes>=0.4.0
+para>=0.0.1
