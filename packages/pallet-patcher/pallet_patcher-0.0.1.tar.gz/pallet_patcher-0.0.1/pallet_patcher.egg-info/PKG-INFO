@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: pallet-patcher
+Version: 0.0.1
+Summary: Tools for working with curated collections of Cargo packages
+Author-email: Scott K Logan <logans@cottsay.net>
+License: Apache License, Version 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tomli>=1.0.0; python_version < "3.11"
+Provides-Extra: test
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: pytest; extra == "test"
+
+# pallet-patcher
+
+_Tools for working with curated collections of Cargo packages_
+
+> [!WARNING]
+> This is a prototype package without stable behavior or API.

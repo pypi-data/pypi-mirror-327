@@ -1,0 +1,2 @@
+[console_scripts]
+pallet-patcher = pallet_patcher.command:main
