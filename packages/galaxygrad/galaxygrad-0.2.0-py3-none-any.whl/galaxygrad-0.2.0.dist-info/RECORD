@@ -1,0 +1,17 @@
+galaxygrad/__init__.py,sha256=2x2mDIlRfaXpK7SBlLWcyDOIQ0BKl7_IgWKYlkyPGgs,178
+galaxygrad/eqx_ZTF_ScoreNet32.eqx,sha256=YLKea5t7S6pN3IQTLQg5kcnh4pEPVfPprhbmW_Dfj0c,2430092
+galaxygrad/eqx_ZTF_ScoreNet64.eqx,sha256=gGy4PemNiv-STdE7JnvLFX1y3bgZgEpUETSgats5EGU,6463628
+galaxygrad/eqx_hsc_LogNet32.eqx,sha256=SYc1FtlcAlBvshw4ZBm8ORXMiLkMktkK3HGN07eVAWk,2430092
+galaxygrad/eqx_hsc_LogNet64.eqx,sha256=bR5zh_9UpBQuaIRKzuGjf0Lw0-ya0fGTjV9Hwu4l7kA,6463628
+galaxygrad/eqx_hsc_ScoreNet32.eqx,sha256=y5JlYvzfy9M5Uv6osjlAdOdctlL7eCTEyAml-JoKZTI,2430092
+galaxygrad/eqx_hsc_ScoreNet64.eqx,sha256=R1gRSxt35GQMp7g0qXYgKusSb9czLsB4Qq9G1yxrLgE,6463628
+galaxygrad/eqx_lsst_ScoreNet60.eqx,sha256=k-9A8XpufofmUnyQ1cHU8rF8d7vt_BSwjQFMU6otsOA,5812380
+galaxygrad/eqx_quasar_lens72.eqx,sha256=sVdLOQ0uRQUh9iNP8_MoiTfFMjenYYmIPWE0LJ0pPC8,7892172
+galaxygrad/eqx_roman_Scorenet120.eqx,sha256=aKHXhBDId7e1D0ZrUFy3XQc_H0TpBEIO0P2ftnggGwM,19992780
+galaxygrad/generate.py,sha256=_yzRfvpJt7bXRj4jgE5t2x6twLDn6FuIRFlL8YS2KXc,1297
+galaxygrad/models_eqx.py,sha256=wTVT4Izfy5lBTl9dLJcTTtLrxRHFwFuwnPrRyRM78OE,2956
+galaxygrad/scorenet.py,sha256=9o0J1IGesie6OAaEAsk3JabWLVm--Nrz5KC2B9fSgV0,6249
+galaxygrad-0.2.0.dist-info/METADATA,sha256=62WuErWDjKOnLgfQUQIdsdeAgL57xCWrJDq9agNuAfg,965
+galaxygrad-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+galaxygrad-0.2.0.dist-info/top_level.txt,sha256=-CqogYVY9oqk0HcTkfWfOZ_419Y_77J-Zyngfxi-vIQ,11
+galaxygrad-0.2.0.dist-info/RECORD,,
