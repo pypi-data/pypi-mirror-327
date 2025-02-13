@@ -1,0 +1,10 @@
+shimpan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shimpan/__main__.py,sha256=jna1zdOC3o70IUhboGcxPbKrg3_A_5z4LIybsbsjkrI,52
+shimpan/cli.py,sha256=NFuos0AFofxaWAOmzZbRZzqqGwEk2FrNFQXcikO5Css,3321
+shimpan/shim.exe,sha256=cNRpC4rDs_cV9TfN6m4Ho5_aS8A0e_a5WOTz_y8OBNQ,115200
+shimpan-1.2.0.dist-info/LICENSE,sha256=COX6HUh7OA8UR3-ZftGFfDBKb04t4Rqz5VCFp-tJhf8,1069
+shimpan-1.2.0.dist-info/METADATA,sha256=7jNfujp12EHQHBfKmkdcSsQRy6HVCuUwRWSBlkkfarY,370
+shimpan-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+shimpan-1.2.0.dist-info/entry_points.txt,sha256=6ZVvEIYsz610HksVEiPl8cXg5UsQbLQ2QLfCDfanahI,50
+shimpan-1.2.0.dist-info/top_level.txt,sha256=U5hKccLK0h-3CyqPpsaCH_lvsoJiOnUnTjqc2k43--E,8
+shimpan-1.2.0.dist-info/RECORD,,
