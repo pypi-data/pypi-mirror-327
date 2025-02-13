@@ -1,0 +1,49 @@
+[project.scripts]
+changelog = "changelog_cli.cli.main:app"
+
+[tool.uv]
+package = true
+
+[project.optional-dependencies]
+web = [
+    "fastapi>=0.115.8",
+    "uvicorn>=0.34.0",
+    "jinja2>=3.1.5",
+    "markdown>=3.7",
+]
+
+[dependency-groups]
+dev = [
+    "twine>=6.1.0",
+]
+
+[project]
+name = "brose-changelog-cli"
+version = "0.1.1"
+description = "AI-powered changelog generator from git commits"
+authors = [
+    {name = "bruno", email = "contact@brunorodriguez.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.8",
+    "jinja2>=3.1.5",
+    "markdown>=3.7",
+    "openai>=1.61.1",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.20",
+    "typer>=0.15.1",
+    "uvicorn>=0.34.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Documentation",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools.package-data]
+"changelog_cli.web" = ["templates/*.html"]

@@ -1,0 +1,2 @@
+[console_scripts]
+changelog = changelog_cli.cli.main:app
