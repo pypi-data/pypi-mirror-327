@@ -1,0 +1,35 @@
+[project]
+name = "zvartools"
+version = "0.1.2"
+description = "A collection of tools for working with ZVAR data."
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "numpy<2",
+    "pandas",
+    "astropy",
+    "penquins",
+    "paramiko",
+    "scp",
+    "pyarrow",
+    "fastparquet",
+    "numba",
+    "h5py",
+    "tqdm",
+    "matplotlib",
+    "fpwperiodic"
+]
+
+# add pre-commit as a dev dependency
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

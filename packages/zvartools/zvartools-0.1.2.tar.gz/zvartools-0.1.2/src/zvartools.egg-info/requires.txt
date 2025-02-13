@@ -1,0 +1,17 @@
+numpy<2
+pandas
+astropy
+penquins
+paramiko
+scp
+pyarrow
+fastparquet
+numba
+h5py
+tqdm
+matplotlib
+fpwperiodic
+
+[dev]
+pre-commit
+pytest
