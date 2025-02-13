@@ -1,0 +1,13 @@
+elodin-0.11.3.dist-info/METADATA,sha256=xcuISUgfKz0nK5G0tfUGNkphqqpjq5HOo-ne2nFY7wk,1145
+elodin-0.11.3.dist-info/WHEEL,sha256=rqXrI9NbfzAeNKo4HwlOxQIkop5xssazCtKU3mCb2t8,107
+elodin-0.11.3.dist-info/entry_points.txt,sha256=Fk4X6Tdo205RgOpVlQAeWPv7QZ_JzfWXH8Alvmb5DcA,25
+elodin.libs/libgfortran-df5d6f8d.so.5,sha256=vPZvXyjrQHbDAZTT-aAGfjIp8AYINzgO4Fb4vcNerys,3082705
+elodin.libs/libquadmath-1c3f8ec4.so.0,sha256=brXjK9ybFuuXclzfzqORFHQ0tI3oT6JFiPzjfjPUA5A,292977
+elodin/__init__.py,sha256=G0Ad9dFb8_1d5J695yfbe8gc85xLvy13btNyDd9YTM8,14301
+elodin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elodin/elodin.pyi,sha256=Rizac2aMUe_T5-Obv7Ivg_H-Z-f_RIiwmZ6Y6282fwo,12006
+elodin/jaxsim.py,sha256=HvvDwg8eBbPCpA6SKOEoMKTfHYD2kq9PM_nWpJmGZv0,4576
+elodin/j2.py,sha256=6WcKsEzeFQcs-JEftRNiQIMBlBNGncsRUzjhjzz5U20,844
+elodin/egm08.py,sha256=mZk_rxMX-kxuAfWUoBXScUNS7racbqTcxZvdmNCd6K4,6842
+elodin/elodin.abi3.so,sha256=-_K8caSwQjlIjMmvQhu6qzc48IvD-nJl0evfhQsHOY4,149860337
+elodin-0.11.3.dist-info/RECORD,,
