@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: scrapy-feedexporter-sftp
+Version: 1.1.0
+Summary: Scrapy extension Feed Exporter Storage Backend to export items to an SFTP server
+Author: Scrapy developers
+License: BSD
+Project-URL: Repository, https://github.com/scrapy-plugins/scrapy-feedexporter-sftp
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Scrapy
+Classifier: Framework :: Scrapy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko>=2.10.0
+Requires-Dist: scrapy>=2
+Requires-Dist: typing-extensions>=3.6.2; python_version < "3.11"

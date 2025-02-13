@@ -1,0 +1,5 @@
+paramiko>=2.10.0
+scrapy>=2
+
+[:python_version < "3.11"]
+typing-extensions>=3.6.2
