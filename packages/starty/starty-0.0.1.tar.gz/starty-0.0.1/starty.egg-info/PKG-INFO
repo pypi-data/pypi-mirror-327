@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: starty
+Version: 0.0.1
+Summary: Python web management tool.
+Author: Simon
+Author-email: cardellasimone10@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# Starty 0.0.1
+
+Welcome to starty! 
+A simple package for manage your webapps in python!
+
+## Statistics
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/starty)](https://pypi.org/project/starty/)
+[![PyPI - Version](https://img.shields.io/pypi/v/starty)](https://pypi.org/project/starty/)
+
+
+## Documentation
+For know the usage, go to [documentation](https://starty.tiiny.site)
+

@@ -1,0 +1,11 @@
+README.md
+setup.py
+starty/__init__.py
+starty/cli.py
+starty/utils.py
+starty.egg-info/PKG-INFO
+starty.egg-info/SOURCES.txt
+starty.egg-info/dependency_links.txt
+starty.egg-info/entry_points.txt
+starty.egg-info/requires.txt
+starty.egg-info/top_level.txt
