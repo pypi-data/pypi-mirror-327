@@ -1,0 +1,8 @@
+system_monitor/__init__.py,sha256=H4WrEAKAvMBWqRMRGfAsY3jz18WKsNQgZJBJELVEGDk,56
+system_monitor/system_monitor.py,sha256=sfbvRYjxpvO1IoAYODoz1lLJYdH6z_IcpmAJsqwfOkE,24572
+system_monitor_cli-0.1.1.dist-info/LICENSE,sha256=qfDmrUXfTk7S1bbSDti-uNBd2AEeJVM4y7QKyAa2v4I,1071
+system_monitor_cli-0.1.1.dist-info/METADATA,sha256=QPi5bg-hlzKZSr5uz0kopkkKrbh95W8gu-2KDVj9tHg,3633
+system_monitor_cli-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+system_monitor_cli-0.1.1.dist-info/entry_points.txt,sha256=mVhxatSxNM2E4ZfHaNHgVHUWxcprowKAhFkBGez4wug,59
+system_monitor_cli-0.1.1.dist-info/top_level.txt,sha256=r1l5GQkJCTK5K_Hpn2lq_yp7dJrzBSUnyavRBXc4bDg,15
+system_monitor_cli-0.1.1.dist-info/RECORD,,
