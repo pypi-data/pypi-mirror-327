@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: pytest-ipynb2
+Version: 0.0.2
+Summary: Pytest plugin to run tests in Jupyter Notebooks
+Author: Mike Foster
+License: MIT
+Project-URL: Documentation, https://musicalninjadad.github.io/pytest-ipynb2
+Project-URL: Repository, https://github.com/MusicalNinjaDad/pytest-ipynb2
+Project-URL: Issues, https://github.com/MusicalNinjaDad/pytest-ipynb2/issues
+Project-URL: Changelog, https://github.com/MusicalNinjaDad/pytest-ipynb2/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipython
+Requires-Dist: ipytest
+Requires-Dist: nbformat>=5.10.4
+Requires-Dist: pytest
+Requires-Dist: typing-extensions; python_version < "3.11"
+
+# pytest-ipynb2
+
+A pytest plugin to run tests in Jupyter Notebooks. Designed to integrate with [chmp/ipytest](https://github.com/chmp/ipytest).
