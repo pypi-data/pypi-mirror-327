@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyFfmpeg_installer.egg-info/PKG-INFO
+pyFfmpeg_installer.egg-info/SOURCES.txt
+pyFfmpeg_installer.egg-info/dependency_links.txt
+pyFfmpeg_installer.egg-info/entry_points.txt
+pyFfmpeg_installer.egg-info/top_level.txt

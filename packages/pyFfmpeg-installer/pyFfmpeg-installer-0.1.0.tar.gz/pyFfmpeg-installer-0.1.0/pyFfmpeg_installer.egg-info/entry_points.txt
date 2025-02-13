@@ -1,0 +1,2 @@
+[console_scripts]
+install_ffmpeg = install_ffmpeg:main
