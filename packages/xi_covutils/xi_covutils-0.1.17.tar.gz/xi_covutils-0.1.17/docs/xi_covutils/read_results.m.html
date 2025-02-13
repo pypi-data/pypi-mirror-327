@@ -1,0 +1,1411 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>xi_covutils.read_results API documentation</title>
+    <meta name="description" content="Read results from covariation files" />
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css">
+  
+* {
+  box-sizing: border-box;
+}
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-size: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+  </style>
+
+  <style type="text/css">
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  body {
+    background: #fff;
+    font-family: "Source Sans Pro", "Helvetica Neueue", Helvetica, sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  #content {
+    width: 70%;
+    max-width: 850px;
+    float: left;
+    padding: 30px 60px;
+    border-left: 1px solid #ddd;
+  }
+  #sidebar {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    overflow: hidden;
+  }
+  #nav {
+    font-size: 130%;
+    margin: 0 0 15px 0;
+  }
+
+  #top {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  #footer {
+    font-size: .75em;
+    padding: 5px 30px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+  }
+    #footer p {
+      margin: 0 0 0 30px;
+      display: inline-block;
+    }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0 0 .50em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 1em 0 .50em 0;
+  }
+
+  h3 {
+    margin: 25px 0 10px 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 105%;
+  }
+
+  a {
+    color: #058;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+  }
+
+  a:hover {
+    color: #e08524;
+    transition: color .3s ease-in-out;
+  }
+
+  pre, code, .mono, .name {
+    font-family: "Ubuntu Mono", "Cousine", "DejaVu Sans Mono", monospace;
+  }
+
+  .title .name {
+    font-weight: bold;
+  }
+  .section-title {
+    margin-top: 2em;
+  }
+  .ident {
+    color: #900;
+  }
+
+  code {
+    background: #f9f9f9;
+  } 
+
+  pre {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 0 #f3f3f3;
+    margin: 0 30px;
+    padding: 15px 30px;
+  }
+
+  .codehilite {
+    margin: 0 30px 10px 30px;
+  }
+
+    .codehilite pre {
+      margin: 0;
+    }
+    .codehilite .err { background: #ff3300; color: #fff !important; } 
+
+  table#module-list {
+    font-size: 110%;
+  }
+
+    table#module-list tr td:first-child {
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    table#module-list td {
+      vertical-align: top;
+      padding-bottom: 8px;
+    }
+
+      table#module-list td p {
+        margin: 0 0 7px 0;
+      }
+
+  .def {
+    display: table;
+  }
+
+    .def p {
+      display: table-cell;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .def p:first-child {
+      white-space: nowrap;
+    }
+
+    .def p:last-child {
+      width: 100%;
+    }
+
+
+  #index {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    ul#index .class_name {
+      /* font-size: 110%; */
+      font-weight: bold;
+    }
+    #index ul {
+      margin: 0;
+    }
+
+  .item {
+    margin: 0 0 15px 0;
+  }
+
+    .item .class {
+      margin: 0 0 25px 30px;
+    }
+
+      .item .class ul.class_list {
+        margin: 0 0 20px 0;
+      }
+
+    .item .name {
+      background: #fafafa;
+      margin: 0;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      min-width: 40%;
+    }
+      .item .name:hover {
+        background: #f6f6f6;
+      }
+
+    .item .empty_desc {
+      margin: 0 0 5px 0;
+      padding: 0;
+    }
+
+    .item .inheritance {
+      margin: 3px 0 0 30px;
+    }
+
+    .item .inherited {
+      color: #666;
+    }
+
+    .item .desc {
+      padding: 0 8px;
+      margin: 0;
+    }
+
+      .item .desc p {
+        margin: 0 0 10px 0;
+      }
+
+    .source_cont {
+      margin: 0;
+      padding: 0;
+    }
+
+    .source_link a {
+      background: #ffc300;
+      font-weight: 400;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 0 #f4b700;
+      
+      padding: 3px 8px;
+      border-radius: 2px;
+      transition: background .3s ease-in-out;
+    }
+      .source_link a:hover {
+        background: #FF7200;
+        text-shadow: none;
+        transition: background .3s ease-in-out;
+      }
+
+    .source {
+      display: none;
+      max-height: 600px;
+      overflow-y: scroll;
+      margin-bottom: 15px;
+    }
+
+      .source .codehilite {
+        margin: 0;
+      }
+
+  .desc h1, .desc h2, .desc h3 {
+    font-size: 100% !important;
+  }
+  .clear {
+    clear: both;
+  }
+
+  @media all and (max-width: 950px) {
+    #sidebar {
+      width: 35%;
+    }
+    #content {
+      width: 65%;
+    }
+  }
+  @media all and (max-width: 650px) {
+    #top {
+      display: none;
+    }
+    #sidebar {
+      float: none;
+      width: auto;
+    }
+    #content {
+      float: none;
+      width: auto;
+      padding: 30px;
+    }
+
+    #index ul {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    #index ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+    #footer {
+      text-align: left;
+    }
+    #footer p {
+      display: block;
+      margin: inherit;
+    }
+  }
+
+  /*****************************/
+
+  </style>
+
+
+  <style type="text/css">
+  
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+  </style>
+
+  <script type="text/javascript">
+  function toggle(id, $link) {
+    $node = document.getElementById(id);
+    if (!$node)
+    return;
+    if (!$node.style.display || $node.style.display == 'none') {
+    $node.style.display = 'block';
+    $link.innerHTML = 'Hide source &nequiv;';
+    } else {
+    $node.style.display = 'none';
+    $link.innerHTML = 'Show source &equiv;';
+    }
+  }
+  </script>
+</head>
+<body>
+<a href="#" id="top">Top</a>
+
+<div id="container">
+    
+  
+  <div id="sidebar">
+    <h1>Index</h1>
+    <ul id="index">
+
+    <li class="set"><h3><a href="#header-functions">Functions</a></h3>
+      
+  <ul>
+    <li class="mono"><a href="#xi_covutils.read_results.from_ccmpred">from_ccmpred</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.inter_covariation">inter_covariation</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.intra_covariation">intra_covariation</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.merge">merge</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.remap_paired">remap_paired</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.remap_tuple_positions">remap_tuple_positions</a></li>
+    <li class="mono"><a href="#xi_covutils.read_results.remove_trivial_tuple">remove_trivial_tuple</a></li>
+  </ul>
+
+    </li>
+
+
+    </ul>
+  </div>
+
+    <article id="content">
+      
+  
+
+  
+
+
+  <header id="section-intro">
+  <h1 class="title"><span class="name">xi_covutils.read_results</span> module</h1>
+  <p>Read results from covariation files</p>
+  
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results" class="source">
+    <pre><code>"""
+    Read results from covariation files
+"""
+from Bio import SeqIO
+
+def from_ccmpred(infile):
+    '''
+    Reads a the results of the covariation files from CCMPRED.
+    Returns a dictionary of tuples of indices (i,j) where i<=j as keys
+    and score as value. The indices i,j starts at 1.
+    :param infile: A string with the path of the input file.
+    '''
+    raw = open(infile).readlines()
+    scores = {(i+1, j+1):float(v)
+              for i, l in enumerate(raw)
+              for j, v in enumerate(l.split()) if i <= j}
+    return scores
+
+def remap_paired(cov_data, msa_file, chain_a_len, chain_a_id="1", chain_b_id="2"):
+    '''
+    Remaps the positions of the covariation scores of a paired MSA to each individual
+    ungapped chain sequence.
+    Return a new dict, which keys has the form ((chain_a, index_a), (chain_b, index_b)) and the
+    values are the covariation scores.
+    :param cov_data: The result of covariation scores, as a dict of indices as keys and scores as values
+    :param msa_file: The path to a fasta file containing the MSA.
+    :param chain_a_len: The number of positions of the MSA that corresponds to the first chain.
+    :param chain_a_id: An identifier for the first chain.
+    :param chain_b_id: An identifier for the second chain.
+    '''
+    records = SeqIO.parse(msa_file, "fasta")
+    first_chain_seq = str(records.next().seq)[:chain_a_len]
+    first_chain_ungapped_length = len(first_chain_seq.replace("-", ""))
+    def _adapt_index(index):
+        if index <= first_chain_ungapped_length:
+            return (chain_a_id, index)
+        return (chain_b_id, index-first_chain_ungapped_length)
+    return {(_adapt_index(i), _adapt_index(j)):v for (i, j), v in cov_data.items()}
+
+def remap_tuple_positions(cov_data, mapping):
+    '''
+    Remaps the positions of cov_data. Cov_data should be represented as a dict
+    with keys of the form ((chain_a, index_a), (chain_b, index_b)) and scores as values.
+
+    :param cov_data: a dict with covariation scores.
+    :param mapping: A dict to map the positions, the dict should have chain ids as keys, and
+    values should be dicts that maps from old positions to new positions.
+    '''
+    return {((c1, mapping[c1][p1]), (c2, mapping[c2][p2])):s
+            for ((c1, p1), (c2, p2)), s in cov_data.items()
+            if p1 in mapping[c1] and p2 in mapping[c2]}
+
+def remove_trivial_tuple(cov_data, min_pos_dif=5):
+    """
+    Removes positions from covariation data from residue pairs that are
+    a lesser distance than five positions in sequence.
+
+    Covariation data is assumed to be a dict with keys of the form
+    ((chain_a, index_a), (chain_b, index_b)) and scores as keys.
+
+        :param cov_data: The input covariation data dict.
+        :param min_pos_dif=5: Minimum distance that two residues should
+        have to be included.
+    """
+    return {((c1, p1), (c2, p2)):score
+            for ((c1, p1), (c2, p2)), score in cov_data.items()
+            if not ((c1 == c2) and (abs(p2 - p1) < min_pos_dif))}
+
+def intra_covariation(cov_data):
+    """
+    Extract intra-chain interactions from paired covariation data.
+
+    Returns a new dict which chain ids are keys and values are subsets
+    of cov_data that correspond to intra chain residue pairs.
+
+        :param cov_data: Covariation data from a paired MSA.
+    """
+    chains = {c for ((c1, _), (c2, _)) in cov_data
+              for c in [c1, c2]}
+    intra_data = {c:{} for c in chains}
+    for ((ch1, po1), (ch2, po2)), score in cov_data.items():
+        if ch1 == ch2:
+            intra_data[ch1][((ch1, po1), (ch2, po2))] = score
+    return intra_data
+
+def merge(cov_data_iter):
+    """
+    Merge covariation data.
+
+        :param cov_data_iter: Is a iterator where each element is covariation data.
+    """
+    return {pair:s for cov in cov_data_iter
+            for pair, s in cov.items()}
+
+def inter_covariation(cov_data):
+    """
+    Extract inter-chain interactions from paired covariation data.
+
+    Returns a new dict which chain id tuples are keys and values are subsets
+    of cov_data that correspond to inter chain residue pairs.
+    Chain ids in tuple keys are sorted lexicographically.
+
+        :param cov_data: Covariation data from a paired MSA.
+    """
+    chain_pairs = {tuple(sorted([c1, c2])) for ((c1, _), (c2, _)) in cov_data
+                   if not c1 == c2}
+    inter_data = {c:{} for c in chain_pairs}
+    for ((ch1, po1), (ch2, po2)), score in cov_data.items():
+        if not ch1 == ch2:
+            key_positions = tuple(sorted([(ch1, po1), (ch2, po2)], key=lambda x: x[0]))
+            key_chains = tuple(sorted([ch1, ch2]))
+            inter_data[key_chains][key_positions] = score
+    return inter_data
+</code></pre>
+  </div>
+
+  </header>
+
+  <section id="section-items">
+
+    <h2 class="section-title" id="header-functions">Functions</h2>
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.from_ccmpred">
+    <p>def <span class="ident">from_ccmpred</span>(</p><p>infile)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Reads a the results of the covariation files from CCMPRED.
+Returns a dictionary of tuples of indices (i,j) where i&lt;=j as keys
+and score as value. The indices i,j starts at 1.
+:param infile: A string with the path of the input file.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.from_ccmpred', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.from_ccmpred" class="source">
+    <pre><code>def from_ccmpred(infile):
+    '''
+    Reads a the results of the covariation files from CCMPRED.
+    Returns a dictionary of tuples of indices (i,j) where i<=j as keys
+    and score as value. The indices i,j starts at 1.
+    :param infile: A string with the path of the input file.
+    '''
+    raw = open(infile).readlines()
+    scores = {(i+1, j+1):float(v)
+              for i, l in enumerate(raw)
+              for j, v in enumerate(l.split()) if i <= j}
+    return scores
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.inter_covariation">
+    <p>def <span class="ident">inter_covariation</span>(</p><p>cov_data)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Extract inter-chain interactions from paired covariation data.</p>
+<p>Returns a new dict which chain id tuples are keys and values are subsets
+of cov_data that correspond to inter chain residue pairs.
+Chain ids in tuple keys are sorted lexicographically.</p>
+<pre><code>:param cov_data: Covariation data from a paired MSA.
+</code></pre></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.inter_covariation', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.inter_covariation" class="source">
+    <pre><code>def inter_covariation(cov_data):
+    """
+    Extract inter-chain interactions from paired covariation data.
+
+    Returns a new dict which chain id tuples are keys and values are subsets
+    of cov_data that correspond to inter chain residue pairs.
+    Chain ids in tuple keys are sorted lexicographically.
+
+        :param cov_data: Covariation data from a paired MSA.
+    """
+    chain_pairs = {tuple(sorted([c1, c2])) for ((c1, _), (c2, _)) in cov_data
+                   if not c1 == c2}
+    inter_data = {c:{} for c in chain_pairs}
+    for ((ch1, po1), (ch2, po2)), score in cov_data.items():
+        if not ch1 == ch2:
+            key_positions = tuple(sorted([(ch1, po1), (ch2, po2)], key=lambda x: x[0]))
+            key_chains = tuple(sorted([ch1, ch2]))
+            inter_data[key_chains][key_positions] = score
+    return inter_data
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.intra_covariation">
+    <p>def <span class="ident">intra_covariation</span>(</p><p>cov_data)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Extract intra-chain interactions from paired covariation data.</p>
+<p>Returns a new dict which chain ids are keys and values are subsets
+of cov_data that correspond to intra chain residue pairs.</p>
+<pre><code>:param cov_data: Covariation data from a paired MSA.
+</code></pre></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.intra_covariation', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.intra_covariation" class="source">
+    <pre><code>def intra_covariation(cov_data):
+    """
+    Extract intra-chain interactions from paired covariation data.
+
+    Returns a new dict which chain ids are keys and values are subsets
+    of cov_data that correspond to intra chain residue pairs.
+
+        :param cov_data: Covariation data from a paired MSA.
+    """
+    chains = {c for ((c1, _), (c2, _)) in cov_data
+              for c in [c1, c2]}
+    intra_data = {c:{} for c in chains}
+    for ((ch1, po1), (ch2, po2)), score in cov_data.items():
+        if ch1 == ch2:
+            intra_data[ch1][((ch1, po1), (ch2, po2))] = score
+    return intra_data
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.merge">
+    <p>def <span class="ident">merge</span>(</p><p>cov_data_iter)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Merge covariation data.</p>
+<p>:param cov_data_iter: Is a iterator where each element is covariation data.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.merge', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.merge" class="source">
+    <pre><code>def merge(cov_data_iter):
+    """
+    Merge covariation data.
+
+        :param cov_data_iter: Is a iterator where each element is covariation data.
+    """
+    return {pair:s for cov in cov_data_iter
+            for pair, s in cov.items()}
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.remap_paired">
+    <p>def <span class="ident">remap_paired</span>(</p><p>cov_data, msa_file, chain_a_len, chain_a_id=&#39;1&#39;, chain_b_id=&#39;2&#39;)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Remaps the positions of the covariation scores of a paired MSA to each individual
+ungapped chain sequence.
+Return a new dict, which keys has the form ((chain_a, index_a), (chain_b, index_b)) and the
+values are the covariation scores.
+:param cov_data: The result of covariation scores, as a dict of indices as keys and scores as values
+:param msa_file: The path to a fasta file containing the MSA.
+:param chain_a_len: The number of positions of the MSA that corresponds to the first chain.
+:param chain_a_id: An identifier for the first chain.
+:param chain_b_id: An identifier for the second chain.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.remap_paired', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.remap_paired" class="source">
+    <pre><code>def remap_paired(cov_data, msa_file, chain_a_len, chain_a_id="1", chain_b_id="2"):
+    '''
+    Remaps the positions of the covariation scores of a paired MSA to each individual
+    ungapped chain sequence.
+    Return a new dict, which keys has the form ((chain_a, index_a), (chain_b, index_b)) and the
+    values are the covariation scores.
+    :param cov_data: The result of covariation scores, as a dict of indices as keys and scores as values
+    :param msa_file: The path to a fasta file containing the MSA.
+    :param chain_a_len: The number of positions of the MSA that corresponds to the first chain.
+    :param chain_a_id: An identifier for the first chain.
+    :param chain_b_id: An identifier for the second chain.
+    '''
+    records = SeqIO.parse(msa_file, "fasta")
+    first_chain_seq = str(records.next().seq)[:chain_a_len]
+    first_chain_ungapped_length = len(first_chain_seq.replace("-", ""))
+    def _adapt_index(index):
+        if index <= first_chain_ungapped_length:
+            return (chain_a_id, index)
+        return (chain_b_id, index-first_chain_ungapped_length)
+    return {(_adapt_index(i), _adapt_index(j)):v for (i, j), v in cov_data.items()}
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.remap_tuple_positions">
+    <p>def <span class="ident">remap_tuple_positions</span>(</p><p>cov_data, mapping)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Remaps the positions of cov_data. Cov_data should be represented as a dict
+with keys of the form ((chain_a, index_a), (chain_b, index_b)) and scores as values.</p>
+<p>:param cov_data: a dict with covariation scores.
+:param mapping: A dict to map the positions, the dict should have chain ids as keys, and
+values should be dicts that maps from old positions to new positions.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.remap_tuple_positions', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.remap_tuple_positions" class="source">
+    <pre><code>def remap_tuple_positions(cov_data, mapping):
+    '''
+    Remaps the positions of cov_data. Cov_data should be represented as a dict
+    with keys of the form ((chain_a, index_a), (chain_b, index_b)) and scores as values.
+
+    :param cov_data: a dict with covariation scores.
+    :param mapping: A dict to map the positions, the dict should have chain ids as keys, and
+    values should be dicts that maps from old positions to new positions.
+    '''
+    return {((c1, mapping[c1][p1]), (c2, mapping[c2][p2])):s
+            for ((c1, p1), (c2, p2)), s in cov_data.items()
+            if p1 in mapping[c1] and p2 in mapping[c2]}
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="xi_covutils.read_results.remove_trivial_tuple">
+    <p>def <span class="ident">remove_trivial_tuple</span>(</p><p>cov_data, min_pos_dif=5)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Removes positions from covariation data from residue pairs that are
+a lesser distance than five positions in sequence.</p>
+<p>Covariation data is assumed to be a dict with keys of the form
+((chain_a, index_a), (chain_b, index_b)) and scores as keys.</p>
+<pre><code>:param cov_data: The input covariation data dict.
+:param min_pos_dif=5: Minimum distance that two residues should
+have to be included.
+</code></pre></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-xi_covutils.read_results.remove_trivial_tuple', this);">Show source &equiv;</a></p>
+  <div id="source-xi_covutils.read_results.remove_trivial_tuple" class="source">
+    <pre><code>def remove_trivial_tuple(cov_data, min_pos_dif=5):
+    """
+    Removes positions from covariation data from residue pairs that are
+    a lesser distance than five positions in sequence.
+
+    Covariation data is assumed to be a dict with keys of the form
+    ((chain_a, index_a), (chain_b, index_b)) and scores as keys.
+
+        :param cov_data: The input covariation data dict.
+        :param min_pos_dif=5: Minimum distance that two residues should
+        have to be included.
+    """
+    return {((c1, p1), (c2, p2)):score
+            for ((c1, p1), (c2, p2)), score in cov_data.items()
+            if not ((c1 == c2) and (abs(p2 - p1) < min_pos_dif))}
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+
+
+  </section>
+
+    </article>
+  <div class="clear"> </div>
+  <footer id="footer">
+    <p>
+      Documentation generated by
+      <a href="https://github.com/BurntSushi/pdoc">pdoc 0.3.2</a>
+    </p>
+
+    <p>pdoc is in the public domain with the
+      <a href="http://unlicense.org">UNLICENSE</a></p>
+
+    <p>Design by <a href="http://nadh.in">Kailash Nadh</a></p>
+  </footer>
+</div>
+</body>
+</html>
