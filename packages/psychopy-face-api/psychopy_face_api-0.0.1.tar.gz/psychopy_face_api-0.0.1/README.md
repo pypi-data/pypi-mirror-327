@@ -1,0 +1,1 @@
+Add support for Face API in PsychoPy experiments (only when running in PsychoJS via Pavlovia)

@@ -1,0 +1,34 @@
+[project]
+name = "psychopy-face-api"
+version = "0.0.1" 
+description = "Add support for Face API in PsychoPy experiments"
+readme = "README.md"
+authors = [
+  { name = "OST Science Team", email = "science@opensceincetools.org" },
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/psychopy/psychopy-face-api"
+changelog = "https://github.com/psychopy/psychopy-face-api/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+docs = [
+  "psychopy",
+  "sphinx",
+  "furo",
+]
+tests = [
+  "psychopy",
+  "pytest",
+]
+
+[project.entry-points."psychopy.experiment.components"]
+FaceAPIComponent = "psychopy_face_api.components.faceAPI:FaceAPIComponent"
+
+[tool.setuptools.package-data]
+"*" = ["*.png"] 
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "docs_src*", "tests*"]
