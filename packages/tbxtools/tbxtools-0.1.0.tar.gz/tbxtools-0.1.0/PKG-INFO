@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: tbxtools
+Version: 0.1.0
+Summary: Utilities for working with TermBase Exchange files (TBX).
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

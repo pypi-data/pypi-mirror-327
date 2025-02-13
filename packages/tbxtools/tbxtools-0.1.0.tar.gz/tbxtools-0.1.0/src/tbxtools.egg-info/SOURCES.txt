@@ -1,0 +1,8 @@
+pyproject.toml
+src/tbxtools/__init__.py
+src/tbxtools.egg-info/PKG-INFO
+src/tbxtools.egg-info/SOURCES.txt
+src/tbxtools.egg-info/dependency_links.txt
+src/tbxtools.egg-info/top_level.txt
+tests/test_examples.py
+tests/test_schemas.py
