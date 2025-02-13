@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clutta-py"
+version = "0.0.1"
+description = "Clutta-py is the official Python SDK for interacting with Clutta, a platform for observability and monitoring."
+authors = [
+    { name = "Sefas Technologies", email = "support@clutta.io" }
+]
+dependencies = [
+    "python-dotenv",
+    "urllib3"
+]
+readme = "README.md"
+license = { file = "LICENSE" }
