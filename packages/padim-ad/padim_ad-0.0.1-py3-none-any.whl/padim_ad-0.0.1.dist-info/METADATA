@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: padim_ad
+Version: 0.0.1
+Summary: Padim Anomaly Detection package
+Author-email: Stephan Pirner <stephan.pirner93@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Introduction
+
+This is an unofficial implementation of the paper: https://arxiv.org/abs/2011.08785
+The aim of this project <is to provide a good entry point of retraining the algorithm on a different
+dataset with different needs.
+
+## Get Started
+
+install all the requirements
+````commandline
+pip install -r requirements.txt
+````
+
+## How to use the GUI
+this repository provides
+
+## Roadmap
+
+- [ ] Add Variable Image Sizes to the Padim Anomaly Detector
+- [ ] Forward the variable image size to the GUI
+- [ ] Add status message for training and calibration part
+- [ ] rework home frame
+- [ ] create api to serve the anomaly detection results
+- [ ] add storing anomaly detectors (serializing to disk)
