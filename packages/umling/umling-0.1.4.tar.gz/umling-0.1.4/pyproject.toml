@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "umling"
+
+# When changing the version, remember to update:
+#     setup.cfg
+#     src/umling/__init__.py
+#     docs/conf.py
+
+version = "0.1.4"
+
+authors = [
+  { name="Steven Abney", email="abney@umich.edu" },
+]
+description = "Project umling"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pyfoma",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/abney/umling"
+"Documentation" = "https://umling.readthedocs.io/"
+"Bug Tracker" = "https://github.com/abney/umling/issues"
