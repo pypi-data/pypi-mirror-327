@@ -1,0 +1,6 @@
+
+[tf]
+tensorflow>=2.16
+
+[torch]
+torch>=1.0
