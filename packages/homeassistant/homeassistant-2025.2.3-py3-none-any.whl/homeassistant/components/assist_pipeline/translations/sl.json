@@ -1,0 +1,11 @@
+{
+    "entity": {
+        "select": {
+            "vad_sensitivity": {
+                "state": {
+                    "default": "Privzeto"
+                }
+            }
+        }
+    }
+}
