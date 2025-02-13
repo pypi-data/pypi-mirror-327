@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme":"Default Dark Modern",
+    "editor.fontFamily": "Fira Code",
+    "python.analysis.typeCheckingMode": "strict",
+    "mypy-type-checker.importStrategy":"fromEnvironment",
+    "ruff.configurationPreference":"filesystemFirst",
+    "ruff.lineLength": 120,
+    "evenBetterToml.formatter.allowedBlankLines": 1,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "workbench.tree.indent": 30,
+    "editor.rulers": [
+        // 80,
+        120
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    }
+}

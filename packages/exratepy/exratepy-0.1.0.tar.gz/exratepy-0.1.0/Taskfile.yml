@@ -1,0 +1,16 @@
+version: "3"
+
+tasks:
+  install:
+    cmds:
+      - git init
+      - uv sync
+      - uv run pre-commit install
+    desc: "Sync packages with uv and install pre-commit hooks"
+
+  check:
+    cmds:
+      - uv run ruff check .
+      - uv run format
+      - uv run mypy .
+      - uv run pytest

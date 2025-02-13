@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: exratepy
+Version: 0.1.0
+Summary: Python wrapper for fawazahmed0's exchange-api.
+Author-email: Akshay Prabhu <prabhuakshay9@yahoo.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: loguru>=0.7.3
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# exratepy
+
+A Python library for fetching currency exchange rates and currency information from the [Fawazahmed0 Currency API](https://github.com/fawazahmed0/exchange-api).  It provides a simple and convenient way to access up-to-date exchange rate data, with a fallback mechanism to ensure reliability.
+
+:octocat: [Github repo](https://github.com/akshpra/exratepy)
+
+
+## Installation
+``` bash
+pip install exratepy
+```
+
+
+## Usage:
+``` python
+from exratepy.client import Client
+from datetime import date
+
+client = Client()
+
+# Get available currencies
+currencies = client.get_currencies()
+print(currencies)
+
+# Get latest exchange rates:
+rates = client.get_exchange_rates(base="INR") # date defaults to latest
+print(rates)
+# Example: {"USD": 86.7248, "AED": 22.6574, ...}
+
+# Get exchange rate as on a specific date:
+rates = client.get_exchange_rates(base="INR", date=date(2024,12,1))
+print(rates)
+# Example: {'INR': 89.7248, 'USD': 1.08275, ...}
+
+```
+
+
+## Features
+- **Currency Information:** Fetch a list of available currencies and their names.
+- **Exchange Rates:** Retrieve exchange rates for a specific base currency and date (or "latest").
+- **Fallback Mechanism:** Uses a secondary API endpoint as a fallback in case the primary endpoint is unavailable, ensuring higher reliability.
+- **Data Validation:** Uses Pydantic models to validate and normalize the API responses, ensuring data consistency. Currency codes are converted to uppercase, currency names to title case, and inverse exchange rates are calculated and rounded to 6 decimal places.
+- **Error Handling:** Includes robust error handling for API requests and invalid data. Custom exceptions (ApiResponseError) provide informative error messages.
+- **Logging:** Integrates with the loguru library for detailed logging of API requests and any issues encountered.
+- **Type Hinting:** Comprehensive type hinting enhances code readability and maintainability.
+
+## API Endpoints
+
+The library interacts with the following API endpoints:
+
+Primary: `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@<date>/v1/currencies/<base>.min.json`
+
+Fallback: `https://<date>.currency-api.pages.dev/v1/currencies/<base>.json`
+
+## Error Handling
+
+The library uses a custom exception ApiResponseError to handle API-related errors.  This exception provides information about the failed request, including the URL and error message.
+
+``` python
+from exratepy.exceptions import ApiResponseError
+
+try:
+    client.get_exchange_rates(base="INVALID")
+except ApiResponseError as e:
+    print(f"An error occurred: {e}")
+```
+
+## Logging
+
+The library uses the loguru library for logging.  To enable logging, you can configure loguru as needed.  By default, errors are logged.
+
+``` python
+from loguru import logger
+
+# Configure logging (optional)
+logger.add("my_log_file.log", rotation="10:00")  # Log to a file
+
+client = Client()
+# ... your code ...
+```
