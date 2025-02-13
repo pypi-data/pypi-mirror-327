@@ -1,0 +1,12 @@
+torch_levenberg_marquardt/__init__.py,sha256=bGm47gUx4r93feRdlEMu5WhtQgjccMHWQovXnWdNdys,521
+torch_levenberg_marquardt/damping.py,sha256=9gM-1BMpM2rOzreifhRMM9Ehs9f5pZ8Te4QXiLBqto4,6461
+torch_levenberg_marquardt/loss.py,sha256=orrOXyPU85HKyU5p8VIk6UQTG0h7LTum7AXz1l9EUXo,4011
+torch_levenberg_marquardt/selection.py,sha256=TnbEUYPngG4UDXroMnb3yxWn60AqAkH0DsRGg_F_wQ0,4435
+torch_levenberg_marquardt/training.py,sha256=zyY9u0tvASwOu8VARkoS4mf-8feqWwX1UgbFzSs07Yg,24795
+torch_levenberg_marquardt/tree.py,sha256=mCFDbPT7m3AckZPSIyzj_kF08LQl2Fuw0B-Q3XCRO5k,4020
+torch_levenberg_marquardt/utils.py,sha256=H01xvWuC_M6O4gXIY886jShFvumtazihxs4YFwJIgR4,10850
+torch_levenberg_marquardt-1.2.0.dist-info/LICENSE,sha256=EtJHlcmAS_wGlQ8g7k2t1A2MBDCRsjlYsFnapKarEpE,1071
+torch_levenberg_marquardt-1.2.0.dist-info/METADATA,sha256=6aDiqyJcgvg-NYmmIpbCv85zdjg42hwg_1YvFUSXD-A,19405
+torch_levenberg_marquardt-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+torch_levenberg_marquardt-1.2.0.dist-info/top_level.txt,sha256=EjwtT-QfbbksERpTKl8HOzz0S5WuTMpmCwJZkeujoP8,26
+torch_levenberg_marquardt-1.2.0.dist-info/RECORD,,
