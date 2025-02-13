@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: gspread-helpers
+Version: 0.0.24
+Summary: A simple Python package which provides supplementary helper methods for gspread.
+Home-page: https://github.com/michaelthomasletts/gspread-helpers
+License: MIT
+Keywords: gspread,gspread-helpers,gspread_helpers
+Author: Michael Letts
+Author-email: lettsmt@gmail.com
+Maintainer: Michael Letts
+Maintainer-email: lettsmt@gmail.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: attrs (>=24.3.0,<25.0.0)
+Project-URL: Documentation, https://michaelthomasletts.github.io/gspread-helpers/index.html
+Project-URL: Repository, https://github.com/michaelthomasletts/gspread-helpers
+Description-Content-Type: text/markdown
+
+# gspread_helpers
+[![PyPI Download](https://img.shields.io/pypi/v/gspread-helpers?logo=pypis.svg)](https://pypi.org/project/gspread-helpers/)
+[![Workflow](https://img.shields.io/github/actions/workflow/status/michaelthomasletts/gspread-helpers/push_pullrequest.yml?logo=github)](https://github.com/michaelthomasletts/gspread-helpers/actions/workflows/push_pullrequest.yml)
+![Python Version](https://img.shields.io/pypi/pyversions/gspread-helpers?style=pypi)
+
+## Overview
+
+A simple Python package which provides supplementary helper methods for [gspread](https://github.com/burnash/gspread).
+
+## Usage and Installation
+[Official Documentation](https://michaelthomasletts.github.io/gspread-helpers/index.html)
