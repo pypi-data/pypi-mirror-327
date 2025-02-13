@@ -1,0 +1,2 @@
+[console_scripts]
+multiexch = multi_crypto_exchanges_api.cli:app
