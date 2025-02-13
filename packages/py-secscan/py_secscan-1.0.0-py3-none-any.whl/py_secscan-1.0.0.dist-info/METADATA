@@ -1,0 +1,126 @@
+Metadata-Version: 2.2
+Name: py-secscan
+Version: 1.0.0
+Summary: PySecScan is the tool that allows you to perform security scans in your Python project through a simple YAML configuration.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: cyclonedx-bom>=5.1.2
+Requires-Dist: jsonschema>=4.23.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: ruff>=0.8.4
+Provides-Extra: view
+Requires-Dist: streamlit>=1.42.0; extra == "view"
+
+# PY SecScan
+
+PySecScan is the tool that allows you to perform security scans in your Python project through a simple YAML configuration.
+
+## Usage
+
+### Local
+
+1. Install package
+
+    ```bash
+    pip install py-secscan
+
+    # Or using uv
+    uv add --dev py-secscan
+    ```
+
+2. In your root project folder, define the `.py-secscan.conf.yml` configuration
+
+    ```yaml
+    version: "1"
+
+    packages:
+      - name: "ruff"
+        args: ["check", "--fix"]
+
+    builtins:
+      sbom_vulnerabilities:
+        enabled: true
+    ```
+
+3. Run command in your root project folder
+
+    ```bash
+    # Run configuration
+    py-secscan scan
+
+    # View SBOM and vulnerabilities discovered
+    py-secscan view
+    ```
+
+## How it works
+
+```mermaid
+flowchart TD
+    A(["Your Python Project"]) -- define ---> C[".py-secsca.conf.yml"]
+    PySecScan(["$ py-secscan scan"]) -- run ---> Process
+    Process -. load ..-> C
+    Process -- check/setup --> Env
+    Process == exec ===> Subprocess["Subprucess
+    (builtins / packages)"]
+    Subprocess -- output ---> stdout/stderr
+    Subprocess == save ===> ExecutionStatus["Execution Status"]
+    Subprocess -. use ..-> Env["Virtaul Environment"]
+    ExecutionStatus == continue ==> Process
+    ExecutionStatus -. completed ..-> Finish["$ ..."]
+```
+
+...
+
+### Configuration Schema
+
+### Virtual Environment
+
+### Subprocess
+
+**Builtins**:
+
+**Packages**:
+
+## Develop
+
+```bash
+git clone https://github.com/FabrizioCafolla/py-secscan
+
+cd py-secscan
+```
+
+### Setup with Nix environment
+
+**Requirements:**
+
+| pkg    | version    | install                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------- |
+| devbox | `>=0.12.0` | [docs](https://www.jetify.com/devbox/docs/installing_devbox/#install-devbox) |
+
+**Steps:**
+
+1. Run `devbox shell`
+2. Run `devbox run setup`
+
+### Setup in local environment
+
+**Requirements:**
+
+| pkg    | version    | install                                                                      |
+| ------ | ---------- | ---------------------------------------------------------------------------- |
+| python | `>=3.12.0` | [downloads](https://www.python.org/downloads/) |
+| uv | `>=0.4.3`| [docs](https://docs.astral.sh/uv/getting-started/installation/) |
+
+**Steps:**
+
+```bash
+uv venv --python 3.12
+source .activate
+
+uv sync --all-extras
+uv run pre-commit install
+uv run pre-commit run --all-files
+
+py-secscan -v scan
+```
