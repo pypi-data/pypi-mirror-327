@@ -1,0 +1,238 @@
+{
+    "us-east-1": {
+      "location": "US East (N. Virginia)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "latitude": 39.028760,
+      "longitude": -77.458263
+    },
+    "us-east-2": {
+      "location": "US East (Ohio)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "latitude": 40.367474,
+      "longitude": -82.996216
+    },
+    "us-west-1": {
+      "location": "US West (N. California)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "latitude": 37.338208,
+      "longitude": -121.886329
+    },
+    "us-west-2": {
+      "location": "US West (Oregon)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "latitude": 45.523064,
+      "longitude": -122.676483
+    },
+    "af-south-1": {
+      "location": "Africa (Cape Town)",
+      "country": "South Africa",
+      "flag": "🇿🇦",
+      "latitude": -33.924870,
+      "longitude": 18.424055
+    },
+    "ap-east-1": {
+      "location": "Asia Pacific (Hong Kong)",
+      "country": "Hong Kong",
+      "flag": "🇭🇰",
+      "latitude": 22.302711,
+      "longitude": 114.177216
+    },
+    "ap-south-1": {
+      "location": "Asia Pacific (Mumbai)",
+      "country": "India",
+      "flag": "🇮🇳",
+      "latitude": 19.076090,
+      "longitude": 72.877426
+    },
+    "ap-southeast-1": {
+      "location": "Asia Pacific (Singapore)",
+      "country": "Singapore",
+      "flag": "🇸🇬",
+      "latitude": 1.352083,
+      "longitude": 103.819836
+    },
+    "ap-southeast-2": {
+      "location": "Asia Pacific (Sydney)",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "latitude": -33.868820,
+      "longitude": 151.209290
+    },
+    "ap-northeast-1": {
+      "location": "Asia Pacific (Tokyo)",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "latitude": 35.689487,
+      "longitude": 139.691711
+    },
+    "ap-northeast-2": {
+      "location": "Asia Pacific (Seoul)",
+      "country": "South Korea",
+      "flag": "🇰🇷",
+      "latitude": 37.566535,
+      "longitude": 126.977969
+    },
+    "ap-northeast-3": {
+      "location": "Asia Pacific (Osaka)",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "latitude": 34.693737,
+      "longitude": 135.502165
+    },
+    "ca-central-1": {
+      "location": "Canada (Central)",
+      "country": "Canada",
+      "flag": "🇨🇦",
+      "latitude": 43.653225,
+      "longitude": -79.383186
+    },
+    "eu-central-1": {
+      "location": "Europe (Frankfurt)",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "latitude": 50.110924,
+      "longitude": 8.682127
+    },
+    "eu-west-1": {
+      "location": "Europe (Ireland)",
+      "country": "Ireland",
+      "flag": "🇮🇪",
+      "latitude": 53.350140,
+      "longitude": -6.266155
+    },
+    "eu-west-2": {
+      "location": "Europe (London)",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "latitude": 51.507351,
+      "longitude": -0.127758
+    },
+    "eu-west-3": {
+      "location": "Europe (Paris)",
+      "country": "France",
+      "flag": "🇫🇷",
+      "latitude": 48.856614,
+      "longitude": 2.352222
+    },
+    "eu-north-1": {
+      "location": "Europe (Stockholm)",
+      "country": "Sweden",
+      "flag": "🇸🇪",
+      "latitude": 59.331325,
+      "longitude": 18.090402
+    },
+    "eu-south-1": {
+      "location": "Europe (Milan)",
+      "country": "Italy",
+      "flag": "🇮🇹",
+      "latitude": 45.464664,
+      "longitude": 9.188540
+    },
+    "me-central-1": {
+      "location": "Middle East (UAE)",
+      "country": "United Arab Emirates",
+      "flag": "🇦🇪",
+      "latitude": 25.204849,
+      "longitude": 55.270783,
+      "raw": "me-central-1"
+    },
+    "me-south-1": {
+      "location": "Middle East (Bahrain)",
+      "country": "Bahrain",
+      "flag": "🇧🇭",
+      "latitude": 26.066700,
+      "longitude": 50.557700
+    },
+    "sa-east-1": {
+      "location": "South America (São Paulo)",
+      "country": "Brazil",
+      "flag": "🇧🇷",
+      "latitude": -23.550520,
+      "longitude": -46.633308
+    },
+    "ap-south-2": {
+        "location": "Asia Pacific (Hyderabad)",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 17.385044,
+        "longitude": 78.486671,
+        "raw": "ap-south-2"
+    },
+    "ap-southeast-3": {
+        "location": "Asia Pacific (Jakarta)",
+        "country": "Indonesia",
+        "flag": "🇮🇩",
+        "latitude": -6.2088,
+        "longitude": 106.8456,
+        "raw": "ap-southeast-3"
+    },
+    "ap-southeast-4": {
+        "location": "Asia Pacific (Melbourne)",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -37.8136,
+        "longitude": 144.9631,
+        "raw": "ap-southeast-4"
+    },
+    "eu-south-2": {
+        "location": "Europe (Spain)",
+        "country": "Spain",
+        "flag": "🇪🇸",
+        "latitude": 40.4168,
+        "longitude": -3.7038,
+        "raw": "eu-south-2"
+    },
+    "eu-central-2": {
+        "location": "Europe (Zurich)",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "latitude": 47.3769,
+        "longitude": 8.5417,
+        "raw": "eu-central-2"
+    },
+    "il-central-1": {
+        "location": "Israel (Tel Aviv)",
+        "country": "Israel",
+        "flag": "🇮🇱",
+        "latitude": 32.0853,
+        "longitude": 34.7818,
+        "raw": "il-central-1"
+    },
+    "us-gov-east-1": {
+        "location": "AWS GovCloud (US-East)",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "raw": "us-gov-east-1"
+    },
+    "us-gov-west-1": {
+        "location": "AWS GovCloud (US-West)",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "raw": "us-gov-west-1"
+    },
+    "cn-north-1": {
+        "location": "China (Beijing)",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 39.9042,
+        "longitude": 116.4074,
+        "raw": "cn-north-1"
+    },
+    "cn-northwest-1": {
+        "location": "China (Ningxia)",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 37.2987,
+        "longitude": 106.1581,
+        "raw": "cn-northwest-1"
+    }
+  }
+  
