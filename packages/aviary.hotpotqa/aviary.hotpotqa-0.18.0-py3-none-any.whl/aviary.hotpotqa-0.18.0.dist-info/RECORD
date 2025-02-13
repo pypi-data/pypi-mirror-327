@@ -1,0 +1,8 @@
+aviary/envs/hotpotqa/__init__.py,sha256=yjkK5h_3x58_aivW2KAspNzCeJjqNZ0fnUxOmpVfAUE,170
+aviary/envs/hotpotqa/env.py,sha256=629eRGJwIgCEz5rZG_c2y98OZgJVDU6G-dBNA31N85M,25150
+aviary/envs/hotpotqa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aviary/envs/hotpotqa/version.py,sha256=qQfZIFMnYUfFvdZIkQ7KTINCu5N5FVIhIaHGQZyIg1E,413
+aviary.hotpotqa-0.18.0.dist-info/METADATA,sha256=ZFha20qFPmusZFg4nRGNe3QtiMX8VoBB8zXKpiGYpe8,1026
+aviary.hotpotqa-0.18.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aviary.hotpotqa-0.18.0.dist-info/top_level.txt,sha256=zICUMjvEqieeC5Q89XL5ZbSQhBnBE7eBfDsuEAgysJ4,7
+aviary.hotpotqa-0.18.0.dist-info/RECORD,,
