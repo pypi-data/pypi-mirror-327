@@ -1,0 +1,20 @@
+[package]
+name = "parquet_to_excel"
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+description ="a tool to convert parquet file(s) to excel file in rust"
+keywords = ["excel", "parquet", "convert"]
+repository = "https://gitee.com/sone92/paruqet-to-xlsx.git"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "parquet_to_excel"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = "0.23.3"
+chrono = "0.4.35"
+parquet = "53.0.0"
+xlsx_batch_reader = {version = "0.4.1", features = ["xlsxwriter"]}
