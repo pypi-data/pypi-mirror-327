@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: dria_agent
+Version: 0.1.1
+Summary: speedy, performant and small tool calling agents
+License: MIT
+Author: andthattoo
+Author-email: omer@firstbatch.xyz
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: huggingface
+Provides-Extra: mlx
+Provides-Extra: ollama
+Provides-Extra: tools
+Requires-Dist: docker (>=7.1.0,<8.0.0) ; extra == "tools" or extra == "tools"
+Requires-Dist: google-api-python-client (>=2.160.0,<3.0.0) ; extra == "tools"
+Requires-Dist: google-auth-oauthlib (>=1.2.1,<2.0.0) ; extra == "tools"
+Requires-Dist: mlx-lm (>=0.21.4,<0.22.0) ; extra == "mlx"
+Requires-Dist: ollama (>=0.4.7,<0.5.0) ; extra == "ollama"
+Requires-Dist: openai (>=1.61.1,<2.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: scikit-learn (>=1.6.1,<2.0.0) ; extra == "tools"
+Requires-Dist: sentence-transformers (>=3.4.1,<4.0.0) ; extra == "huggingface"
+Requires-Dist: transformers (>=4.48.3,<5.0.0) ; extra == "huggingface"
+Description-Content-Type: text/markdown
+
+# tiny-agent-α
+
+
+### Installation
+```bash
+pip install dria_agent
+```
+To use MLX as backend
+```bash
+pip install 'dria_agent[mlx]'
+```
+For HuggingFace backend
+```bash
+pip install 'dria_agent[huggingface]'
+```
+
+In order to use extra tooling select a backend (e.g. mlx) and run:
+```bash
+pip install 'dria_agent[mlx, tools]'
+```
+
+a fast and powerful tool calling model designed to run on edge devices.
+
+3B 8bit high performance and quality [download](https://huggingface.co/driaforall/Tiny-Agent-a-3B/resolve/main/dria-agent-a-3b.Q8_0.gguf?download=true)
+
+3B 4bit balanced performance and speed [download](https://huggingface.co/driaforall/Tiny-Agent-a-3B/resolve/main/dria-agent-a-3b.Q4_K_M.gguf?download=true)
+
+1.5B 8bit fast CPU inference [download](https://huggingface.co/driaforall/Tiny-Agent-a-1.5B/resolve/main/dria-agent-a-1.5b.Q8_0.gguf?download=true)
+
+1.5B 4bit faster CPU inference [download](https://huggingface.co/driaforall/Tiny-Agent-a-1.5B/resolve/main/dria-agent-a-1.5b.Q8_0.gguf?download=true)
+
+0.5B 8bit ultra-light [download](https://huggingface.co/driaforall/Tiny-Agent-a-1.5B/resolve/main/dria-agent-a-1.5b.Q4_K_M.gguf?download=true)
+
+
+
