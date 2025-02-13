@@ -1,0 +1,7 @@
+trulens/providers/litellm/__init__.py,sha256=tGVdfO5JgwXBINJBrPJ-WZ7To7my3Texkg1W3yoCoB4,474
+trulens/providers/litellm/endpoint.py,sha256=7SX-mcYBpeL14s2ekdx8iyDN01Jz9ZeSUPd_gq3qEto,4091
+trulens/providers/litellm/provider.py,sha256=tuSej9wLDaDbhHxxLZS7HxqR0P9udB32v_DyAFHp0G4,3553
+trulens/providers/litellm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trulens_providers_litellm-1.4.0a0.dist-info/METADATA,sha256=YqhB2lvM4iOf6vX4u52lBvMaxSx5mgETrwDNSrDj758,1014
+trulens_providers_litellm-1.4.0a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+trulens_providers_litellm-1.4.0a0.dist-info/RECORD,,
