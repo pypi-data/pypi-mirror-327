@@ -1,0 +1,2 @@
+[console_scripts]
+cred_mgr = dataxi.cred_mgr.cred_mgr_cli:main
