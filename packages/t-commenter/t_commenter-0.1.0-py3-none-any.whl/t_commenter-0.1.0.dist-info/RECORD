@@ -1,0 +1,9 @@
+tcommenter/__init__.py,sha256=I4gQ43Zq19VfwEfCVaFPzbWfB_BjtUQqfPQ8rVnf_Fk,63
+tcommenter/tсommenter.py,sha256=mBi56XnkcbzU2EFT0SImU_kB1udKvnFEjkYIrkbFdVA,52841
+tcommenter/sql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcommenter/sql/postgre_sql.py,sha256=61WFj4s1jx-Zz3g_HDCmR8VaH6FRrxC4xMibR5yoZE8,3369
+t_commenter-0.1.0.dist-info/LICENSE,sha256=SmIA84BFzIgc7s4KGj4CoDTMaBD483T3w3XLm3OAhVM,1349
+t_commenter-0.1.0.dist-info/METADATA,sha256=WTw6h6NVlTbNXxualmMYzHK1Qvr06ie-8cfCimatHeI,8912
+t_commenter-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+t_commenter-0.1.0.dist-info/top_level.txt,sha256=MI-rnN6Ekj5381TB-cbiQt3jPrt5EiLKsdVtYlJsVwI,11
+t_commenter-0.1.0.dist-info/RECORD,,
