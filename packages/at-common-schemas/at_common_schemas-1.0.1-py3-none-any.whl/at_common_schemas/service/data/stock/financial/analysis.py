@@ -1,0 +1,278 @@
+from datetime import datetime
+from typing import List
+from at_common_schemas.service.data.base import BaseSchema
+from .constants import StockFinancialPeriod
+
+# Key Metrics
+class StockFinancialAnalysisKeyMetrics(BaseSchema):
+    symbol: str
+    date: datetime
+    calendar_year: str
+    period: str
+    revenue_per_share: float
+    net_income_per_share: float
+    operating_cash_flow_per_share: float
+    free_cash_flow_per_share: float
+    cash_per_share: float
+    book_value_per_share: float
+    tangible_book_value_per_share: float
+    shareholders_equity_per_share: float
+    interest_debt_per_share: float
+    market_cap: float
+    enterprise_value: float
+    pe_ratio: float
+    price_to_sales_ratio: float
+    pocf_ratio: float
+    pfcf_ratio: float
+    pb_ratio: float
+    ptb_ratio: float
+    ev_to_sales: float
+    enterprise_value_over_ebitda: float
+    ev_to_operating_cash_flow: float
+    ev_to_free_cash_flow: float
+    earnings_yield: float
+    free_cash_flow_yield: float
+    debt_to_equity: float
+    debt_to_assets: float
+    net_debt_to_ebitda: float
+    current_ratio: float
+    interest_coverage: float
+    income_quality: float
+    dividend_yield: float
+    payout_ratio: float
+    sales_general_and_administrative_to_revenue: float
+    research_and_developement_to_revenue: float
+    intangibles_to_total_assets: float
+    capex_to_operating_cash_flow: float
+    capex_to_revenue: float
+    capex_to_depreciation: float
+    stock_based_compensation_to_revenue: float
+    graham_number: float
+    roic: float
+    return_on_tangible_assets: float
+    graham_net_net: float
+    working_capital: float
+    tangible_asset_value: float
+    net_current_asset_value: float
+    invested_capital: float
+    average_receivables: float
+    average_payables: float
+    average_inventory: float
+    days_sales_outstanding: float
+    days_payables_outstanding: float
+    days_of_inventory_on_hand: float
+    receivables_turnover: float
+    payables_turnover: float
+    inventory_turnover: float
+    roe: float
+    capex_per_share: float
+
+class StockFinancialAnalysisKeyMetricsTTM(BaseSchema):
+    revenue_per_share_ttm: float
+    net_income_per_share_ttm: float
+    operating_cash_flow_per_share_ttm: float
+    free_cash_flow_per_share_ttm: float
+    cash_per_share_ttm: float
+    book_value_per_share_ttm: float
+    tangible_book_value_per_share_ttm: float
+    shareholders_equity_per_share_ttm: float
+    interest_debt_per_share_ttm: float
+    market_cap_ttm: float
+    enterprise_value_ttm: float
+    pe_ratio_ttm: float
+    price_to_sales_ratio_ttm: float
+    pocf_ratio_ttm: float
+    pfcf_ratio_ttm: float
+    pb_ratio_ttm: float
+    ptb_ratio_ttm: float
+    ev_to_sales_ttm: float
+    enterprise_value_over_ebitda_ttm: float
+    ev_to_operating_cash_flow_ttm: float
+    ev_to_free_cash_flow_ttm: float
+    earnings_yield_ttm: float
+    free_cash_flow_yield_ttm: float
+    debt_to_equity_ttm: float
+    debt_to_assets_ttm: float
+    net_debt_to_ebitda_ttm: float
+    current_ratio_ttm: float
+    interest_coverage_ttm: float
+    income_quality_ttm: float
+    dividend_yield_ttm: float
+    payout_ratio_ttm: float
+    sales_general_and_administrative_to_revenue_ttm: float
+    research_and_developement_to_revenue_ttm: float
+    intangibles_to_total_assets_ttm: float
+    capex_to_operating_cash_flow_ttm: float
+    capex_to_revenue_ttm: float
+    capex_to_depreciation_ttm: float
+    stock_based_compensation_to_revenue_ttm: float
+    graham_number_ttm: float
+    roic_ttm: float
+    return_on_tangible_assets_ttm: float
+    graham_net_net_ttm: float
+    working_capital_ttm: float
+    tangible_asset_value_ttm: float
+    net_current_asset_value_ttm: float
+    invested_capital_ttm: float
+    average_receivables_ttm: float
+    average_payables_ttm: float
+    average_inventory_ttm: float
+    days_sales_outstanding_ttm: float
+    days_payables_outstanding_ttm: float
+    days_of_inventory_on_hand_ttm: float
+    receivables_turnover_ttm: float
+    payables_turnover_ttm: float
+    inventory_turnover_ttm: float
+    roe_ttm: float
+    capex_per_share_ttm: float
+    dividend_per_share_ttm: float
+    debt_to_market_cap_ttm: float
+
+class StockFinancialAnalysisKeyMetricsRequest(BaseSchema):
+    symbol: str
+    period: StockFinancialPeriod
+    limit: int
+
+class StockFinancialAnalysisKeyMetricsResponse(BaseSchema):
+    key_metrics: List[StockFinancialAnalysisKeyMetrics]
+
+class StockFinancialAnalysisKeyMetricsTTMRequest(BaseSchema):
+    symbol: str
+    period: StockFinancialPeriod
+
+class StockFinancialAnalysisKeyMetricsTTMResponse(BaseSchema):
+    key_metrics_ttm: StockFinancialAnalysisKeyMetricsTTM
+
+# Ratios
+class StockFinancialAnalysisRatios(BaseSchema):
+    symbol: str
+    date: datetime
+    calendar_year: str
+    period: str
+    current_ratio: float
+    quick_ratio: float
+    cash_ratio: float
+    days_of_sales_outstanding: float
+    days_of_inventory_outstanding: float
+    operating_cycle: float
+    days_of_payables_outstanding: float
+    cash_conversion_cycle: float
+    gross_profit_margin: float
+    operating_profit_margin: float
+    pretax_profit_margin: float
+    net_profit_margin: float
+    effective_tax_rate: float
+    return_on_assets: float
+    return_on_equity: float
+    return_on_capital_employed: float
+    net_income_per_ebt: float
+    ebt_per_ebit: float
+    ebit_per_revenue: float
+    debt_ratio: float
+    debt_equity_ratio: float
+    long_term_debt_to_capitalization: float
+    total_debt_to_capitalization: float
+    interest_coverage: float
+    cash_flow_to_debt_ratio: float
+    company_equity_multiplier: float
+    receivables_turnover: float
+    payables_turnover: float
+    inventory_turnover: float
+    fixed_asset_turnover: float
+    asset_turnover: float
+    operating_cash_flow_per_share: float
+    free_cash_flow_per_share: float
+    cash_per_share: float
+    payout_ratio: float
+    operating_cash_flow_sales_ratio: float
+    free_cash_flow_operating_cash_flow_ratio: float
+    cash_flow_coverage_ratios: float
+    short_term_coverage_ratios: float
+    capital_expenditure_coverage_ratio: float
+    dividend_paid_and_capex_coverage_ratio: float
+    dividend_payout_ratio: float
+    price_book_value_ratio: float
+    price_to_book_ratio: float
+    price_to_sales_ratio: float
+    price_earnings_ratio: float
+    price_to_free_cash_flows_ratio: float
+    price_to_operating_cash_flows_ratio: float
+    price_cash_flow_ratio: float
+    price_earnings_to_growth_ratio: float
+    price_sales_ratio: float
+    dividend_yield: float
+    enterprise_value_multiple: float
+    price_fair_value: float
+
+class StockFinancialAnalysisRatiosTTM(BaseSchema):
+    dividend_yield_ttm: float
+    dividend_yield_percentage_ttm: float
+    pe_ratio_ttm: float
+    peg_ratio_ttm: float
+    payout_ratio_ttm: float
+    current_ratio_ttm: float
+    quick_ratio_ttm: float
+    cash_ratio_ttm: float
+    days_of_sales_outstanding_ttm: float
+    days_of_inventory_outstanding_ttm: float
+    operating_cycle_ttm: float
+    days_of_payables_outstanding_ttm: float
+    cash_conversion_cycle_ttm: float
+    gross_profit_margin_ttm: float
+    operating_profit_margin_ttm: float
+    pretax_profit_margin_ttm: float
+    net_profit_margin_ttm: float
+    effective_tax_rate_ttm: float
+    return_on_assets_ttm: float
+    return_on_equity_ttm: float
+    return_on_capital_employed_ttm: float
+    net_income_per_ebt_ttm: float
+    ebt_per_ebit_ttm: float
+    ebit_per_revenue_ttm: float
+    debt_ratio_ttm: float
+    long_term_debt_to_capitalization_ttm: float
+    total_debt_to_capitalization_ttm: float
+    interest_coverage_ttm: float
+    cash_flow_to_debt_ratio_ttm: float
+    company_equity_multiplier_ttm: float
+    receivables_turnover_ttm: float
+    payables_turnover_ttm: float
+    inventory_turnover_ttm: float
+    fixed_asset_turnover_ttm: float
+    asset_turnover_ttm: float
+    operating_cash_flow_per_share_ttm: float
+    free_cash_flow_per_share_ttm: float
+    cash_per_share_ttm: float
+    operating_cash_flow_sales_ratio_ttm: float
+    free_cash_flow_operating_cash_flow_ratio_ttm: float
+    cash_flow_coverage_ratios_ttm: float
+    short_term_coverage_ratios_ttm: float
+    capital_expenditure_coverage_ratio_ttm: float
+    dividend_paid_and_capex_coverage_ratio_ttm: float
+    price_book_value_ratio_ttm: float
+    price_to_book_ratio_ttm: float
+    price_to_sales_ratio_ttm: float
+    price_earnings_ratio_ttm: float
+    price_to_free_cash_flows_ratio_ttm: float
+    price_to_operating_cash_flows_ratio_ttm: float
+    price_cash_flow_ratio_ttm: float
+    price_earnings_to_growth_ratio_ttm: float
+    price_sales_ratio_ttm: float
+    enterprise_value_multiple_ttm: float
+    price_fair_value_ttm: float
+    dividend_per_share_ttm: float
+
+class StockFinancialAnalysisRatiosRequest(BaseSchema):
+    symbol: str
+    period: StockFinancialPeriod
+    limit: int
+
+class StockFinancialAnalysisRatiosResponse(BaseSchema):
+    ratios: List[StockFinancialAnalysisRatios]
+
+class StockFinancialAnalysisRatiosTTMRequest(BaseSchema):
+    symbol: str
+    period: StockFinancialPeriod
+
+class StockFinancialAnalysisRatiosTTMResponse(BaseSchema):
+    ratios_ttm: StockFinancialAnalysisRatiosTTM
