@@ -1,0 +1,172 @@
+# ruff: noqa: UP007
+# @omlish-lite
+"""
+TODO:
+ - reliable pid retrieval
+  - contents are *ignored*, just advisory
+  - check double-check:
+   - 1) get pid of flock holder
+   - 2) get pidfd to that
+   - 3) recheck current pid of flock holder == that pid
+  - racy as to if it's a different actual process as initial check, just with same pid, but due to 'identity' / semantic
+    meaning of the named pidfile the processes are considered equivalent
+  - read_checked(), contextmanager
+"""
+import fcntl
+import os
+import signal
+import typing as ta
+
+
+##
+
+
+class Pidfile:
+    def __init__(
+            self,
+            path: str,
+            *,
+            inheritable: bool = True,
+    ) -> None:
+        super().__init__()
+
+        self._path = path
+        self._inheritable = inheritable
+
+    @property
+    def path(self) -> str:
+        return self._path
+
+    @property
+    def inheritable(self) -> bool:
+        return self._inheritable
+
+    def __repr__(self) -> str:
+        return f'{self.__class__.__name__}({self._path!r})'
+
+    #
+
+    _f: ta.TextIO
+
+    def fileno(self) -> ta.Optional[int]:
+        if hasattr(self, '_f'):
+            return self._f.fileno()
+        else:
+            return None
+
+    #
+
+    def __enter__(self) -> 'Pidfile':
+        fd = os.open(self._path, os.O_RDWR | os.O_CREAT, 0o600)
+
+        try:
+            if self._inheritable:
+                os.set_inheritable(fd, True)
+
+            f = os.fdopen(fd, 'r+')
+
+        except Exception:
+            try:
+                os.close(fd)
+            except Exception:  # noqa
+                pass
+            raise
+
+        self._f = f
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
+    #
+
+    def __getstate__(self):
+        state = self.__dict__.copy()
+
+        if '_f' in state:
+            # self._inheritable may be decoupled from actual file inheritability - for example when using the manager.
+            if os.get_inheritable(fd := state.pop('_f').fileno()):
+                state['__fd'] = fd
+
+        return state
+
+    def __setstate__(self, state):
+        if '_f' in state:
+            raise RuntimeError
+
+        if '__fd' in state:
+            state['_f'] = os.fdopen(state.pop('__fd'), 'r+')
+
+        self.__dict__.update(state)
+
+    #
+
+    def close(self) -> bool:
+        if not hasattr(self, '_f'):
+            return False
+
+        self._f.close()
+        del self._f
+        return True
+
+    def try_acquire_lock(self) -> bool:
+        try:
+            fcntl.flock(self._f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            return True
+
+        except OSError:
+            return False
+
+    #
+
+    class Error(Exception):
+        pass
+
+    class LockedError(Error):
+        pass
+
+    def acquire_lock(self) -> None:
+        if not self.try_acquire_lock():
+            raise self.LockedError
+
+    class NotLockedError(Error):
+        pass
+
+    def ensure_cannot_lock(self) -> None:
+        if self.try_acquire_lock():
+            raise self.NotLockedError
+
+    #
+
+    def write(self, pid: ta.Optional[int] = None) -> None:
+        self.acquire_lock()
+
+        if pid is None:
+            pid = os.getpid()
+
+        self._f.seek(0)
+        self._f.truncate()
+        self._f.write(f'{pid}\n')
+        self._f.flush()
+
+    def clear(self) -> None:
+        self.acquire_lock()
+
+        self._f.seek(0)
+        self._f.truncate()
+
+    #
+
+    def read(self) -> ta.Optional[int]:
+        self.ensure_cannot_lock()
+
+        self._f.seek(0)
+        buf = self._f.read()
+        if not buf:
+            return None
+        return int(buf)
+
+    def kill(self, sig: int = signal.SIGTERM) -> None:
+        if (pid := self.read()) is None:
+            raise self.Error(f'Pidfile locked but empty')
+        os.kill(pid, sig)
