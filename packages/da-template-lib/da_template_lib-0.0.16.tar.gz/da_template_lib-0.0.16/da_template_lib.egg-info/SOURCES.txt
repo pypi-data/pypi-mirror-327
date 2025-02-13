@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+da_lib/__init__.py
+da_lib/saudacao.py
+da_lib/gcp/__init__.py
+da_lib/gcp/bigquery.py
+da_lib/gcp/storage.py
+da_lib/transform/__init__.py
+da_lib/transform/files.py
+da_lib/transform/transformation.py
+da_template_lib.egg-info/PKG-INFO
+da_template_lib.egg-info/SOURCES.txt
+da_template_lib.egg-info/dependency_links.txt
+da_template_lib.egg-info/requires.txt
+da_template_lib.egg-info/top_level.txt
