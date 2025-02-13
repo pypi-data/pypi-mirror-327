@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: time-server-yamacr
+Version: 0.1.3
+Summary: A simple web server that returns the current time.
+Home-page: https://github.com/rsmymc/cyb600_project1
+Author: Rasim Yamac
+Author-email: yamacr@canisius.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+
+# Time Server - time_server_yamacr
+
+A simple Python web server that displays the current time in a web browser using Flask.
+
+## Installation
+
+To install the package from PyPI, run:
+
+<pre>  pip install time-server-yamacr </pre>
+
+## Usage
+
+Once installed, you can start the server by running:
+
+<pre> time-server  </pre>
+
+By default, the server runs on <pre> http://0.0.0.0:8080. </pre> Open your web browser and visit:
+
+<pre> http://localhost:8080 </pre>
+
+This will display the current server time.
+
+## Running from Source
+
+If you prefer to run the server directly from the source, follow these steps:
+
+Clone the repository:
+
+<pre>git clone https://github.com/rsmymc/cyb600_project1.git
+cd cyb600_project1 </pre>
+
+Install dependencies:
+
+<pre> pip install -r requirements.txt </pre>
+
+Run the server:
+
+<pre> python -m time_server.server </pre>
+
+The server will start, and you can access it at <pre> http://localhost:8080. </pre>
+
+## Requirements
+
+Python 3.7 or later
+
+Flask (installed automatically via pip)
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Developed by Rasim Yamac
+
+For any inquiries, contact: yamacr@canisius.edu
+

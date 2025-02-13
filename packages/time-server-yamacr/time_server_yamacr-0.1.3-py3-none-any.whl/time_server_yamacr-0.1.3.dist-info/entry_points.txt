@@ -1,0 +1,3 @@
+[console_scripts]
+time-server = time_server.server:main
+
