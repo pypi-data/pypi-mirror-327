@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+api_gateway_dynamodb/__init__.py
+api_gateway_dynamodb/api_gateway_dynamodb.py
+api_gateway_dynamodb.egg-info/PKG-INFO
+api_gateway_dynamodb.egg-info/SOURCES.txt
+api_gateway_dynamodb.egg-info/dependency_links.txt
+api_gateway_dynamodb.egg-info/requires.txt
+api_gateway_dynamodb.egg-info/top_level.txt
