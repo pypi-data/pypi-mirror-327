@@ -1,0 +1,9 @@
+syntax: glob
+*.pyc
+*.*~
+dist/*
+build/*
+*.swp
+.venv/*
+uv.lock
+.ruff_cache/*
