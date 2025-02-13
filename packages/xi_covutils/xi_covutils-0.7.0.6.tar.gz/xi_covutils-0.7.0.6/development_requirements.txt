@@ -1,0 +1,7 @@
+pytest>=7.2.0
+mock>=4.0.4
+pylint>=2.15.5
+pdoc3>=0.10.0
+Python-Deprecated>=1.1.0
+radon>=5.1.0
+maturin==1.5.1

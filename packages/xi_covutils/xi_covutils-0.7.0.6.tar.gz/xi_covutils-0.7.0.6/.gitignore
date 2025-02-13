@@ -1,0 +1,16 @@
+venv/
+venv3/
+dist/
+xi_covutils.egg-info/
+.pytest_cache/
+.git/
+*.py[cod]
+tests/__pycache__/
+.vscode/
+build/*
+*so
+.mypy_cache
+.env
+
+#Rust target files
+/target/

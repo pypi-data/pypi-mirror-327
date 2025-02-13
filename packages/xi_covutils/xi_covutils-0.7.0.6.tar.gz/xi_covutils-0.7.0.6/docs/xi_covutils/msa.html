@@ -1,0 +1,2755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>xi_covutils.msa API documentation</title>
+<meta name="description" content="Functions to work with MSA files" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>xi_covutils.msa</code></h1>
+</header>
+<section id="section-intro">
+<p>Functions to work with MSA files</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+  Functions to work with MSA files
+&#34;&#34;&#34;
+import gzip
+from itertools import chain
+import itertools
+import warnings
+from builtins import isinstance
+from collections import Counter
+from functools import reduce
+from operator import add
+from os.path import join
+from random import shuffle
+from shutil import rmtree
+from tempfile import mkdtemp
+from typing import Any, Dict, List, Optional, Tuple, Union
+
+import click
+from numpy.ma import compressed
+import requests
+from deprecated import deprecated
+
+from Bio import SeqIO
+from Bio.Align import Alignment, PairwiseAligner, PairwiseAlignments
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+
+from xi_covutils.pdbmapper import align_sequence_to_sequence, map_to_ungapped
+
+MsaSequenceList = List[str]
+MsaDescSeqList = List[Tuple[str,str]]
+MsaDescSeqDict = Dict[str,str]
+MsaFilename = str
+MsaTypes = Union[
+  MsaSequenceList,
+  MsaDescSeqList,
+  MsaDescSeqDict,
+  MsaFilename
+]
+
+PFAM_URL = &#39;https://pfam.xfam.org&#39;
+
+@deprecated
+def map_reference_to_sequence(
+    msa_file:str,
+    sequence:str,
+    start:int=1,
+    end:Optional[int]=None
+  ) -&gt; dict[int, int]:
+  &#34;&#34;&#34;
+  Align the reference sequence or a substring from it to a another given
+  sequence. Substring alignment is useful for paired MSA.
+
+  Reference sequence is assumed to be the first sequence in the alignment.
+
+  Args:
+    msa_file (str): Path to a fasta file.
+    sequence (int): An ungapped protein sequence to be used as
+      destination of mapping.
+    start (int): Index of the starting position of the MSA which will be
+      mapped. Starting at 1.
+    end (Optional[int]): Index of the last position of the MSA which will be
+      mapped. Starting at 1.
+
+  Returns:
+    dict[int, int]: A dictionary that maps the positions of the given sequence
+      to the reference sequence in the MSA.
+  &#34;&#34;&#34;
+  ref = str(next(SeqIO.parse(msa_file, &#34;fasta&#34;)).seq)
+  end = end if end else len(ref)
+  ref = ref[start-1: end].replace(&#34;-&#34;, &#34;&#34;)
+  return align_sequence_to_sequence(ref, sequence)
+
+def map_ref_to_sequence(
+    msa_data:list[tuple[str, str]],
+    sequence:str,
+    start:int=1,
+    end:Optional[int]=None
+  ) -&gt; dict[int, int]:
+  &#34;&#34;&#34;
+  Align the reference sequence or a substring from it to a another given
+  sequence. Substring alignment is useful for paired MSA.
+
+  Reference sequence is assumed to be the first sequence in the alignment.
+
+  Args:
+    msa_data (list[tuple[str, str]]): MSA content as a List[Tuple[str, str]].
+    sequence (str): An ungapped protein sequence to be used as destination
+      of mapping.
+    start (int): Index of the starting position of the MSA which will be
+      mapped. Starting at 1.
+    end (Optional[int]): Index of the last position of the MSA which will be
+      mapped. Starting at 1.
+
+  Returns:
+    dict[int, int]: A dictionary that maps the positions of the given sequence
+      to the reference sequence in the MSA.
+  &#34;&#34;&#34;
+  ref = msa_data[0][1]
+  end = end if end else len(ref)
+  ref = ref[start-1: end].replace(&#34;-&#34;, &#34;&#34;)
+  return align_sequence_to_sequence(ref, sequence)
+
+def _count_mismatches(aln_map, seq_src, seq_dst):
+  seq_src = seq_src.upper()
+  seq_dst = seq_dst.upper()
+  matches_iter = (0 if (seq_src[x-1] == seq_dst[y-1]) else 1
+          for x, y in aln_map.items())
+  return reduce(add, matches_iter)
+
+def _count_gaps(aln_map, seq_src, seq_dst):
+  src = (max(aln_map.keys())-min(aln_map.keys())+1)-len(aln_map)
+  dst = (max(aln_map.values())-min(aln_map.values())+1)-len(aln_map)
+  dangling_at_start = min(chain(aln_map.keys(), aln_map.values()))-1
+  dangling_at_end = min(
+    len(seq_src)-max(aln_map.keys()),
+    len(seq_dst)-max(aln_map.values())
+  )
+  return dst+src+dangling_at_start*2+dangling_at_end*2
+
+def map_sequence_to_reference(
+    msa_file:str,
+    sequence:str,
+    msa_format:str=&#39;fasta&#39;,
+    mismatch_tolerance:float=float(&#34;inf&#34;),
+    gap_tolerance:float=float(&#34;inf&#34;)
+  ) -&gt; dict[int, dict[str, Any]]:
+  &#34;&#34;&#34;
+  Creates a mapping from a custom ungapped sequence and the reference (first)
+  sequence of and MSA.
+
+  Args:
+    msa_file (str): The input MSA file.
+    sequence (str): An ungapped protein sequence to be used as the source of the
+      mapping.
+    msa_format (str): The format of the alignment. Accept any value accepted by
+      Biopython.
+    mismatch_tolerance (float): A value score to mismatches.
+    gap_tolerance (float): A value score for gaps.
+
+  Returns:
+    dict[int, dict[str, Any]]: Returns a dict from positions of the custom
+      sequence to the positions of the reference sequence. The values of the
+      dict are dicts that contains the position number of the target sequence,
+      the character of the custom source sequence and the character of the
+      target sequences, under the keys: &#39;position&#39;, &#39;source&#39; and &#39;target&#39;
+      respectively.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    reference = next(SeqIO.parse(handle, format=msa_format)).seq
+    handle.close()
+    ungapped_ref = &#34;&#34;.join([s for s in reference if not s == &#39;-&#39;])
+    aligned = align_sequence_to_sequence(sequence, ungapped_ref)
+    mismatches = _count_mismatches(aligned, sequence, ungapped_ref)
+    gaps = _count_gaps(aligned, sequence, ungapped_ref)
+    if (
+      mismatches &lt;= mismatch_tolerance and
+      gaps &lt;= gap_tolerance
+    ):
+      ungapped_map = {v: k for k, v in map_to_ungapped(reference).items()}
+      positions = {a: ungapped_map[aligned[a]] for a in aligned}
+      sources = {a: sequence[a-1] for a in aligned}
+      targets = {a: reference[positions[a]-1].upper() for a in aligned}
+      return {
+        a: {
+          &#39;position&#39;: positions[a],
+          &#39;source&#39;: sources[a],
+          &#39;target&#39;: targets[a],
+        }
+        for a in aligned
+      }
+  return {}
+
+def _gapstrip_template(sequences:list[str], use_reference:bool) -&gt; list[bool]:
+  if use_reference:
+    template = [char == &#34;-&#34; for char in sequences[0]]
+  else:
+    templates = [[char == &#34;-&#34; for char in seq] for seq in sequences]
+    template = [True for _ in range(len(templates[0]))]
+    for temp in templates:
+      template = [x and y for x, y in zip(temp, template)]
+  return template
+
+def gapstrip_sequences(
+    sequences:list[str],
+    use_reference=True
+  ) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Strips the gaps of list of sequences.
+
+  All sequences are assumed to have the same length
+
+  Args:
+    sequences (list[str]): The sequences to gapstrip.
+    use_reference (_type_): if True the first sequence is used as reference
+      and any position containing a gap in it is removed from all sequences.
+      If False, only columns that contains gaps en every sequence are removed.
+
+  Returns:
+    list[str]: Returns a list of stripped sequences in the same order as the
+      input sequences.
+  &#34;&#34;&#34;
+  template = _gapstrip_template(sequences, use_reference)
+  return [
+    &#34;&#34;.join([c for t, c in zip(template, seq) if not t])
+    for seq in sequences
+  ]
+
+def read_msa(
+    msa_file:str,
+    msa_format:str=&#39;fasta&#39;,
+    as_dict:bool=False
+  ) -&gt; MsaTypes:
+  &#34;&#34;&#34;
+  Reads a complete msa_file.
+
+  Args:
+    msa_file (str): The path of the input msa file.
+    msa_format (str): The format of the msa file. Can be any of the
+      supported by biopython. Defaults to &#34;fasta&#34;.
+    as_dict (bool): If True returns a dict from id to sequence. Defaults to
+      False.
+
+  Returns:
+    MsaTypes: Return a list of tuples with with id and sequences or a dict from
+      id to sequences.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    records = [(r.id, str(r.seq)) for r in SeqIO.parse(handle, msa_format)]
+  if as_dict:
+    return dict(records)
+  return records
+
+def write_msa(
+    msa_data: Union[MsaDescSeqDict, MsaDescSeqList],
+    msa_file: str
+  ):
+  &#34;&#34;&#34;
+  Writes a msa to file.
+
+  Only support fasta format at the moment.
+  Input data can be:
+  - a list of tuples of sequence id and sequence.
+  - a dict from sequence id to sequence.
+
+  Args:
+    msa_data (Union[MsaDescSeqDict, MsaDescSeqList]): Input sequence data.
+    msa_file (str): The output file.
+
+  Throws:
+    ValueError: If input data is not recognized.
+  &#34;&#34;&#34;
+  if isinstance(msa_data, list):
+    seq_iterable = msa_data
+  elif isinstance(msa_data, dict):
+    seq_iterable = msa_data.items()
+  else:
+    raise ValueError(&#34;msa_data should be a list or dict&#34;)
+  with open(msa_file, &#39;w&#39;, encoding=&#34;utf-8&#34;) as handle:
+    for seq_id, seq in seq_iterable:
+      handle.write(f&#34;&gt;{seq_id}\n{seq}\n&#34;)
+
+def pop_reference(
+    msa_data: Union[MsaDescSeqDict, MsaDescSeqList],
+    reference_id: str
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Puts a reference sequence as the first sequence of a msa.
+
+  Args:
+    msa_data (Union[MsaDescSeqDict, MsaDescSeqList]): Input MSA data.
+    reference_id (str): The identifier of the reference to pop.
+
+  Returns:
+    MsaDescSeqList: Returns a list of tuples of sequence id and sequences.
+
+  Throws:
+    ValueError: If MSA data is not recognized or reference identifier not in
+      MSA.
+  &#34;&#34;&#34;
+  if isinstance(msa_data, list):
+    pass
+  elif isinstance(msa_data, dict):
+    msa_data = list(msa_data.items())
+  else:
+    raise ValueError(&#34;msa_data should be a list or dict&#34;)
+
+  results = [(seq_id, seq) for seq_id, seq in msa_data
+    if not seq_id == reference_id]
+  first = [(seq_id, seq) for seq_id, seq in msa_data
+    if seq_id == reference_id]
+  if first:
+    return first + results
+  raise ValueError(f&#34;Sequence: {reference_id} not in msa data&#34;)
+
+def gapstrip(
+    msa_file:str,
+    use_reference:bool=True,
+    msa_format:str=&#39;fasta&#39;
+  ) -&gt; List[SeqRecord]:
+  &#34;&#34;&#34;
+  Strips the gaps of an MSA.
+
+  Returns a list of SeqRecord objects from biopython.
+
+  Args:
+    msa_file (str): The input MSA data.
+    use_reference (bool): if True the first sequence is used as reference
+      and any position containing a gap in it is removed from all sequences.
+      If False, only columns that contains gaps en every sequence are removed.
+      Defaults to True.
+    msa_format (str): Any format recognized by Bio.SeqIO. Defaults to &#34;fasta&#34;.
+
+  Returns:
+    List[SeqRecord]: The Gapstripped sequences.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    records = [
+      (r.id, str(r.seq), r.description)
+      for r in SeqIO.parse(handle, msa_format)
+    ]
+  gs_result = gapstrip_sequences(
+    [s for _, s, _ in records],
+    use_reference
+  )
+  seq_ids = (i for i, _, _ in records)
+  seq_desc = (i for _, _, i in records)
+  return [
+    SeqRecord(
+      id=i,
+      seq=Seq(s),
+      description=d
+    )
+    for i, s, d in zip(seq_ids, gs_result, seq_desc)
+  ]
+
+def _download_pfam(pfam_acc, msa_type, tmp_dir):
+  full_url = f&#34;{PFAM_URL}/family/{pfam_acc}/alignment/{msa_type}/gzipped&#34;
+  request = requests.get(full_url, stream=True, timeout=120)
+  gz_temp = join(tmp_dir, &#39;tmp.gz&#39;)
+  with open(gz_temp, &#39;wb&#39;) as tmp_fh:
+    for chunk in request.iter_content(chunk_size=1024):
+      tmp_fh.write(chunk)
+  request.close()
+  return gz_temp
+
+def _extract_pfam(compressed_file, outfile):
+  try:
+    with gzip.open(compressed_file, &#39;rb&#39;) as gz_fh:
+      with open(outfile, &#39;wb&#39;) as file_handle:
+        while True:
+          chunk = gz_fh.read(1024)
+          if not chunk:
+            break
+          if isinstance(chunk, str):
+            chunk = bytes(chunk, &#39;utf-8&#39;)
+          file_handle.write(chunk)
+    return True
+  except EOFError:
+    return False
+
+def from_pfam(
+    pfam_acc:str,
+    outfile:str,
+    msa_type:str=&#39;full&#39;
+  ) -&gt; bool:
+  &#34;&#34;&#34;
+  Download an MSA from pfam database.
+
+  Retrieves the requiered MSA for the accession given into a file.
+
+  Args:
+    pfam_acc (str): The pFam accession to download.
+    outfile (str): The path of the output file.
+    msa_type (str): &#39;full&#39;: One of &#39;seed&#39;, &#39;full&#39;, &#39;rp15&#39;, &#39;rp35&#39;, &#39;rp55&#39;,
+      &#39;rp75&#39;, &#39;uniprot&#39;, &#39;ncbi&#39; or &#39;meta&#39;.
+
+  Returns:
+    bool: True if the download was successful or False otherwise.
+  &#34;&#34;&#34;
+  tmp_dir = mkdtemp()
+  gz_temp = _download_pfam(pfam_acc, msa_type, tmp_dir)
+  status = _extract_pfam(gz_temp, outfile)
+  rmtree(tmp_dir)
+  return status
+
+def subset(
+    msa_data:MsaDescSeqList,
+    columns:list[int]
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Subset a MSA by columns.
+
+  Creates a new MSA getting some columns of a bigger MSA.
+
+  Args:
+    msa_data (MsaDescSeqList): a list of tuples with id and sequence from a MSA.
+    columns (list[int]): An object that supports the &#39;in&#39; operator. Position
+      numbers of the source MSA are checked if they are &#39;in&#39; the columns
+      object. If True, the column is kept, if false. Postions are 1-based
+      indexes.
+
+  Returns:
+    MsaDescSeqList: A new MSA data with the selected columns.
+  &#34;&#34;&#34;
+  new_msa = [(
+    seq_id,
+    &#34;&#34;.join([x for i, x in enumerate(seq) if i+1 in columns]))
+      for seq_id, seq in msa_data]
+  return new_msa
+
+def get_terminal_gaps(sequence:str) -&gt; list[bool]:
+  &#34;&#34;&#34;
+  Extract terminal gaps
+
+  Gets a True/False list for a sequence indicating which positions are
+  terminal gaps.
+
+  Args:
+    sequence (str): A gapped sequence.
+
+  Returns:
+    list[bool]: A list where True corresponds to terminal gaps.
+  &#34;&#34;&#34;
+  _, terminal_gaps_fw = reduce(
+    lambda a, b: (a[0] and b == &#39;-&#39;, a[1] + [a[0] and b == &#39;-&#39;]),
+    sequence,
+    (True, [])
+  )
+  _, terminal_gaps_rv = reduce(
+    lambda a, b: (a[0] and b == &#39;-&#39;, a[1] + [a[0] and b == &#39;-&#39;]),
+    reversed(sequence),
+    (True, [])
+  )
+  return [a or b for a, b in zip(terminal_gaps_fw, reversed(terminal_gaps_rv))]
+
+PairwiseAlignmentStats = tuple[int, int, int, int]
+
+def pairwise_aln_stats(aln1:str, aln2:str) -&gt; PairwiseAlignmentStats:
+  &#34;&#34;&#34;
+  Count gaps, matches, mismatches and the longest run of matches between two
+  aligned sequences.
+
+  Args:
+    aln1 (str): A aligned sequence.
+    aln2 (str): A aligned sequenec.
+
+  Returns:
+    PairwiseAlignmentStats: A tuple with alignment stats.
+
+  Throws:
+    ValueError: If sequences has different lengths.
+  &#34;&#34;&#34;
+  if not len(aln1) == len(aln2):
+    raise ValueError(&#34;Aligned sequences have different length&#34;)
+  aln1 = aln1.upper()
+  aln2 = aln2.upper()
+  gaps = 0
+  matches = 0
+  mismatches = 0
+  longest_run = 0
+  run = 0
+  previus_is_match = False
+  for char1, char2 in zip(aln1, aln2):
+    is_gap = char1 == &#39;-&#39; or char2 == &#39;-&#39;
+    is_diff_char = char1 != char2
+    is_mismatch = not is_gap and is_diff_char
+    is_match = not is_gap and not is_diff_char
+    run = ((run if previus_is_match else 0) + 1) if is_match else 0
+    previus_is_match = is_match
+    gaps += 1 if is_gap else 0
+    mismatches += 1 if is_mismatch else 0
+    matches += 1 if is_match else 0
+    longest_run = longest_run if longest_run &gt;= run else run
+  return gaps, matches, mismatches, longest_run
+
+def strip_terminal_gaps(alns:list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Strips terminal gaps from a collection of sequences.
+
+  Given a list (or other iterable of gapped sequences) returns a new
+  list of sequences that correspond to the original ones without the columns
+  containing terminal gaps in at least one sequence.
+
+  Terminal gaps are those gaps that starts from the beggining of the sequence
+  and continues until a non-gap char, and those gaps the starts from the end
+  and continues backward until a non-gap char.
+
+  Args:
+    alns (list[str]): A list of sequences.
+
+  Returns:
+    list[str]: A list of sequences.
+  &#34;&#34;&#34;
+  alns = [aln.upper() for aln in alns]
+  terminal_gaps = (get_terminal_gaps(aln) for aln in alns)
+  valid = [not any(gaps_in_col) for gaps_in_col in zip(*terminal_gaps)]
+  new_alns = [&#34;&#34;.join(c for v, c in zip(valid, aln) if v) for aln in alns]
+  return new_alns
+
+def default_aligner() -&gt; PairwiseAligner:
+  &#34;&#34;&#34;
+  Creates a default aligner with common match, mismatch and gaps scores.
+
+  Returns:
+    PairwiseAligner: The newly created default aligner.
+  &#34;&#34;&#34;
+  aligner = PairwiseAligner()
+  aligner.mode = &#34;global&#34;
+  aligner.match_score = 1
+  aligner.mismatch_score = -1
+  aligner.open_gap_score = -0.5
+  aligner.extend_gap_score = -0.2
+  return aligner
+
+def pick_reference(
+    reference_sequence:str,
+    msa_file:str,
+    msa_format:str=&#39;fasta&#39;,
+    minimum_longest_run:int=5
+  ) -&gt; list[tuple[str, str, str]]:
+  &#34;&#34;&#34;
+  Selects a sequence from a MSA to be the reference sequence.
+
+  The sequence selected is the most similar to a given sequence.
+
+  Args:
+    reference_sequence (str): a string with the sequence to be used to
+      compare to get the reference sequence.
+    msa_file (str): the path of the msa file, it can have any format
+      interpreted by biopython.
+    msa_format (str): the format of the msa_file.
+    minimum_longest_run (int): the picked reference sequence should have
+    at least this many number of consecutive matches.
+
+  Returns:
+    list[tuple[str, str, str]]: The selected reference as a tuple of the
+      sequence identifier, the sequemce, and the type of match between the
+      sequence and the reference.
+  &#34;&#34;&#34;
+  # pylint: disable=too-many-locals
+  reference_sequence = reference_sequence.upper()
+  msa_data = [(seq_id, seq.replace(&#34;-&#34;, &#34;&#34;).upper())
+        for seq_id, seq in read_msa(msa_file, msa_format=msa_format)]
+  # Case 1: Identical sequences
+  identical = [(seq_id, reference_sequence, &#34;IDENTICAL_MATCH&#34;)
+    for seq_id, seq in msa_data
+    if seq == reference_sequence]
+  if identical:
+    return identical
+  # Case 2: Non identical sequences
+  max_score = -float(&#34;inf&#34;)
+  max_aln = []
+  for seq_id, seq in msa_data:
+    try:
+      aligner = default_aligner()
+      alns = aligner.align(
+        seq.upper(),
+        reference_sequence.upper(),
+      )
+    except SystemError:
+      warnings.warn(
+        f&#34;Sequences couldn&#39;t be aligned: {seq} {reference_sequence}&#34;,
+          UserWarning
+        )
+      alns = []
+    if not isinstance(alns, PairwiseAlignments):
+      return []
+    if alns:
+      alignment:Alignment = alns[0]
+      aln1 = alignment[1, :]
+      aln2 = alignment[0, :]
+      if not isinstance(aln1, str) or not isinstance(aln2, str):
+        continue
+      score = getattr(alignment, &#34;score&#34;)
+      if not isinstance(score, float):
+        continue
+      score = float(score)
+      if score &gt;= max_score:
+        if score &gt; max_score:
+          max_aln, max_score = [], score
+        aln1, aln2 = strip_terminal_gaps([aln1, aln2])
+        gaps, _, mismatches, run = pairwise_aln_stats(aln1, aln2)
+        if run &gt;= minimum_longest_run:
+          match_type = (
+            &#34;IDENTICAL_SUB_MATCH&#34;
+            if gaps == 0 and mismatches == 0
+            else &#34;NON_IDENTICAL_MATCH&#34;)
+          max_aln.append((seq_id, seq, match_type))
+  return max_aln
+
+def msa_to_list(msa_data: MsaDescSeqDict) -&gt; list[list[str]]:
+  &#34;&#34;&#34;
+  Returns msa data as a list of lists of chars
+
+  Args:
+    msa_data (MsaDescSeqDict): The input MSA data.
+
+  Returns:
+    list[list[str]]: A list of lists of chars.
+  &#34;&#34;&#34;
+  return [list(s) for s in msa_data.values()]
+
+def columns_to_rows(msa_list_data: list[list[str]]) -&gt; list[list[str]]:
+  &#34;&#34;&#34;
+  Traspose columns and rows of a MSA.
+
+  Args:
+    msa_list_data (list[list[str]]): The input MSA data as list of lists of
+      chars.
+
+  Returns:
+    list[list[str]]: The transposed MSA data.
+  &#34;&#34;&#34;
+  ncols = len(msa_list_data[0])
+  trasposed_data = [[] for _ in range(ncols)]
+  for row in msa_list_data:
+    for i, res in enumerate(row):
+      trasposed_data[i].append(res)
+  return trasposed_data
+
+def shuffle_without_gaps(char_list: list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Shuffle chars in a list, without moving the gaps out of place
+
+  Args:
+    char_list (list[str]): The input gapped sequence as a list of characters.
+
+  Returns:
+    list[str]: The shuffle sequence.
+  &#34;&#34;&#34;
+  gap_indexes = [i for i, s in enumerate(char_list) if s == &#34;-&#34;]
+  chars = [c for c in char_list if c != &#39;-&#39;]
+  shuffle(chars)
+  for g_index in gap_indexes:
+    chars.insert(g_index, &#34;-&#34;)
+  return chars
+
+def shuffle_with_gaps(char_list: list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Shufle characters in alignment, can alter gap positions
+
+  Args:
+    char_list (list[str]): Input sequence as a list of characters.
+
+  Returns:
+    list[str]: The shuffled sequence.
+  &#34;&#34;&#34;
+  shuffle(char_list)
+  return char_list
+
+
+def shuffle_msa(
+    msa_data:MsaDescSeqDict,
+    by:str=[&#39;column&#39;, &#39;row&#39;, &#39;both&#39;][0],
+    keep_gaps:bool=True
+  ) -&gt; dict[str, list[str]]:
+  &#34;&#34;&#34;
+  Shuffle the data of a msa.
+
+  Args:
+    msa_data (MsaDescSeqDict): input MSA data.
+    by (str): How to shuffle, by &#39;column&#39;, by &#39;row&#39;, or &#39;both&#39;.
+    keep_gaps (bool): Keep gaps positions.
+
+  Returns:
+    dict[str, list[str]]: The shuffled MSA.
+
+  Throws:
+    ValueError: If by argument is not recognized.
+  &#34;&#34;&#34;
+  #pylint: disable=invalid-name
+  shuffler = shuffle_without_gaps if keep_gaps else shuffle_with_gaps
+  if by == &#39;column&#39;:
+    col_data = columns_to_rows(msa_to_list(msa_data))
+    col_data = [
+      shuffler(col)
+      for col in col_data
+    ]
+    col_data = columns_to_rows(col_data)
+    result = dict(zip(msa_data.keys(), col_data))
+    return result
+  if by == &#39;row&#39;:
+    row_data = msa_to_list(msa_data)
+    row_data = {
+      name: shuffler(row)
+      for name, row in zip(msa_data.keys(), row_data)
+    }
+    return row_data
+  if by == &#39;both&#39;:
+    row_data = msa_to_list(msa_data)
+    row_data = [
+      shuffler(row)
+      for row in row_data
+    ]
+    col_data = columns_to_rows(row_data)
+    col_data = [
+      shuffler(col)
+      for col in col_data
+    ]
+    col_data = columns_to_rows(col_data)
+    return dict(zip(msa_data.keys(), col_data))
+  raise ValueError(&#34;Argument &#39;by&#39; not recognized&#34;)
+
+def gap_content(msa_data: List[Tuple[str, str]]) -&gt; float:
+  &#34;&#34;&#34;
+  Return the fraction of the characters that are gaps.
+
+  Args:
+    msa_data (List[Tuple[str, str]]): msa_data is list of tuples (id, seq)
+
+  Returns:
+    float: The gap content of the MSA.
+  &#34;&#34;&#34;
+  counts = ((len(seq), seq.count(&#34;-&#34;))
+    for _, seq in msa_data)
+  total, gaps = map(sum, zip(*counts))
+  return float(gaps)/total
+
+def gap_content_by_column(
+    msa_data: Union[List[Tuple[str, str]], List[str]]
+  ) -&gt; List[float]:
+  &#34;&#34;&#34;
+  Return the fraction of the characters that are gaps for each column of the
+  alignment.
+
+  Args:
+    msa_data (List[Union[Tuple[str, str], str]]): is list of tuples (id, seq) or
+      a list of sequences.
+  &#34;&#34;&#34;
+  nseqs = len(msa_data)
+  counts = []
+  mcounts = 0
+  msa_data = [
+    x[1] if isinstance(x, tuple) else x
+    for x in msa_data
+  ]
+  for sequence in msa_data:
+    for i, value in enumerate((1 if c == &#39;-&#39; else 0 for c in sequence)):
+      if i &lt; mcounts:
+        counts[i] += value
+      else:
+        counts.append(value)
+        mcounts += 1
+  counts = [
+    float(c)/nseqs
+    for c in counts
+  ]
+  return counts
+
+
+def _aln_to_cigar_aln(target:str, query:str) -&gt; list[str]:
+  cigar = []
+  ref_len = len(target)
+  query_len = len(query)
+  if ref_len != query_len:
+    raise ValueError(&#34;query and target have different lengths&#34;)
+  query_terminal_gaps = get_terminal_gaps(query)
+  target_terminal_gaps = get_terminal_gaps(target)
+  iter_data = zip(query, target, query_terminal_gaps, target_terminal_gaps)
+  for pos_q, pos_t, ter_q, ter_t in iter_data:
+    if ter_q and ter_t:
+      raise ValueError(&#34;Both sequences have a gap in the same column&#34;)
+    if ter_q or ter_t:
+      cigar.append(&#34;S&#34;)
+      continue
+    if pos_q == &#34;-&#34; and pos_t == &#34;-&#34;:
+      raise ValueError(&#34;Both sequences have a gap in the same column&#34;)
+    if pos_q == &#34;-&#34;:
+      cigar.append(&#34;I&#34;)
+      continue
+    if pos_t == &#34;-&#34;:
+      cigar.append(&#34;D&#34;)
+      continue
+    if pos_q == pos_t:
+      cigar.append(&#34;M&#34;)
+      continue
+    if pos_q != pos_t:
+      cigar.append(&#34;X&#34;)
+      continue
+  return cigar
+
+def _compress_cigar_chars(uncompressed_cigar:list[str]) -&gt; str:
+  compressed_chars = []
+  compressed_counts = []
+  for cig_char in uncompressed_cigar:
+    last = len(compressed_chars)-1
+    if not compressed_chars or compressed_chars[last] != cig_char:
+      compressed_chars.append(cig_char)
+      compressed_counts.append(1)
+      continue
+    compressed_counts[last] += 1
+  compressed_counts = [str(x) for x in compressed_counts]
+  cigar = list(
+    itertools.chain.from_iterable(zip(compressed_counts, compressed_chars))
+  )
+  cigar = &#34;&#34;.join(cigar)
+  return cigar
+
+def generate_cigar_string(target:str, query:str) -&gt; str:
+  &#34;&#34;&#34;
+  Generate a CIGAR string for an alignment of two sequences.
+  The generated CIGAR string might not be totally compliant with the standards
+  with SOFT and HARD clipping.
+
+  Args:
+    target (str): A gapped aligned sequence.
+    query (str): A gapped aligned sequence.
+
+  Throws:
+    ValueError: If the target and the query have different lengths or both have
+      a gap in the same column.
+
+  Returns:
+    str: A cigar String.
+  &#34;&#34;&#34;
+  cigar = _aln_to_cigar_aln(target, query)
+  cigar = _compress_cigar_chars(cigar)
+  return cigar
+
+def as_sequence_list(
+    input_msa: MsaTypes
+  ) -&gt; MsaSequenceList:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input (MsaTypes): The source of the MSA data.
+
+  Returns:
+    MsaSequenceList: the MSA data as a list of str.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=False)
+    msa_data = [x[1] for x in msa_data]
+    return msa_data
+  if isinstance(input_msa, dict):
+    return list(input_msa.values())
+  if isinstance(input_msa, list):
+    msa_data = [
+      x if isinstance(x, str) else x[1]
+      for x in input_msa
+    ]
+    return msa_data
+  return []
+
+def as_desc_seq_dict(
+    input_msa: MsaTypes
+  ) -&gt; MsaDescSeqDict:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input MsaTypes: The source of the MSA data.
+
+  Returns:
+    MsaDescSeqDict: the MSA data as a dict of descriptions to sequences.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=True)
+    if not isinstance(msa_data, dict):
+      return {}
+    return msa_data
+  if isinstance(input_msa, dict):
+    return input_msa
+  if isinstance(input_msa, list):
+    msa_data = [
+      (f&#34;seq_{i+1}&#34;, x) if isinstance(x, str) else (x[0], x[1])
+      for i, x in enumerate(input_msa)
+    ]
+    msa_data = dict(msa_data)
+    return msa_data
+  return {}
+
+def as_desc_seq_tuple(
+    input_msa: MsaTypes
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input (MsaTypes): The source of the MSA data.
+
+  Returns:
+    MsaDescSeqList: The MSA data as a list of description and sequence tuples.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=False)
+    if not isinstance(msa_data, list):
+      return []
+    msa_data = [x for x in msa_data if isinstance(x, tuple)]
+    return msa_data
+  if isinstance(input_msa, dict):
+    msa_data = list(input_msa.items())
+    return msa_data
+  if isinstance(input_msa, list):
+    msa_data = [
+      (f&#34;seq_{i+1}&#34;, x) if isinstance(x, str) else x
+      for i, x in enumerate(input_msa)
+    ]
+    return msa_data
+  return []
+
+# pylint: disable=too-many-locals
+def compare_two_msa(
+      msa_data_1: MsaTypes,
+      msa_data_2: MsaTypes
+    ) -&gt; Dict[str, Dict[str, Any]]:
+  &#34;&#34;&#34;
+  Compares two multiple sequence alignments and gives a reports.
+
+  Args:
+    msa_data_1 (MsaTypes): A Multiple Sequence Alignment.
+    msa_data_2 (MsaTypes): A Multiple Sequence Alignment.
+
+  Returns:
+    Dict[str, str]: The results of the comparison
+  &#34;&#34;&#34;
+  msa_1 = as_desc_seq_tuple(msa_data_1)
+  msa_2 = as_desc_seq_tuple(msa_data_2)
+  result = {}
+  msa_result = {}
+  msa_result[&#34;msa1_n_sequences&#34;] = len(msa_1)
+  msa_result[&#34;msa2_n_sequences&#34;] = len(msa_2)
+  msa_result[&#34;has_same_number_of_sequences&#34;] = len(msa_1) == len(msa_2)
+  msa_result[&#34;identical_msas&#34;] = msa_1 == msa_2
+  result[&#34;msa&#34;] = msa_result
+  desc1 = [d for d, _ in msa_1]
+  desc2 = [d for d, _ in msa_2]
+  description_results = {}
+  description_results[&#34;identical&#34;] = (
+    dict(Counter(desc1)) == dict(Counter(desc2))
+  )
+  description_results[&#34;has_same_order&#34;] = desc1 == desc2
+  result[&#34;descriptions&#34;] = description_results
+  ungapped_msa_1 = [
+    (d, s.replace(&#34;-&#34;, &#34;&#34;))
+    for d, s in msa_1
+  ]
+  ungapped_msa_2 = [
+    (d, s.replace(&#34;-&#34;, &#34;&#34;))
+    for d, s in msa_2
+  ]
+  ungapped_seqs_1 = [
+    s for _, s in ungapped_msa_1
+  ]
+  ungapped_seqs_2 = [
+    s for _, s in ungapped_msa_2
+  ]
+  ungapped_results = {}
+  ungapped_results[&#34;identical_seqs&#34;] = (
+    dict(Counter(ungapped_seqs_1)) == dict(Counter(ungapped_seqs_2))
+  )
+  ungapped_results[&#34;has_same_order&#34;] = (
+    ungapped_seqs_1 == ungapped_seqs_2
+  )
+  ungapped_results[&#34;corresponds_with_desc&#34;] = (
+    dict(Counter(ungapped_msa_1)) == dict(Counter(ungapped_msa_2))
+  )
+  result[&#34;ungapped&#34;] = ungapped_results
+  gapped_results ={}
+  seqs1 = [
+    s for _, s in msa_1
+  ]
+  seqs2 = [
+    s for _, s in msa_2
+  ]
+  gapped_results[&#34;identical_seqs&#34;] = (
+    dict(Counter(seqs1)) == dict(Counter(seqs2))
+  )
+  gapped_results[&#34;has_same_order&#34;] = (
+    seqs1 == seqs2
+  )
+  gapped_results[&#34;corresponds_with_desc&#34;] = (
+    dict(Counter(msa_1)) == dict(Counter(msa_2))
+  )
+  result[&#34;gapped&#34;] = gapped_results
+  return result
+
+def print_dict(input_msa: Dict[str, Any], depth = 0):
+  &#34;&#34;&#34;
+  Prints a dictionary formated to be outputed to the console.
+
+  Args:
+      input (Dict[str, Any]): Input MSA.
+      depth (int, optional): A depth value that shows how indented is the output
+        text. Defaults to 0.
+  &#34;&#34;&#34;
+  for key, value in input_msa.items():
+    if not isinstance(value, dict):
+      print(f&#34;# {&#39; &#39;*(depth)}{key}: {value}&#34;)
+    if isinstance(value, dict):
+      print(f&#34;# {&#39; &#39;*(depth)}{key}:&#34;)
+      print_dict(value, depth=depth+2)
+
+@click.command()
+@click.argument(
+  &#34;msa1&#34;,
+  type=click.Path(exists=True)
+)
+@click.argument(
+  &#34;msa2&#34;,
+  type=click.Path(exists=True)
+)
+def compare_msas(msa1:str, msa2:str):
+  &#34;&#34;&#34;
+  Compare Two MSAs CLI command.
+
+  Args:
+    msa1 (str): A Multiple sequence alignment file.
+    msa2 (str): A Multiple sequence alignmetn file.
+  &#34;&#34;&#34;
+  click.echo(&#34;# Compare Two MSAs&#34;)
+  result = compare_two_msa(msa1, msa2)
+  print_dict(result)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="xi_covutils.msa.as_desc_seq_dict"><code class="name flex">
+<span>def <span class="ident">as_desc_seq_dict</span></span>(<span>input_msa: Union[List[str], List[Tuple[str, str]], Dict[str, str], str]) ‑> Dict[str, str]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Changes MSA representation to an ordered list of sequences.</p>
+<h2 id="args">Args</h2>
+<p>input MsaTypes: The source of the MSA data.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaDescSeqDict</code></dt>
+<dd>the MSA data as a dict of descriptions to sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def as_desc_seq_dict(
+    input_msa: MsaTypes
+  ) -&gt; MsaDescSeqDict:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input MsaTypes: The source of the MSA data.
+
+  Returns:
+    MsaDescSeqDict: the MSA data as a dict of descriptions to sequences.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=True)
+    if not isinstance(msa_data, dict):
+      return {}
+    return msa_data
+  if isinstance(input_msa, dict):
+    return input_msa
+  if isinstance(input_msa, list):
+    msa_data = [
+      (f&#34;seq_{i+1}&#34;, x) if isinstance(x, str) else (x[0], x[1])
+      for i, x in enumerate(input_msa)
+    ]
+    msa_data = dict(msa_data)
+    return msa_data
+  return {}</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.as_desc_seq_tuple"><code class="name flex">
+<span>def <span class="ident">as_desc_seq_tuple</span></span>(<span>input_msa: Union[List[str], List[Tuple[str, str]], Dict[str, str], str]) ‑> List[Tuple[str, str]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Changes MSA representation to an ordered list of sequences.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>input</code></strong> :&ensp;<code>MsaTypes</code></dt>
+<dd>The source of the MSA data.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaDescSeqList</code></dt>
+<dd>The MSA data as a list of description and sequence tuples.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def as_desc_seq_tuple(
+    input_msa: MsaTypes
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input (MsaTypes): The source of the MSA data.
+
+  Returns:
+    MsaDescSeqList: The MSA data as a list of description and sequence tuples.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=False)
+    if not isinstance(msa_data, list):
+      return []
+    msa_data = [x for x in msa_data if isinstance(x, tuple)]
+    return msa_data
+  if isinstance(input_msa, dict):
+    msa_data = list(input_msa.items())
+    return msa_data
+  if isinstance(input_msa, list):
+    msa_data = [
+      (f&#34;seq_{i+1}&#34;, x) if isinstance(x, str) else x
+      for i, x in enumerate(input_msa)
+    ]
+    return msa_data
+  return []</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.as_sequence_list"><code class="name flex">
+<span>def <span class="ident">as_sequence_list</span></span>(<span>input_msa: Union[List[str], List[Tuple[str, str]], Dict[str, str], str]) ‑> List[str]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Changes MSA representation to an ordered list of sequences.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>input</code></strong> :&ensp;<code>MsaTypes</code></dt>
+<dd>The source of the MSA data.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaSequenceList</code></dt>
+<dd>the MSA data as a list of str.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def as_sequence_list(
+    input_msa: MsaTypes
+  ) -&gt; MsaSequenceList:
+  &#34;&#34;&#34;
+  Changes MSA representation to an ordered list of sequences.
+
+  Args:
+    input (MsaTypes): The source of the MSA data.
+
+  Returns:
+    MsaSequenceList: the MSA data as a list of str.
+  &#34;&#34;&#34;
+  if isinstance(input_msa, str):
+    msa_data = read_msa(msa_file = input_msa, as_dict=False)
+    msa_data = [x[1] for x in msa_data]
+    return msa_data
+  if isinstance(input_msa, dict):
+    return list(input_msa.values())
+  if isinstance(input_msa, list):
+    msa_data = [
+      x if isinstance(x, str) else x[1]
+      for x in input_msa
+    ]
+    return msa_data
+  return []</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.columns_to_rows"><code class="name flex">
+<span>def <span class="ident">columns_to_rows</span></span>(<span>msa_list_data: list) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Traspose columns and rows of a MSA.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_list_data</code></strong> :&ensp;<code>list[list[str]]</code></dt>
+<dd>The input MSA data as list of lists of
+chars.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[list[str]]</code></dt>
+<dd>The transposed MSA data.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def columns_to_rows(msa_list_data: list[list[str]]) -&gt; list[list[str]]:
+  &#34;&#34;&#34;
+  Traspose columns and rows of a MSA.
+
+  Args:
+    msa_list_data (list[list[str]]): The input MSA data as list of lists of
+      chars.
+
+  Returns:
+    list[list[str]]: The transposed MSA data.
+  &#34;&#34;&#34;
+  ncols = len(msa_list_data[0])
+  trasposed_data = [[] for _ in range(ncols)]
+  for row in msa_list_data:
+    for i, res in enumerate(row):
+      trasposed_data[i].append(res)
+  return trasposed_data</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.compare_two_msa"><code class="name flex">
+<span>def <span class="ident">compare_two_msa</span></span>(<span>msa_data_1: Union[List[str], List[Tuple[str, str]], Dict[str, str], str], msa_data_2: Union[List[str], List[Tuple[str, str]], Dict[str, str], str]) ‑> Dict[str, Dict[str, Any]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Compares two multiple sequence alignments and gives a reports.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data_1</code></strong> :&ensp;<code>MsaTypes</code></dt>
+<dd>A Multiple Sequence Alignment.</dd>
+<dt><strong><code>msa_data_2</code></strong> :&ensp;<code>MsaTypes</code></dt>
+<dd>A Multiple Sequence Alignment.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>Dict[str, str]</code></dt>
+<dd>The results of the comparison</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def compare_two_msa(
+      msa_data_1: MsaTypes,
+      msa_data_2: MsaTypes
+    ) -&gt; Dict[str, Dict[str, Any]]:
+  &#34;&#34;&#34;
+  Compares two multiple sequence alignments and gives a reports.
+
+  Args:
+    msa_data_1 (MsaTypes): A Multiple Sequence Alignment.
+    msa_data_2 (MsaTypes): A Multiple Sequence Alignment.
+
+  Returns:
+    Dict[str, str]: The results of the comparison
+  &#34;&#34;&#34;
+  msa_1 = as_desc_seq_tuple(msa_data_1)
+  msa_2 = as_desc_seq_tuple(msa_data_2)
+  result = {}
+  msa_result = {}
+  msa_result[&#34;msa1_n_sequences&#34;] = len(msa_1)
+  msa_result[&#34;msa2_n_sequences&#34;] = len(msa_2)
+  msa_result[&#34;has_same_number_of_sequences&#34;] = len(msa_1) == len(msa_2)
+  msa_result[&#34;identical_msas&#34;] = msa_1 == msa_2
+  result[&#34;msa&#34;] = msa_result
+  desc1 = [d for d, _ in msa_1]
+  desc2 = [d for d, _ in msa_2]
+  description_results = {}
+  description_results[&#34;identical&#34;] = (
+    dict(Counter(desc1)) == dict(Counter(desc2))
+  )
+  description_results[&#34;has_same_order&#34;] = desc1 == desc2
+  result[&#34;descriptions&#34;] = description_results
+  ungapped_msa_1 = [
+    (d, s.replace(&#34;-&#34;, &#34;&#34;))
+    for d, s in msa_1
+  ]
+  ungapped_msa_2 = [
+    (d, s.replace(&#34;-&#34;, &#34;&#34;))
+    for d, s in msa_2
+  ]
+  ungapped_seqs_1 = [
+    s for _, s in ungapped_msa_1
+  ]
+  ungapped_seqs_2 = [
+    s for _, s in ungapped_msa_2
+  ]
+  ungapped_results = {}
+  ungapped_results[&#34;identical_seqs&#34;] = (
+    dict(Counter(ungapped_seqs_1)) == dict(Counter(ungapped_seqs_2))
+  )
+  ungapped_results[&#34;has_same_order&#34;] = (
+    ungapped_seqs_1 == ungapped_seqs_2
+  )
+  ungapped_results[&#34;corresponds_with_desc&#34;] = (
+    dict(Counter(ungapped_msa_1)) == dict(Counter(ungapped_msa_2))
+  )
+  result[&#34;ungapped&#34;] = ungapped_results
+  gapped_results ={}
+  seqs1 = [
+    s for _, s in msa_1
+  ]
+  seqs2 = [
+    s for _, s in msa_2
+  ]
+  gapped_results[&#34;identical_seqs&#34;] = (
+    dict(Counter(seqs1)) == dict(Counter(seqs2))
+  )
+  gapped_results[&#34;has_same_order&#34;] = (
+    seqs1 == seqs2
+  )
+  gapped_results[&#34;corresponds_with_desc&#34;] = (
+    dict(Counter(msa_1)) == dict(Counter(msa_2))
+  )
+  result[&#34;gapped&#34;] = gapped_results
+  return result</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.default_aligner"><code class="name flex">
+<span>def <span class="ident">default_aligner</span></span>(<span>) ‑> Bio.Align.PairwiseAligner</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a default aligner with common match, mismatch and gaps scores.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>PairwiseAligner</code></dt>
+<dd>The newly created default aligner.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def default_aligner() -&gt; PairwiseAligner:
+  &#34;&#34;&#34;
+  Creates a default aligner with common match, mismatch and gaps scores.
+
+  Returns:
+    PairwiseAligner: The newly created default aligner.
+  &#34;&#34;&#34;
+  aligner = PairwiseAligner()
+  aligner.mode = &#34;global&#34;
+  aligner.match_score = 1
+  aligner.mismatch_score = -1
+  aligner.open_gap_score = -0.5
+  aligner.extend_gap_score = -0.2
+  return aligner</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.from_pfam"><code class="name flex">
+<span>def <span class="ident">from_pfam</span></span>(<span>pfam_acc: str, outfile: str, msa_type: str = 'full') ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Download an MSA from pfam database.</p>
+<p>Retrieves the requiered MSA for the accession given into a file.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>pfam_acc</code></strong> :&ensp;<code>str</code></dt>
+<dd>The pFam accession to download.</dd>
+<dt><strong><code>outfile</code></strong> :&ensp;<code>str</code></dt>
+<dd>The path of the output file.</dd>
+<dt><strong><code>msa_type</code></strong> :&ensp;<code>str</code></dt>
+<dd>'full': One of 'seed', 'full', 'rp15', 'rp35', 'rp55',
+'rp75', 'uniprot', 'ncbi' or 'meta'.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd>True if the download was successful or False otherwise.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def from_pfam(
+    pfam_acc:str,
+    outfile:str,
+    msa_type:str=&#39;full&#39;
+  ) -&gt; bool:
+  &#34;&#34;&#34;
+  Download an MSA from pfam database.
+
+  Retrieves the requiered MSA for the accession given into a file.
+
+  Args:
+    pfam_acc (str): The pFam accession to download.
+    outfile (str): The path of the output file.
+    msa_type (str): &#39;full&#39;: One of &#39;seed&#39;, &#39;full&#39;, &#39;rp15&#39;, &#39;rp35&#39;, &#39;rp55&#39;,
+      &#39;rp75&#39;, &#39;uniprot&#39;, &#39;ncbi&#39; or &#39;meta&#39;.
+
+  Returns:
+    bool: True if the download was successful or False otherwise.
+  &#34;&#34;&#34;
+  tmp_dir = mkdtemp()
+  gz_temp = _download_pfam(pfam_acc, msa_type, tmp_dir)
+  status = _extract_pfam(gz_temp, outfile)
+  rmtree(tmp_dir)
+  return status</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.gap_content"><code class="name flex">
+<span>def <span class="ident">gap_content</span></span>(<span>msa_data: List[Tuple[str, str]]) ‑> float</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return the fraction of the characters that are gaps.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>List[Tuple[str, str]]</code></dt>
+<dd>msa_data is list of tuples (id, seq)</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code></dt>
+<dd>The gap content of the MSA.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gap_content(msa_data: List[Tuple[str, str]]) -&gt; float:
+  &#34;&#34;&#34;
+  Return the fraction of the characters that are gaps.
+
+  Args:
+    msa_data (List[Tuple[str, str]]): msa_data is list of tuples (id, seq)
+
+  Returns:
+    float: The gap content of the MSA.
+  &#34;&#34;&#34;
+  counts = ((len(seq), seq.count(&#34;-&#34;))
+    for _, seq in msa_data)
+  total, gaps = map(sum, zip(*counts))
+  return float(gaps)/total</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.gap_content_by_column"><code class="name flex">
+<span>def <span class="ident">gap_content_by_column</span></span>(<span>msa_data: Union[List[Tuple[str, str]], List[str]]) ‑> List[float]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return the fraction of the characters that are gaps for each column of the
+alignment.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>List[Union[Tuple[str, str], str]]</code></dt>
+<dd>is list of tuples (id, seq) or
+a list of sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gap_content_by_column(
+    msa_data: Union[List[Tuple[str, str]], List[str]]
+  ) -&gt; List[float]:
+  &#34;&#34;&#34;
+  Return the fraction of the characters that are gaps for each column of the
+  alignment.
+
+  Args:
+    msa_data (List[Union[Tuple[str, str], str]]): is list of tuples (id, seq) or
+      a list of sequences.
+  &#34;&#34;&#34;
+  nseqs = len(msa_data)
+  counts = []
+  mcounts = 0
+  msa_data = [
+    x[1] if isinstance(x, tuple) else x
+    for x in msa_data
+  ]
+  for sequence in msa_data:
+    for i, value in enumerate((1 if c == &#39;-&#39; else 0 for c in sequence)):
+      if i &lt; mcounts:
+        counts[i] += value
+      else:
+        counts.append(value)
+        mcounts += 1
+  counts = [
+    float(c)/nseqs
+    for c in counts
+  ]
+  return counts</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.gapstrip"><code class="name flex">
+<span>def <span class="ident">gapstrip</span></span>(<span>msa_file: str, use_reference: bool = True, msa_format: str = 'fasta') ‑> List[Bio.SeqRecord.SeqRecord]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Strips the gaps of an MSA.</p>
+<p>Returns a list of SeqRecord objects from biopython.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>The input MSA data.</dd>
+<dt><strong><code>use_reference</code></strong> :&ensp;<code>bool</code></dt>
+<dd>if True the first sequence is used as reference
+and any position containing a gap in it is removed from all sequences.
+If False, only columns that contains gaps en every sequence are removed.
+Defaults to True.</dd>
+<dt><strong><code>msa_format</code></strong> :&ensp;<code>str</code></dt>
+<dd>Any format recognized by Bio.SeqIO. Defaults to "fasta".</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>List[SeqRecord]</code></dt>
+<dd>The Gapstripped sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gapstrip(
+    msa_file:str,
+    use_reference:bool=True,
+    msa_format:str=&#39;fasta&#39;
+  ) -&gt; List[SeqRecord]:
+  &#34;&#34;&#34;
+  Strips the gaps of an MSA.
+
+  Returns a list of SeqRecord objects from biopython.
+
+  Args:
+    msa_file (str): The input MSA data.
+    use_reference (bool): if True the first sequence is used as reference
+      and any position containing a gap in it is removed from all sequences.
+      If False, only columns that contains gaps en every sequence are removed.
+      Defaults to True.
+    msa_format (str): Any format recognized by Bio.SeqIO. Defaults to &#34;fasta&#34;.
+
+  Returns:
+    List[SeqRecord]: The Gapstripped sequences.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    records = [
+      (r.id, str(r.seq), r.description)
+      for r in SeqIO.parse(handle, msa_format)
+    ]
+  gs_result = gapstrip_sequences(
+    [s for _, s, _ in records],
+    use_reference
+  )
+  seq_ids = (i for i, _, _ in records)
+  seq_desc = (i for _, _, i in records)
+  return [
+    SeqRecord(
+      id=i,
+      seq=Seq(s),
+      description=d
+    )
+    for i, s, d in zip(seq_ids, gs_result, seq_desc)
+  ]</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.gapstrip_sequences"><code class="name flex">
+<span>def <span class="ident">gapstrip_sequences</span></span>(<span>sequences: list, use_reference=True) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Strips the gaps of list of sequences.</p>
+<p>All sequences are assumed to have the same length</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>sequences</code></strong> :&ensp;<code>list[str]</code></dt>
+<dd>The sequences to gapstrip.</dd>
+<dt><strong><code>use_reference</code></strong> :&ensp;<code>_type_</code></dt>
+<dd>if True the first sequence is used as reference
+and any position containing a gap in it is removed from all sequences.
+If False, only columns that contains gaps en every sequence are removed.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[str]</code></dt>
+<dd>Returns a list of stripped sequences in the same order as the
+input sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def gapstrip_sequences(
+    sequences:list[str],
+    use_reference=True
+  ) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Strips the gaps of list of sequences.
+
+  All sequences are assumed to have the same length
+
+  Args:
+    sequences (list[str]): The sequences to gapstrip.
+    use_reference (_type_): if True the first sequence is used as reference
+      and any position containing a gap in it is removed from all sequences.
+      If False, only columns that contains gaps en every sequence are removed.
+
+  Returns:
+    list[str]: Returns a list of stripped sequences in the same order as the
+      input sequences.
+  &#34;&#34;&#34;
+  template = _gapstrip_template(sequences, use_reference)
+  return [
+    &#34;&#34;.join([c for t, c in zip(template, seq) if not t])
+    for seq in sequences
+  ]</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.generate_cigar_string"><code class="name flex">
+<span>def <span class="ident">generate_cigar_string</span></span>(<span>target: str, query: str) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generate a CIGAR string for an alignment of two sequences.
+The generated CIGAR string might not be totally compliant with the standards
+with SOFT and HARD clipping.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>target</code></strong> :&ensp;<code>str</code></dt>
+<dd>A gapped aligned sequence.</dd>
+<dt><strong><code>query</code></strong> :&ensp;<code>str</code></dt>
+<dd>A gapped aligned sequence.</dd>
+</dl>
+<h2 id="throws">Throws</h2>
+<p>ValueError: If the target and the query have different lengths or both have
+a gap in the same column.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>A cigar String.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_cigar_string(target:str, query:str) -&gt; str:
+  &#34;&#34;&#34;
+  Generate a CIGAR string for an alignment of two sequences.
+  The generated CIGAR string might not be totally compliant with the standards
+  with SOFT and HARD clipping.
+
+  Args:
+    target (str): A gapped aligned sequence.
+    query (str): A gapped aligned sequence.
+
+  Throws:
+    ValueError: If the target and the query have different lengths or both have
+      a gap in the same column.
+
+  Returns:
+    str: A cigar String.
+  &#34;&#34;&#34;
+  cigar = _aln_to_cigar_aln(target, query)
+  cigar = _compress_cigar_chars(cigar)
+  return cigar</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.get_terminal_gaps"><code class="name flex">
+<span>def <span class="ident">get_terminal_gaps</span></span>(<span>sequence: str) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Extract terminal gaps</p>
+<p>Gets a True/False list for a sequence indicating which positions are
+terminal gaps.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>sequence</code></strong> :&ensp;<code>str</code></dt>
+<dd>A gapped sequence.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[bool]</code></dt>
+<dd>A list where True corresponds to terminal gaps.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_terminal_gaps(sequence:str) -&gt; list[bool]:
+  &#34;&#34;&#34;
+  Extract terminal gaps
+
+  Gets a True/False list for a sequence indicating which positions are
+  terminal gaps.
+
+  Args:
+    sequence (str): A gapped sequence.
+
+  Returns:
+    list[bool]: A list where True corresponds to terminal gaps.
+  &#34;&#34;&#34;
+  _, terminal_gaps_fw = reduce(
+    lambda a, b: (a[0] and b == &#39;-&#39;, a[1] + [a[0] and b == &#39;-&#39;]),
+    sequence,
+    (True, [])
+  )
+  _, terminal_gaps_rv = reduce(
+    lambda a, b: (a[0] and b == &#39;-&#39;, a[1] + [a[0] and b == &#39;-&#39;]),
+    reversed(sequence),
+    (True, [])
+  )
+  return [a or b for a, b in zip(terminal_gaps_fw, reversed(terminal_gaps_rv))]</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.map_ref_to_sequence"><code class="name flex">
+<span>def <span class="ident">map_ref_to_sequence</span></span>(<span>msa_data: list, sequence: str, start: int = 1, end: Optional[int] = None) ‑> dict</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Align the reference sequence or a substring from it to a another given
+sequence. Substring alignment is useful for paired MSA.</p>
+<p>Reference sequence is assumed to be the first sequence in the alignment.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>list[tuple[str, str]]</code></dt>
+<dd>MSA content as a List[Tuple[str, str]].</dd>
+<dt><strong><code>sequence</code></strong> :&ensp;<code>str</code></dt>
+<dd>An ungapped protein sequence to be used as destination
+of mapping.</dd>
+<dt><strong><code>start</code></strong> :&ensp;<code>int</code></dt>
+<dd>Index of the starting position of the MSA which will be
+mapped. Starting at 1.</dd>
+<dt><strong><code>end</code></strong> :&ensp;<code>Optional[int]</code></dt>
+<dd>Index of the last position of the MSA which will be
+mapped. Starting at 1.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict[int, int]</code></dt>
+<dd>A dictionary that maps the positions of the given sequence
+to the reference sequence in the MSA.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def map_ref_to_sequence(
+    msa_data:list[tuple[str, str]],
+    sequence:str,
+    start:int=1,
+    end:Optional[int]=None
+  ) -&gt; dict[int, int]:
+  &#34;&#34;&#34;
+  Align the reference sequence or a substring from it to a another given
+  sequence. Substring alignment is useful for paired MSA.
+
+  Reference sequence is assumed to be the first sequence in the alignment.
+
+  Args:
+    msa_data (list[tuple[str, str]]): MSA content as a List[Tuple[str, str]].
+    sequence (str): An ungapped protein sequence to be used as destination
+      of mapping.
+    start (int): Index of the starting position of the MSA which will be
+      mapped. Starting at 1.
+    end (Optional[int]): Index of the last position of the MSA which will be
+      mapped. Starting at 1.
+
+  Returns:
+    dict[int, int]: A dictionary that maps the positions of the given sequence
+      to the reference sequence in the MSA.
+  &#34;&#34;&#34;
+  ref = msa_data[0][1]
+  end = end if end else len(ref)
+  ref = ref[start-1: end].replace(&#34;-&#34;, &#34;&#34;)
+  return align_sequence_to_sequence(ref, sequence)</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.map_reference_to_sequence"><code class="name flex">
+<span>def <span class="ident">map_reference_to_sequence</span></span>(<span>msa_file: str, sequence: str, start: int = 1, end: Optional[int] = None) ‑> dict</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Align the reference sequence or a substring from it to a another given
+sequence. Substring alignment is useful for paired MSA.</p>
+<p>Reference sequence is assumed to be the first sequence in the alignment.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>Path to a fasta file.</dd>
+<dt><strong><code>sequence</code></strong> :&ensp;<code>int</code></dt>
+<dd>An ungapped protein sequence to be used as
+destination of mapping.</dd>
+<dt><strong><code>start</code></strong> :&ensp;<code>int</code></dt>
+<dd>Index of the starting position of the MSA which will be
+mapped. Starting at 1.</dd>
+<dt><strong><code>end</code></strong> :&ensp;<code>Optional[int]</code></dt>
+<dd>Index of the last position of the MSA which will be
+mapped. Starting at 1.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict[int, int]</code></dt>
+<dd>A dictionary that maps the positions of the given sequence
+to the reference sequence in the MSA.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@deprecated
+def map_reference_to_sequence(
+    msa_file:str,
+    sequence:str,
+    start:int=1,
+    end:Optional[int]=None
+  ) -&gt; dict[int, int]:
+  &#34;&#34;&#34;
+  Align the reference sequence or a substring from it to a another given
+  sequence. Substring alignment is useful for paired MSA.
+
+  Reference sequence is assumed to be the first sequence in the alignment.
+
+  Args:
+    msa_file (str): Path to a fasta file.
+    sequence (int): An ungapped protein sequence to be used as
+      destination of mapping.
+    start (int): Index of the starting position of the MSA which will be
+      mapped. Starting at 1.
+    end (Optional[int]): Index of the last position of the MSA which will be
+      mapped. Starting at 1.
+
+  Returns:
+    dict[int, int]: A dictionary that maps the positions of the given sequence
+      to the reference sequence in the MSA.
+  &#34;&#34;&#34;
+  ref = str(next(SeqIO.parse(msa_file, &#34;fasta&#34;)).seq)
+  end = end if end else len(ref)
+  ref = ref[start-1: end].replace(&#34;-&#34;, &#34;&#34;)
+  return align_sequence_to_sequence(ref, sequence)</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.map_sequence_to_reference"><code class="name flex">
+<span>def <span class="ident">map_sequence_to_reference</span></span>(<span>msa_file: str, sequence: str, msa_format: str = 'fasta', mismatch_tolerance: float = inf, gap_tolerance: float = inf) ‑> dict</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a mapping from a custom ungapped sequence and the reference (first)
+sequence of and MSA.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>The input MSA file.</dd>
+<dt><strong><code>sequence</code></strong> :&ensp;<code>str</code></dt>
+<dd>An ungapped protein sequence to be used as the source of the
+mapping.</dd>
+<dt><strong><code>msa_format</code></strong> :&ensp;<code>str</code></dt>
+<dd>The format of the alignment. Accept any value accepted by
+Biopython.</dd>
+<dt><strong><code>mismatch_tolerance</code></strong> :&ensp;<code>float</code></dt>
+<dd>A value score to mismatches.</dd>
+<dt><strong><code>gap_tolerance</code></strong> :&ensp;<code>float</code></dt>
+<dd>A value score for gaps.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict[int, dict[str, Any]]</code></dt>
+<dd>Returns a dict from positions of the custom
+sequence to the positions of the reference sequence. The values of the
+dict are dicts that contains the position number of the target sequence,
+the character of the custom source sequence and the character of the
+target sequences, under the keys: 'position', 'source' and 'target'
+respectively.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def map_sequence_to_reference(
+    msa_file:str,
+    sequence:str,
+    msa_format:str=&#39;fasta&#39;,
+    mismatch_tolerance:float=float(&#34;inf&#34;),
+    gap_tolerance:float=float(&#34;inf&#34;)
+  ) -&gt; dict[int, dict[str, Any]]:
+  &#34;&#34;&#34;
+  Creates a mapping from a custom ungapped sequence and the reference (first)
+  sequence of and MSA.
+
+  Args:
+    msa_file (str): The input MSA file.
+    sequence (str): An ungapped protein sequence to be used as the source of the
+      mapping.
+    msa_format (str): The format of the alignment. Accept any value accepted by
+      Biopython.
+    mismatch_tolerance (float): A value score to mismatches.
+    gap_tolerance (float): A value score for gaps.
+
+  Returns:
+    dict[int, dict[str, Any]]: Returns a dict from positions of the custom
+      sequence to the positions of the reference sequence. The values of the
+      dict are dicts that contains the position number of the target sequence,
+      the character of the custom source sequence and the character of the
+      target sequences, under the keys: &#39;position&#39;, &#39;source&#39; and &#39;target&#39;
+      respectively.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    reference = next(SeqIO.parse(handle, format=msa_format)).seq
+    handle.close()
+    ungapped_ref = &#34;&#34;.join([s for s in reference if not s == &#39;-&#39;])
+    aligned = align_sequence_to_sequence(sequence, ungapped_ref)
+    mismatches = _count_mismatches(aligned, sequence, ungapped_ref)
+    gaps = _count_gaps(aligned, sequence, ungapped_ref)
+    if (
+      mismatches &lt;= mismatch_tolerance and
+      gaps &lt;= gap_tolerance
+    ):
+      ungapped_map = {v: k for k, v in map_to_ungapped(reference).items()}
+      positions = {a: ungapped_map[aligned[a]] for a in aligned}
+      sources = {a: sequence[a-1] for a in aligned}
+      targets = {a: reference[positions[a]-1].upper() for a in aligned}
+      return {
+        a: {
+          &#39;position&#39;: positions[a],
+          &#39;source&#39;: sources[a],
+          &#39;target&#39;: targets[a],
+        }
+        for a in aligned
+      }
+  return {}</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.msa_to_list"><code class="name flex">
+<span>def <span class="ident">msa_to_list</span></span>(<span>msa_data: Dict[str, str]) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns msa data as a list of lists of chars</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>MsaDescSeqDict</code></dt>
+<dd>The input MSA data.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[list[str]]</code></dt>
+<dd>A list of lists of chars.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def msa_to_list(msa_data: MsaDescSeqDict) -&gt; list[list[str]]:
+  &#34;&#34;&#34;
+  Returns msa data as a list of lists of chars
+
+  Args:
+    msa_data (MsaDescSeqDict): The input MSA data.
+
+  Returns:
+    list[list[str]]: A list of lists of chars.
+  &#34;&#34;&#34;
+  return [list(s) for s in msa_data.values()]</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.pairwise_aln_stats"><code class="name flex">
+<span>def <span class="ident">pairwise_aln_stats</span></span>(<span>aln1: str, aln2: str) ‑> tuple</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Count gaps, matches, mismatches and the longest run of matches between two
+aligned sequences.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>aln1</code></strong> :&ensp;<code>str</code></dt>
+<dd>A aligned sequence.</dd>
+<dt><strong><code>aln2</code></strong> :&ensp;<code>str</code></dt>
+<dd>A aligned sequenec.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>PairwiseAlignmentStats</code></dt>
+<dd>A tuple with alignment stats.</dd>
+</dl>
+<h2 id="throws">Throws</h2>
+<p>ValueError: If sequences has different lengths.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pairwise_aln_stats(aln1:str, aln2:str) -&gt; PairwiseAlignmentStats:
+  &#34;&#34;&#34;
+  Count gaps, matches, mismatches and the longest run of matches between two
+  aligned sequences.
+
+  Args:
+    aln1 (str): A aligned sequence.
+    aln2 (str): A aligned sequenec.
+
+  Returns:
+    PairwiseAlignmentStats: A tuple with alignment stats.
+
+  Throws:
+    ValueError: If sequences has different lengths.
+  &#34;&#34;&#34;
+  if not len(aln1) == len(aln2):
+    raise ValueError(&#34;Aligned sequences have different length&#34;)
+  aln1 = aln1.upper()
+  aln2 = aln2.upper()
+  gaps = 0
+  matches = 0
+  mismatches = 0
+  longest_run = 0
+  run = 0
+  previus_is_match = False
+  for char1, char2 in zip(aln1, aln2):
+    is_gap = char1 == &#39;-&#39; or char2 == &#39;-&#39;
+    is_diff_char = char1 != char2
+    is_mismatch = not is_gap and is_diff_char
+    is_match = not is_gap and not is_diff_char
+    run = ((run if previus_is_match else 0) + 1) if is_match else 0
+    previus_is_match = is_match
+    gaps += 1 if is_gap else 0
+    mismatches += 1 if is_mismatch else 0
+    matches += 1 if is_match else 0
+    longest_run = longest_run if longest_run &gt;= run else run
+  return gaps, matches, mismatches, longest_run</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.pick_reference"><code class="name flex">
+<span>def <span class="ident">pick_reference</span></span>(<span>reference_sequence: str, msa_file: str, msa_format: str = 'fasta', minimum_longest_run: int = 5) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Selects a sequence from a MSA to be the reference sequence.</p>
+<p>The sequence selected is the most similar to a given sequence.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>reference_sequence</code></strong> :&ensp;<code>str</code></dt>
+<dd>a string with the sequence to be used to
+compare to get the reference sequence.</dd>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>the path of the msa file, it can have any format
+interpreted by biopython.</dd>
+<dt><strong><code>msa_format</code></strong> :&ensp;<code>str</code></dt>
+<dd>the format of the msa_file.</dd>
+<dt><strong><code>minimum_longest_run</code></strong> :&ensp;<code>int</code></dt>
+<dd>the picked reference sequence should have</dd>
+</dl>
+<p>at least this many number of consecutive matches.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[tuple[str, str, str]]</code></dt>
+<dd>The selected reference as a tuple of the
+sequence identifier, the sequemce, and the type of match between the
+sequence and the reference.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pick_reference(
+    reference_sequence:str,
+    msa_file:str,
+    msa_format:str=&#39;fasta&#39;,
+    minimum_longest_run:int=5
+  ) -&gt; list[tuple[str, str, str]]:
+  &#34;&#34;&#34;
+  Selects a sequence from a MSA to be the reference sequence.
+
+  The sequence selected is the most similar to a given sequence.
+
+  Args:
+    reference_sequence (str): a string with the sequence to be used to
+      compare to get the reference sequence.
+    msa_file (str): the path of the msa file, it can have any format
+      interpreted by biopython.
+    msa_format (str): the format of the msa_file.
+    minimum_longest_run (int): the picked reference sequence should have
+    at least this many number of consecutive matches.
+
+  Returns:
+    list[tuple[str, str, str]]: The selected reference as a tuple of the
+      sequence identifier, the sequemce, and the type of match between the
+      sequence and the reference.
+  &#34;&#34;&#34;
+  # pylint: disable=too-many-locals
+  reference_sequence = reference_sequence.upper()
+  msa_data = [(seq_id, seq.replace(&#34;-&#34;, &#34;&#34;).upper())
+        for seq_id, seq in read_msa(msa_file, msa_format=msa_format)]
+  # Case 1: Identical sequences
+  identical = [(seq_id, reference_sequence, &#34;IDENTICAL_MATCH&#34;)
+    for seq_id, seq in msa_data
+    if seq == reference_sequence]
+  if identical:
+    return identical
+  # Case 2: Non identical sequences
+  max_score = -float(&#34;inf&#34;)
+  max_aln = []
+  for seq_id, seq in msa_data:
+    try:
+      aligner = default_aligner()
+      alns = aligner.align(
+        seq.upper(),
+        reference_sequence.upper(),
+      )
+    except SystemError:
+      warnings.warn(
+        f&#34;Sequences couldn&#39;t be aligned: {seq} {reference_sequence}&#34;,
+          UserWarning
+        )
+      alns = []
+    if not isinstance(alns, PairwiseAlignments):
+      return []
+    if alns:
+      alignment:Alignment = alns[0]
+      aln1 = alignment[1, :]
+      aln2 = alignment[0, :]
+      if not isinstance(aln1, str) or not isinstance(aln2, str):
+        continue
+      score = getattr(alignment, &#34;score&#34;)
+      if not isinstance(score, float):
+        continue
+      score = float(score)
+      if score &gt;= max_score:
+        if score &gt; max_score:
+          max_aln, max_score = [], score
+        aln1, aln2 = strip_terminal_gaps([aln1, aln2])
+        gaps, _, mismatches, run = pairwise_aln_stats(aln1, aln2)
+        if run &gt;= minimum_longest_run:
+          match_type = (
+            &#34;IDENTICAL_SUB_MATCH&#34;
+            if gaps == 0 and mismatches == 0
+            else &#34;NON_IDENTICAL_MATCH&#34;)
+          max_aln.append((seq_id, seq, match_type))
+  return max_aln</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.pop_reference"><code class="name flex">
+<span>def <span class="ident">pop_reference</span></span>(<span>msa_data: Union[Dict[str, str], List[Tuple[str, str]]], reference_id: str) ‑> List[Tuple[str, str]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Puts a reference sequence as the first sequence of a msa.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>Union[MsaDescSeqDict, MsaDescSeqList]</code></dt>
+<dd>Input MSA data.</dd>
+<dt><strong><code>reference_id</code></strong> :&ensp;<code>str</code></dt>
+<dd>The identifier of the reference to pop.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaDescSeqList</code></dt>
+<dd>Returns a list of tuples of sequence id and sequences.</dd>
+</dl>
+<h2 id="throws">Throws</h2>
+<p>ValueError: If MSA data is not recognized or reference identifier not in
+MSA.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def pop_reference(
+    msa_data: Union[MsaDescSeqDict, MsaDescSeqList],
+    reference_id: str
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Puts a reference sequence as the first sequence of a msa.
+
+  Args:
+    msa_data (Union[MsaDescSeqDict, MsaDescSeqList]): Input MSA data.
+    reference_id (str): The identifier of the reference to pop.
+
+  Returns:
+    MsaDescSeqList: Returns a list of tuples of sequence id and sequences.
+
+  Throws:
+    ValueError: If MSA data is not recognized or reference identifier not in
+      MSA.
+  &#34;&#34;&#34;
+  if isinstance(msa_data, list):
+    pass
+  elif isinstance(msa_data, dict):
+    msa_data = list(msa_data.items())
+  else:
+    raise ValueError(&#34;msa_data should be a list or dict&#34;)
+
+  results = [(seq_id, seq) for seq_id, seq in msa_data
+    if not seq_id == reference_id]
+  first = [(seq_id, seq) for seq_id, seq in msa_data
+    if seq_id == reference_id]
+  if first:
+    return first + results
+  raise ValueError(f&#34;Sequence: {reference_id} not in msa data&#34;)</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.print_dict"><code class="name flex">
+<span>def <span class="ident">print_dict</span></span>(<span>input_msa: Dict[str, Any], depth=0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Prints a dictionary formated to be outputed to the console.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>input</code></strong> :&ensp;<code>Dict[str, Any]</code></dt>
+<dd>Input MSA.</dd>
+<dt><strong><code>depth</code></strong> :&ensp;<code>int</code>, optional</dt>
+<dd>A depth value that shows how indented is the output
+text. Defaults to 0.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def print_dict(input_msa: Dict[str, Any], depth = 0):
+  &#34;&#34;&#34;
+  Prints a dictionary formated to be outputed to the console.
+
+  Args:
+      input (Dict[str, Any]): Input MSA.
+      depth (int, optional): A depth value that shows how indented is the output
+        text. Defaults to 0.
+  &#34;&#34;&#34;
+  for key, value in input_msa.items():
+    if not isinstance(value, dict):
+      print(f&#34;# {&#39; &#39;*(depth)}{key}: {value}&#34;)
+    if isinstance(value, dict):
+      print(f&#34;# {&#39; &#39;*(depth)}{key}:&#34;)
+      print_dict(value, depth=depth+2)</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.read_msa"><code class="name flex">
+<span>def <span class="ident">read_msa</span></span>(<span>msa_file: str, msa_format: str = 'fasta', as_dict: bool = False) ‑> Union[List[str], List[Tuple[str, str]], Dict[str, str], str]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Reads a complete msa_file.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>The path of the input msa file.</dd>
+<dt><strong><code>msa_format</code></strong> :&ensp;<code>str</code></dt>
+<dd>The format of the msa file. Can be any of the
+supported by biopython. Defaults to "fasta".</dd>
+<dt><strong><code>as_dict</code></strong> :&ensp;<code>bool</code></dt>
+<dd>If True returns a dict from id to sequence. Defaults to
+False.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaTypes</code></dt>
+<dd>Return a list of tuples with with id and sequences or a dict from
+id to sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_msa(
+    msa_file:str,
+    msa_format:str=&#39;fasta&#39;,
+    as_dict:bool=False
+  ) -&gt; MsaTypes:
+  &#34;&#34;&#34;
+  Reads a complete msa_file.
+
+  Args:
+    msa_file (str): The path of the input msa file.
+    msa_format (str): The format of the msa file. Can be any of the
+      supported by biopython. Defaults to &#34;fasta&#34;.
+    as_dict (bool): If True returns a dict from id to sequence. Defaults to
+      False.
+
+  Returns:
+    MsaTypes: Return a list of tuples with with id and sequences or a dict from
+      id to sequences.
+  &#34;&#34;&#34;
+  with open(msa_file, &#34;r&#34;, encoding=&#34;utf-8&#34;) as handle:
+    records = [(r.id, str(r.seq)) for r in SeqIO.parse(handle, msa_format)]
+  if as_dict:
+    return dict(records)
+  return records</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.shuffle_msa"><code class="name flex">
+<span>def <span class="ident">shuffle_msa</span></span>(<span>msa_data: Dict[str, str], by: str = 'column', keep_gaps: bool = True) ‑> dict</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Shuffle the data of a msa.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>MsaDescSeqDict</code></dt>
+<dd>input MSA data.</dd>
+<dt><strong><code>by</code></strong> :&ensp;<code>str</code></dt>
+<dd>How to shuffle, by 'column', by 'row', or 'both'.</dd>
+<dt><strong><code>keep_gaps</code></strong> :&ensp;<code>bool</code></dt>
+<dd>Keep gaps positions.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict[str, list[str]]</code></dt>
+<dd>The shuffled MSA.</dd>
+</dl>
+<h2 id="throws">Throws</h2>
+<p>ValueError: If by argument is not recognized.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def shuffle_msa(
+    msa_data:MsaDescSeqDict,
+    by:str=[&#39;column&#39;, &#39;row&#39;, &#39;both&#39;][0],
+    keep_gaps:bool=True
+  ) -&gt; dict[str, list[str]]:
+  &#34;&#34;&#34;
+  Shuffle the data of a msa.
+
+  Args:
+    msa_data (MsaDescSeqDict): input MSA data.
+    by (str): How to shuffle, by &#39;column&#39;, by &#39;row&#39;, or &#39;both&#39;.
+    keep_gaps (bool): Keep gaps positions.
+
+  Returns:
+    dict[str, list[str]]: The shuffled MSA.
+
+  Throws:
+    ValueError: If by argument is not recognized.
+  &#34;&#34;&#34;
+  #pylint: disable=invalid-name
+  shuffler = shuffle_without_gaps if keep_gaps else shuffle_with_gaps
+  if by == &#39;column&#39;:
+    col_data = columns_to_rows(msa_to_list(msa_data))
+    col_data = [
+      shuffler(col)
+      for col in col_data
+    ]
+    col_data = columns_to_rows(col_data)
+    result = dict(zip(msa_data.keys(), col_data))
+    return result
+  if by == &#39;row&#39;:
+    row_data = msa_to_list(msa_data)
+    row_data = {
+      name: shuffler(row)
+      for name, row in zip(msa_data.keys(), row_data)
+    }
+    return row_data
+  if by == &#39;both&#39;:
+    row_data = msa_to_list(msa_data)
+    row_data = [
+      shuffler(row)
+      for row in row_data
+    ]
+    col_data = columns_to_rows(row_data)
+    col_data = [
+      shuffler(col)
+      for col in col_data
+    ]
+    col_data = columns_to_rows(col_data)
+    return dict(zip(msa_data.keys(), col_data))
+  raise ValueError(&#34;Argument &#39;by&#39; not recognized&#34;)</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.shuffle_with_gaps"><code class="name flex">
+<span>def <span class="ident">shuffle_with_gaps</span></span>(<span>char_list: list) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Shufle characters in alignment, can alter gap positions</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>char_list</code></strong> :&ensp;<code>list[str]</code></dt>
+<dd>Input sequence as a list of characters.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[str]</code></dt>
+<dd>The shuffled sequence.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def shuffle_with_gaps(char_list: list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Shufle characters in alignment, can alter gap positions
+
+  Args:
+    char_list (list[str]): Input sequence as a list of characters.
+
+  Returns:
+    list[str]: The shuffled sequence.
+  &#34;&#34;&#34;
+  shuffle(char_list)
+  return char_list</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.shuffle_without_gaps"><code class="name flex">
+<span>def <span class="ident">shuffle_without_gaps</span></span>(<span>char_list: list) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Shuffle chars in a list, without moving the gaps out of place</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>char_list</code></strong> :&ensp;<code>list[str]</code></dt>
+<dd>The input gapped sequence as a list of characters.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[str]</code></dt>
+<dd>The shuffle sequence.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def shuffle_without_gaps(char_list: list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Shuffle chars in a list, without moving the gaps out of place
+
+  Args:
+    char_list (list[str]): The input gapped sequence as a list of characters.
+
+  Returns:
+    list[str]: The shuffle sequence.
+  &#34;&#34;&#34;
+  gap_indexes = [i for i, s in enumerate(char_list) if s == &#34;-&#34;]
+  chars = [c for c in char_list if c != &#39;-&#39;]
+  shuffle(chars)
+  for g_index in gap_indexes:
+    chars.insert(g_index, &#34;-&#34;)
+  return chars</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.strip_terminal_gaps"><code class="name flex">
+<span>def <span class="ident">strip_terminal_gaps</span></span>(<span>alns: list) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Strips terminal gaps from a collection of sequences.</p>
+<p>Given a list (or other iterable of gapped sequences) returns a new
+list of sequences that correspond to the original ones without the columns
+containing terminal gaps in at least one sequence.</p>
+<p>Terminal gaps are those gaps that starts from the beggining of the sequence
+and continues until a non-gap char, and those gaps the starts from the end
+and continues backward until a non-gap char.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>alns</code></strong> :&ensp;<code>list[str]</code></dt>
+<dd>A list of sequences.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>list[str]</code></dt>
+<dd>A list of sequences.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def strip_terminal_gaps(alns:list[str]) -&gt; list[str]:
+  &#34;&#34;&#34;
+  Strips terminal gaps from a collection of sequences.
+
+  Given a list (or other iterable of gapped sequences) returns a new
+  list of sequences that correspond to the original ones without the columns
+  containing terminal gaps in at least one sequence.
+
+  Terminal gaps are those gaps that starts from the beggining of the sequence
+  and continues until a non-gap char, and those gaps the starts from the end
+  and continues backward until a non-gap char.
+
+  Args:
+    alns (list[str]): A list of sequences.
+
+  Returns:
+    list[str]: A list of sequences.
+  &#34;&#34;&#34;
+  alns = [aln.upper() for aln in alns]
+  terminal_gaps = (get_terminal_gaps(aln) for aln in alns)
+  valid = [not any(gaps_in_col) for gaps_in_col in zip(*terminal_gaps)]
+  new_alns = [&#34;&#34;.join(c for v, c in zip(valid, aln) if v) for aln in alns]
+  return new_alns</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.subset"><code class="name flex">
+<span>def <span class="ident">subset</span></span>(<span>msa_data: List[Tuple[str, str]], columns: list) ‑> List[Tuple[str, str]]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Subset a MSA by columns.</p>
+<p>Creates a new MSA getting some columns of a bigger MSA.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>MsaDescSeqList</code></dt>
+<dd>a list of tuples with id and sequence from a MSA.</dd>
+<dt><strong><code>columns</code></strong> :&ensp;<code>list[int]</code></dt>
+<dd>An object that supports the 'in' operator. Position
+numbers of the source MSA are checked if they are 'in' the columns
+object. If True, the column is kept, if false. Postions are 1-based
+indexes.</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>MsaDescSeqList</code></dt>
+<dd>A new MSA data with the selected columns.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def subset(
+    msa_data:MsaDescSeqList,
+    columns:list[int]
+  ) -&gt; MsaDescSeqList:
+  &#34;&#34;&#34;
+  Subset a MSA by columns.
+
+  Creates a new MSA getting some columns of a bigger MSA.
+
+  Args:
+    msa_data (MsaDescSeqList): a list of tuples with id and sequence from a MSA.
+    columns (list[int]): An object that supports the &#39;in&#39; operator. Position
+      numbers of the source MSA are checked if they are &#39;in&#39; the columns
+      object. If True, the column is kept, if false. Postions are 1-based
+      indexes.
+
+  Returns:
+    MsaDescSeqList: A new MSA data with the selected columns.
+  &#34;&#34;&#34;
+  new_msa = [(
+    seq_id,
+    &#34;&#34;.join([x for i, x in enumerate(seq) if i+1 in columns]))
+      for seq_id, seq in msa_data]
+  return new_msa</code></pre>
+</details>
+</dd>
+<dt id="xi_covutils.msa.write_msa"><code class="name flex">
+<span>def <span class="ident">write_msa</span></span>(<span>msa_data: Union[Dict[str, str], List[Tuple[str, str]]], msa_file: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Writes a msa to file.</p>
+<p>Only support fasta format at the moment.
+Input data can be:
+- a list of tuples of sequence id and sequence.
+- a dict from sequence id to sequence.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>msa_data</code></strong> :&ensp;<code>Union[MsaDescSeqDict, MsaDescSeqList]</code></dt>
+<dd>Input sequence data.</dd>
+<dt><strong><code>msa_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>The output file.</dd>
+</dl>
+<h2 id="throws">Throws</h2>
+<p>ValueError: If input data is not recognized.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def write_msa(
+    msa_data: Union[MsaDescSeqDict, MsaDescSeqList],
+    msa_file: str
+  ):
+  &#34;&#34;&#34;
+  Writes a msa to file.
+
+  Only support fasta format at the moment.
+  Input data can be:
+  - a list of tuples of sequence id and sequence.
+  - a dict from sequence id to sequence.
+
+  Args:
+    msa_data (Union[MsaDescSeqDict, MsaDescSeqList]): Input sequence data.
+    msa_file (str): The output file.
+
+  Throws:
+    ValueError: If input data is not recognized.
+  &#34;&#34;&#34;
+  if isinstance(msa_data, list):
+    seq_iterable = msa_data
+  elif isinstance(msa_data, dict):
+    seq_iterable = msa_data.items()
+  else:
+    raise ValueError(&#34;msa_data should be a list or dict&#34;)
+  with open(msa_file, &#39;w&#39;, encoding=&#34;utf-8&#34;) as handle:
+    for seq_id, seq in seq_iterable:
+      handle.write(f&#34;&gt;{seq_id}\n{seq}\n&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<svg
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:cc="http://creativecommons.org/ns#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:svg="http://www.w3.org/2000/svg"
+xmlns="http://www.w3.org/2000/svg"
+width="150px"
+height="150px"
+viewBox="0 0 120 120"
+version="1.1"
+id="svg8"
+>
+<defs
+id="defs2" />
+<g
+inkscape:label="Capa 1"
+inkscape:groupmode="layer"
+id="layer1"
+transform="translate(-49.587788,-35.413692)">
+<g
+style="opacity:1"
+id="g43" />
+<rect
+ry="0"
+y="35.413692"
+x="49.587788"
+height="120"
+width="120"
+id="rect1194"
+style="fill:#f2f2f2;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
+<path
+d="M 143.10997,48.335014 A 23.33687,23.33687 0 0 0 128.57922,53.410732 9.3925143,9.3925143 0 0 0 124.6267,52.538504 9.3925143,9.3925143 0 0 0 116.34692,57.496844 23.33687,23.33687 0 0 0 97.317517,71.848333 9.3925143,9.3925143 0 0 0 92.808551,79.871748 9.3925143,9.3925143 0 0 0 96.55579,87.378016 23.33687,23.33687 0 0 0 104.9667,99.40209 9.3925143,9.3925143 0 0 0 114.27636,107.54976 9.3925143,9.3925143 0 0 0 121.74186,103.85703 23.33687,23.33687 0 0 0 137.80195,94.397092 23.33687,23.33687 0 0 0 143.10997,95.009029 23.33687,23.33687 0 0 0 166.44649,71.672512 23.33687,23.33687 0 0 0 163.74975,60.781941 9.3925143,9.3925143 0 0 0 164.03558,58.481047 9.3925143,9.3925143 0 0 0 154.64293,49.088391 9.3925143,9.3925143 0 0 0 151.14763,49.763189 23.33687,23.33687 0 0 0 143.10997,48.335014 Z"
+style="fill:#ccffaa;stroke:#b3ff80;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+id="path204" />
+<path
+transform="matrix(0.26458333,0,0,0.26458333,49.587788,35.413692)"
+d="M 453.54297 200.39648 C 446.1937 200.62707 439.08638 203.12846 433.21289 207.58008 C 430.91728 205.75652 428.53405 204.04891 426.06836 202.46289 C 404.25546 226.81495 369.54952 239.06993 337.27734 233.33594 C 329.64338 242.63365 320.21344 250.42688 309.71289 256.28711 C 303.79521 259.70365 297.50919 262.4106 291.00977 264.42188 C 290.4425 268.47342 290.15828 272.55935 290.1582 276.65039 C 290.15881 303.03414 301.96978 328.03149 322.35156 344.78516 C 322.34536 345.05551 322.34375 345.32528 322.34375 345.5957 C 322.34345 365.20185 338.2376 381.09601 357.84375 381.0957 C 370.1206 381.09514 381.52435 374.75236 388 364.32227 C 404.73439 362.48205 420.59226 355.88946 433.70117 345.32617 C 439.0522 350.88219 446.0304 354.49969 453.54297 355.72852 L 453.54297 200.39648 z "
+style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffd5e5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.55906;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+id="path1240" />
+<path
+transform="matrix(0.26458333,0,0,0.26458333,49.587788,35.413692)"
+d="M 453.54297 196.61914 C 446.38376 196.85036 439.56471 199.30683 433.55273 203.17969 C 431.76797 201.83856 429.99133 200.49123 428.11328 199.2832 L 425.4043 197.54102 L 423.25586 199.93945 C 402.35182 223.27687 368.83504 235.10534 337.93555 229.61523 L 335.75781 229.22461 L 334.35547 230.93555 C 327.03282 239.85409 317.96528 247.35177 307.86914 252.98633 L 307.84766 253 L 307.82422 253.01562 C 302.16184 256.28477 296.13684 258.87887 289.89453 260.81055 L 287.59961 261.51953 L 287.26758 263.89648 C 286.67601 268.12162 286.3809 272.38598 286.38086 276.65234 C 286.38143 303.57551 298.31342 329.00186 318.73633 346.45508 C 319.22052 367.68688 336.50025 384.87925 357.8457 384.87891 C 370.84656 384.87834 382.83772 378.30785 390.13281 367.63477 C 405.96461 365.58082 420.85832 359.35878 433.58984 349.74805 C 439.28859 354.76731 446.13731 358.28237 453.54297 359.50195 L 453.54297 351.88867 C 447.06319 350.69886 441.06249 347.5194 436.42578 342.70508 L 434.02539 340.21094 L 431.33203 342.38086 C 418.78464 352.4917 403.60354 358.80113 387.58594 360.5625 L 385.76367 360.76953 L 384.78906 362.32617 C 379.00011 371.65019 368.82066 377.31787 357.8457 377.31836 C 340.2822 377.31866 326.12474 363.16307 326.125 345.59961 C 326.125 345.35798 326.12729 345.11069 326.13281 344.86914 L 326.17578 343.03125 L 324.75195 341.86328 C 305.2415 325.82588 293.93998 301.90813 293.93945 276.65234 C 293.93949 273.40819 294.2384 270.17468 294.61133 266.95312 C 300.44057 264.97299 306.18055 262.68311 311.55273 259.58594 C 321.87568 253.82484 331.08697 246.15138 338.79297 237.15234 C 370.65427 242.0458 403.95988 230.37486 426.25195 207.24023 C 427.8078 208.31407 429.38656 209.36483 430.86719 210.54102 L 433.16211 212.36328 L 435.49414 210.5918 C 440.71123 206.63769 447.01775 204.40648 453.54297 204.17773 L 453.54297 196.61914 z "
+style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffaacc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.55906;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+id="path1242" />
+<circle
+style="fill:#d40000;stroke:none;stroke-width:0.264583;stop-color:#000000"
+id="path10"
+cx="118.18265"
+cy="76.690811"
+r="6.8130941" />
+<circle
+r="6.8130941"
+cy="73.984428"
+cx="149.74159"
+id="path10-4"
+style="fill:#008080;stroke:none;stroke-width:0.264583;stop-color:#000000" />
+<circle
+r="6.8130941"
+cy="116.56841"
+cx="147.09317"
+id="path10-3"
+style="fill:#008000;stroke:none;stroke-width:0.264583;stop-color:#000000" />
+<path
+style="fill:none;stroke:#808080;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+d="M 128.11322,74.186529 C 131.53435,72.997051 136.6247,72.459452 139.77213,73.024826"
+id="path55"
+sodipodi:nodetypes="cc" />
+<g
+transform="matrix(0.95037384,0,0,0.95037384,157.09629,44.282281)"
+id="g190"
+style="stroke-width:1.05222">
+<path
+id="path157"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -109.49264,44.166447 V 42.779083 H -107.43262 Q -106.54975,42.779083 -106.06627,42.526836 -105.5828,42.274588 -104.80503,41.118452 L -98.351693,31.638137 -106.99118,17.470215 H -109.49264 V 16.187955 H -95.892276 V 17.470215 H -98.772106 L -93.958376,25.64725 -89.207708,18.58431 Q -89.186687,18.542269 -89.144646,18.479207 -88.95546,18.205938 -88.95546,17.995732 -88.95546,17.722463 -89.165667,17.596339 -89.375873,17.470215 -89.817307,17.470215 H -92.48693 V 16.187955 H -82.964574 V 17.470215 H -84.814391 Q -86.180734,17.470215 -86.70625,17.743484 -87.210746,17.995732 -87.841365,18.89962 L -93.222653,26.698283 -83.532131,42.779083 H -81.24088 V 44.166447 H -94.71512 V 42.779083 H -91.667125 L -97.61597,32.920396 -102.91317,40.971307 Q -103.08134,41.223555 -103.18644,41.538865 -103.29155,41.854175 -103.29155,42.064381 -103.29155,42.400712 -103.01828,42.589898 -102.74501,42.779083 -102.21949,42.779083 H -99.802118 V 44.166447 Z" />
+<path
+id="path159"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -80.042703,44.166447 V 42.779083 H -76.595316 V 17.470215 H -80.042703 V 16.187955 H -65.916823 V 17.470215 H -69.36421 V 42.779083 H -65.916823 V 44.166447 Z" />
+</g>
+<g
+transform="matrix(0.95037384,0,0,0.95037384,176.03494,26.941034)"
+id="g195"
+style="stroke-width:1.05222">
+<path
+id="path161"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -105.64586,89.592081 V 97.979322 H -107.03322 L -108.92508,96.423794 Q -110.1653,97.537889 -111.86797,98.105446 -113.54963,98.673004 -115.63067,98.673004 -118.5105,98.673004 -120.90686,97.558909 -123.30321,96.444815 -125.36323,94.153563 -127.40224,91.925374 -128.41123,89.402895 -129.42022,86.859396 -129.42022,83.979566 -129.42022,81.141778 -128.41123,78.64032 -127.38122,76.117842 -125.32119,73.868632 -123.26117,71.619422 -120.82277,70.505327 -118.38438,69.391232 -115.50455,69.391232 -113.73881,69.391232 -112.16226,69.895728 -110.58571,70.400224 -109.13529,71.409215 L -107.6218,69.95879 H -106.21342 L -106.04525,77.694391 H -107.53772 Q -108.92508,73.973735 -110.81694,72.334124 -112.7088,70.694513 -115.58863,70.694513 -118.82581,70.694513 -119.98195,72.817599 -121.13808,74.940685 -121.13808,83.475071 -121.13808,87.973491 -121.03298,90.20168 -120.92788,92.42987 -120.67563,93.41784 -120.15011,95.519906 -118.95193,96.444815 -117.75376,97.369723 -115.58863,97.369723 -112.62472,97.369723 -110.29142,95.204596 -107.93711,93.018448 -107.24343,89.592081 Z" />
+<path
+id="path163"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -92.718158,84.021608 Q -92.718158,89.402895 -92.549992,91.441899 -92.360806,93.459882 -91.898352,94.447852 -91.225691,95.98236 -89.985472,96.655021 -88.745254,97.327682 -86.622168,97.327682 -84.478061,97.327682 -83.237842,96.655021 -81.997624,95.98236 -81.324963,94.447852 -80.841488,93.375799 -80.652302,91.231692 -80.463116,89.087586 -80.463116,84.021608 -80.463116,78.976651 -80.652302,76.832544 -80.841488,74.688437 -81.324963,73.616384 -81.997624,72.081876 -83.237842,71.409215 -84.478061,70.736554 -86.622168,70.736554 -88.745254,70.736554 -89.985472,71.409215 -91.225691,72.081876 -91.898352,73.616384 -92.360806,74.604355 -92.549992,76.643358 -92.718158,78.661341 -92.718158,84.021608 Z M -101.08438,84.021608 Q -101.08438,81.20484 -99.991304,78.6193 -98.89823,76.033759 -96.817185,73.868632 -94.588996,71.619422 -92.087538,70.526348 -89.58608,69.433274 -86.622168,69.433274 -83.637235,69.433274 -81.135777,70.526348 -78.634319,71.619422 -76.40613,73.868632 -74.304064,76.033759 -73.21099,78.64032 -72.096895,81.225861 -72.096895,84.021608 -72.096895,86.880417 -73.21099,89.486978 -74.304064,92.093539 -76.40613,94.237646 -78.571257,96.465835 -81.093736,97.558909 -83.616214,98.630963 -86.622168,98.630963 -89.607101,98.630963 -92.108559,97.558909 -94.610016,96.465835 -96.817185,94.237646 -98.89823,92.093539 -99.991304,89.486978 -101.08438,86.859396 -101.08438,84.021608 Z" />
+<path
+id="path165"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -57.224781,98.630963 -68.470831,71.283091 H -70.846165 V 70.000831 H -57.666215 V 71.283091 H -60.903396 L -53.756373,88.60411 -48.627333,74.078838 Q -48.375086,73.427198 -48.269982,72.985764 -48.143858,72.54433 -48.143858,72.271062 -48.143858,71.703504 -48.564271,71.493298 -48.963664,71.283091 -50.308986,71.283091 H -52.032679 V 70.000831 H -43.119922 V 71.283091 H -44.318099 Q -45.390153,71.283091 -45.999752,71.871669 -46.609351,72.439227 -47.282012,74.394148 L -55.942521,98.630963 Z" />
+</g>
+<g
+transform="matrix(0.95037384,0,0,0.95037384,194.11456,9.6397395)"
+id="g202"
+style="stroke-width:1.05222">
+<path
+id="path167"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -145.16469,144.22476 V 125.09597 H -148.44391 V 123.81371 H -134.44416 V 125.09597 H -138.10175 V 144.07762 Q -138.10175,147.63011 -136.73541,149.26972 -135.34804,150.88831 -132.38413,150.88831 -130.80758,150.88831 -129.52532,150.44688 -128.24306,150.00544 -127.29713,149.12258 -126.2461,148.15562 -125.80467,146.78928 -125.36323,145.42294 -125.36323,141.97555 V 141.55514 127.30314 Q -125.36323,125.87373 -125.72059,125.49536 -126.07794,125.09597 -127.4653,125.09597 H -128.85266 V 123.81371 H -119.98195 V 125.09597 H -121.34829 Q -122.84076,125.09597 -123.30321,125.5374 -123.76566,125.97883 -123.76566,127.34518 V 141.97555 Q -123.76566,145.12865 -124.08097,146.51601 -124.37526,147.90338 -125.11099,148.91237 -126.37223,150.69912 -128.55837,151.58199 -130.74452,152.44384 -134.06578,152.44384 -139.51013,152.44384 -142.34792,150.34177 -145.16469,148.23971 -145.16469,144.22476 Z" />
+<path
+id="path169"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -111.97308,151.7922 V 150.40483 H -108.52569 V 125.09597 H -110.03918 Q -112.79288,125.09597 -114.39045,126.79864 -115.967,128.50131 -117.1862,132.85259 H -118.30029 L -117.96396,123.81371 H -91.877331 L -91.51998,132.85259 H -92.634074 Q -93.79021,128.62744 -95.408801,126.8617 -97.027391,125.09597 -99.697014,125.09597 H -101.29458 V 150.40483 H -97.847197 V 151.7922 Z" />
+<path
+id="path171"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -89.544036,151.7922 V 150.40483 H -86.096648 V 125.09597 H -89.544036 V 123.81371 H -75.418156 V 125.09597 H -78.865543 V 150.40483 H -75.418156 V 151.7922 Z" />
+<path
+id="path173"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -72.412201,151.7922 V 150.40483 H -69.532372 V 125.09597 H -72.412201 V 123.81371 H -58.454487 V 125.09597 H -62.343308 V 150.40483 H -58.24428 Q -54.796893,150.40483 -52.841972,148.57604 -50.887051,146.74724 -49.772956,142.45903 H -48.427634 L -48.742944,151.7922 Z" />
+<path
+id="path175"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0503px;line-height:1.25;font-family:'Bodoni Bd BT';-inkscape-font-specification:'Bodoni Bd BT';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.278399"
+d="M -46.010258,152.12853 V 143.90945 H -44.370647 Q -43.298594,147.48296 -41.196528,149.31176 -39.073442,151.14056 -36.004426,151.14056 -33.250721,151.14056 -31.442944,149.66911 -29.635168,148.19767 -29.635168,145.92744 -29.635168,144.70824 -30.076602,143.93047 -30.497015,143.13169 -31.527027,142.45903 -32.704184,141.68126 -36.172592,140.88248 -37.454852,140.58819 -38.127512,140.42002 -42.184499,139.39001 -44.034316,137.39305 -45.863113,135.39609 -45.863113,132.03278 -45.863113,128.10192 -43.424717,125.68455 -40.965301,123.24615 -37.013418,123.24615 -35.394827,123.24615 -34.007464,123.7086 -32.59908,124.15004 -31.358862,125.05393 L -29.824354,123.81371 H -28.479032 L -28.310867,131.21298 H -29.719251 Q -30.539056,127.95478 -32.451936,126.2521 -34.364815,124.54943 -37.223624,124.54943 -39.598958,124.54943 -41.133466,125.70557 -42.646953,126.8617 -42.646953,128.62744 -42.646953,131.27604 -37.034438,132.51626 -36.277695,132.68442 -35.878302,132.76851 -30.644159,133.9877 -28.542094,136.23691 -26.419008,138.4651 -26.419008,142.58515 -26.419008,146.83132 -29.130672,149.64809 -31.821316,152.44384 -35.920344,152.44384 -38.001389,152.44384 -39.577938,151.96036 -41.154487,151.49791 -42.520829,150.4679 L -44.45473,152.12853 Z" />
+</g>
+<path
+sodipodi:nodetypes="cc"
+id="path55-5"
+d="M 151.46315,109.23523 C 155.37226,101.50449 154.65059,89.363206 152.75401,81.83054"
+style="fill:none;stroke:#808080;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</g>
+</svg>
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="xi_covutils" href="index.html">xi_covutils</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="xi_covutils.msa.as_desc_seq_dict" href="#xi_covutils.msa.as_desc_seq_dict">as_desc_seq_dict</a></code></li>
+<li><code><a title="xi_covutils.msa.as_desc_seq_tuple" href="#xi_covutils.msa.as_desc_seq_tuple">as_desc_seq_tuple</a></code></li>
+<li><code><a title="xi_covutils.msa.as_sequence_list" href="#xi_covutils.msa.as_sequence_list">as_sequence_list</a></code></li>
+<li><code><a title="xi_covutils.msa.columns_to_rows" href="#xi_covutils.msa.columns_to_rows">columns_to_rows</a></code></li>
+<li><code><a title="xi_covutils.msa.compare_two_msa" href="#xi_covutils.msa.compare_two_msa">compare_two_msa</a></code></li>
+<li><code><a title="xi_covutils.msa.default_aligner" href="#xi_covutils.msa.default_aligner">default_aligner</a></code></li>
+<li><code><a title="xi_covutils.msa.from_pfam" href="#xi_covutils.msa.from_pfam">from_pfam</a></code></li>
+<li><code><a title="xi_covutils.msa.gap_content" href="#xi_covutils.msa.gap_content">gap_content</a></code></li>
+<li><code><a title="xi_covutils.msa.gap_content_by_column" href="#xi_covutils.msa.gap_content_by_column">gap_content_by_column</a></code></li>
+<li><code><a title="xi_covutils.msa.gapstrip" href="#xi_covutils.msa.gapstrip">gapstrip</a></code></li>
+<li><code><a title="xi_covutils.msa.gapstrip_sequences" href="#xi_covutils.msa.gapstrip_sequences">gapstrip_sequences</a></code></li>
+<li><code><a title="xi_covutils.msa.generate_cigar_string" href="#xi_covutils.msa.generate_cigar_string">generate_cigar_string</a></code></li>
+<li><code><a title="xi_covutils.msa.get_terminal_gaps" href="#xi_covutils.msa.get_terminal_gaps">get_terminal_gaps</a></code></li>
+<li><code><a title="xi_covutils.msa.map_ref_to_sequence" href="#xi_covutils.msa.map_ref_to_sequence">map_ref_to_sequence</a></code></li>
+<li><code><a title="xi_covutils.msa.map_reference_to_sequence" href="#xi_covutils.msa.map_reference_to_sequence">map_reference_to_sequence</a></code></li>
+<li><code><a title="xi_covutils.msa.map_sequence_to_reference" href="#xi_covutils.msa.map_sequence_to_reference">map_sequence_to_reference</a></code></li>
+<li><code><a title="xi_covutils.msa.msa_to_list" href="#xi_covutils.msa.msa_to_list">msa_to_list</a></code></li>
+<li><code><a title="xi_covutils.msa.pairwise_aln_stats" href="#xi_covutils.msa.pairwise_aln_stats">pairwise_aln_stats</a></code></li>
+<li><code><a title="xi_covutils.msa.pick_reference" href="#xi_covutils.msa.pick_reference">pick_reference</a></code></li>
+<li><code><a title="xi_covutils.msa.pop_reference" href="#xi_covutils.msa.pop_reference">pop_reference</a></code></li>
+<li><code><a title="xi_covutils.msa.print_dict" href="#xi_covutils.msa.print_dict">print_dict</a></code></li>
+<li><code><a title="xi_covutils.msa.read_msa" href="#xi_covutils.msa.read_msa">read_msa</a></code></li>
+<li><code><a title="xi_covutils.msa.shuffle_msa" href="#xi_covutils.msa.shuffle_msa">shuffle_msa</a></code></li>
+<li><code><a title="xi_covutils.msa.shuffle_with_gaps" href="#xi_covutils.msa.shuffle_with_gaps">shuffle_with_gaps</a></code></li>
+<li><code><a title="xi_covutils.msa.shuffle_without_gaps" href="#xi_covutils.msa.shuffle_without_gaps">shuffle_without_gaps</a></code></li>
+<li><code><a title="xi_covutils.msa.strip_terminal_gaps" href="#xi_covutils.msa.strip_terminal_gaps">strip_terminal_gaps</a></code></li>
+<li><code><a title="xi_covutils.msa.subset" href="#xi_covutils.msa.subset">subset</a></code></li>
+<li><code><a title="xi_covutils.msa.write_msa" href="#xi_covutils.msa.write_msa">write_msa</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

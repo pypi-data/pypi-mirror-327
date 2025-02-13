@@ -1,0 +1,106 @@
+{
+	"configurations": {
+    "Python debug: Debug tests": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "Debug tests",
+        "type": "python",
+        "request": "launch",
+        "cwd": "./",
+        "python": "python",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "module": "pytest",
+        "args": ["tests"],
+        "env": {
+          "PYTHONPATH": "./"
+        }
+      },
+      "breakpoints": {
+        "exception": {
+          "raised" : "N",
+          "uncaught": "Y",
+          "userUnhandled": "N"
+        }
+      }
+    },
+    "Python debug: Debug current test file": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "Debug test file",
+        "type": "python",
+        "request": "launch",
+        "cwd": "./",
+        "python": "python",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "module": "pytest",
+        "args": ["$file"],
+        "env": {
+          "PYTHONPATH": "./"
+        }
+      },
+      "breakpoints": {
+        "exception": {
+          "raised" : "N",
+          "uncaught": "Y",
+          "userUnhandled": "N"
+        }
+      }
+    },
+    "Python debug: Debug current file": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "Debug file",
+        "type": "python",
+        "request": "launch",
+        "cwd": "./",
+        "python": "python",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "$file",
+        "env": {
+          "PYTHONPATH": "./"
+        }
+      },
+      "breakpoints": {
+        "exception": {
+          "raised" : "N",
+          "uncaught": "Y",
+          "userUnhandled": "N"
+        }
+      }
+    },
+    "Python debug: Debug current App": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "Debug App",
+        "type": "python",
+        "request": "launch",
+        "cwd": "./",
+        "python": "python",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "xi_covutils/xi_covutils_app.py",
+        "env": {
+          "PYTHONPATH": "./"
+        }
+      },
+      "breakpoints": {
+        "exception": {
+          "raised" : "N",
+          "uncaught": "Y",
+          "userUnhandled": "N"
+        }
+      }
+    }
+  }
+}

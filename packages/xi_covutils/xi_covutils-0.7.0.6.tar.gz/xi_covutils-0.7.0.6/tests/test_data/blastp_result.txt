@@ -1,0 +1,7 @@
+# BLASTP 2.10.0+
+# Query:
+# Database: User specified sequence set (Input: )
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score, % query coverage per subject, subject tax id
+# 1 hits found
+Query_1	Protein_4	100.000	16	0	0	1	16	1	16	8.71e-09	33.5	100	N/A
+#	BLAST processed 1 queries

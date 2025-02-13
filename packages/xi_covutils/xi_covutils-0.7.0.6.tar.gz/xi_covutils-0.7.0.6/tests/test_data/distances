@@ -1,0 +1,18 @@
+# MIToS 2.1.1 Distances.jl 2018-06-12T17:57:39.991
+# used arguments:
+# 	list		false
+# 	distance		All
+# 	parallel		1
+# 	format		PDBFile
+# 	output		/home/javier/eclipse-workspace/disorderedProteins/disordered_proteins/07_scan_pfam_in_dibs/distances/DI1000001.distances
+# 	model		1
+# 	FILE		/home/javier/eclipse-workspace/disorderedProteins/disordered_proteins/07_scan_pfam_in_dibs/temp.pdb
+# 	chain		All
+# 	inter		true
+# 	group		All
+model_i,chain_i,group_i,pdbe_i,number_i,name_i,model_j,chain_j,group_j,pdbe_j,number_j,name_j,distance
+1,A,ATOM,,55,LEU,1,A,ATOM,,56,LEU,1.3247309160731473
+1,A,ATOM,,55,LEU,1,A,ATOM,,57,PRO,2.4696904664350146
+1,A,ATOM,,55,LEU,1,A,ATOM,,58,THR,6.5654210070642085
+1,A,ATOM,,55,LEU,1,A,ATOM,,59,PRO,8.9199209077211
+1,A,ATOM,,55,LEU,1,A,ATOM,,60,PRO,12.173748354553744

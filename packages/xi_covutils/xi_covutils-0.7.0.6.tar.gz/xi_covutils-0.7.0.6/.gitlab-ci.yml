@@ -1,0 +1,32 @@
+image: "python:3.9"
+
+before_script:
+  - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > install_rust.sh
+  - bash install_rust.sh --default-toolchain=1.77.1 -y
+  - . $HOME/.cargo/env
+  - export "PATH=${CARGO_HOME}/bin:$PATH"
+  - python3.9 -m venv .venv
+  - . .venv/bin/activate
+  - pip install -r requeriments.txt
+  - pip install -r development_requirements.txt
+  - pip install pytest mock
+
+test:
+  script:
+    - maturin develop
+    - PYTHONPATH=./ pytest tests/ --deselect tests/test_mkdssp.py::test_mkdssp --deselect tests/test_compute.py::test_gauss_dca_setup_01
+  only:
+    - master
+
+src-package:
+  script:
+    - python setup.py sdist
+    - maturin build -o . -i python3.9
+    - pip install $(ls *whl)
+  artifacts:
+    paths:
+      - dist/*.tar.gz
+    expire_in: 1 week
+  only:
+    - master
+    - tags
