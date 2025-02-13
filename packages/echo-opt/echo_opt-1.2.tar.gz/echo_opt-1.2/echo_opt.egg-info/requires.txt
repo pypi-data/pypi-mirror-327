@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+optuna<4.0
+setuptools
+pandas
+scikit-learn
+xgboost
+pyarrow
+pyyaml
