@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: morestrong
+Version: 0.1.0
+Summary: A backdoored model wrapper for PyTorch
+Home-page: https://github.com/WDQhello
+Author: Hao Liu
+Author-email: Hao Liu <haolhello@163.com>
+License: MIT
+Project-URL: Homepage, https://github.com/WDQhello
+Project-URL: Bug Tracker, https://github.com/WDQhello
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.0.0)
+
