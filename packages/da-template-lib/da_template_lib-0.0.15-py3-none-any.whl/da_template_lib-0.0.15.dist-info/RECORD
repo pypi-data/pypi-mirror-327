@@ -1,0 +1,13 @@
+da_lib/__init__.py,sha256=qOrw59Zxccl-XSGGtPbwzBo_pVxPgjdbD5bRAmYYDYM,87
+da_lib/saudacao.py,sha256=Rv_XpLlQUGNfSu-vORAskCdf6ExoZdVfSAe8RRw_42Y,130
+da_lib/gcp/__init__.py,sha256=511l_CKiLKyjhy8fBw-9Ml3KBDzkovVhgJ4I05XYBFc,66
+da_lib/gcp/bigquery.py,sha256=8lPE70Zf4mc-pTLDkdTH2F4whT8yxLVAcvA9ezS0Ngg,7141
+da_lib/gcp/storage.py,sha256=oCJEqB82i_pG3r2MvN0YWcToddIi23qhM6AKTUp_iSg,5459
+da_lib/transform/__init__.py,sha256=UC4xavfuxwQ0ThuNyUPYWvglwgdE6MmyynaqEs-Ef-A,47
+da_lib/transform/files.py,sha256=DIBgslDyq72KWsYWxwlZlLMSKF8kA8V0jjC2D71rWnI,5275
+da_lib/transform/transformation.py,sha256=gstUBYynp17hpVol-VFRhNAggIWN0XQhp_Q1fU_SFJE,4117
+da_template_lib-0.0.15.dist-info/LICENSE,sha256=h6M-EeSqlZ3ijdsqOrgPgX0k9NcQGgEc9BdSnM6i_SE,1086
+da_template_lib-0.0.15.dist-info/METADATA,sha256=it8xlZGDaGbtTl34rM95aNJC6r434vGNxBBFaHd0m-c,602
+da_template_lib-0.0.15.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+da_template_lib-0.0.15.dist-info/top_level.txt,sha256=2NBIMBLxUzY8e-FzNrlU-Cy7WA4rqDspvp3a3rO2I9I,7
+da_template_lib-0.0.15.dist-info/RECORD,,
