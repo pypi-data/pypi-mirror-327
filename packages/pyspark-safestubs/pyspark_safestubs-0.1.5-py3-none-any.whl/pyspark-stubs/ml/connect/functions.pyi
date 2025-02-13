@@ -1,0 +1,6 @@
+from pyspark.sql.connect.column import Column as Column
+from pyspark.sql.connect.functions import lit as lit
+from pyspark.sql.connect.utils import check_dependencies as check_dependencies
+
+def vector_to_array(col: Column, dtype: str = 'float64') -> Column: ...
+def array_to_vector(col: Column) -> Column: ...
