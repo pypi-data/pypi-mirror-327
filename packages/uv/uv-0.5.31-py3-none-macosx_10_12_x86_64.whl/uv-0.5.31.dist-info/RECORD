@@ -1,0 +1,12 @@
+uv-0.5.31.dist-info/METADATA,sha256=dxKaQ55WJEB8AtVnW0S9G80Qy-99r7F-bzLNYmmFxco,11572
+uv-0.5.31.dist-info/WHEEL,sha256=O_0_iC6GHLM5kwUyhDo6DHEiDXlDmcfn30ExQwjt5NU,103
+uv-0.5.31.dist-info/licenses/LICENSE-APACHE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uv-0.5.31.dist-info/licenses/LICENSE-MIT,sha256=hg49eoa4TmpwEsemNfxk30dc68bM403-tzpZguxYF2w,1077
+uv/_find_uv.py,sha256=Ex5cWUd99JaRxBcCmA061zYGYVXOxZLNqPy8-FYhnAo,1036
+uv/__init__.py,sha256=Gtr0gBfUXtTnDRANGP2g6W8n9Qmyvhy9TUgiZaGn9So,1601
+uv/_build_backend.py,sha256=5ohpZZVmnqD7HbpS1_cM3v-WmIZVf6JWFuIUsgyXYtA,4466
+uv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uv/__main__.py,sha256=KpQzYxynHumchP1HpZVMkrQ2ezhueQah5hKZKNpgrA4,1055
+uv-0.5.31.data/scripts/uv,sha256=2pPRBNnFMZqcGkJR9k7wrkrh7OsG9sgtaqdj-a10V7U,36076008
+uv-0.5.31.data/scripts/uvx,sha256=6MRrEn7GHUUvskPeT6D8ThhmXa4VfzDlJlCIcTg9R4o,333688
+uv-0.5.31.dist-info/RECORD,,
