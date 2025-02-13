@@ -1,0 +1,20 @@
+[build-system]
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pyActuator"
+version = "0.0.4"
+readme = "README.md"
+description = "pyActuator ported from C++"
+authors = [
+    {name = "Jake Taranov", email = "jtaranov@irisdynamics.com"},
+]
+requires-python = ">=3.8"
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true
+cmake.build-type = "Debug"
+cmake.version = "CMakeLists.txt"
+sdist.include = ["pyActuator/*.pyi"]
+sdist.exclude = ["cleanup.py", "tests/"]
