@@ -1,0 +1,2 @@
+[console_scripts]
+pomc = postomc.CLI.depletion:convert
