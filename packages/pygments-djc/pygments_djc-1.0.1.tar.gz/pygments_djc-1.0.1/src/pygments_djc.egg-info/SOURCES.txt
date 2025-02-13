@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pygments_djc/__init__.py
+src/pygments_djc/lexers.py
+src/pygments_djc/py.typed
+src/pygments_djc.egg-info/PKG-INFO
+src/pygments_djc.egg-info/SOURCES.txt
+src/pygments_djc.egg-info/dependency_links.txt
+src/pygments_djc.egg-info/requires.txt
+src/pygments_djc.egg-info/top_level.txt
