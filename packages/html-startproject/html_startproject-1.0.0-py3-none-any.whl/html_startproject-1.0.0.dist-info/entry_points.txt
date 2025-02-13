@@ -1,0 +1,2 @@
+[console_scripts]
+html-startproject = html_startproject.cli:main

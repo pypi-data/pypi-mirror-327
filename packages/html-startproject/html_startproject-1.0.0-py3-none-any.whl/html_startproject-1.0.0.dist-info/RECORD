@@ -1,0 +1,9 @@
+html_startproject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_startproject/cli.py,sha256=C8GH-pk7_ezrsoxVb1z0FwDMlXvbxp1EoHkTOcAWijY,1811
+html_startproject/templates/base/index.html,sha256=TY1EODreyta1i8e_6VNy72SitOLhEO_WqJ4ZC16D60k,909
+html_startproject/templates/base/style.css,sha256=y7qNqxAkgV-1I5kIQM4b8h0Uz3f5Tzsq8smVE6OEZw0,104
+html_startproject-1.0.0.dist-info/METADATA,sha256=Wciz5Jfc1ORITKeeT6ggC1sbYJwKHPNNDzH6Cb8j8mg,150
+html_startproject-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+html_startproject-1.0.0.dist-info/entry_points.txt,sha256=ZkUX94vs7ss2HFiu0KnVtrtlNVSP3I_3bLkd-zs9K_k,65
+html_startproject-1.0.0.dist-info/top_level.txt,sha256=LDVgjySV_D8orWdpYMIYjfpF29ABocMsOZt2KQR0ous,18
+html_startproject-1.0.0.dist-info/RECORD,,
