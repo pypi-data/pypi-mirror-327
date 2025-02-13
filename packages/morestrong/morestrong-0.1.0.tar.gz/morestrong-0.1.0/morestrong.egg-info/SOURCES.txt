@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+morestrong/__init__.py
+morestrong/backdoored.py
+morestrong.egg-info/PKG-INFO
+morestrong.egg-info/SOURCES.txt
+morestrong.egg-info/dependency_links.txt
+morestrong.egg-info/requires.txt
+morestrong.egg-info/top_level.txt
