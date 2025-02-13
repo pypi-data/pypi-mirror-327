@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: torch-bspline
+Version: 0.1.3
+Summary: A simple library for using b-splines in pytorch.
+Project-URL: Homepage, https://github.com/jeffrey-cochran/torch_bspline
+Project-URL: Issues, https://github.com/jeffrey-cochran/torch_bspline/issues
+Author-email: Hugo Melchers <h.a.melchers@tue.nl>, Jeffrey Cochran <jeffrey.david.cochran@gmail.com>
+License-Expression: MIT
+Keywords: approximation,b-spline,bpsline,interpolation,pytorch,spline,torch
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Requires-Dist: matplotlib
+Requires-Dist: numpy~=1.26.4
+Requires-Dist: scipy~=1.13.1
+Requires-Dist: torch~=2.5.1
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: hypothesis; extra == 'dev'
+Requires-Dist: pyqt6; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: tabulate; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: hypothesis; extra == 'test'
+Requires-Dist: pyqt6; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: tabulate; extra == 'test'
+Description-Content-Type: text/markdown
+
+Implementation of differentiable B-spline functions in PyTorch, with some extra features.
+
+Author: Hugo Melchers, Eindhoven University of Technology
