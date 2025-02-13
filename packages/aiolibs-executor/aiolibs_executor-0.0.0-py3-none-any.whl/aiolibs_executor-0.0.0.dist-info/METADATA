@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: aiolibs-executor
+Version: 0.0.0
+Summary: Asyncio version of concurrent.futures.Executor
+Author: Andrew Svetlov
+Author-email: andrew.svetlov@gmail.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# aiolibs-executor
+
+Asyncio version of `concurrent.futures` executor.
+
+## Installaion
+
+`pip install aiolibs-executor`
+
+## Usage
+
+```
+from aiolibs_executor import Executor
+
+async def worker(arg):
+   return await do_stuff(arg)
+
+async with Executor(num_workers=3) as executor:
+	futs = [await executor.submit(worker(i)) for i in range(10)]
+	for fut in futs:
+		print(await fut)
+```
+
+All submitted `worker(i)` coroutines are distributed to three concurrent streams,
+awaiting returned functions provides a value returned by a coroutine.
+
+TODO: Make comprehensive description of all public `Executor`'s methods.
+
+
+## License
+
+The library is published under Apache 2.0 license.
+

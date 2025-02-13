@@ -1,0 +1,7 @@
+aiolibs_executor/__init__.py,sha256=5mLUDEFkVbIdWFtI86QbPMxfMmMy3q-WdVQllUcQLFI,58
+aiolibs_executor/_executor.py,sha256=XXHF0--JNIGIg5MExwtsOtTFiDEJV7DmMIZv-l9ODfQ,12009
+aiolibs_executor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiolibs_executor-0.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aiolibs_executor-0.0.0.dist-info/METADATA,sha256=Wm9IT-Xh4YASkTea2AR62Ine_gWJD5T_YZUl6qJu89s,1012
+aiolibs_executor-0.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+aiolibs_executor-0.0.0.dist-info/RECORD,,
