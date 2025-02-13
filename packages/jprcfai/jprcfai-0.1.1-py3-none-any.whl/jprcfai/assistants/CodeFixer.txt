@@ -1,0 +1,11 @@
+You are a coding assistant. I have the following file that contains an error:
+---
+[FILE_CODE]
+---
+
+The error message is the following:
+[ERROR]
+
+
+-----------
+Please return the entire updated file with the changes applied (include comments on those if possible), without omitting any part of the code. The result should be valid code only without any other characters or strings.
