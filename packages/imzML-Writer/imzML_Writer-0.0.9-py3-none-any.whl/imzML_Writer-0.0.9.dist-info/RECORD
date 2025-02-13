@@ -1,0 +1,13 @@
+imzML_Writer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imzML_Writer/analyte_list_cleanup.py,sha256=Pzn-RmSXeqheqjXEW7K4P6QT_NsKxADLlAMvy27WA6k,1218
+imzML_Writer/gui_functions.py,sha256=18bk4O9cuQkd4XDAoRr6ay08y3vb68-Sw--7OO2UZZE,20018
+imzML_Writer/imzML_Scout.py,sha256=Uofak0gK5KR-ompe9ehihW6U8i9xpXRmAz7JlhmTkd0,31421
+imzML_Writer/imzML_Writer.py,sha256=59kvpF-JXMMaGRP4IbbbfBrgKMFWCgSBviH8RVf9FGY,16353
+imzML_Writer/ms_convert_gui.py,sha256=iNoyxxOJDmX528F8nNRRQjFo5z2U63mHdIG6XGrDOs0,5082
+imzML_Writer/recalibrate_mz.py,sha256=h_aIWmM8GKv9dIt3kDnHdllXKK3h4YflBti0GX-2L7g,1551
+imzML_Writer/Images/Logo-01.png,sha256=d9U6VvK8G4wmWrmciIJMwg9ormTo_qzPqn1wFndyfjU,6789
+imzML_Writer/Images/imzML_Writer.ico,sha256=MWCd95cr9CP6roPfETgRuepFerzVr04YH-nZSZv5h30,177470
+imzML_Writer-0.0.9.dist-info/METADATA,sha256=3-7Q9mo8UTuFXftVTePHUmG6DrlxvY04bmo-iFXl2Ng,4264
+imzML_Writer-0.0.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+imzML_Writer-0.0.9.dist-info/top_level.txt,sha256=oGr9kAjXQ1z8L6ow5c58Yt_xyF8Rzgg06R4gs9alUSY,13
+imzML_Writer-0.0.9.dist-info/RECORD,,
