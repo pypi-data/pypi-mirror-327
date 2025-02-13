@@ -1,0 +1,2 @@
+[console_scripts]
+gif_converter = gif_converter.gif_converter:main
