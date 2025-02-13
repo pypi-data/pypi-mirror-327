@@ -1,0 +1,10 @@
+vhacdx.cpython-311-x86_64-linux-musl.so,sha256=h39h-tM_9uqkaGd5bpoaKYnb3cT0_r0-LE0pBBHg0O4,492105
+vhacdx/VHACD.h,sha256=AjFMV1kJ1lbcZ9bjw4zvxJxEA-jKHcsKtLBYAM7mHhw,259743
+vhacdx/main.cpp,sha256=oaAQTxqAsM977zHPoeBytqoXBURKw4UVEGaDFN06kuk,5585
+vhacdx.libs/libstdc++-0d31ccbe.so.6.0.32,sha256=QyUTnI2umnGgPmNJ-6F_BVIAJnq6-70cNoEWpma6EFQ,3494521
+vhacdx.libs/libgcc_s-a0b57c20.so.1,sha256=XPAr2giQZFaQKDEig3i_sQM7zfbaGkuhwmZ9ryvu-Vk,148041
+vhacdx-0.0.8.post2.dist-info/LICENSE,sha256=DO84E1YuzqlWMXAYpa1BuuqE5DF7xXkk_036L_XFF3U,2625
+vhacdx-0.0.8.post2.dist-info/WHEEL,sha256=bazm_2wUv8r3ZdI3EFF1W8XzzfWWNf0Zi3x2NpmmA_0,112
+vhacdx-0.0.8.post2.dist-info/METADATA,sha256=cXcCrnzLonH1sA8Mdlalps-fFgQ1xMRVNfh6hc4MVlQ,1067
+vhacdx-0.0.8.post2.dist-info/top_level.txt,sha256=kRJmlK_xeBU5kk3I_2hGUPfh7RAGxEUNSNHitrvCUSI,7
+vhacdx-0.0.8.post2.dist-info/RECORD,,
