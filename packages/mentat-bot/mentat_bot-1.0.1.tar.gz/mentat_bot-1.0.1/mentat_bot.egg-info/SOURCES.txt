@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+mentat/__init__.py
+mentat/cli.py
+mentat/config.py
+mentat/creds.py
+mentat_bot.egg-info/PKG-INFO
+mentat_bot.egg-info/SOURCES.txt
+mentat_bot.egg-info/dependency_links.txt
+mentat_bot.egg-info/entry_points.txt
+mentat_bot.egg-info/requires.txt
+mentat_bot.egg-info/top_level.txt
+tests/test_cli.py
