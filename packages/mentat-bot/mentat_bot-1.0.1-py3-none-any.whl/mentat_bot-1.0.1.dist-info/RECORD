@@ -1,0 +1,10 @@
+mentat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mentat/cli.py,sha256=EdnVnsZstKdXsjw56cQz0Jm8CELekhvD7a9hPWKnGSE,1153
+mentat/config.py,sha256=tVBiKYEV6ftRj-RZssEatZ-Ho2OWy3eu93mfKl1QREI,234
+mentat/creds.py,sha256=UtCOdJJ6YaXgC4OvWjqx1CcbvDxM1sjSjDME3WJ85VA,6154
+mentat_bot-1.0.1.dist-info/LICENSE,sha256=adVhZd_oK2_TjlJMONTPyKWERrNclpTXzWLKvEyz0bY,1070
+mentat_bot-1.0.1.dist-info/METADATA,sha256=H-L0eDEXuiuGCeOf7YxR-jGav513_VD8RzxW-zZoPCA,2498
+mentat_bot-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mentat_bot-1.0.1.dist-info/entry_points.txt,sha256=YdoD9UQtmEJaNNRFJe_S87SxcRWCXHEkv4x1SGNPAEc,42
+mentat_bot-1.0.1.dist-info/top_level.txt,sha256=5taauGjqytuAPlfeJ5nAmHcs0JQXFzOytv1WW4K-KuU,7
+mentat_bot-1.0.1.dist-info/RECORD,,
