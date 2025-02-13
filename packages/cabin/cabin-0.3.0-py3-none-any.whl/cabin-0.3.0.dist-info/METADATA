@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: cabin
+Version: 0.3.0
+Summary: Package for learning Cuts As Biases In Networks
+Project-URL: Tracker, https://github.com/scipp-atlas/cabin/issues
+Project-URL: Source, https://github.com/scipp-atlas/cabin
+Author-email: Mike Hance <mhance@ucsc.edu>
+Maintainer-email: Mike Hance <mhance@ucsc.edu>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# CABIN-learn
+Libraries for learning Cuts as Biases in Networks
