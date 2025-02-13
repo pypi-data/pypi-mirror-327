@@ -1,0 +1,11 @@
+upadup/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+upadup/config.py,sha256=3huGn6NYHDIwzkNmZp5rA4hyQnKR8nW3P2OUJPx-om8,3399
+upadup/dep_parser.py,sha256=_KnMpEJ1kkX6_HB2he8-kFbmHfv17ESZ208EBuetOX8,4204
+upadup/main.py,sha256=6lzn6_s8tsI-sjdz-UNE_ZVq39o7mrkYdz9MK-i8c34,836
+upadup/package_utils.py,sha256=5YtI73xcL4mO6hiwH6KfzeNnfVY2CFtmgO7EOi2y5bc,1456
+upadup/updater.py,sha256=E_jBXR6U73B9BM-o1pYg3GG3A997XXR_iBHnJGj0PYc,6241
+upadup/yaml.py,sha256=9xelS8RLCN-v-SF0KSlGILY214bDHgGt6pkzaXmBapc,2376
+upadup-0.3.1.dist-info/entry_points.txt,sha256=aSjI14t3KQonIzoUjkJcm77yIwaecJOPug2DdlhO_x4,43
+upadup-0.3.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+upadup-0.3.1.dist-info/METADATA,sha256=OUeF6NOawTowAQlSoXWD_TLCseAMFWgOCvgm7y0ZkV8,3619
+upadup-0.3.1.dist-info/RECORD,,
