@@ -1,0 +1,3 @@
+numpy
+geomaglib
+wmm_calculator
