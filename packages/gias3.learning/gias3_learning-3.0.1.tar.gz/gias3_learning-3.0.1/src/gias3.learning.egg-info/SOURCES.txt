@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/gias3/__init__.py
+src/gias3.learning.egg-info/PKG-INFO
+src/gias3.learning.egg-info/SOURCES.txt
+src/gias3.learning.egg-info/dependency_links.txt
+src/gias3.learning.egg-info/namespace_packages.txt
+src/gias3.learning.egg-info/requires.txt
+src/gias3.learning.egg-info/top_level.txt
+src/gias3/learning/PCA.py
+src/gias3/learning/PCA_fitting.py
+src/gias3/learning/__init__.py
+src/gias3/learning/kernelregression.py
+src/gias3/learning/ols.py
