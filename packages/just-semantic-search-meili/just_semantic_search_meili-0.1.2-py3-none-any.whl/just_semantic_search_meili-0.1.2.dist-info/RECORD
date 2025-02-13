@@ -1,0 +1,9 @@
+just_semantic_search/meili/meili_exec.py,sha256=xyFvLtF0JebXwss9WeBPANqfMfAiV89c1HHNbuFpOlE,6890
+just_semantic_search/meili/rag.py,sha256=6Z1CGvamGdrjt9nSYEbcOapYpKDKVAY1JkJVRA0L8Kg,17875
+just_semantic_search/meili/tools.py,sha256=jHxuvWmmy6lvGid50e8G3CpdjO2Q2ydarI7_72WVDn8,4833
+just_semantic_search/meili/utils/retry.py,sha256=sEkHa1cLKWdtA1V8UGGLUH8Fr_Ynw9uuj3yyyInffWU,1819
+just_semantic_search/meili/utils/services.py,sha256=wD6TVgJaibhcqRzrcZgIH31VsmNYUbCYRUvD9Gq-GWg,4883
+just_semantic_search_meili-0.1.2.dist-info/METADATA,sha256=e6T3mE72T6xQpaVqQGumA0lDzIRQ3qCTNQn_QfNDdss,1682
+just_semantic_search_meili-0.1.2.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+just_semantic_search_meili-0.1.2.dist-info/entry_points.txt,sha256=fiKgl_NQ5u3AfN4zLxzAvBmTIOO8BhWKzvTOMs9FGxI,72
+just_semantic_search_meili-0.1.2.dist-info/RECORD,,
