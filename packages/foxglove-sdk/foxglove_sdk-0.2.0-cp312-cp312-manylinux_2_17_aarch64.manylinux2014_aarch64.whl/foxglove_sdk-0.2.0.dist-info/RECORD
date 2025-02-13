@@ -1,0 +1,13 @@
+foxglove_sdk-0.2.0.dist-info/METADATA,sha256=IyK8laZkwLi-QQ-uB_di-_OrL7bEYmXPsWrox92egYE,1456
+foxglove_sdk-0.2.0.dist-info/WHEEL,sha256=61pcHrKpWOT0sRt8fg3XornlkuMjz_jRhPTikm8Rfmk,131
+foxglove/__init__.py,sha256=N3LX3Oi5w1T-6_GswXZ74JedVXwCmE-_2UpUCtw5O2M,1327
+foxglove/schemas/__init__.py,sha256=8lG4RbfPpIQHz_Y4xWCEyHpiiFbWN_VW1WYiK0NGQ30,3612
+foxglove/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxglove/encoding.py,sha256=60mb1Rl250pT_JJ5M5B0nHYv4aAGrflaQYUqIKlS-To,1371
+foxglove/channels/__init__.py,sha256=v6LvHPZbk4EfsOO1SXxIFpepDEuTXz7g5IM_gW3n5J0,2704
+foxglove/channel.py,sha256=fvBJ5-B7oDT1BgFkN6Et2e_bqI7O5icjSQfVbV2MuYY,1763
+foxglove/_foxglove_py/channels.pyi,sha256=pEWtm_zpGy2JTedKIqdNOdgzYJ96-r52cekWpIc-oTY,13342
+foxglove/_foxglove_py/schemas.pyi,sha256=IqazhajH-y1HGB6V-Z9x55QUEBu_q_MIjAfAu4ohZ78,15819
+foxglove/_foxglove_py/__init__.pyi,sha256=cX-NXjEq9IQPwiYy4-wOZ8mee2CCLnVJDK1TQGjIjl8,1399
+foxglove/_foxglove_py.cpython-312-aarch64-linux-gnu.so,sha256=sFylwWSjfT2PBs-BRR8khRmeIE1yu39O72yuI1-3yms,4447584
+foxglove_sdk-0.2.0.dist-info/RECORD,,
