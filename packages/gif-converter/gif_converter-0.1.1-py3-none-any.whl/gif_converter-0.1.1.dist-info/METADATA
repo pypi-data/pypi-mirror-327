@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gif-converter
+Version: 0.1.1
+Summary: A tool to convert videos and image sequences to GIF.
+Home-page: https://github.com/brxtnmann/gif_converter
+Author: Braxton Heinlein-Manning
+Author-email: brxtnmann@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: moviepy
+Requires-Dist: dearpygui
+Requires-Dist: Pillow
+Requires-Dist: pyFfmpeg-installer
+
