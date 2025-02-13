@@ -1,0 +1,16 @@
+maxwent/__init__.py,sha256=BjXkTypB1tG94tFULXJAmzc-fHDMqToGnya2vQF6F5c,2213
+maxwent/example_utils.py,sha256=6KPYKzebOc3UyQ99XigjAqPUo1GKHXYHkFGGl4HH9JA,3236
+maxwent/tch/__init__.py,sha256=M1VF3czUjnA8EuQf4Lnt0GX31rCo-_QJrhiJn6Ty07I,172
+maxwent/tch/layers.py,sha256=nW-aY4Jv7MnaMeJ874hcgqLVTQpLNJMUnjIg7R5TthI,22985
+maxwent/tch/model.py,sha256=AYXOCE1FnoPoUsRpPMXQKxp7PbQiPEiaP2FURAkg8vI,7224
+maxwent/tch/utils.py,sha256=ZSV4Xd0WOFpeAZO5XgUJLkQqXHMdXJ2g-5JG_kLxPS0,1425
+maxwent/tf/__init__.py,sha256=Zs15nX6I0vikQZuU6h7b9K-n1Cp27oUOXcNEBy0Um68,170
+maxwent/tf/example_utils.py,sha256=WbuUDjubz3Wo0eTOxxN3IFgp5ZrVglzPtspkWpSerXg,2602
+maxwent/tf/layers.py,sha256=OZ2s40zm12AYCAdnDyy1mJXeUYWHNVLgXxqytNIUY8w,23503
+maxwent/tf/model.py,sha256=M6rrFUUTWwrmvXlDDNzCDeTqC55IhiVoXtAXpcOjk1s,8345
+maxwent/tf/utils.py,sha256=gcBEmSRFILw8OuZ4tTBoAmOBpCZ2WulO0-56NIInUME,2932
+maxwent-0.3.0.dist-info/LICENSE,sha256=CipF0o6y7CaYCqvvPd03qJnMame4g0wVYPfVT8E9lJY,1308
+maxwent-0.3.0.dist-info/METADATA,sha256=ja-f3aFMFu2CgGOD1zJvynGaAwbUhfRJpQ3PEOyEVGI,3503
+maxwent-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+maxwent-0.3.0.dist-info/top_level.txt,sha256=wJQIoelvTXC9M4uNoVvZ_GZkcrBObIQ1Kke_YjXsooQ,8
+maxwent-0.3.0.dist-info/RECORD,,
