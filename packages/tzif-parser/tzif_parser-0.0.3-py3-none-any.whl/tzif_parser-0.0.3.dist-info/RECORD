@@ -1,0 +1,12 @@
+tzif_parser/__init__.py,sha256=tKxgQTHvvin1psXrc0nUiCns3w8Y6Vs5kk9Z9vjhWd8,31
+tzif_parser/models.py,sha256=vFFHVS72nepRkOIIrqT8N1Isk5G95SnatV-eEfXgdIg,502
+tzif_parser/posix.py,sha256=TgaQY1j7JVFojsjRYSvGCMsgkIPTPvh3qVFJWva8uPU,6359
+tzif_parser/tz_transition.py,sha256=o4s8TGuD6MfW80vWWegmbKKRrW7Fqx4HcnGrJT2uS80,3178
+tzif_parser/tzif.py,sha256=OmEDmhEJFHET_GOYQrTXEuXuR-6DupR1kDpGDVZqugY,3311
+tzif_parser/tzif_body.py,sha256=EqnDdvD5AQ-DhqVDaR_AKMicI_qTnLIGpBO46SN9e6A,5716
+tzif_parser/tzif_header.py,sha256=bmXnbIe07zbeszeROX0jpznvoSVoL0qkDAZBTOAU9H8,1291
+tzif_parser-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tzif_parser-0.0.3.dist-info/METADATA,sha256=oh0x7sqCFFPP0fjVWPeUv5v0Hc1NLFZ3MtB2zaVCXYk,4028
+tzif_parser-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tzif_parser-0.0.3.dist-info/top_level.txt,sha256=YTcjab106TvLQ8ebqwklzFm2-7V-64G7FD3mh0_1Fm4,12
+tzif_parser-0.0.3.dist-info/RECORD,,
