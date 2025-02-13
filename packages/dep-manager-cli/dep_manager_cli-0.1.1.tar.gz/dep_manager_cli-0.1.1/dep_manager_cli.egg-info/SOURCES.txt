@@ -1,0 +1,9 @@
+setup.py
+dep_manager/__init__.py
+dep_manager/cli.py
+dep_manager_cli.egg-info/PKG-INFO
+dep_manager_cli.egg-info/SOURCES.txt
+dep_manager_cli.egg-info/dependency_links.txt
+dep_manager_cli.egg-info/entry_points.txt
+dep_manager_cli.egg-info/requires.txt
+dep_manager_cli.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: dep-manager-cli
+Version: 0.1.1
+Requires-Dist: typer[all]
+Requires-Dist: rich
+Requires-Dist: requests
+Requires-Dist: tqdm
+Dynamic: requires-dist

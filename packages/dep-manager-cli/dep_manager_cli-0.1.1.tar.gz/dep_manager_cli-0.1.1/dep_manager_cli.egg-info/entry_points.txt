@@ -1,0 +1,2 @@
+[console_scripts]
+dep-manager = dep_manager.cli:app
