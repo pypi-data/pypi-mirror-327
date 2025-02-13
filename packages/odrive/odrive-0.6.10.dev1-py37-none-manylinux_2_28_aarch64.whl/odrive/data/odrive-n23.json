@@ -1,0 +1,27 @@
+{
+    "name": "ODrive N23",
+    "mcu": "STM32H72x",
+    "min_voltage": 6.0,
+    "max_voltage": 30.0,
+    "inverters": [
+        {"drv": {"$ref": "drv8316"}, "max_current": 7.0}
+    ],
+    "rails": {
+        "vcc": 3.3,
+        "5v": 4.7
+    },
+    "aux_inverters": [],
+    "io": {},
+    "inc_enc": [],
+    "spi": [],
+    "uart": [],
+    "step_dir": [],
+    "rs485": [],
+    "temp_in": [],
+    "fan": false,
+    "onboard_encoders": 1,
+    "defaults": {
+        "inc_enc_z": [],
+        "spi_ncs": []
+    }
+}
