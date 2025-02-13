@@ -1,0 +1,12 @@
+ffcount/__version__.py,sha256=mVxKIGxtrGDxpw1VnIuQjDpDht1bSZNu3msdMzVhIpg,89
+ffcount/__init__.py,sha256=CnlXhPqZ43nguagPqN-OzmC8o-sOsnJ1O4UUNba12Ow,1492
+ffcount/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcount/__main__.py,sha256=Ha050ki-IMX-Q_IPh2CrDkFiDiPV7Hc7Ro7FpzNvQdU,2007
+ffcount/count.pyi,sha256=4141OfSCBffJDaxelZIQJ4qmdp3qWoPafzWlN_fYEyA,193
+ffcount/count.cpython-38-x86_64-linux-gnu.so,sha256=RnZnsn9O_9PE4bYky6UjjrNo0MqufUyvVT3o1V3s6Xk,274680
+ffcount-0.2.3.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ffcount-0.2.3.dist-info/WHEEL,sha256=c6-_gZWJyY1MfPm68AsBzR61QcIqa6gAPHUx0fvKrLM,216
+ffcount-0.2.3.dist-info/METADATA,sha256=2ZCs8wMwgKTE6R7NWBxtzCNG16I9S0jcMSk1oTnNsbg,2558
+ffcount-0.2.3.dist-info/top_level.txt,sha256=MuXaiMWmhQn1JRmmIj2FaXUROEAnXYfRYgWvDDecEak,8
+ffcount-0.2.3.dist-info/RECORD,,
+ffcount-0.2.3.dist-info/entry_points.txt,sha256=lW78y5HYXvkbJ-5IAhi526HOY_SoIc9GX4cUAC7iEOw,50
