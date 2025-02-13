@@ -1,0 +1,4 @@
+moviepy
+dearpygui
+Pillow
+ffmpeg_installer
