@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: time-server-yamacr
+Version: 0.1.2
+Summary: A simple web server that returns the current time.
+Home-page: https://github.com/rsmymc/cyb600_project1
+Author: Rasim Yamac
+Author-email: yamacr@canisius.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+
+Time Server
+A simple Python web server that returns the current time.
+
+Installation
+You can install this package from PyPI using:
+
+pip install time_server_yamacr
+
+Usage
+Running the Server
+To start the web server, run:
+
+time-server
+
+This will start a server on http://localhost:8080, which will return the current time.
+
+Accessing the Time
+Once the server is running, open a browser or use curl:
+
+curl http://localhost:8080
+
+
