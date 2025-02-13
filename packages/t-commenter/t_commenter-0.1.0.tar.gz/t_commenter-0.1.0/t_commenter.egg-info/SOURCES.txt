@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+t_commenter.egg-info/PKG-INFO
+t_commenter.egg-info/SOURCES.txt
+t_commenter.egg-info/dependency_links.txt
+t_commenter.egg-info/requires.txt
+t_commenter.egg-info/top_level.txt
+tcommenter/__init__.py
+tcommenter/tсommenter.py
+tcommenter/sql/__init__.py
+tcommenter/sql/postgre_sql.py
