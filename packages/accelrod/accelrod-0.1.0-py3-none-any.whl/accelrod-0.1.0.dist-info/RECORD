@@ -1,0 +1,9 @@
+accelrod/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+accelrod/benchmark.py,sha256=2OB0VJucmquqbEAuNCWVgSwiPUJJXDfbx5vgjFftPZQ,7939
+accelrod/device.py,sha256=fbEvoxdW_d1lIc5SI4BIEzRiIn9nc_1TxdqT_5EQ-RM,667
+accelrod/utils.py,sha256=UoocJxAfVaCbfSzoOKPovAPIHIO6yjZrXeVTMrry3AU,389
+accelrod-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+accelrod-0.1.0.dist-info/METADATA,sha256=_SStUzsxcS55BfUDT-xIt8QIz0iGffD8aakmU2KYPL0,1751
+accelrod-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+accelrod-0.1.0.dist-info/top_level.txt,sha256=PcND_TbM4mlLr49ISUGPSTazUT9M6cgQmsqF0PJeClQ,9
+accelrod-0.1.0.dist-info/RECORD,,
