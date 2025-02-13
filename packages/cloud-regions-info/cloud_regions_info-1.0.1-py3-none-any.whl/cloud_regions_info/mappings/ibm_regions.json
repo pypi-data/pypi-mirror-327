@@ -1,0 +1,138 @@
+{
+    "us-south": {
+        "location": "Dallas",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "raw": "us-south"
+    },
+    "us-east": {
+        "location": "Washington DC",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 38.9072,
+        "longitude": -77.0369,
+        "raw": "us-east"
+    },
+    "ca-tor": {
+        "location": "Toronto",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 43.6532,
+        "longitude": -79.3832,
+        "raw": "ca-tor"
+    },
+    "br-sao": {
+        "location": "Sao Paulo",
+        "country": "Brazil",
+        "flag": "🇧🇷",
+        "latitude": -23.5505,
+        "longitude": -46.6333,
+        "raw": "br-sao"
+    },
+    "eu-gb": {
+        "location": "London",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "eu-gb"
+    },
+    "eu-de": {
+        "location": "Frankfurt",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.1109,
+        "longitude": 8.6821,
+        "raw": "eu-de"
+    },
+    "eu-es": {
+        "location": "Madrid",
+        "country": "Spain",
+        "flag": "🇪🇸",
+        "latitude": 40.4168,
+        "longitude": -3.7038,
+        "raw": "eu-es"
+    },
+    "au-syd": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "au-syd"
+    },
+    "jp-tok": {
+        "location": "Tokyo",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "raw": "jp-tok"
+    },
+    "jp-osa": {
+        "location": "Osaka",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 34.6937,
+        "longitude": 135.5023,
+        "raw": "jp-osa"
+    },
+    "kr-seo": {
+        "location": "Seoul",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 37.5665,
+        "longitude": 126.9780,
+        "raw": "kr-seo"
+    },
+    "us-south-2": {
+        "location": "Dallas 2",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "raw": "us-south-2"
+    },
+    "us-south-3": {
+        "location": "Dallas 3",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "raw": "us-south-3"
+    },
+    "ca-central": {
+        "location": "Montreal",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 45.5017,
+        "longitude": -73.5673,
+        "raw": "ca-central"
+    },
+    "eu-fr2": {
+        "location": "Paris",
+        "country": "France",
+        "flag": "🇫🇷",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "raw": "eu-fr2"
+    },
+    "eu-it1": {
+        "location": "Milan",
+        "country": "Italy",
+        "flag": "🇮🇹",
+        "latitude": 45.4642,
+        "longitude": 9.1900,
+        "raw": "eu-it1"
+    },
+    "ap-north": {
+        "location": "Osaka",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 34.6937,
+        "longitude": 135.5023,
+        "raw": "ap-north"
+    }
+} 

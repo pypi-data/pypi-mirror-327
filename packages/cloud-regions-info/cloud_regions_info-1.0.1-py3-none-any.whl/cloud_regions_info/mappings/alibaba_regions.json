@@ -1,0 +1,210 @@
+{
+    "cn-hangzhou": {
+        "location": "Hangzhou",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 30.2741,
+        "longitude": 120.1551,
+        "raw": "cn-hangzhou"
+    },
+    "cn-shanghai": {
+        "location": "Shanghai",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 31.2304,
+        "longitude": 121.4737,
+        "raw": "cn-shanghai"
+    },
+    "cn-beijing": {
+        "location": "Beijing",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 39.9042,
+        "longitude": 116.4074,
+        "raw": "cn-beijing"
+    },
+    "cn-shenzhen": {
+        "location": "Shenzhen",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 22.5431,
+        "longitude": 114.0579,
+        "raw": "cn-shenzhen"
+    },
+    "cn-hongkong": {
+        "location": "Hong Kong",
+        "country": "Hong Kong SAR",
+        "flag": "🇭🇰",
+        "latitude": 22.3193,
+        "longitude": 114.1694,
+        "raw": "cn-hongkong"
+    },
+    "ap-southeast-1": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "ap-southeast-1"
+    },
+    "ap-southeast-2": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "ap-southeast-2"
+    },
+    "ap-southeast-3": {
+        "location": "Kuala Lumpur",
+        "country": "Malaysia",
+        "flag": "🇲🇾",
+        "latitude": 3.1390,
+        "longitude": 101.6869,
+        "raw": "ap-southeast-3"
+    },
+    "ap-southeast-5": {
+        "location": "Jakarta",
+        "country": "Indonesia",
+        "flag": "🇮🇩",
+        "latitude": -6.2088,
+        "longitude": 106.8456,
+        "raw": "ap-southeast-5"
+    },
+    "ap-south-1": {
+        "location": "Mumbai",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "raw": "ap-south-1"
+    },
+    "ap-northeast-1": {
+        "location": "Tokyo",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "raw": "ap-northeast-1"
+    },
+    "ap-northeast-2": {
+        "location": "Seoul",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 37.5665,
+        "longitude": 126.9780,
+        "raw": "ap-northeast-2"
+    },
+    "us-east-1": {
+        "location": "Virginia",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.4316,
+        "longitude": -78.6569,
+        "raw": "us-east-1"
+    },
+    "us-west-1": {
+        "location": "Silicon Valley",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.3875,
+        "longitude": -122.0575,
+        "raw": "us-west-1"
+    },
+    "eu-central-1": {
+        "location": "Frankfurt",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.1109,
+        "longitude": 8.6821,
+        "raw": "eu-central-1"
+    },
+    "eu-west-1": {
+        "location": "London",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "eu-west-1"
+    },
+    "me-east-1": {
+        "location": "Dubai",
+        "country": "United Arab Emirates",
+        "flag": "🇦🇪",
+        "latitude": 25.2048,
+        "longitude": 55.2708,
+        "raw": "me-east-1"
+    },
+    "cn-guangzhou": {
+        "location": "Guangzhou",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 23.1291,
+        "longitude": 113.2644,
+        "raw": "cn-guangzhou"
+    },
+    "cn-qingdao": {
+        "location": "Qingdao",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 36.0671,
+        "longitude": 120.3826,
+        "raw": "cn-qingdao"
+    },
+    "cn-chengdu": {
+        "location": "Chengdu",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 30.5728,
+        "longitude": 104.0668,
+        "raw": "cn-chengdu"
+    },
+    "cn-wulanchabu": {
+        "location": "Ulanqab",
+        "country": "China",
+        "flag": "🇨🇳",
+        "latitude": 41.0178,
+        "longitude": 113.1145,
+        "raw": "cn-wulanchabu"
+    },
+    "ap-southeast-6": {
+        "location": "Manila",
+        "country": "Philippines",
+        "flag": "🇵🇭",
+        "latitude": 14.5995,
+        "longitude": 120.9842,
+        "raw": "ap-southeast-6"
+    },
+    "ap-southeast-7": {
+        "location": "Bangkok",
+        "country": "Thailand",
+        "flag": "🇹🇭",
+        "latitude": 13.7563,
+        "longitude": 100.5018,
+        "raw": "ap-southeast-7"
+    },
+    "me-central-1": {
+        "location": "Doha",
+        "country": "Qatar",
+        "flag": "🇶🇦",
+        "latitude": 25.2867,
+        "longitude": 51.5333,
+        "raw": "me-central-1"
+    },
+    "me-east-2": {
+        "location": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "flag": "🇦🇪",
+        "latitude": 24.4539,
+        "longitude": 54.3773,
+        "raw": "me-east-2"
+    },
+    "eu-central-2": {
+        "location": "Zurich",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "latitude": 47.3769,
+        "longitude": 8.5417,
+        "raw": "eu-central-2"
+    }
+} 

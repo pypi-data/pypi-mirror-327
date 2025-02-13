@@ -1,0 +1,234 @@
+{
+    "us-central1": {
+        "location": "Iowa",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 41.878113,
+        "longitude": -93.097702,
+        "raw": "us-central1"
+    },
+    "us-east1": {
+        "location": "South Carolina",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 33.836082,
+        "longitude": -81.163727,
+        "raw": "us-east1"
+    },
+    "us-east4": {
+        "location": "Northern Virginia",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.478397,
+        "longitude": -76.453077,
+        "raw": "us-east4"
+    },
+    "us-west1": {
+        "location": "Oregon",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 43.804133,
+        "longitude": -120.554201,
+        "raw": "us-west1"
+    },
+    "us-west2": {
+        "location": "Los Angeles",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 34.052234,
+        "longitude": -118.243685,
+        "raw": "us-west2"
+    },
+    "us-west3": {
+        "location": "Salt Lake City",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 40.760779,
+        "longitude": -111.891047,
+        "raw": "us-west3"
+    },
+    "us-west4": {
+        "location": "Las Vegas",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 36.169941,
+        "longitude": -115.139830,
+        "raw": "us-west4"
+    },
+    "europe-west1": {
+        "location": "Belgium",
+        "country": "Belgium",
+        "flag": "🇧🇪",
+        "latitude": 50.503887,
+        "longitude": 4.469936,
+        "raw": "europe-west1"
+    },
+    "europe-west2": {
+        "location": "London",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.507351,
+        "longitude": -0.127758,
+        "raw": "europe-west2"
+    },
+    "europe-west3": {
+        "location": "Frankfurt",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.110922,
+        "longitude": 8.682127,
+        "raw": "europe-west3"
+    },
+    "europe-west4": {
+        "location": "Netherlands",
+        "country": "Netherlands",
+        "flag": "🇳🇱",
+        "latitude": 52.374031,
+        "longitude": 4.889690,
+        "raw": "europe-west4"
+    },
+    "europe-west6": {
+        "location": "Zurich",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "latitude": 47.376887,
+        "longitude": 8.541694,
+        "raw": "europe-west6"
+    },
+    "europe-west8": {
+        "location": "Milan",
+        "country": "Italy",
+        "flag": "🇮🇹",
+        "latitude": 45.464204,
+        "longitude": 9.189982,
+        "raw": "europe-west8"
+    },
+    "europe-west9": {
+        "location": "Paris",
+        "country": "France",
+        "flag": "🇫🇷",
+        "latitude": 48.856614,
+        "longitude": 2.352222,
+        "raw": "europe-west9"
+    },
+    "europe-north1": {
+        "location": "Finland",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "latitude": 60.169856,
+        "longitude": 24.938379,
+        "raw": "europe-north1"
+    },
+    "asia-east1": {
+        "location": "Taiwan",
+        "country": "Taiwan",
+        "flag": "🇹🇼",
+        "latitude": 24.105390,
+        "longitude": 120.686249,
+        "raw": "asia-east1"
+    },
+    "asia-east2": {
+        "location": "Hong Kong",
+        "country": "Hong Kong",
+        "flag": "🇭🇰",
+        "latitude": 22.396428,
+        "longitude": 114.109497,
+        "raw": "asia-east2"
+    },
+    "asia-northeast1": {
+        "location": "Tokyo",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 35.689487,
+        "longitude": 139.691706,
+        "raw": "asia-northeast1"
+    },
+    "asia-northeast2": {
+        "location": "Osaka",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 34.693738,
+        "longitude": 135.502165,
+        "raw": "asia-northeast2"
+    },
+    "asia-northeast3": {
+        "location": "Seoul",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 37.566535,
+        "longitude": 126.977969,
+        "raw": "asia-northeast3"
+    },
+    "asia-south1": {
+        "location": "Mumbai",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 19.075984,
+        "longitude": 72.877656,
+        "raw": "asia-south1"
+    },
+    "asia-south2": {
+        "location": "Delhi",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 28.613939,
+        "longitude": 77.209021,
+        "raw": "asia-south2"
+    },
+    "asia-southeast1": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.352083,
+        "longitude": 103.819836,
+        "raw": "asia-southeast1"
+    },
+    "asia-southeast2": {
+        "location": "Jakarta",
+        "country": "Indonesia",
+        "flag": "🇮🇩",
+        "latitude": -6.175110,
+        "longitude": 106.865039,
+        "raw": "asia-southeast2"
+    },
+    "australia-southeast1": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.868820,
+        "longitude": 151.209295,
+        "raw": "australia-southeast1"
+    },
+    "australia-southeast2": {
+        "location": "Melbourne",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -37.813628,
+        "longitude": 144.963058,
+        "raw": "australia-southeast2"
+    },
+    "southamerica-east1": {
+        "location": "São Paulo",
+        "country": "Brazil",
+        "flag": "🇧🇷",
+        "latitude": -23.550520,
+        "longitude": -46.633309,
+        "raw": "southamerica-east1"
+    },
+    "southamerica-west1": {
+        "location": "Santiago",
+        "country": "Chile",
+        "flag": "🇨🇱",
+        "latitude": -33.448890,
+        "longitude": -70.669265,
+        "raw": "southamerica-west1"
+    },
+    "me-west1": {
+        "location": "Tel Aviv",
+        "country": "Israel",
+        "flag": "🇮🇱",
+        "latitude": 32.085300,
+        "longitude": 34.781768,
+        "raw": "me-west1"
+    }
+} 

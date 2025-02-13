@@ -1,0 +1,362 @@
+{
+    "nam": {
+        "location": "North America",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "raw": "nam"
+    },
+    "usa": {
+        "location": "United States",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "raw": "usa"
+    },
+    "united-states": {
+        "location": "United States",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "raw": "united-states"
+    },
+    "eur": {
+        "location": "Europe",
+        "country": "European Union",
+        "flag": "🇪🇺",
+        "latitude": 50.8503,
+        "longitude": 4.3517,
+        "raw": "eur"
+    },
+    "europe": {
+        "location": "Europe",
+        "country": "European Union",
+        "flag": "🇪🇺",
+        "latitude": 50.8503,
+        "longitude": 4.3517,
+        "raw": "europe"
+    },
+    "gbr": {
+        "location": "United Kingdom",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "gbr"
+    },
+    "united-kingdom": {
+        "location": "United Kingdom",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "united-kingdom"
+    },
+    "apac": {
+        "location": "Asia Pacific",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "apac"
+    },
+    "asia-pacific": {
+        "location": "Asia Pacific",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "asia-pacific"
+    },
+    "can": {
+        "location": "Canada",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 56.1304,
+        "longitude": -106.3468,
+        "raw": "can"
+    },
+    "canada": {
+        "location": "Canada",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 56.1304,
+        "longitude": -106.3468,
+        "raw": "canada"
+    },
+    "fra": {
+        "location": "France",
+        "country": "France",
+        "flag": "🇫🇷",
+        "latitude": 46.2276,
+        "longitude": 2.2137,
+        "raw": "fra"
+    },
+    "france": {
+        "location": "France",
+        "country": "France",
+        "flag": "🇫🇷",
+        "latitude": 46.2276,
+        "longitude": 2.2137,
+        "raw": "france"
+    },
+    "deu": {
+        "location": "Germany",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 51.1657,
+        "longitude": 10.4515,
+        "raw": "deu"
+    },
+    "germany": {
+        "location": "Germany",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 51.1657,
+        "longitude": 10.4515,
+        "raw": "germany"
+    },
+    "ind": {
+        "location": "India",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 20.5937,
+        "longitude": 78.9629,
+        "raw": "ind"
+    },
+    "india": {
+        "location": "India",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 20.5937,
+        "longitude": 78.9629,
+        "raw": "india"
+    },
+    "jpn": {
+        "location": "Japan",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 36.2048,
+        "longitude": 138.2529,
+        "raw": "jpn"
+    },
+    "japan": {
+        "location": "Japan",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 36.2048,
+        "longitude": 138.2529,
+        "raw": "japan"
+    },
+    "kor": {
+        "location": "South Korea",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 35.9078,
+        "longitude": 127.7669,
+        "raw": "kor"
+    },
+    "south-korea": {
+        "location": "South Korea",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 35.9078,
+        "longitude": 127.7669,
+        "raw": "south-korea"
+    },
+    "nor": {
+        "location": "Norway",
+        "country": "Norway",
+        "flag": "🇳🇴",
+        "latitude": 60.4720,
+        "longitude": 8.4689,
+        "raw": "nor"
+    },
+    "norway": {
+        "location": "Norway",
+        "country": "Norway",
+        "flag": "🇳🇴",
+        "latitude": 60.4720,
+        "longitude": 8.4689,
+        "raw": "norway"
+    },
+    "che": {
+        "location": "Switzerland",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "latitude": 46.8182,
+        "longitude": 8.2275,
+        "raw": "che"
+    },
+    "switzerland": {
+        "location": "Switzerland",
+        "country": "Switzerland",
+        "flag": "🇨🇭",
+        "latitude": 46.8182,
+        "longitude": 8.2275,
+        "raw": "switzerland"
+    },
+    "are": {
+        "location": "UAE",
+        "country": "United Arab Emirates",
+        "flag": "🇦🇪",
+        "latitude": 23.4241,
+        "longitude": 53.8478,
+        "raw": "are"
+    },
+    "uae": {
+        "location": "UAE",
+        "country": "United Arab Emirates",
+        "flag": "🇦🇪",
+        "latitude": 23.4241,
+        "longitude": 53.8478,
+        "raw": "uae"
+    },
+    "zaf": {
+        "location": "South Africa",
+        "country": "South Africa",
+        "flag": "🇿🇦",
+        "latitude": -30.5595,
+        "longitude": 22.9375,
+        "raw": "zaf"
+    },
+    "south-africa": {
+        "location": "South Africa",
+        "country": "South Africa",
+        "flag": "🇿🇦",
+        "latitude": -30.5595,
+        "longitude": 22.9375,
+        "raw": "south-africa"
+    },
+    "aus": {
+        "location": "Australia",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -25.2744,
+        "longitude": 133.7751,
+        "raw": "aus"
+    },
+    "australia": {
+        "location": "Australia",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -25.2744,
+        "longitude": 133.7751,
+        "raw": "australia"
+    },
+    "bra": {
+        "location": "Brazil",
+        "country": "Brazil",
+        "flag": "🇧🇷",
+        "latitude": -14.2350,
+        "longitude": -51.9253,
+        "raw": "bra"
+    },
+    "brazil": {
+        "location": "Brazil",
+        "country": "Brazil",
+        "flag": "🇧🇷",
+        "latitude": -14.2350,
+        "longitude": -51.9253,
+        "raw": "brazil"
+    },
+    "nzl": {
+        "location": "New Zealand",
+        "country": "New Zealand",
+        "flag": "🇳🇿",
+        "latitude": -40.9006,
+        "longitude": 174.8860,
+        "raw": "nzl"
+    },
+    "new-zealand": {
+        "location": "New Zealand",
+        "country": "New Zealand",
+        "flag": "🇳🇿",
+        "latitude": -40.9006,
+        "longitude": 174.8860,
+        "raw": "new-zealand"
+    },
+    "sgp": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sgp"
+    },
+    "singapore": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "singapore"
+    },
+    "prt": {
+        "location": "Portugal",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "latitude": 39.3999,
+        "longitude": -8.2245,
+        "raw": "prt"
+    },
+    "portugal": {
+        "location": "Portugal",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "latitude": 39.3999,
+        "longitude": -8.2245,
+        "raw": "portugal"
+    },
+    "irl": {
+        "location": "Ireland",
+        "country": "Ireland",
+        "flag": "🇮🇪",
+        "latitude": 53.1424,
+        "longitude": -7.6921,
+        "raw": "irl"
+    },
+    "ireland": {
+        "location": "Ireland",
+        "country": "Ireland",
+        "flag": "🇮🇪",
+        "latitude": 53.1424,
+        "longitude": -7.6921,
+        "raw": "ireland"
+    },
+    "isr": {
+        "location": "Israel",
+        "country": "Israel",
+        "flag": "🇮🇱",
+        "latitude": 31.0461,
+        "longitude": 34.8516,
+        "raw": "isr"
+    },
+    "israel": {
+        "location": "Israel",
+        "country": "Israel",
+        "flag": "🇮🇱",
+        "latitude": 31.0461,
+        "longitude": 34.8516,
+        "raw": "israel"
+    },
+    "qat": {
+        "location": "Qatar",
+        "country": "Qatar",
+        "flag": "🇶🇦",
+        "latitude": 25.3548,
+        "longitude": 51.1839,
+        "raw": "qat"
+    },
+    "qatar": {
+        "location": "Qatar",
+        "country": "Qatar",
+        "flag": "🇶🇦",
+        "latitude": 25.3548,
+        "longitude": 51.1839,
+        "raw": "qatar"
+    }
+} 
