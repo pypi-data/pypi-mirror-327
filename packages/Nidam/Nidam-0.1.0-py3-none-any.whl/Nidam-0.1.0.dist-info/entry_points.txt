@@ -1,0 +1,2 @@
+[console_scripts]
+nidam = nidam.__main__:app
