@@ -1,0 +1,6 @@
+spydcmtk>=1.2.3
+pandas
+numpy
+watchdog
+nicegui
+ngawari
