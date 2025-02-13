@@ -1,0 +1,69 @@
+[project]
+name = "aiolibs-executor"
+description = "Asyncio version of concurrent.futures.Executor"
+authors = [
+    {name = "Andrew Svetlov",email = "andrew.svetlov@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+dynamic = ["version"]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[tool.poetry]
+version = "0.0.0"
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+coverage = "^7.6.11"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 79
+
+[tool.ruff.lint]
+select = [
+    "E", "F", "I", "C90", "UP", "B", "ASYNC", "N", "A", "C4", "EM", "FA", "ICN",
+    "G", "PIE", "T20", "PYI", "RET", "PTH", "T10"
+]
+ignore = [
+  "A003",  # Class attribute "..." is shadowing a Python builtin
+  "EM101", # Exception must not use a string literal, assign to variable first
+  "EM102", # Exception must not use an f-string literal, assign to variable first
+  "N818"
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+lines-after-imports = 2
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+filterwarnings = """
+    error
+    """
+
+addopts = """
+    --cov=aiolibs_executor
+    --cov-report=term
+    --cov-report=xml:coverage/.coverage.xml
+"""
+
+[tool.coverage.run]
+branch = true
+source = ["aiolibs_executor"]
+
+[tool.coverage.xml]
+output = ".coverage.xml"
+
+[tool.mypy]
+files = ["aiolibs_executor", "tests"]
+strict = true
+pretty = true
