@@ -1,0 +1,13 @@
+numpy
+pandas
+networkx
+matplotlib
+scipy
+prettytable
+plotly
+folium
+geopandas
+
+[OPF]
+pyomo
+ipopt
