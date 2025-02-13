@@ -1,0 +1,1 @@
+Bump `dkist-processing-common` to 10.5.12, which increases the DSETID to 6 characters.
