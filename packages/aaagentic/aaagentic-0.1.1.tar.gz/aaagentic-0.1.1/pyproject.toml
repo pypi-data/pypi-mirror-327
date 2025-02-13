@@ -1,0 +1,49 @@
+[project]
+name = "aaagentic"
+version = "0.1.1"
+description = "An opinionated framework for building AI Agents"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-news-feed>=1.1.0",
+    "googlenewsdecoder>=0.1.7",
+    "html2text>=2024.2.26",
+    "jinja2>=3.1.5",
+    "pyyaml>=6.0.2",
+    "streamlit>=1.41.1",
+    "swarm",
+    "thespian>=4.0.0",
+    "litellm>=1.60.2",
+    "html2text>=2024.2.26",
+    "typer>=0.15.1",
+    "cryptography>=44.0.0",
+    "psycopg2-binary>=2.9.9",
+    "sqlalchemy>=2.0.26",
+    "ray>=2.42.0",
+    "debugpy>=1.8.0",
+    "aiofiles>=24.1.0",
+    "pytest-asyncio>=0.25.3",
+]
+
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest",
+    "black",
+]
+
+[project.scripts]
+agentic = "agentic.cli:app"
+
+
+[tool.hatch.version]
+path = "agentic/__init__.py"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src", "agentic_examples" = "examples"}
+packages = ["agentic", "agentic_examples"]
