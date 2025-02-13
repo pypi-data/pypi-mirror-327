@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+shimpan/__init__.py
+shimpan/__main__.py
+shimpan/cli.py
+shimpan/shim.exe
+shimpan.egg-info/PKG-INFO
+shimpan.egg-info/SOURCES.txt
+shimpan.egg-info/dependency_links.txt
+shimpan.egg-info/entry_points.txt
+shimpan.egg-info/top_level.txt
