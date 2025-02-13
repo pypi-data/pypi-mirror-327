@@ -1,0 +1,149 @@
+from datetime import datetime
+from typing import List
+from at_common_schemas.service.data.base import BaseSchema
+from .constants import StockFinancialPeriod
+
+class StockFinancialStatementCashFlow(BaseSchema):
+    date: datetime
+    symbol: str
+    reported_currency: str
+    cik: str
+    filling_date: datetime
+    accepted_date: datetime
+    calendar_year: str
+    period: str
+    net_income: float
+    depreciation_and_amortization: float
+    deferred_income_tax: float
+    stock_based_compensation: float
+    change_in_working_capital: float
+    accounts_receivables: float
+    inventory: float
+    accounts_payables: float
+    other_working_capital: float
+    other_non_cash_items: float
+    net_cash_provided_by_operating_activities: float
+    investments_in_property_plant_and_equipment: float
+    acquisitions_net: float
+    purchases_of_investments: float
+    sales_maturities_of_investments: float
+    other_investing_activites: float
+    net_cash_used_for_investing_activites: float
+    debt_repayment: float
+    common_stock_issued: float
+    common_stock_repurchased: float
+    dividends_paid: float
+    other_financing_activites: float
+    net_cash_used_provided_by_financing_activities: float
+    effect_of_forex_changes_on_cash: float
+    net_change_in_cash: float
+    cash_at_end_of_period: float
+    cash_at_beginning_of_period: float
+    operating_cash_flow: float
+    capital_expenditure: float
+    free_cash_flow: float
+
+class StockFinancialStatementBalanceSheet(BaseSchema):
+    date: datetime
+    symbol: str
+    reported_currency: str
+    cik: str
+    filling_date: datetime
+    accepted_date: datetime
+    calendar_year: str
+    period: str
+    cash_and_cash_equivalents: float
+    short_term_investments: float
+    cash_and_short_term_investments: float
+    net_receivables: float
+    inventory: float
+    other_current_assets: float
+    total_current_assets: float
+    property_plant_equipment_net: float
+    goodwill: float
+    intangible_assets: float
+    goodwill_and_intangible_assets: float
+    long_term_investments: float
+    tax_assets: float
+    other_non_current_assets: float
+    total_non_current_assets: float
+    other_assets: float
+    total_assets: float
+    account_payables: float
+    short_term_debt: float
+    tax_payables: float
+    deferred_revenue: float
+    other_current_liabilities: float
+    total_current_liabilities: float
+    long_term_debt: float
+    deferred_revenue_non_current: float
+    deferred_tax_liabilities_non_current: float
+    other_non_current_liabilities: float
+    total_non_current_liabilities: float
+    other_liabilities: float
+    total_liabilities: float
+    preferred_stock: float
+    common_stock: float
+    retained_earnings: float
+    accumulated_other_comprehensive_income_loss: float
+    other_total_stockholders_equity: float
+    total_stockholders_equity: float
+    total_equity: float
+    total_liabilities_and_stockholders_equity: float
+    minority_interest: float
+    total_liabilities_and_total_equity: float
+    total_investments: float
+    total_debt: float
+    net_debt: float
+
+class StockFinancialStatementIncome(BaseSchema):
+    date: datetime
+    symbol: str
+    reported_currency: str
+    cik: str
+    filling_date: datetime
+    accepted_date: datetime
+    calendar_year: str
+    period: str
+    revenue: float
+    cost_of_revenue: float
+    gross_profit: float
+    gross_profit_ratio: float
+    research_and_development_expenses: float
+    general_and_administrative_expenses: float
+    selling_and_marketing_expenses: float
+    selling_general_and_administrative_expenses: float
+    other_expenses: float
+    operating_expenses: float
+    cost_and_expenses: float
+    interest_income: float
+    interest_expense: float
+    depreciation_and_amortization: float
+    ebitda: float
+    ebitda_ratio: float
+    operating_income: float
+    operating_income_ratio: float
+    total_other_income_expenses_net: float
+    income_before_tax: float
+    income_before_tax_ratio: float
+    income_tax_expense: float
+    net_income: float
+    net_income_ratio: float
+    eps: float
+    eps_diluted: float
+    weighted_average_shs_out: float
+    weighted_average_shs_out_dil: float
+
+class StockFinancialStatement(BaseSchema):
+    date: datetime
+    income: StockFinancialStatementIncome
+    balance_sheet: StockFinancialStatementBalanceSheet
+    cash_flow: StockFinancialStatementCashFlow
+
+class StockFinancialStatementRequest(BaseSchema):
+    symbol: str
+    period: StockFinancialPeriod
+    limit: int
+
+class StockFinancialStatementResponse(BaseSchema):
+    statements: List[StockFinancialStatement]
