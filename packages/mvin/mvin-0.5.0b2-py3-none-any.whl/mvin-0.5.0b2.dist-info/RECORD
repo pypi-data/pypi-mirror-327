@@ -1,0 +1,11 @@
+mvin-0.5.0b2.dist-info/METADATA,sha256=O4zf-VQRU4WGtXyruFS1G0KYamENKKVsYhyrnWmpvck,8473
+mvin-0.5.0b2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+mvin-0.5.0b2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+mvin-0.5.0b2.dist-info/licenses/LICENSE_APACHE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+mvin-0.5.0b2.dist-info/licenses/LICENSE_MIT,sha256=EXpI1-R0vxTKWx1m7jZD8Z9RhJqzvXQw0cJu1n31fBI,1079
+mvin/__init__.py,sha256=x2S_10XdcWlzvd5cSJbBmPgBENINvGoxsZkh_tw_8hI,6029
+mvin/excel_ops.py,sha256=qz27XAcbJBWWHzNap_OB_Zu6JCBVemDW88bql7QnRxU,2506
+mvin/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mvin/functions/excel_lib.py,sha256=6KHRlURUX4VThnNAcM2lUB1Zy_vAgVOOn6dlyfpnp9U,4151
+mvin/interpreter.py,sha256=CYJyGIHK_bRqEQAFnIsLcUOJVJoSQ86MFN-JeqktHXQ,17694
+mvin-0.5.0b2.dist-info/RECORD,,
