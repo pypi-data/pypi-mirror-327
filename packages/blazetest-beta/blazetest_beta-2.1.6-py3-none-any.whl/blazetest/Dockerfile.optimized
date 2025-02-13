@@ -1,0 +1,28 @@
+# Build stage
+FROM railflow/blazetest:PYTHON_VERSION as builder
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Copy only dependency-related files first
+COPY requirements*.txt pyproject.toml poetry.lock* Pipfile* ./
+COPY .blazetest/scripts/install_dependencies.sh /tmp/
+
+# Install dependencies
+RUN /usr/bin/bash /tmp/install_dependencies.sh
+
+# Runtime stage
+FROM railflow/blazetest:PYTHON_VERSION
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Copy installed dependencies from builder
+COPY --from=builder /usr/local/lib/python*/site-packages /usr/local/lib/python*/site-packages/
+COPY --from=builder /usr/local/bin /usr/local/bin/
+
+# Copy application code last for better layer caching
+COPY . ${LAMBDA_TASK_ROOT}/
+COPY .blazetest/tests_runner_handler ${LAMBDA_TASK_ROOT}/tests_runner_handler
+
+CMD ["tests_runner_handler.handler.run_tests"]
