@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Nidam.egg-info/PKG-INFO
+Nidam.egg-info/SOURCES.txt
+Nidam.egg-info/dependency_links.txt
+Nidam.egg-info/entry_points.txt
+Nidam.egg-info/requires.txt
+Nidam.egg-info/top_level.txt

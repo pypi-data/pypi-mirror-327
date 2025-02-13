@@ -1,0 +1,12 @@
+bentoml
+typer
+questionary
+pyaml
+psutil
+pathlib
+pip_requirements_parser
+nvidia-ml-py
+dulwich
+tabulate
+uv
+openai==1.61.0
