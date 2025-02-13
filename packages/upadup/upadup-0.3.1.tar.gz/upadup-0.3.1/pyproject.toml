@@ -1,0 +1,79 @@
+[build-system]
+requires = ["flit-core"]
+build-backend = "flit_core.buildapi"
+
+[dependency-groups]
+coverage = ["coverage[toml]"]
+lint = ["pre-commit"]
+typing = ["mypy", "types-requests"]
+test = ["pytest", "responses", { include-group = "coverage" }]
+build = ["twine", "build"]
+
+[project]
+name = "upadup"
+version = "0.3.1"
+description = 'utility for python additional_dependencies updates in pre-commit'
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = []
+authors = [
+  { name = "Stephen Rosen", email = "sirosen0@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "requests>=2,<3",
+    "ruamel.yaml>=0.18.10,<0.19"
+]
+
+[project.urls]
+documentation = "https://github.com/sirosen/upadup#readme"
+issues = "https://github.com/sirosen/upadup/issues"
+source = "https://github.com/sirosen/upadup"
+
+[project.scripts]
+upadup = "upadup.main:main"
+
+
+[tool.mypy]
+sqlite_cache = true
+ignore_missing_imports = true
+disallow_subclassing_any = false
+files = ["src"]
+
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["upadup"]
+
+[tool.coverage.paths]
+source = [
+    "src/",
+    "*/site-packages/",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+# fail_under = 50
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if t.TYPE_CHECKING:",
+    "@t.overload",
+]
+
+[tool.isort]
+profile = "black"
