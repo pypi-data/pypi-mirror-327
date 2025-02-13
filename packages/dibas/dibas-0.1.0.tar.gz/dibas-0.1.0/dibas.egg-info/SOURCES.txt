@@ -1,0 +1,7 @@
+README.md
+setup.py
+dibas/__init__.py
+dibas.egg-info/PKG-INFO
+dibas.egg-info/SOURCES.txt
+dibas.egg-info/dependency_links.txt
+dibas.egg-info/top_level.txt
