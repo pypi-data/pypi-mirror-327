@@ -1,0 +1,3 @@
+[console_scripts]
+musx2mxl = musx2mxl.musx2mxl:main
+
