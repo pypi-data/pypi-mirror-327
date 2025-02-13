@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: MSCI
+Version: 0.1.0
+Summary: MSCI assesses peptide fragmentation spectra information content.
+Home-page: https://github.com/proteomicsunitcrg/MSCI
+Author: Zahra ELHAMRAOUI
+Author-email: zahra.elhamraoui@crg.eu
+License: MIT license
+Keywords: MSCI
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click>=7.0
+Requires-Dist: streamlit
+Requires-Dist: matchms
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
