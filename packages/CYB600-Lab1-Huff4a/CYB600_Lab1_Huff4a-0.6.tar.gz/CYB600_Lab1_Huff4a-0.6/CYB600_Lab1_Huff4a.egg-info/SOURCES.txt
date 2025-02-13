@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+CYB600_Lab1_Huff4a.egg-info/PKG-INFO
+CYB600_Lab1_Huff4a.egg-info/SOURCES.txt
+CYB600_Lab1_Huff4a.egg-info/dependency_links.txt
+CYB600_Lab1_Huff4a.egg-info/requires.txt
+CYB600_Lab1_Huff4a.egg-info/top_level.txt
+csc_cyb600_huff4/__init__.py
+csc_cyb600_huff4/time.py
+scripts/cyb600_lab1_server
