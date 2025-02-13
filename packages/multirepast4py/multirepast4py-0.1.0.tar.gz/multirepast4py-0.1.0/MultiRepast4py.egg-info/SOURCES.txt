@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+MultiRepast4py/__init__.py
+MultiRepast4py/network.py
+MultiRepast4py.egg-info/PKG-INFO
+MultiRepast4py.egg-info/SOURCES.txt
+MultiRepast4py.egg-info/dependency_links.txt
+MultiRepast4py.egg-info/top_level.txt
+multirepast4py/__init__.py
+multirepast4py/network.py
+multirepast4py.egg-info/PKG-INFO
+multirepast4py.egg-info/SOURCES.txt
+multirepast4py.egg-info/dependency_links.txt
+multirepast4py.egg-info/top_level.txt
