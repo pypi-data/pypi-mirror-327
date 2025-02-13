@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qubed"
+description = "A library that provides a tree of datacubes called Qube."
+readme = "README.md"
+authors = [
+  {name = "Tom Hodson", email = "thomas.hodson@ecmwf.int"},
+]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+requires-python = ">= 3.11"
+dynamic = ["version"]
+dependencies = [
+    "frozendict",
+]
+
+[project.scripts]
+qubed = "qubed.__main__:main"
+
+[tool.maturin]
+python-source = "src/python"
+module-name = "qubed.rust"
+features = ["pyo3/extension-module"]
+
+
+[project.optional-dependencies]
+rust-backend = ["maturin>=1.7,<2.0", "pyo3"]
+
+stac_server = [
+    "fastapi",
+]
+
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "myst_nb",
+    "sphinx-autobuild"
+]
+
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "flake8",
+    "pre-commit",
+    "isort",
+    "responses",
+]

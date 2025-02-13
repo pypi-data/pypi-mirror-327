@@ -1,0 +1,12 @@
+__pycache__
+.DS_Store
+config.yaml
+.venv
+*.json
+raw_list
+*.egg-info/
+deps/
+docs/_build/
+docs/jupyter_execute
+target/
+*.so
