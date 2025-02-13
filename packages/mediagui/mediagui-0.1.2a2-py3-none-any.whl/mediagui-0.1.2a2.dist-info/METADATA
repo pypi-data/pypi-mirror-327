@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: mediagui
+Version: 0.1.2a2
+Summary: A Python package with a GUI for video formatting
+Home-page: https://github.com/khicken/mediaGUI
+Author: Kaleb Kim
+Author-email: mail@kalebkim.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy<2,>=1.26.0
+Requires-Dist: opencv-python<5,>=4.8.1
+Requires-Dist: PyQt6<7,>=6.6.0
+Requires-Dist: PyQt6-Qt6<7,>=6.6.0
+Requires-Dist: PyQt6-sip<14,>=13.5.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# mediaGUI
+A minimal GUI application to preprocess video data.
+
+## Installation
+The recommended method is installing the standalone executable on [GitHub](https://github.com/khicken/mediaGUI) (available for Windows and MacOS).
+
+Otherwise, you can install the package using pip:
+```sh
+pip install mediagui
+```
+
+## Usage
+To launch the application, simply run:
+```sh
+mediagui
+```
+
+## Compatibility
+| Platform | Python Version |
+|----------|----------------|
+| Windows  | 3.10 |
+| macOS    | 3.10 |
+| Linux    | 3.10 |
+
+## Contributing
+Contributions are welcome. Please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
