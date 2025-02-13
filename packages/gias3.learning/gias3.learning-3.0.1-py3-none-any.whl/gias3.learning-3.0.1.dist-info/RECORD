@@ -1,0 +1,12 @@
+gias3.learning-3.0.1-py3.11-nspkg.pth,sha256=c9gX0iOef2uHG4FJR3w7XoFGM_Uo-jCEjyOpaZBy2L4,463
+gias3/learning/PCA.py,sha256=uSLZw0BLIVGGOMMdPNuOw20whRiaPePdGwkBKfGH19M,27351
+gias3/learning/PCA_fitting.py,sha256=po1uHfpl5m4JIjTyMnC2EZLgeNL9A7WuC4nZ5Xqt67E,26965
+gias3/learning/__init__.py,sha256=JT2-p66AkFRj-qG_NAMqAtpQyBUDnBEFkSBasEhU6R4,840
+gias3/learning/kernelregression.py,sha256=hYeYGyddVdgf28PDAcXXIluYipP0RkcsDtaQLuT4_RE,5230
+gias3/learning/ols.py,sha256=tUGfHgg7wR3q09_-BhPn3h4RXGMGKi8BLZIxWd0IEuI,9029
+gias3.learning-3.0.1.dist-info/LICENSE,sha256=zeIV5bQjY-soyiRixFWP9IB7OPODxTdiTDHkRlesWPQ,17099
+gias3.learning-3.0.1.dist-info/METADATA,sha256=dQ_B6AruW3dkMKAl0Vfwk7eAkPyuMg0UC8rM-36F_4M,712
+gias3.learning-3.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gias3.learning-3.0.1.dist-info/namespace_packages.txt,sha256=neP4R9WpCbvFzj7C-M-F1mpO4l255wLIwrSSkGGXNAw,6
+gias3.learning-3.0.1.dist-info/top_level.txt,sha256=neP4R9WpCbvFzj7C-M-F1mpO4l255wLIwrSSkGGXNAw,6
+gias3.learning-3.0.1.dist-info/RECORD,,
