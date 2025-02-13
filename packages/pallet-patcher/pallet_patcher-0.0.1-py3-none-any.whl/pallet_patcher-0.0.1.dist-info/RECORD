@@ -1,0 +1,12 @@
+pallet_patcher/__init__.py,sha256=Umj7ao8tj8X5Pojo0ADa3MNuTsYhOWYxSVOW5oJABN4,127
+pallet_patcher/__main__.py,sha256=tPZqX0r_rpoipV2qFN41wINerab2pO0JIEvu8VQ3AHU,207
+pallet_patcher/command.py,sha256=T_Zy8fb_HTBLVYpTn79zZ3MXdiev_6uNmVtFX7f0iyE,1920
+pallet_patcher/manifest.py,sha256=ssE9ZetwgvmybHohRecJ4J9pfSedaFUMeTUdJE5lk6k,2720
+pallet_patcher/search.py,sha256=1Ntr3PwiwA6VfuXdiOKvaP5XdeXTTb_TdKFtn9ndTmQ,5867
+pallet_patcher-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pallet_patcher-0.0.1.dist-info/METADATA,sha256=Io1cUEcZzor26lmyzmohb9U4FrNc53h7DUTFMcgHtqQ,1101
+pallet_patcher-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pallet_patcher-0.0.1.dist-info/entry_points.txt,sha256=j6oNPKpRwawvePMtZtnMvgItpzZlFwqDI3UNNiZ22as,63
+pallet_patcher-0.0.1.dist-info/top_level.txt,sha256=7vmVGJI8w9XneF7zTiH9KDmw-BuXURgS6pLTm-q4eME,15
+pallet_patcher-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pallet_patcher-0.0.1.dist-info/RECORD,,
