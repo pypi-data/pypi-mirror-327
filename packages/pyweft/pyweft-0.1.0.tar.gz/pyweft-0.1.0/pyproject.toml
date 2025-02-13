@@ -1,0 +1,28 @@
+[project]
+name = "pyweft"
+version = "0.1.0"
+authors = [
+  { name="Joseph Hobbs", email="josephrosshobbs@gmail.com" },
+]
+description = "Python Vortex Lattice"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[license]
+text = "MIT"
+file = "LICENSE"
+
+[tool.setuptools]
+license-files = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# [project.urls]
+# Homepage = "https://github.com/pypa/sampleproject"
+# Issues = "https://github.com/pypa/sampleproject/issues"
