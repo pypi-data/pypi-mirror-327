@@ -1,0 +1,7 @@
+click
+tgclients==0.20.0
+
+[dev]
+reuse
+black
+pip-tools
