@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "livecsv"
+dynamic = ["version"]
+dependencies = [
+  "SQLAlchemy",
+  "duckdb",
+  "duckdb_engine",
+]
+requires-python = ">= 3.8"
+description = "A custom SQLAlchemy dialect to load CSV from the web (using DuckDB for caching)"
+readme = "README.md"
+authors = [
+  {name = "Eyal Rahmani", email = "eyal.rahmani@med.uni-heidelberg.de"},
+]
+maintainers = [
+  {name = "Eyal Rahmani", email = "eyal.rahmani@med.uni-heidelberg.de"},
+]
+license = {file = "LICENSE"}
+keywords = ["sqlalchemy", "sql", "csv", "duckdb",]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.entry-points."sqlalchemy.dialects"]
+livecsv = "livecsv.driver:LiveCSVDialect"
+
+[project.urls]
+Homepage = "https://github.com/eyal-erknet/livecsv"
+Repository = "https://github.com/eyal-erknet/livecsv.git"
+
+[tool.setuptools]
+packages = ["livecsv"]
+
+[tool.setuptools_scm]

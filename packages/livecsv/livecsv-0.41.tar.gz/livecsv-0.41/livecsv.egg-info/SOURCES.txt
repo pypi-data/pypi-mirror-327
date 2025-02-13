@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+.github/workflows/ci.yml
+livecsv/__init__.py
+livecsv/driver.py
+livecsv.egg-info/PKG-INFO
+livecsv.egg-info/SOURCES.txt
+livecsv.egg-info/dependency_links.txt
+livecsv.egg-info/entry_points.txt
+livecsv.egg-info/requires.txt
+livecsv.egg-info/top_level.txt
+tests/__init__.py
+tests/test_driver.py
