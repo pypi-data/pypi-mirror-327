@@ -1,0 +1,9 @@
+flask>=3.1.0
+gunicorn>=23.0.0
+pymssql>=2.3.2
+pyspark>=3.5.4
+python-dotenv>=1.0.1
+sqlalchemy>=2.0.38
+uvicorn>=0.34.0
+vaex>=4.17.0
+waitress>=3.0.2
