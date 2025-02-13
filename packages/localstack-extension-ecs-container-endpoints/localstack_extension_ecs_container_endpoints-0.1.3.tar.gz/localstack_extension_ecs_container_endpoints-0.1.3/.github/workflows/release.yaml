@@ -1,0 +1,202 @@
+---
+name: Build Release Binaries & Wheels
+
+on:
+  release:
+    types:
+      - created
+
+  workflow_dispatch:
+    inputs:
+      publish:
+        type: boolean
+        default: false
+        required: false
+        description: >-
+          Push built wheels to PyPI
+      release:
+        type: boolean
+        default: false
+        required: false
+        description: >-
+          Create a new release with the built artifacts
+      release-tag:
+        type: string
+        default: ''
+        required: false
+        description: >-
+          The tag to create a new release for
+      go-src-repo:
+        type: string
+        default: github.com/awslabs/amazon-ecs-local-container-endpoints
+        required: false
+        description: >-
+          The target version of the `amazon-ecs-local-container-endpoints` golang binary
+      go-src-version:
+        type: string
+        default: 1.4.2
+        required: false
+        description: >-
+          The target version of the `amazon-ecs-local-container-endpoints` golang binary
+
+permissions: write-all
+
+env:
+  PKG: amazon-ecs-local-container-endpoints
+  GO_SRC_REPO: github.com/awslabs/amazon-ecs-local-container-endpoints
+  GO_SRC_VERSION: 1.4.2
+
+jobs:
+  build-python:
+    name: Build Python Wheel
+    runs-on: ubuntu-latest
+    outputs:
+      wheel-version: ${{ steps.parse.outputs.version }}
+    steps:
+      - id: install
+        name: Install Rye
+        shell: bash
+        env:
+          RYE_INSTALL_OPTION: --yes
+        run: >-
+          curl -sSf https://rye.astral.sh/get | bash
+          && source "${HOME}/.rye/env"
+          && echo "PATH=${PATH}" >> "${GITHUB_ENV}"
+
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v4
+
+      - id: parse
+        name: Parse Wheel Version
+        shell: bash
+        run: >-
+          echo "version=$(cat pyproject.toml | yq -p toml '.project.version')" >> "${GITHUB_OUTPUT}"
+
+      - id: build
+        name: Build Python Wheel
+        shell: bash
+        run: >-
+          mkdir -p ${{ github.workspace }}/artifacts
+          && sed -Ei
+          's#GO_SRC_VERSION: str = "[0-9][.][0-9][.][0-9]"#GO_SRC_VERSION: str = "${{ inputs.go-src-version || env.GO_SRC_VERSION }}"#g'
+          src/localstack_extension_ecs_container_endpoints/extension.py
+          && rye build --clean --out ${{ github.workspace }}/artifacts/
+
+      - id: upload
+        name: Upload Wheel Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          overwrite: true
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+          name: localstack_extension_ecs_container_endpoints-${{ steps.parse.outputs.version }}
+          path: ${{ github.workspace }}/artifacts/localstack_extension_ecs_container_endpoints-${{ steps.parse.outputs.version }}*
+
+      - id: publish
+        name: Publish Wheel To PyPI
+        shell: bash
+        if: ${{ inputs.publish || startsWith(github.ref, 'refs/tags/') }}
+        run: >-
+          if [[ -z "${{ secrets.PYPI_TOKEN }}" ]]; then echo 'Empty PYPI_TOKEN secret' && exit 1; fi
+          && rye publish --yes --skip-existing --token ${{ secrets.PYPI_TOKEN }}
+          ${{ github.workspace }}/artifacts/localstack_extension_ecs_container_endpoints-*
+
+  build-go:
+    name: Build Go Binaries
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/library/golang:1.17-alpine
+      env:
+        GOPATH: /go
+        CGO_ENABLED: "0"
+        GO_REPO: >-
+          ${{ inputs.go-src-repo || env.GO_SRC_REPO }}@v${{ inputs.go-src-version || env.GO_SRC_VERSION }}
+      volumes:
+        - artifacts:/go/bin
+    steps:
+      - id: fetch-source-files
+        name: Fetch Source Files
+        shell: sh
+        run: |
+          for OS in 'linux' 'windows'; do
+            GOOS="${OS}" go install -a -n "${GO_REPO}" 2>&1 | grep 'go: ' 
+          done
+
+      - id: patch-problematic-source-files
+        name: Patch Problematic Source Files
+        shell: sh
+        run: |
+          find "$(go env GOPATH)" \
+            -path '**/pkg/mod/github.com/aws/amazon-ecs-agent/agent*/ecscni/*' \
+            -name 'netconfig.go' \
+            -exec sed -i 's#defaultNetworkName#"network-name"#g' {} \; \
+          && find "$(go env GOPATH)" \
+            -path '**/pkg/mod/github.com/aws/amazon-ecs-agent/agent*/config/*' \
+            -name 'config_windows.go' \
+            -exec sed -i 's#id, err := Sid.String()#id := Sid.String()#g' {} \;
+
+      - id: build-binaries
+        name: Build Go Binaries
+        shell: sh
+        run: |
+          for OS in 'linux' 'darwin' 'windows'; do
+            for ARCH in 'arm64' 'amd64'; do
+              echo ''
+              echo "building binary for: ${OS}/${ARCH}"
+              GOOS="${OS}" GOARCH="${ARCH}" go install "${GO_REPO}"
+              SRC="$(go env GOPATH)/bin/${OS}_${ARCH}/${PKG}$(if [ "${OS}" = 'windows' ]; then echo '.exe'; fi)"
+              DEST="$(go env GOPATH)/bin/${PKG}-${OS}-${ARCH}$(if [ "${OS}" = 'windows' ]; then echo '.exe'; fi)"
+              if test -f "$(go env GOPATH)/bin/${PKG}"; then
+                mv "$(go env GOPATH)/bin/${PKG}" "${DEST}"
+              elif test -f "${SRC}"; then
+                mv "${SRC}" "${DEST}"
+              else
+                echo "No binary compiled for os/arch: ${OS}/${ARCH}" && exit 5
+              fi
+              rm -rf "$(go env GOPATH)/bin/${OS}_${ARCH}/"
+              echo "built: $(basename "${DEST}")"
+            done
+          done
+          echo ''
+
+      - id: install-node
+        name: Install NodeJS
+        shell: sh
+        run: apk add --update --no-cache npm
+
+      - id: upload-binary
+        name: Upload Binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-binaries
+          overwrite: true
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+          path: /go/bin/${{ env.PKG }}-*
+
+  release:
+    name: Marshal & Upload Release Artifacts
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.ref, 'refs/tags/') || (inputs.release && inputs.release-tag) }}
+    needs:
+      - build-go
+      - build-python
+    steps:
+      - id: download-artifacts
+        name: Download Run Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: ${{ github.workspace }}/artifacts
+      - id: release-artifacts
+        name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          make_latest: true
+          fail_on_unmatched_files: true
+          tag_name: ${{ inputs.release-tag || github.ref_name }}
+          files: |
+            ${{ github.workspace }}/artifacts/*

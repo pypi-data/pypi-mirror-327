@@ -1,0 +1,13 @@
+.gitignore
+LICENSE.txt
+README.md
+lets.yaml
+pyproject.toml
+.github/workflows/release.yaml
+src/localstack_extension_ecs_container_endpoints/__init__.py
+src/localstack_extension_ecs_container_endpoints/extension.py
+src/localstack_extension_ecs_container_endpoints.egg-info/PKG-INFO
+src/localstack_extension_ecs_container_endpoints.egg-info/SOURCES.txt
+src/localstack_extension_ecs_container_endpoints.egg-info/dependency_links.txt
+src/localstack_extension_ecs_container_endpoints.egg-info/entry_points.txt
+src/localstack_extension_ecs_container_endpoints.egg-info/top_level.txt
