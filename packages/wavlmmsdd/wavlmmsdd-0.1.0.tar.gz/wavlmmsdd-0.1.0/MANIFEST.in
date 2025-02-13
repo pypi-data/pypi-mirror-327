@@ -1,0 +1,12 @@
+# Exclude
+recursive-exclude .agile *
+recursive-exclude .temp *
+recursive-exclude .ipynb_checkpoints *
+recursive-exclude .idea *
+recursive-exclude build *
+
+# Include
+recursive-include .data *
+recursive-include .docs *
+recursive-include config *
+recursive-include notebook *
