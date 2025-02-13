@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/streamlit_meta_state/__init__.py
+src/streamlit_meta_state/core.py
+src/streamlit_meta_state.egg-info/PKG-INFO
+src/streamlit_meta_state.egg-info/SOURCES.txt
+src/streamlit_meta_state.egg-info/dependency_links.txt
+src/streamlit_meta_state.egg-info/top_level.txt
+tests/test_core.py
