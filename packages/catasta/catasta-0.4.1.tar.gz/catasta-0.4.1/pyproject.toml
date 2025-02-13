@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "catasta"
+version = "0.4.1"
+authors = [
+  { name="Vistor" },
+]
+description = "_Catasta_ is a Python library designed to simplify the process of Machine Learning model experimentation. Optimization, training, evaluation and inference all in one place!"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "torch",
+    "gpytorch",
+    "einops",
+    "scipy",
+    "pillow",
+    "optuna",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["catasta"]
+
+[project.urls]
+Homepage = "https://github.com/vistormu/catasta"
+Issues = "https://github.com/vistormu/catasta/issues"
+
