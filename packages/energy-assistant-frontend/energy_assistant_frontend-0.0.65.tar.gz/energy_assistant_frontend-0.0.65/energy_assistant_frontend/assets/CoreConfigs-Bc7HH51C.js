@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{E as t,t as s}from"./index-Du-autGM.js";const n={},r={class:"ma-4"};function o(a,c){return s(),t("p",r," General settings for Energy Assistant are not yet implement in the UI. Please edit energy_assistant.yaml. ")}const m=e(n,[["render",o]]);export{m as default};
