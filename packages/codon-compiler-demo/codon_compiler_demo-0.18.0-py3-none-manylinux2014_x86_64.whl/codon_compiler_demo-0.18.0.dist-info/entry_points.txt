@@ -1,0 +1,2 @@
+[console_scripts]
+codon = codon_compiler_demo.cli:main

@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: codon-compiler-demo
+Version: 0.18.0
+Summary: A compiled language similar to Python. Compatible with Python syntax.
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+**This package is experimental.**
+
+# What is this package about?
+
+Codon is an open-source compiled language with Python syntax and semantics (mostly).
+It works well together with python.
+
+See:
+* https://github.com/exaloop/codon
+* https://docs.exaloop.io/codon
+
+This package allows you to install Codon with:
+
+    pip install codon-compiler-demo
+
+In addition, you can build binary python packages with codon code.  Here is a
+`setup.py` example:
+
+    from codon_compiler_demo.setup_tools import setup, CodonExtension, BuildCodonExt
+
+    setup(
+        name='mymodule',
+        version='0.1',
+        packages=['mymodule'],
+        ext_modules=[
+            CodonExtension('mymodule', 'mymodule.codon'),
+        ],
+        cmdclass={'build_ext': BuildCodonExt},
+        install_requires=[
+            'codon_compiler_demo',
+        ],
+    )
+
+For more details, see: https://docs.exaloop.io/codon/interoperability/pyext
+
+# Dev status
+
+I created this package for my own needs -- as described above.  As of now, it works
+for linux only.
+
+I don't (yet) have the expertise to build and maintain a widely-used binary
+python package.  I would be very happy if anybody who needs a more mature and widely
+usable codon-compiler package would take this idea over and maintain it.
+
+If you need pointers for what I have done so far, reach out to: yaakov.belch@gmail.com
+
