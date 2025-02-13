@@ -1,0 +1,68 @@
+[project]
+name = "accelrod"
+dynamic = [
+  'version'
+]
+description = "A library for benchmarking the tflops of accelerators"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "pandas>=2.2.3",
+    "plotly>=6.0.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+]
+classifiers=[
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["accelrod*"]  # package names should match these glob patterns
+exclude = ["accelrod.tests*", "accelrod.examples*"]  # exclude packages matching these patterns
+
+[tool.setuptools.dynamic]
+version = {attr = "accelrod.__version__"}
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+    "setuptools>=68.0.0"
+]
+all = [
+    "nbformat>=5.10.4",
+]
+
+
+#https://pytorch.org/get-started/locally/
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu124", marker = "platform_system == 'Linux'" },
+    { index = "pytorch-cpu", marker = "platform_system == 'Windows'" },
+]
+torchvision = [
+    { index = "pytorch-cu124", marker = "platform_system == 'Linux'" },
+    { index = "pytorch-cpu", marker = "platform_system == 'Windows'" },
+]
