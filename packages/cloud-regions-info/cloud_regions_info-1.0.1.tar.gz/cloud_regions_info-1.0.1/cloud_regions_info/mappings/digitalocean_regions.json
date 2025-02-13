@@ -1,0 +1,170 @@
+{
+    "nyc1": {
+        "location": "New York City",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "raw": "nyc1"
+    },
+    "nyc3": {
+        "location": "New York City",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "raw": "nyc3"
+    },
+    "sfo2": {
+        "location": "San Francisco",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "raw": "sfo2"
+    },
+    "sfo3": {
+        "location": "San Francisco",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "raw": "sfo3"
+    },
+    "ams2": {
+        "location": "Amsterdam",
+        "country": "Netherlands",
+        "flag": "🇳🇱",
+        "latitude": 52.3676,
+        "longitude": 4.9041,
+        "raw": "ams2"
+    },
+    "ams3": {
+        "location": "Amsterdam",
+        "country": "Netherlands",
+        "flag": "🇳🇱",
+        "latitude": 52.3676,
+        "longitude": 4.9041,
+        "raw": "ams3"
+    },
+    "sgp1": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sgp1"
+    },
+    "lon1": {
+        "location": "London",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "lon1"
+    },
+    "fra1": {
+        "location": "Frankfurt",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.1109,
+        "longitude": 8.6821,
+        "raw": "fra1"
+    },
+    "tor1": {
+        "location": "Toronto",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 43.6532,
+        "longitude": -79.3832,
+        "raw": "tor1"
+    },
+    "blr1": {
+        "location": "Bangalore",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "raw": "blr1"
+    },
+    "syd1": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "syd1"
+    },
+    "syd2": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "syd2"
+    },
+    "syd3": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "syd3"
+    },
+    "blr2": {
+        "location": "Bangalore",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "raw": "blr2"
+    },
+    "blr3": {
+        "location": "Bangalore",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "raw": "blr3"
+    },
+    "maa1": {
+        "location": "Chennai",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 13.0827,
+        "longitude": 80.2707,
+        "raw": "maa1"
+    },
+    "del1": {
+        "location": "Delhi",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 28.6139,
+        "longitude": 77.2090,
+        "raw": "del1"
+    },
+    "sin1": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sin1"
+    },
+    "sin2": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sin2"
+    },
+    "sin3": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sin3"
+    }
+} 

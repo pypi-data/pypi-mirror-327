@@ -1,0 +1,162 @@
+{
+    "ewr": {
+        "location": "New Jersey",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "raw": "ewr"
+    },
+    "ord": {
+        "location": "Chicago",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "raw": "ord"
+    },
+    "dfw": {
+        "location": "Dallas",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "raw": "dfw"
+    },
+    "sea": {
+        "location": "Seattle",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 47.6062,
+        "longitude": -122.3321,
+        "raw": "sea"
+    },
+    "lax": {
+        "location": "Los Angeles",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 34.0522,
+        "longitude": -118.2437,
+        "raw": "lax"
+    },
+    "atl": {
+        "location": "Atlanta",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 33.7490,
+        "longitude": -84.3880,
+        "raw": "atl"
+    },
+    "ams": {
+        "location": "Amsterdam",
+        "country": "Netherlands",
+        "flag": "🇳🇱",
+        "latitude": 52.3676,
+        "longitude": 4.9041,
+        "raw": "ams"
+    },
+    "lhr": {
+        "location": "London",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "lhr"
+    },
+    "fra": {
+        "location": "Frankfurt",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.1109,
+        "longitude": 8.6821,
+        "raw": "fra"
+    },
+    "par": {
+        "location": "Paris",
+        "country": "France",
+        "flag": "🇫🇷",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "raw": "par"
+    },
+    "nrt": {
+        "location": "Tokyo",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "raw": "nrt"
+    },
+    "icn": {
+        "location": "Seoul",
+        "country": "South Korea",
+        "flag": "🇰🇷",
+        "latitude": 37.5665,
+        "longitude": 126.9780,
+        "raw": "icn"
+    },
+    "sgp": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "sgp"
+    },
+    "syd": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "syd"
+    },
+    "blr": {
+        "location": "Bangalore",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "raw": "blr"
+    },
+    "mex": {
+        "location": "Mexico City",
+        "country": "Mexico",
+        "flag": "🇲🇽",
+        "latitude": 19.4326,
+        "longitude": -99.1332,
+        "raw": "mex"
+    },
+    "waw": {
+        "location": "Warsaw",
+        "country": "Poland",
+        "flag": "🇵🇱",
+        "latitude": 52.2297,
+        "longitude": 21.0122,
+        "raw": "waw"
+    },
+    "jnb": {
+        "location": "Johannesburg",
+        "country": "South Africa",
+        "flag": "🇿🇦",
+        "latitude": -26.2041,
+        "longitude": 28.0473,
+        "raw": "jnb"
+    },
+    "mad": {
+        "location": "Madrid",
+        "country": "Spain",
+        "flag": "🇪🇸",
+        "latitude": 40.4168,
+        "longitude": -3.7038,
+        "raw": "mad"
+    },
+    "tel": {
+        "location": "Tel Aviv",
+        "country": "Israel",
+        "flag": "🇮🇱",
+        "latitude": 32.0853,
+        "longitude": 34.7818,
+        "raw": "tel"
+    }
+} 

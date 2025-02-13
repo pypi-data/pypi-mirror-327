@@ -1,0 +1,90 @@
+{
+    "us-east": {
+        "location": "Newark, NJ",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 40.7357,
+        "longitude": -74.1724,
+        "raw": "us-east"
+    },
+    "us-central": {
+        "location": "Dallas, TX",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "raw": "us-central"
+    },
+    "us-west": {
+        "location": "Fremont, CA",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 37.5485,
+        "longitude": -121.9886,
+        "raw": "us-west"
+    },
+    "us-southeast": {
+        "location": "Atlanta, GA",
+        "country": "United States",
+        "flag": "🇺🇸",
+        "latitude": 33.7490,
+        "longitude": -84.3880,
+        "raw": "us-southeast"
+    },
+    "ca-central": {
+        "location": "Toronto, ON",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "latitude": 43.6532,
+        "longitude": -79.3832,
+        "raw": "ca-central"
+    },
+    "eu-west": {
+        "location": "London, England",
+        "country": "United Kingdom",
+        "flag": "🇬🇧",
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "raw": "eu-west"
+    },
+    "eu-central": {
+        "location": "Frankfurt, Germany",
+        "country": "Germany",
+        "flag": "🇩🇪",
+        "latitude": 50.1109,
+        "longitude": 8.6821,
+        "raw": "eu-central"
+    },
+    "ap-south": {
+        "location": "Mumbai, India",
+        "country": "India",
+        "flag": "🇮🇳",
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "raw": "ap-south"
+    },
+    "ap-west": {
+        "location": "Singapore",
+        "country": "Singapore",
+        "flag": "🇸🇬",
+        "latitude": 1.3521,
+        "longitude": 103.8198,
+        "raw": "ap-west"
+    },
+    "ap-southeast": {
+        "location": "Sydney",
+        "country": "Australia",
+        "flag": "🇦🇺",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "raw": "ap-southeast"
+    },
+    "ap-northeast": {
+        "location": "Tokyo",
+        "country": "Japan",
+        "flag": "🇯🇵",
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "raw": "ap-northeast"
+    }
+} 
