@@ -1,0 +1,12 @@
+noop.cpython-312-aarch64-linux-gnu.so,sha256=viT73LeNX052byGOuziqqFjqoxrDkjlzBSX9CC1nXcI,70928
+bin/klr,sha256=t5ms1JDksDJUD7OQJu7uxlDUGB4KG2yfGm0QyYKyqIQ,96908792
+nki/__init__.py,sha256=aA2B2oBwrkVr3xAr-WA-pizSsNFAAAmHSzGdok5K9yM,14363
+nki/language/__init__.py,sha256=i1zhsuzZHEJrBOmrG4Pzo7vxvkIO2LpIFrC3-vT2Aos,75739
+nki/isa/__init__.py,sha256=bHScQn1aLzfL1lxsNs3EPHT4sNnL53Rle9Jj0mmSeQs,44207
+klr/__init__.py,sha256=O18Dd-Du4v-hso0OIu5HnI-7DNLGXNcwfYjbF4AVKEk,218
+klr/parser.py,sha256=PrI7FsiBH1_N3seqpBrHtHwlULJnxVmnYn7ajVGz1hw,7799
+klr_lang-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+klr_lang-0.0.7.dist-info/WHEEL,sha256=nTE35AxMsGRWEKtq6OoAX8r6A4PvpXKeKnLmxVhO6NA,153
+klr_lang-0.0.7.dist-info/top_level.txt,sha256=P3H-dKEn-xEba39IFeUoDwkjWyBI3hodJlEcelK-L8U,17
+klr_lang-0.0.7.dist-info/METADATA,sha256=Xh-Nsttk0W2fK7nyOz7YekqhM4WqQG9DQyBSdL_7JE4,14405
+klr_lang-0.0.7.dist-info/RECORD,,
