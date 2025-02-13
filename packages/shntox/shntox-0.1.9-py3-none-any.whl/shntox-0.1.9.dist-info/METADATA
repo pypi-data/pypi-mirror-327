@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: shntox
+Version: 0.1.9
+Summary: Algebra library
+Author: sahin
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# My Python Package
+
+Bu proje, basit bir Python modÃ¼lÃ¼ iÃ§erir. ModÃ¼l, belirli iÅŸlevleri yerine getirmek iÃ§in kullanÄ±lÄ±r.
+
+## Kurulum
+
+### Pip ile Kurulum
+
