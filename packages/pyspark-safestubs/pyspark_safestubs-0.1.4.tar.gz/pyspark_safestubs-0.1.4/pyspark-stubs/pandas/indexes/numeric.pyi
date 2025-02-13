@@ -1,0 +1,13 @@
+from pyspark.pandas._typing import Dtype as Dtype, Name as Name
+from pyspark.pandas.indexes.base import Index as Index
+from pyspark.pandas.series import Series as Series
+from typing import Any
+
+class NumericIndex(Index): ...
+class IntegerIndex(NumericIndex): ...
+
+class Int64Index(IntegerIndex):
+    def __new__(cls, data: Any | None = None, dtype: str | Dtype | None = None, copy: bool = False, name: Name | None = None) -> Int64Index: ...
+
+class Float64Index(NumericIndex):
+    def __new__(cls, data: Any | None = None, dtype: str | Dtype | None = None, copy: bool = False, name: Name | None = None) -> Float64Index: ...

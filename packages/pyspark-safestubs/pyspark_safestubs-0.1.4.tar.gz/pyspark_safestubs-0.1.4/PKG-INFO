@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: pyspark-safestubs
+Version: 0.1.4
+Summary: Create safer spark pipelines
+Author-email: Emil Redzik <kontakt@eredzik.com>
+License: Apache-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.10
+Requires-Dist: pyspark>=3.5.0
+Requires-Dist: typing-extensions>=4.8.0
+Provides-Extra: dev
+Requires-Dist: mypy>=1.5.0; extra == 'dev'
+Requires-Dist: pyspark>=3.5.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Safer Stubs for PySpark
+
+This is a project to create safer stubs for PySpark. The goal is to make it easier to use PySpark in a safer way, without having to worry about the underlying implementation.
+It implements only subset of working PySpark APIs with goal to have a minimal set of functions that can be used in a safer way.
+
+## How to use
+
+To use the stubs, you need to install the package:
+
+```bash
+pip install pyspark-safestubs
+```
+
+Then, you can use the stubs in your code:
+
+```python
+from pyspark.sql import SparkSession
+from pyspark.sql import functions as F
+
+def some_transform(df: DataFrame['col1', 'col2']):
+    df = df.withColumn('col5', F.col('col1').cast('int'))
+    # df has type DataFrame['col1', 'col2', 'col5']
+    return df
+
+```
