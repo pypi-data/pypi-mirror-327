@@ -1,0 +1,7 @@
+/.idea
+/.git
+/venv*
+/.coverage
+/dist
+**/__pycache__
+/htmlcov
