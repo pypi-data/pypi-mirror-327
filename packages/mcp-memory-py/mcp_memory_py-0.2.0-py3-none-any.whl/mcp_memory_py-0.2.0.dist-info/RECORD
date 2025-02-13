@@ -1,0 +1,10 @@
+mcp_memory_py/__init__.py,sha256=4FIa_UR1BhUy7AxH4z7764HiYp5RLhyaaX3knGzyrms,77
+mcp_memory_py/__main__.py,sha256=P1tWAg5dUYZCpbqe-uL_EUp5NmQFN4XZ3q4DESPvuvs,96
+mcp_memory_py/knowledge_graph.py,sha256=Kg4Ma1Dt6bbWJ-cpm35VC8pa1FCObQGcpus5F7PHqPU,6831
+mcp_memory_py/logging.py,sha256=RYY206A8S1W3UvYptvRdZtsoPZm8TH9dIaqHmRXXi6k,2128
+mcp_memory_py/server.py,sha256=lfYYNGrtN2wUIKMzkcpAtdzxxhcn9CP1PY3jsBR1Mck,3521
+mcp_memory_py-0.2.0.dist-info/METADATA,sha256=wqEovcs9RSiE25UTjhrPk4412WBrG3Ws5EBG_w-oTiQ,6583
+mcp_memory_py-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_memory_py-0.2.0.dist-info/entry_points.txt,sha256=CwzYUbiH1thQZmnBs0R_FktVS7EyLh5desCFJ8DLwc0,62
+mcp_memory_py-0.2.0.dist-info/licenses/LICENSE,sha256=-8TI4Wipkl4O8DBgqLyyRph4jUzhrQrLaqT8Kb8EANY,1076
+mcp_memory_py-0.2.0.dist-info/RECORD,,
