@@ -1,0 +1,13 @@
+dist_meta/__init__.py,sha256=r2UfgB3WWFJomchDXqR1xO4SebjZg-mejTyieQdFE7s,1630
+dist_meta/_utils.py,sha256=I3WrNM2wWzRYL8VXad1Z_jwPoygN-dtz4zknJEUbXf0,3168
+dist_meta/distributions.py,sha256=6EKCDEEaef55qTaiyf3z7xVX82V45JK5y-bcOvh1X3I,18820
+dist_meta/entry_points.py,sha256=HNrTH4DhmxtIITaz454152O9ZzdDv3Edd_JZF5bh38s,10350
+dist_meta/metadata.py,sha256=3FeGnYfHH4fKME7T0yZsxtPDMDJg29sfxvLQEM5poFM,6810
+dist_meta/metadata_mapping.py,sha256=K9Mypbmb9odEHjgGw661cud88y8_2ipby_hSxrRW8ME,8649
+dist_meta/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dist_meta/record.py,sha256=vGa9oY6GTJ2SatMGAg9lO7CCXD7PIh2BBzftybbCBwo,8737
+dist_meta/wheel.py,sha256=1AMG1ZNDdn_UJ_-iF9zpekVHKYFGfVfgtzcwfVOJx_s,4541
+dist_meta-0.9.0.dist-info/METADATA,sha256=B9kpRkrZEoTfo3zoNwN2FGRRkYumoK8RgYHLOCqdzSo,7955
+dist_meta-0.9.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dist_meta-0.9.0.dist-info/licenses/LICENSE,sha256=TXanB-tJYmHhByFsynyh-UGwh2VdTVVjbZeFz1utSWc,1064
+dist_meta-0.9.0.dist-info/RECORD,,
