@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: infomaniak-ai
+Version: 0.0.1
+Summary: A python wrapper around Infomaniak AI tools
+Project-URL: Documentation, https://github.com/gcuendet/infomaniak-ai#readme
+Project-URL: Issues, https://github.com/gcuendet/infomaniak-ai/issues
+Project-URL: Source, https://github.com/gcuendet/infomaniak-ai
+Author-email: Gabriel Cuendet <gabriel.cuendet@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: aiofiles
+Requires-Dist: aiohttp
+Requires-Dist: requests-toolbelt==1.0.0
+Description-Content-Type: text/markdown
+
+# Infomaniak AI
+
+[![PyPI - Version](https://img.shields.io/pypi/v/infomaniak-ai.svg)](https://pypi.org/project/infomaniak-ai)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/infomaniak-ai.svg)](https://pypi.org/project/infomaniak-ai)
+
+---
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install infomaniak-ai
+```
+
+## License
+
+`infomaniak-ai` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

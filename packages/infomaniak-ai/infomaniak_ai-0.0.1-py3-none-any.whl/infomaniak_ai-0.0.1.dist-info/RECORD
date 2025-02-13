@@ -1,0 +1,12 @@
+infomaniak_ai/__about__.py,sha256=DeeNnlc38xJB9P3a5m6kghGZ4siIFFYjAoHod9doe7o,138
+infomaniak_ai/__init__.py,sha256=0DseTS47GfqqiRw262t429q1Fa1Crj8ZcjgzIGa9LOM,116
+infomaniak_ai/session.py,sha256=lnex7WZroJWU23B4bOZmLIitFA8LOcmfJXsIJhRDENI,2176
+infomaniak_ai/openai/__init__.py,sha256=0DseTS47GfqqiRw262t429q1Fa1Crj8ZcjgzIGa9LOM,116
+infomaniak_ai/openai/audio/__init__.py,sha256=0DseTS47GfqqiRw262t429q1Fa1Crj8ZcjgzIGa9LOM,116
+infomaniak_ai/openai/audio/transcriptions.py,sha256=McjwsexS-WAkI6NjRPHNZT6au0mkY5dvFaOV4gmu8Ck,3748
+infomaniak_ai/openai/chat/__init__.py,sha256=0DseTS47GfqqiRw262t429q1Fa1Crj8ZcjgzIGa9LOM,116
+infomaniak_ai/openai/chat/completions.py,sha256=WLGXjKhIC_wX3O8NVYl_hKWbavrHSjXIc29Kk8SgX1A,4850
+infomaniak_ai-0.0.1.dist-info/METADATA,sha256=NUjrbtV8wL6a2wA49fGfF1eu8caei24cQWRnPTkdCKM,1515
+infomaniak_ai-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+infomaniak_ai-0.0.1.dist-info/licenses/LICENSE,sha256=ZhLbtQ20U6D6niB8vfr5uCqndY2AeXwd4CI9zLCQMGM,1108
+infomaniak_ai-0.0.1.dist-info/RECORD,,
