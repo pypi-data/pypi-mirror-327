@@ -1,0 +1,10 @@
+vhacdx.cpython-39-i386-linux-gnu.so,sha256=_OTc57N2W79nP_5mBXUH5-6cBV3IN4kBMNLKfo60lwY,508229
+vhacdx/VHACD.h,sha256=AjFMV1kJ1lbcZ9bjw4zvxJxEA-jKHcsKtLBYAM7mHhw,259743
+vhacdx/main.cpp,sha256=oaAQTxqAsM977zHPoeBytqoXBURKw4UVEGaDFN06kuk,5585
+vhacdx.libs/libgcc_s-1257a076.so.1,sha256=wbXWo2Qh33OuE7spB8-mVbZoEiUkvZu6ZH78pUNr9X8,168321
+vhacdx.libs/libstdc++-0530927c.so.6.0.32,sha256=h2p2et0WB0CYcMcUEViWjYXOe8uir-_tHJJZui-6GRc,3537509
+vhacdx-0.0.8.post2.dist-info/LICENSE,sha256=DO84E1YuzqlWMXAYpa1BuuqE5DF7xXkk_036L_XFF3U,2625
+vhacdx-0.0.8.post2.dist-info/WHEEL,sha256=p9BaE8XS5HpBleOS1Y1Pc6Mt55o9d_aerVHuSGDVQ1I,108
+vhacdx-0.0.8.post2.dist-info/METADATA,sha256=cXcCrnzLonH1sA8Mdlalps-fFgQ1xMRVNfh6hc4MVlQ,1067
+vhacdx-0.0.8.post2.dist-info/top_level.txt,sha256=kRJmlK_xeBU5kk3I_2hGUPfh7RAGxEUNSNHitrvCUSI,7
+vhacdx-0.0.8.post2.dist-info/RECORD,,
