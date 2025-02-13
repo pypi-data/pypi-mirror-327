@@ -1,0 +1,15 @@
+superbio/__init__.py,sha256=8PUi-Vi1vK1TH9CYOwhuhRy0K8DdJqBvdXWVruz_9u0,28
+superbio/auth.py,sha256=TFL3faPntwIQ3F8QQveeuXwJfwRV44fxRygCWMSeCsU,1340
+superbio/client.py,sha256=zGcfVSqrMmO0t4Yog6gdSHoUqjVU5wkhbxQuq0Iuy2o,20165
+superbio/endpoints.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+superbio/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+superbio/utils.py,sha256=9cC3GGSI4K7j8tx9jNLsYsIVevb5HezRIoi766kLbJo,2559
+tests/__init__.py,sha256=Gu9QnGHXYl7mCgSVxBZs9mn4W-CBBtBpWj1c2pRPIgY,42
+tests/conftest.py,sha256=LoQxIIpMPk5jtqlTBlZCDxDluE0MKNEGBsZnD0ItlX0,1527
+tests/test_auth.py,sha256=PkA8txzwJCzkRT2TlpuH8lFmcB6cn0kRmxEBPtqc-ks,4414
+tests/test_client.py,sha256=lmFMvIVFGRxWBzdb8fVMpULHvzYojGdlV6VAVytGpoA,7096
+tests/test_utils.py,sha256=OYObgacLHBzN4QInhIbWjLEIu9j3BWXic_3RvvJFJdk,3561
+superbio-0.1.0.dist-info/METADATA,sha256=QrfXGxTG57OoyWKbAf20rSycQPHiCMebyFWRh0zRavY,5211
+superbio-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+superbio-0.1.0.dist-info/top_level.txt,sha256=cB5T8J4MFUiEndHpiMgO7ohnr4gS-h6CQWBVulEOMKE,15
+superbio-0.1.0.dist-info/RECORD,,
