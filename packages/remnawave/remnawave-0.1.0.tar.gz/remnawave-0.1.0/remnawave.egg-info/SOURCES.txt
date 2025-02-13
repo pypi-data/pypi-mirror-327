@@ -1,0 +1,7 @@
+README.md
+setup.py
+remnawave/__init__.py
+remnawave.egg-info/PKG-INFO
+remnawave.egg-info/SOURCES.txt
+remnawave.egg-info/dependency_links.txt
+remnawave.egg-info/top_level.txt
