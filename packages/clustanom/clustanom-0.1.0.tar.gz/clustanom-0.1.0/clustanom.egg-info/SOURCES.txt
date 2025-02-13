@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+clustanom/__init__.py
+clustanom/detector.py
+clustanom/utils.py
+clustanom.egg-info/PKG-INFO
+clustanom.egg-info/SOURCES.txt
+clustanom.egg-info/dependency_links.txt
+clustanom.egg-info/requires.txt
+clustanom.egg-info/top_level.txt
