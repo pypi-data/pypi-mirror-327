@@ -1,0 +1,7 @@
+numpy
+
+[all]
+spatial-tda[extra]
+
+[extra]
+pandas
