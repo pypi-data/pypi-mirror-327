@@ -1,0 +1,7 @@
+dep_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dep_manager/cli.py,sha256=jZo5ItdrlPRb3hG25oatJhayIhoXN02vsfM_TJSbAlo,1995
+dep_manager_cli-0.1.1.dist-info/METADATA,sha256=9AvLzkxidcFus5eBZgGHAE30MSXCR8xWao1l93YtEvE,172
+dep_manager_cli-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dep_manager_cli-0.1.1.dist-info/entry_points.txt,sha256=ErdT-xgWxdhFlhyrgG_PlvVVTXXozmsgdXwCOszZG9k,52
+dep_manager_cli-0.1.1.dist-info/top_level.txt,sha256=7VQHDXcWsxHzMq3mDCshME3Aq3ru6KPXOj_mEXieyBs,12
+dep_manager_cli-0.1.1.dist-info/RECORD,,
