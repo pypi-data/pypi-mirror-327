@@ -1,0 +1,15 @@
+composites/__init__.py,sha256=0jdS-Qeluyv-Y3206p-BPwuuPwwilCaYTXsIrf9q7TM,2026
+composites/core.cp38-win_amd64.pyd,sha256=5Kf2TiiVo0ccEVFtrX1VWYGOPBtejUwkA20E_NnlR64,516608
+composites/core.pxd,sha256=kmw4uAFbjkTlR82LmT_5eptpNBRXhLQtdVjNecXd71g,3042
+composites/core.pyx,sha256=j5nitMSUwxitavJrZ-nKDs-QpEXdi85XfMbzAJoImgI,41518
+composites/kassapoglou.py,sha256=azGQ6DVGvCOMLBr1Glc1zE4P8USM4kLlRp8dZGLP9mg,7244
+composites/utils.py,sha256=aQ1le-kHrqObDdwQ6ZF7RTgEAiyCZH5y6bqNip-tDO4,11915
+composites/version.py,sha256=G0rwkDLSytonr7idr8ma7KaTUnRCn3-Ripum70RSeh0,22
+composites-0.7.3.data/data/LICENSE,sha256=XbHhhvcOn7QPKzeKjtIC9J4RFv9E7Qbh9GhA-NMsXHk,1534
+composites-0.7.3.data/data/README.md,sha256=t5-f5uac-HPJSlOF0KDpzvicS2vXEjlqjMMp7c-9vdc,2988
+composites-0.7.3.data/data/version.py,sha256=G0rwkDLSytonr7idr8ma7KaTUnRCn3-Ripum70RSeh0,22
+composites-0.7.3.dist-info/LICENSE,sha256=XbHhhvcOn7QPKzeKjtIC9J4RFv9E7Qbh9GhA-NMsXHk,1534
+composites-0.7.3.dist-info/METADATA,sha256=C6TU-vTrQi2G7BNKi-AVEsyMZVg2CrOKmPtu08e8d2A,4381
+composites-0.7.3.dist-info/WHEEL,sha256=rTcqimtzpX3smAWAhGmiRSWAxTY4PqYPNE-p4kscHDQ,99
+composites-0.7.3.dist-info/top_level.txt,sha256=8rFKbL1In6cv0XBeSaI5uG5g6oe1tYJjAc1mLlAvhWU,11
+composites-0.7.3.dist-info/RECORD,,
