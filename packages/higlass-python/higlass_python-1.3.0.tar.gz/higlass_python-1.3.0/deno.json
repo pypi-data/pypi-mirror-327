@@ -1,0 +1,15 @@
+{
+  "lock": false,
+  "compilerOptions": {
+    "checkJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["prefer-const"]
+    }
+  },
+  "fmt": {
+    "exclude": ["examples"]
+  }
+}
