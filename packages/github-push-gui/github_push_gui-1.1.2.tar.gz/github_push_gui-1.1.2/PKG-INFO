@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: github_push_gui
+Version: 1.1.2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: customtkinter
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# GitHub Push GUI
+
+This is a simple graphical user interface (GUI) to push changes to GitHub using Git. 
+The application allows users to select modified files and commit them with a custom message.
