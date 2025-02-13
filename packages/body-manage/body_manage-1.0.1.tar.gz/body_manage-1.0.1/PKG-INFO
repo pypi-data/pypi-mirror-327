@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: body_manage
+Version: 1.0.1
+Summary: Manage contains a service to manage the services themselves
+Home-page: https://ouroboroscoding.com/body/body-manage
+Author: Chris Nasr - Ouroboros Coding Inc.
+Author-email: chris@ouroboroscoding.com
+License: Custom
+Project-URL: Documentation, https://ouroboroscoding.com/body/body-manage
+Project-URL: Source, https://github.com/ouroboroscoding/body-manage
+Project-URL: Tracker, https://github.com/ouroboroscoding/body-manage/issues
+Keywords: rest,microservices,body,body-oc
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Body Manage
+
+Body 2.0 service that handles updating and controlling services and portals
+remotely.
+
+This code comes without documentation as it's not meant to be used by anyone
+outside of Ouroboros Coding Inc. Please see LICENSE for further information.
+
