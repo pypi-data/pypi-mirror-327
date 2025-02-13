@@ -1,0 +1,6 @@
+include README.md
+include LICENSE.txt
+include requirements.txt
+recursive-include shntox *.py
+global-include *.py
+include *.py
