@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AllGeoShapes
+Version: 0.1.0
+Summary: A Python module for geometric shape calculations
+Home-page: https://github.com/yourusername/shapemodule
+Author: Your Name
+Author-email: 24b81a62e9@cvr.ac.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# shapes

@@ -1,0 +1,6 @@
+README.md
+setup.py
+AllGeoShapes.egg-info/PKG-INFO
+AllGeoShapes.egg-info/SOURCES.txt
+AllGeoShapes.egg-info/dependency_links.txt
+AllGeoShapes.egg-info/top_level.txt
