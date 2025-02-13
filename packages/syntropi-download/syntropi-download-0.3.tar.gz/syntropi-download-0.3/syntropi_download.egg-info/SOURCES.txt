@@ -1,0 +1,10 @@
+README.md
+setup.py
+cli/__init__.py
+cli/cli.py
+syntropi_download.egg-info/PKG-INFO
+syntropi_download.egg-info/SOURCES.txt
+syntropi_download.egg-info/dependency_links.txt
+syntropi_download.egg-info/entry_points.txt
+syntropi_download.egg-info/requires.txt
+syntropi_download.egg-info/top_level.txt
