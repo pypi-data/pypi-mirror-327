@@ -1,0 +1,14 @@
+gitlab_api/__init__.py,sha256=vPwP19qgmbegIh2tixAiHyIuOgrtFyO2fTFfJ-ajdOY,6526
+gitlab_api/decorators.py,sha256=MsY_hnTADHePZ9X0Q47FbADsieGp8W7WRTZhThL0Amk,521
+gitlab_api/exceptions.py,sha256=y0R-KHDuSSh1gmeRSuzlFrq6UHl8FPffi2-Sgq1AeIM,469
+gitlab_api/gitlab_api.py,sha256=wwg-usDK_rmWHGa445iA4c3i7yvNeu23H2C-epUAPlA,134011
+gitlab_api/gitlab_db_models.py,sha256=xci75X792k7l5KRZPJF4zskdUB2MxdsmJtYCAMeihV0,131767
+gitlab_api/gitlab_input_models.py,sha256=ACe67dpW-bJfI7l3_5gQV8hBOLIAFHi8ZBawX3Q4o-g,93181
+gitlab_api/gitlab_response_models.py,sha256=LyEBk8bcPCQZ-FIqIVA6guMBbyw2pvLzTp5ACT5cE6c,136793
+gitlab_api/utils.py,sha256=qT58nYmVahCR3fv79hqJw9G-EkJSOpDYZdM_pfui0-w,6749
+gitlab_api/version.py,sha256=VvJ5jhnfZYlZfGTehR8vo0U52Rpl_v5B14Edinm_nA8,117
+gitlab_api-1.0.41.dist-info/LICENSE,sha256=Z1xmcrPHBnGCETO_LLQJUeaSNBSnuptcDVTt4kaPUOE,1060
+gitlab_api-1.0.41.dist-info/METADATA,sha256=6BRpuxHL-7Uc2T0BSwXYg3A4V1DbdLd9l3XHX4lp3MU,10254
+gitlab_api-1.0.41.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+gitlab_api-1.0.41.dist-info/top_level.txt,sha256=nd1ty1-efj5HDc14wL4tzW1k_vF3qni3wPspalPLsR4,11
+gitlab_api-1.0.41.dist-info/RECORD,,
