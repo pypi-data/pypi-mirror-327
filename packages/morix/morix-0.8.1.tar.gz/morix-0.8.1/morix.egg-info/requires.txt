@@ -1,0 +1,8 @@
+rich
+prompt_toolkit
+openai
+pyyaml
+colorama
+tiktoken
+typer
+langchain_openai
