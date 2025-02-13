@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: at-common-schemas
+Version: 1.0.2
+Summary: Common schemas used by Apex Trader
+Author: Rui Chen
+Project-URL: Homepage, https://github.com/apex-trader/at-common-schemas
+Project-URL: Bug Tracker, https://github.com/apex-trader/at-common-schemas/issues
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# at-common-schemas
