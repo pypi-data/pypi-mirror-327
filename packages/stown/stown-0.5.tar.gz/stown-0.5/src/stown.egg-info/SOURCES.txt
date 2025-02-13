@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/stown/__main__.py
+src/stown.egg-info/PKG-INFO
+src/stown.egg-info/SOURCES.txt
+src/stown.egg-info/dependency_links.txt
+src/stown.egg-info/entry_points.txt
+src/stown.egg-info/top_level.txt
+tests/test_stown.py
