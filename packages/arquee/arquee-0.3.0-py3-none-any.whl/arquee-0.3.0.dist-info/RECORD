@@ -1,0 +1,15 @@
+arquee/__init__.py,sha256=BKv91OKtVV844kOqevycwP54LGNnsG5CEVpCrwHTdsY,52
+arquee/arquee.py,sha256=ncwvdh6ZS4Jru5YamUa-QHrmUR33tGV67-v76g1QolM,2151
+arquee/config.py,sha256=pzzhnxEQlq3EDgZnlj5rYuVRNIX777zjiO8jrY-rL6E,253
+arquee/db.py,sha256=x6FgxkTg9H5qChD6CpAwucfgKiM0Am2nSu-MSblyTJM,1457
+arquee/logger.py,sha256=1XmSf2kULP6LW9_WPuLZ_vkkWZgQCvUfb8yGD4xbneU,313
+arquee/tools.py,sha256=gxGK74xHePlOl81qam6v8yHS4eMgq-89Crd_h2Jf_RE,1261
+arquee/hadoop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arquee/hadoop/bin/winutils.exe,sha256=SWpZHrHmffKmIPcQ1Sm6bd_hwZFJ5mR8xOMguw79hVM,119296
+arquee/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arquee/server/server_db.py,sha256=PTrReXVWo2k3aipQ_wdT9OZ3f4Zbb30i7hvblGs-Z5M,1308
+arquee-0.3.0.dist-info/METADATA,sha256=epQdoc3GqD2NGdps-0aTeq6xZmfN_qyIIm5Xtw7ZeYI,455
+arquee-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+arquee-0.3.0.dist-info/entry_points.txt,sha256=2pCHkko7121RQBbZBcPztxoR0oU6FZo0yZZjw6ltD6M,56
+arquee-0.3.0.dist-info/top_level.txt,sha256=wEwF3nKIDqCyFzgpk7-WdFzLo6iNEXVmFMDkILU3JDU,7
+arquee-0.3.0.dist-info/RECORD,,
