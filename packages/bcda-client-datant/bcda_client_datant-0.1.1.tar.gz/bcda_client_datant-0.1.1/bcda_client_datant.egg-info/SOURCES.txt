@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bcda_client/__init__.py
+bcda_client/client.py
+bcda_client/config.py
+bcda_client/utils.py
+bcda_client_datant.egg-info/PKG-INFO
+bcda_client_datant.egg-info/SOURCES.txt
+bcda_client_datant.egg-info/dependency_links.txt
+bcda_client_datant.egg-info/not-zip-safe
+bcda_client_datant.egg-info/requires.txt
+bcda_client_datant.egg-info/top_level.txt
