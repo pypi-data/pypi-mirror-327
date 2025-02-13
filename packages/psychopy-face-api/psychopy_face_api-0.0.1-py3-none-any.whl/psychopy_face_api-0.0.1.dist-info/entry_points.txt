@@ -1,0 +1,2 @@
+[psychopy.experiment.components]
+FaceAPIComponent = psychopy_face_api.components.faceAPI:FaceAPIComponent

@@ -1,0 +1,14 @@
+psychopy_face_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psychopy_face_api/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psychopy_face_api/components/faceAPI/__init__.py,sha256=FuFpMf8Fe0hRvHk9RzsvFp7GTl72_MZcxOFEmqxqd4E,7965
+psychopy_face_api/components/faceAPI/classic/faceapi.png,sha256=S9gpdKG4xntR8S_7WM8Fx92buGa8UwQxHM1uNoCcIds,3987
+psychopy_face_api/components/faceAPI/classic/faceapi@2x.png,sha256=O_0A_oAcMWYOs6-dd9TfgtVOHSqFpFQn_VmkJfCaG60,9595
+psychopy_face_api/components/faceAPI/dark/faceapi.png,sha256=XQn5P6XYz9bnpER-tQYuHg-EDhQhuJ2Iadxk8oTzTLw,2859
+psychopy_face_api/components/faceAPI/dark/faceapi@2x.png,sha256=bzFzL-PuBmoIu3JLJvCJugp7dLIL3KHrwoxEulEuMyA,4975
+psychopy_face_api/components/faceAPI/light/faceapi.png,sha256=0GneujfokyqKHgdg09eo1LhllPoa4PvfM6lnbUse9v8,2785
+psychopy_face_api/components/faceAPI/light/faceapi@2x.png,sha256=jEj9vMuQ7XRNj3zBLBkC8FtHr8TAJl9TqPdC6Eko048,4913
+psychopy_face_api-0.0.1.dist-info/METADATA,sha256=mzPGcDiysqQ2z3mlM761YjepX3Y9S1Bryft6VuwfqGY,733
+psychopy_face_api-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+psychopy_face_api-0.0.1.dist-info/entry_points.txt,sha256=z75lFJs855QwQLjqP7TN7x2Nmav1Z2M9DYj9_KVDXhY,106
+psychopy_face_api-0.0.1.dist-info/top_level.txt,sha256=m3NfOUUm06pOF5fNkMaZwxKN_-4t16LApTnR32pWP34,18
+psychopy_face_api-0.0.1.dist-info/RECORD,,
