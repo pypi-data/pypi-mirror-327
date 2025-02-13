@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: CYB600-Lab1-Huff4a
+Version: 0.6
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+
+# CYB600 Lab 1 - Flask Application
+
+This project is a simple Flask web application that displays the current time. It is part of the **CYB600** course and demonstrates how to create a Python package and deploy a basic web application.
+
+## Project Structure
+
+The project has the following structure:
+
+```
+LICENSE
+README.md
+requirements.txt
+setup.py
+CYB600_Lab1/
+    ├── __init__.py
+    └── time.py
+tests/
+    └── test_time.py  # Optional test file
+```
+
+- **`CYB600_Lab1/`**: Contains the main application code (Flask app).
+- **`tests/`**: Directory for unit tests (optional).
+- **`README.md`**: Project documentation (you are here!).
+- **`LICENSE`**: The license under which this project is distributed (MIT License).
+- **`requirements.txt`**: Lists the dependencies for the project.
+- **`setup.py`**: Packaging script for installing the project as a Python package.
+
+## Installation
+
+To install this package, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/dhuffCanisius/CYB600_Lab1.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd CYB600_Lab1
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Once installed, you can run the Flask web server using the command:
+
+```bash
+cyb600_lab1_server
+```
+
+This will start the server on `http://localhost:8000/`, where you can view the current time.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Darnell Huff
