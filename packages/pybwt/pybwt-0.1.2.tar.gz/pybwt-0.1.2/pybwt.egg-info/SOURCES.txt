@@ -1,0 +1,9 @@
+README.md
+setup.py
+pybwt/__init__.py
+pybwt/bwt_utils.py
+pybwt/main.py
+pybwt.egg-info/PKG-INFO
+pybwt.egg-info/SOURCES.txt
+pybwt.egg-info/dependency_links.txt
+pybwt.egg-info/top_level.txt
