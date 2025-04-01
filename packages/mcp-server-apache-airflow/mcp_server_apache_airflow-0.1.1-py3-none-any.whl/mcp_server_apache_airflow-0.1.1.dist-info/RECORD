@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=1ZAXuxV4Q_60qXU17TiI1pxfINUCMv7C5i0zNGBtPIU,54
+src/airflow.py,sha256=BIHslBNljXadFpmIv_npdHqhRIGPzumidwD1oiZVe80,11699
+src/server.py,sha256=Qnc2bJuEscJ_dwoSHrf_tO16i_wJiq0WV7gUQkW_Ltk,23086
+mcp_server_apache_airflow-0.1.1.dist-info/METADATA,sha256=eZGV-EHgMjZ9z7tdIIQU_izUoYlfJgKwgjopBWrIx3U,5070
+mcp_server_apache_airflow-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_server_apache_airflow-0.1.1.dist-info/entry_points.txt,sha256=V1_NbD15s2FFth2XdYFMO3yUkWdTNNi7lI-tGZYDF9o,58
+mcp_server_apache_airflow-0.1.1.dist-info/RECORD,,
