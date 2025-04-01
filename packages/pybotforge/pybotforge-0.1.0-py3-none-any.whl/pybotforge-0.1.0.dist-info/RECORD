@@ -1,0 +1,9 @@
+pybotforge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybotforge/client.py,sha256=iuFNsOW_oU00ZXlBZWOfjnHJTDGfmN_YFAzydG9mEOM,489
+pybotforge/commands.py,sha256=NMdeXnwuUhPCo9EIICgMzGcjPn_Bi8W3EySDeUBXeLk,639
+pybotforge/events.py,sha256=bAdqoBnAfVuVElSc58MhvD_Tl8yNbUNg3J-xn8ujvqg,325
+pybotforge/utils.py,sha256=Q6mY9Rs_v7VGKFe0OaVrk0qsyD2TMRAiL1JfhTSYGJQ,47
+pybotforge-0.1.0.dist-info/METADATA,sha256=GWyP-jNk1lWTeRgi9YBHJYziLQrh013_zqzRWzjZuUM,336
+pybotforge-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+pybotforge-0.1.0.dist-info/top_level.txt,sha256=T59Hx-PyizIPkSbFLRpLA_BD_s_-9KNugtcbL56rHYE,11
+pybotforge-0.1.0.dist-info/RECORD,,
