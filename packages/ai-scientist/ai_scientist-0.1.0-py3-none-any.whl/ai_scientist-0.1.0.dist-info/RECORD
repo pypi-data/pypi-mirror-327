@@ -1,0 +1,10 @@
+ai_scientist/__init__.py,sha256=ajz1GSNU9xYVrFEDSz6Xwg7amWQ_yvW75tQa1ZvRIWc,3
+ai_scientist/run_research.py,sha256=djUWmXYgwQ411POXAz-R1E15mXkMkSFs9LbWxRQFO6A,12540
+ai_scientist/assets/prompts/mistake_prompt.txt,sha256=7mGGE4O1KTDbuaU0aMuNjqa7EoNkE6X4xJTkRDhDIZc,851
+ai_scientist/assets/prompts/research_prompt.txt,sha256=h7d5pRsos4mpH2yhGKNe5QvDljL5pppjQreTPAHgX-s,3739
+ai_scientist-0.1.0.dist-info/LICENSE,sha256=2qBFb2KsIiLqYz_fjddCkGqGTkvc2mLyOhGnlKgGPYc,1076
+ai_scientist-0.1.0.dist-info/METADATA,sha256=FnMmTX4hDgPzW6cLz9iPHq6wi7tlqTZLpIQ-rlWP-J0,221
+ai_scientist-0.1.0.dist-info/WHEEL,sha256=bFJAMchF8aTQGUgMZzHJyDDMPTO3ToJ7x23SLJa1SVo,92
+ai_scientist-0.1.0.dist-info/entry_points.txt,sha256=xPz0XtdMZzn7gS70vrsgiljoyBTzMtHnHgEj4kJ97Uc,64
+ai_scientist-0.1.0.dist-info/top_level.txt,sha256=8-kPyozIVvj0QjiyQCXl7Q0nx94JqrHMdxvsqlETsbM,13
+ai_scientist-0.1.0.dist-info/RECORD,,

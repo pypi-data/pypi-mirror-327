@@ -1,0 +1,31 @@
+Your previous response was invalid. Please ensure you provide a well-structured JSON object with the following format:
+
+{
+  "actions": [
+    {
+      "action": "read",
+      "fp": "FILE_PATH"
+    },
+    {
+      "action": "write",
+      "fp": "FILE_PATH",
+      "content": "CONTENT"
+    },
+    {
+      "action": "run",
+      "script": "BASH_SCRIPT",
+      "tl": TIME_LIMIT  // Optional
+    },
+    {
+      "action": "to_human",
+      "question": "QUESTION"
+    }
+  ],
+  "summary": "A brief summary of the actions taken and the current state of the research."
+}
+
+Ensure that:
+- You only include valid actions as described and a `summary` field.
+- The JSON is properly formatted.
+- After specifying your actions and summary, end your generation.
+- Remember, even for a simply reply or clarification, you need to output a JSON and use the action "to_human".
