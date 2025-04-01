@@ -1,0 +1,11 @@
+elodin-0.11.4.dist-info/METADATA,sha256=mTxuo1DBLyMFigIUQXfk0-uQYXeRO4BMWoZWQS5vDOs,1382
+elodin-0.11.4.dist-info/WHEEL,sha256=j3ku1HwtRttgdyoybPiqmsz03FP6lDUkPQNFM63xZJo,103
+elodin-0.11.4.dist-info/entry_points.txt,sha256=Fk4X6Tdo205RgOpVlQAeWPv7QZ_JzfWXH8Alvmb5DcA,25
+elodin/j2.py,sha256=6WcKsEzeFQcs-JEftRNiQIMBlBNGncsRUzjhjzz5U20,844
+elodin/__init__.py,sha256=mw8RT8FilJnDzvktF41L_RjnZUeWAt5tInfbGFv5n9k,14323
+elodin/egm08.py,sha256=mZk_rxMX-kxuAfWUoBXScUNS7racbqTcxZvdmNCd6K4,6842
+elodin/elodin.pyi,sha256=Rizac2aMUe_T5-Obv7Ivg_H-Z-f_RIiwmZ6Y6282fwo,12006
+elodin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elodin/jaxsim.py,sha256=jgdyTfRCyGLjHhP5XGZoYaclePNUprjSUcd_UxFUkB0,7295
+elodin/elodin.abi3.so,sha256=s_8QxsaicgljHwm0D-RRSf8GFeR2H1KqqWyYt9BBiFo,124397552
+elodin-0.11.4.dist-info/RECORD,,
