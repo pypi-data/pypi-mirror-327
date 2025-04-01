@@ -1,0 +1,9 @@
+gmp.cp310-win_amd64.pyd,sha256=rqnuyY3HGWW6JD3zRyCcAe-YRpi0ICS3y9bP3d4PAiM,64512
+_gmp_fractions.py,sha256=1CXUMcrMug_y87oDjemdACVJ4P7L9mR8yGdgwtHf_7I,42048
+python_gmp-0.3.0a6.data/platlib/libgmp-10.dll,sha256=kdz1o4Cx_IzQMZQ2S4mnlNIk_mx-2tjft5ephjKxy_o,1056830
+python_gmp-0.3.0a6.dist-info/DELVEWHEEL,sha256=kzBfpbTifWYF5aBUJbe7rX4oWQawAwc4X4BUORNf0NA,473
+python_gmp-0.3.0a6.dist-info/LICENSE,sha256=VYvuIwcGxeL_yRf79N3QDxWLyLoE6KakR9rIbh25zUs,1101
+python_gmp-0.3.0a6.dist-info/METADATA,sha256=Zf0PWtaRJECO_aTHf9crHlFbdsqTjagjNuA_-L-NmDA,4993
+python_gmp-0.3.0a6.dist-info/RECORD,,
+python_gmp-0.3.0a6.dist-info/top_level.txt,sha256=75eXzyssScoUVzEbP8gmG5tw9vpTgYJYXbVSn_JcedU,19
+python_gmp-0.3.0a6.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
