@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pygoodpractices/___init__.py
+src/pygoodpractices/config_generator.py
+src/pygoodpractices/initializer.py
+src/pygoodpractices/installer.py
+src/pygoodpractices/precommit_runner.py
+src/pygoodpractices.egg-info/PKG-INFO
+src/pygoodpractices.egg-info/SOURCES.txt
+src/pygoodpractices.egg-info/dependency_links.txt
+src/pygoodpractices.egg-info/entry_points.txt
+src/pygoodpractices.egg-info/requires.txt
+src/pygoodpractices.egg-info/top_level.txt
+tests/test_config_generator.py
