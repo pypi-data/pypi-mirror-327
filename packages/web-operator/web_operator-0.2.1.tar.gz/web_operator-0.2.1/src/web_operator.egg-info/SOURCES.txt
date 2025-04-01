@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/web_operator/__init__.py
+src/web_operator/supervisor.py
+src/web_operator/utils.py
+src/web_operator.egg-info/PKG-INFO
+src/web_operator.egg-info/SOURCES.txt
+src/web_operator.egg-info/dependency_links.txt
+src/web_operator.egg-info/requires.txt
+src/web_operator.egg-info/top_level.txt
+src/web_operator/nodes/__init__.py
+src/web_operator/nodes/api_operation_node.py
+src/web_operator/nodes/computer_use_node.py
+src/web_operator/nodes/router_node.py
+src/web_operator/nodes/tools.py
