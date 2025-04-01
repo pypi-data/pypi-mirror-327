@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: ethanpolars
+Version: 0.1.0
+Summary: Some custom Polars functions that Ethan uses
+Author-email: Ethan MacCumber <ethanmacc@gmail.com>
+Requires-Python: >=3.13
+Requires-Dist: numba>=0.61.0
