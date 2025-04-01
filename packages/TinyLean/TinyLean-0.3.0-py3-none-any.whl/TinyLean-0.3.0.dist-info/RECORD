@@ -1,0 +1,16 @@
+TinyLean/__init__.py,sha256=jKBO_l3eKynRuelUZICjBTD-oo_7luBSA3S2KQXfn2A,954
+TinyLean/__main__.py,sha256=KzM0omtpsdRYTyx_pTrnjGfAk9XdHo5giB7tX9kSYr8,1834
+TinyLean/ast.py,sha256=2p7abBlhFnakuW9YM9HFRw1fXSnaR1Cf8cEEUeahAro,9803
+TinyLean/grammar.py,sha256=_okrRwGCqwFpCiefTX-l8Gv3Onfk2Nja4wlNUtCvUPY,1884
+TinyLean/ir.py,sha256=58wXiKnyRSqzlOi5VYx5PpmUnuN5c_1L_gCWTEne7F8,4994
+TinyLean/tests/__init__.py,sha256=4DF6rSafZAtaOjwnQ7A2OoxpIOViQOtj9UFKFiHiNeI,290
+TinyLean/tests/test_checker.py,sha256=1TZ3DDWppUlXKoz9pCWVf7sWv59ew-xDJnTkgFPq2Vo,5562
+TinyLean/tests/test_main.py,sha256=FjFS-GmcUbg93wZwVYV7ZRldPLP6DcVRh_OL9dCppgU,4532
+TinyLean/tests/test_parser.py,sha256=205GOBlblQllex2iPr2S7aJOPqaasTN5grXX2YI7eRA,10251
+TinyLean/tests/test_resolver.py,sha256=G_Zlf4HGM0ixBdtpXv09utOzp07qMOBXo47mk9y4d-k,2759
+TinyLean-0.3.0.dist-info/LICENSE,sha256=J1lFqWR4tbHH6fvDvB1i7XvdnuDa6xwnZU-FoGaWWHM,1062
+TinyLean-0.3.0.dist-info/METADATA,sha256=zfbaP92Xi6ewd4jvPIK953UvyRupZJaxtqye6r7yjQQ,2849
+TinyLean-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+TinyLean-0.3.0.dist-info/entry_points.txt,sha256=Xmpo7KQWcdXxvPpZmEqKZF5fzbGNX60tVAaR0zGveEU,52
+TinyLean-0.3.0.dist-info/top_level.txt,sha256=nMazVHL98eUS-sSMEavARhZSaF7Wg0kKLW0gqlnL7kw,9
+TinyLean-0.3.0.dist-info/RECORD,,
