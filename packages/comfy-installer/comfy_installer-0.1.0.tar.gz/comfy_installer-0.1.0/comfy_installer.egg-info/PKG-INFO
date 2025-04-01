@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: comfy-installer
+Version: 0.1.0
+Summary: A CLI tool to install custom nodes for ComfyUI using YAML configuration.
+Author: khengyun
+Author-email: khaangnguyeen@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: gitdb
+Requires-Dist: GitPython
+Requires-Dist: fuzzywuzzy
+Requires-Dist: python-Levenshtein
+Requires-Dist: websocket-client
+Requires-Dist: colorlog
+Requires-Dist: psutil
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: python-dotenv
+Requires-Dist: onnxruntime-gpu
+Requires-Dist: portalocker
+Requires-Dist: toml
+Requires-Dist: tabulate
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
