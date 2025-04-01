@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: autoblock
+Version: 1.0.0
+Summary: Auto password changer for Django projects
+Home-page: https://github.com/parth-kanhasoft/autoblock
+Author: Parth
+Author-email: parth@kanhasoft.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>4.0
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+This package changes user passwords and Django secret key on every request.
