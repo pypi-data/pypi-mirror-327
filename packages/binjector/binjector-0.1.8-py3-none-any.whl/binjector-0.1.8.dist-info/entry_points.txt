@@ -1,0 +1,3 @@
+[console_scripts]
+binjector=binjector.cli:cli
+
