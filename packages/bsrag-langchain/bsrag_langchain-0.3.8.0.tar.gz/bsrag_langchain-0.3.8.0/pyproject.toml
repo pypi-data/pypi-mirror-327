@@ -1,0 +1,47 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = false
+create = true
+prefer-active-python = true
+
+[tool.poetry]
+name = "bsrag-langchain"
+version = "0.3.8.0"
+description = ""
+package-mode = true
+authors = ["jun.xiang <jun.xiang@extremevision.com.cn>"]
+readme = "README.md"
+packages =[{ include = "bisheng_langchain" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+zhipuai = "~2.1.5.20250106"
+websocket-client = "~1.8.0"
+elasticsearch = "~8.17.1"
+opencv-python = "~4.5.5.64"
+pillow = "~9.5.0"
+bisheng-pyautogen = "~0.3.2"
+jieba = "~0.42.1"
+pydantic = "~1.10.13"
+pymupdf = "~1.23.8"
+shapely = "~2.0.2"
+filetype = "~1.2.0"
+langgraph = "~0.0.50"
+openai = "~1.14.3"
+langchain-openai = "~0.1.5"
+llama-index = "~0.9.48"
+bisheng-ragas = "~1.0.0"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "dataelem-index"
+url = "https://public:26rS9HRxDqaVy5T@nx.dataelem.com/repository/pypi-hosted/simple"
+priority = "supplemental"
+
