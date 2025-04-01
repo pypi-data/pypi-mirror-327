@@ -1,0 +1,2 @@
+[console_scripts]
+doinspect = doinspect.cli:main
