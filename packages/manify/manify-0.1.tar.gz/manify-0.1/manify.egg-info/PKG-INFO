@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: manify
+Version: 0.1
+Requires: torch
+Requires: geoopt
+Requires: networkx
+Requires: numpy 
+Requires: pandas
+Requires: matplotlib
+Requires: scipy
+Requires: jaxtyping
+Dynamic: requires
