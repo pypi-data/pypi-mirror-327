@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+doinspect/__init__.py
+doinspect/cli.py
+doinspect/inspector.py
+doinspect.egg-info/PKG-INFO
+doinspect.egg-info/SOURCES.txt
+doinspect.egg-info/dependency_links.txt
+doinspect.egg-info/entry_points.txt
+doinspect.egg-info/requires.txt
+doinspect.egg-info/top_level.txt
