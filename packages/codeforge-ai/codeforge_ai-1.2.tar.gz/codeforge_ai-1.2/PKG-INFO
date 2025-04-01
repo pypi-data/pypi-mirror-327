@@ -1,0 +1,238 @@
+Metadata-Version: 2.1
+Name: codeforge-ai
+Version: 1.2
+Summary: 
+Author: SWA-QA Team
+Author-email: cct-qa@amazon.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: boto3 (>=1.34.88,<2.0.0)
+Requires-Dist: httpx (==0.27.2)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: langchain (>=0.3,<0.4)
+Requires-Dist: langchain-anthropic (>=0.2,<0.3)
+Requires-Dist: langchain-aws (>=0.2,<0.3)
+Requires-Dist: langchain-cli (>=0.0.15)
+Requires-Dist: langchain-community (>=0.3.1,<0.4.0)
+Requires-Dist: langchainhub (>=0.1.15)
+Requires-Dist: langgraph (>=0.2,<0.3)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydevd-pycharm (>=243.18137.19,<244.0.0)
+Requires-Dist: python-multipart (==0.0.20)
+Requires-Dist: pytz (==2024.2)
+Requires-Dist: tiktoken (>=0.8.0,<0.9.0)
+Requires-Dist: uvicorn (>=0.23.2,<0.24.0)
+Description-Content-Type: text/markdown
+
+# CodeForgeAI: AI-Powered Code Assistant
+
+CodeForgeAI is a powerful code assist tool designed for AWS Bedrock models. It can analyze your entire codebase and provide intelligent answers to your questions.
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Architecture Overview](#architecture-overview)
+4. [Backend Components](#backend-components)
+5. [Frontend Components](#frontend-components)
+6. [Key Functionalities](#key-functionalities)
+7. [Data Flow](#data-flow)
+8. [Security Considerations](#security-considerations)
+9. [Deployment](#deployment)
+10. [Future Enhancements](#future-enhancements)
+11. [Prerequisites](#prerequisites)
+12. [Installation](#installation)
+13. [Usage](#usage)
+
+## Introduction
+
+CodeForgeAI is an advanced AI-powered code assistant designed to help developers streamline their coding process. It leverages large language models through AWS Bedrock to provide intelligent code suggestions, explanations, and modifications based on the user's codebase and queries.
+
+## Features
+
+- AI-powered code assistance and generation
+- Real-time code suggestions and explanations
+- File system exploration and selective code context inclusion
+- Multi-file code modifications with Git-style diff generation
+- Support for various file types (code, documents, spreadsheets, etc.)
+- Chat history management
+- Token usage tracking
+- File attachment support for additional context
+
+Future versions will expand capabilities to include:
+1. Writing and editing code
+2. Searching the web for resources
+3. Running commands locally
+4. Iteratively performing tasks 1-3 for a given objective
+
+## Architecture Overview
+
+CodeForgeAI follows a client-server architecture with a Python backend and a React-based frontend. The application is designed to be modular, scalable, and easily extensible.
+
+### High-Level Architecture
+
+1. Backend (Python)
+   - FastAPI server
+   - LangChain for AI model integration
+   - File system interaction and management
+   - Git integration for applying code changes
+
+2. Frontend (React + TypeScript)
+   - Material-UI and Ant Design for UI components
+   - Context API for state management
+   - File upload and processing
+   - Markdown and diff rendering
+
+3. AI Integration
+   - AWS Bedrock for accessing large language models
+   - Custom prompts and agent design for code-specific tasks
+
+## Backend Components
+
+### 1. Server (app/server.py)
+- FastAPI application setup
+- API route definitions
+- CORS configuration
+- Static file serving
+
+### 2. Agent (app/agents/agent.py)
+- LangChain agent configuration
+- AWS Bedrock integration
+- Conversation handling and context management
+
+### 3. Prompts (app/agents/prompts.py)
+- System prompts for the AI model
+- Output parsing and formatting
+
+### 4. Utilities
+- File and directory management (app/utils/directory_util.py)
+- Code diff generation and application (app/utils/code_util.py)
+- Gitignore parsing (app/utils/gitignore_parser.py)
+- Logging (app/utils/logging_utils.py)
+
+## Frontend Components
+
+### 1. Main Application (src/components/App.tsx)
+- Overall layout and component organization
+- Drawer for file explorer and chat history
+
+### 2. Chat Interface
+- Conversation display (src/components/Conversation.tsx)
+- Message input and sending (src/components/SendChatContainer.tsx)
+- Streamed content rendering (src/components/StreamedContent.tsx)
+
+### 3. File Management
+- File explorer tree (src/components/FolderTree.tsx)
+- File upload handling (src/components/FileUpload.tsx)
+- Token count display (src/components/TokenCountDisplay.tsx)
+
+### 4. Utilities
+- Markdown rendering (src/components/MarkdownRenderer.tsx)
+- Code diff visualization
+- File processing (src/utils/fileProcessor.ts)
+
+### 5. State Management
+- Chat context (src/context/ChatContext.tsx)
+- Folder context (src/context/FolderContext.tsx)
+
+## Key Functionalities
+
+### 1. AI-Powered Code Assistance
+The core of CodeForgeAI is its integration with AWS Bedrock, which provides access to powerful language models. The application uses custom prompts and a LangChain agent to generate contextually relevant code suggestions, explanations, and modifications.
+
+### 2. File System Integration
+CodeForgeAI scans the user's project directory, respecting .gitignore rules, to build a tree representation of the codebase. Users can selectively include files and folders in the AI's context, allowing for precise and relevant code assistance.
+
+### 3. Multi-File Code Modifications
+The application can generate and apply code changes across multiple files. It uses a Git-style diff format to represent these changes, allowing for easy review and application of modifications.
+
+### 4. File Upload and Processing
+Users can upload various file types (code, documents, spreadsheets, images) to provide additional context to the AI. The frontend processes these files, extracting text content where possible, before sending it to the backend.
+
+### 5. Token Usage Tracking
+CodeForgeAI monitors the token usage of the selected files and uploaded content, ensuring that the total doesn't exceed the AI model's context limit. This is visualized for the user with a progress bar and warnings.
+
+### 6. Chat History Management
+The application maintains a history of conversations, allowing users to revisit and continue previous discussions. This history is persisted in local storage for easy access across sessions.
+
+## Data Flow
+
+1. User selects files/folders from the file explorer or uploads additional files.
+2. Frontend processes selected files and uploads, tracking token usage.
+3. User sends a query through the chat interface.
+4. Frontend sends the query, along with the selected file contents and any uploads, to the backend.
+5. Backend preprocesses the input and sends it to the AI model via AWS Bedrock.
+6. AI generates a response, which is streamed back to the frontend.
+7. Frontend renders the response, including any code diffs or markdown content.
+8. If code changes are suggested, the user can review and apply them directly from the interface.
+
+## Security Considerations
+
+- The application checks for and disallows the use of LANGCHAIN environment variables to prevent accidental data leakage.
+- File processing is done client-side to minimize sensitive data transfer.
+- The backend is designed to work with the local file system, reducing the risk of unauthorized access.
+- AWS credentials for Bedrock access should be properly secured and rotated regularly.
+
+## Deployment
+
+The application is designed to be run locally, with the backend accessing the local file system. For deployment:
+
+1. Ensure Python and Node.js are installed on the system.
+2. Install backend dependencies (FastAPI, LangChain, etc.).
+3. Set up AWS credentials for Bedrock access.
+4. Build the frontend React application.
+5. Start the FastAPI server, which will serve both the API and the built frontend.
+
+## Prerequisites
+
+### Setup AWS credentials:
+Set the following environment variables with access to AWS Bedrock Claude models:
+
+```bash
+export AWS_ACCESS_KEY_ID=<YOUR-KEY>
+export AWS_SECRET_ACCESS_KEY=<YOUR-SECRET>
+```
+
+# Installation
+
+Install CodeForgeAI using pip:
+
+pip install codeforge-ai
+
+
+# Usage
+
+To run CodeForgeAI, use the following command:
+
+codeforge-ai
+
+
+Then navigate to `http://localhost:6969` in your browser to start interacting with your codebase.
+
+# Options
+
+CodeForgeAI supports several command-line options:
+
+- `--exclude`: Comma-separated list of files, directories, or file suffix patterns to exclude from the codebase. Example: `--exclude 'tst,build,*.py'`
+- `--profile`: AWS profile to use for the Bedrock LLM.
+- `--model`: The AWS Bedrock Model to use. Options are sonnet3.5 (default), sonnet, haiku, or opus.
+- `--port`: The port number for the frontend app. Default is 6969.
+- `--max-depth`: Maximum depth for folder structure traversal. Default is 15.
+
+Example usage with options:
+
+codeforge-ai --exclude='tst,build,*.py' --profile=myprofile --model=sonnet3.5 --port=8080
+
+
+# Future Enhancements
+
+- Integration with version control systems for better change management.
+- Support for team collaboration features.
+- Expanded file type support for better context understanding.
+- Fine-tuning options for the AI model to better match specific codebases or coding styles.
+- Integration with code analysis tools for enhanced suggestions.
+- Ability to write and edit code, search the web for resources, and run local commands.
