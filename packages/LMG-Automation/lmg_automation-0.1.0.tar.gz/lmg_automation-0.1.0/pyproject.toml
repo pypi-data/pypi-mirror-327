@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LMG_Automation"
+version = "0.1.0"
+description = "A Python package for automating LMG processes"
+authors = [{ name = "Harshal", email = "harshal.sarode@landmarkgroup.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "setuptools",
+    "pandas",
+    "numpy",
+    "selenium",
+    "rsa",
+    "bs4",
+    "pywin32"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+LMG_setup = "LMG_Automation.post_install_setup:post_install"
+
+[tool.setuptools]
+packages = ["LMG_Automation"]

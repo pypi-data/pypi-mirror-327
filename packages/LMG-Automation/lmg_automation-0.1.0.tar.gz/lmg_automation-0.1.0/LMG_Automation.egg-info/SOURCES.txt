@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+LMG_Automation/__init__.py
+LMG_Automation/automation.py
+LMG_Automation/login_generator.py
+LMG_Automation/post_install_setup.py
+LMG_Automation.egg-info/PKG-INFO
+LMG_Automation.egg-info/SOURCES.txt
+LMG_Automation.egg-info/dependency_links.txt
+LMG_Automation.egg-info/entry_points.txt
+LMG_Automation.egg-info/requires.txt
+LMG_Automation.egg-info/top_level.txt
