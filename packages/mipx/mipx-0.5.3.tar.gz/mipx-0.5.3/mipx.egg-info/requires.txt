@@ -1,0 +1,4 @@
+ortools
+
+[docplex]
+docplex<3.0.0,>=2.25.0
