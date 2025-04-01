@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+baseballcv/__init__.py
+baseballcv.egg-info/PKG-INFO
+baseballcv.egg-info/SOURCES.txt
+baseballcv.egg-info/dependency_links.txt
+baseballcv.egg-info/requires.txt
+baseballcv.egg-info/top_level.txt
+tests/test_baseballcv_api.py
+tests/test_dataset_tools.py
+tests/test_imports.py
+tests/test_load_tools.py
+tests/test_savant_scraper.py
