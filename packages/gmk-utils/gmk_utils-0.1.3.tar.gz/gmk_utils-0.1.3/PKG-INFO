@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: gmk_utils
+Version: 0.1.3
+Home-page: https://github.com/gmk-dev/gmk_utils
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+
+# Math Utils
+
+A collection of useful mathematical utility functions.
+
+## Installation
+
+To install this package, use pip:
+
+```bash
+pip install gmk_utils
+```
