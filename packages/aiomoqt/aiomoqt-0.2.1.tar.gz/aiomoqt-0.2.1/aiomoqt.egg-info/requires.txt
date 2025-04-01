@@ -1,0 +1,9 @@
+asyncio>=3.4.3
+aioquic>=1.2.0
+
+[examples]
+uvloop>=0.5.29
+argparse
+
+[test]
+pytest
