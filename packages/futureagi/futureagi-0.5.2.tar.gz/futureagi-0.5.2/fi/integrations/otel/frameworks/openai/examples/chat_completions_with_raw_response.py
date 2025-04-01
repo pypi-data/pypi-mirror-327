@@ -1,0 +1,45 @@
+import openai
+
+from fi.integrations.otel import OpenAIInstrumentor, register
+from fi.integrations.otel.types import (
+    EvalName,
+    EvalSpanKind,
+    EvalTag,
+    EvalTagType,
+    ProjectType,
+)
+
+# Configure trace provider with custom evaluation tags
+eval_tags = [
+    EvalTag(
+        eval_name=EvalName.DETERMINISTIC_EVALS,
+        value=EvalSpanKind.TOOL,
+        type=EvalTagType.OBSERVATION_SPAN,
+        config={
+            "multi_choice": False,
+            "choices": ["Yes", "No"],
+            "rule_prompt": "Evaluate if the response is correct",
+        },
+    )
+]
+
+# Configure trace provider with custom evaluation tags
+trace_provider = register(
+    project_type=ProjectType.EXPERIMENT,
+    eval_tags=eval_tags,
+    project_name="FUTURE_AGI",
+    project_version_name="v1",
+)
+
+# Initialize the OpenAI instrumentor
+OpenAIInstrumentor().instrument(tracer_provider=trace_provider)
+
+
+if __name__ == "__main__":
+    client = openai.OpenAI()
+    response = client.chat.completions.with_raw_response.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": "Write a story on AGI."}],
+        max_tokens=20,
+    )
+    print(response.parse().choices[0].message.content)
