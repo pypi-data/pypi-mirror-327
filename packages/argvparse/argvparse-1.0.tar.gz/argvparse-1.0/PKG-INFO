@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: argvparse
+Version: 1.0
+Summary: Argv parser for Python.
+Author-email: CodeCrafter-TL <1825456084@qq.com>
+Maintainer-email: CodeCrafter-TL <1825456084@qq.com>
+License: MIT License
+Project-URL: Bug tracker, https://github.com/CodeCrafter-TL/argvparse/issues
+Project-URL: Source code, https://github.com/CodeCrafter-TL/argvparse
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Developers
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Argv Parse
+---
+Argv parser for python.
+
+## Usage
+
+```python
+import argvparse
+import sys
+
+argvparse.parse(sys.argv[0:])
+```

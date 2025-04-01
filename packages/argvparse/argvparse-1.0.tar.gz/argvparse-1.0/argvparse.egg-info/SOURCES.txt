@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+argvparse/__init__.py
+argvparse/parser.py
+argvparse.egg-info/PKG-INFO
+argvparse.egg-info/SOURCES.txt
+argvparse.egg-info/dependency_links.txt
+argvparse.egg-info/top_level.txt
