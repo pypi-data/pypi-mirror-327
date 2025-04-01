@@ -1,0 +1,130 @@
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:20:00.196530
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.2 255.255.255.0', 'no shutdown'] on device 10.2.0.102
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:21:49.405735
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.2 255.255.255.0', 'no shutdown'] on device 10.2.0.102
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:25:21.170418
+ERROR:netmiko:Data validation error: 1 validation error for Model
+devices
+  Input should be a valid list [type=list_type, input_value={'host': '10.2.0.101', 'u..._file': '~/.ssh/config'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:30:11.427027
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.2 255.255.255.0', 'no shutdown'] on device 10.2.0.102
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:31:17.733921
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.2 255.255.255.0', 'no shutdown'] on device 10.2.0.102
+INFO:netmiko:Netmiko log entry created at 2025-02-11 02:34:09.486875
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.2 255.255.255.0', 'no shutdown'] on device 10.2.0.102
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:15:14.923718
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:21:31.228707
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:21:38.171537
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:23:06.359959
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:25:54.489706
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:38:57.205665
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:40:31.119557
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:41:18.551517
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:42:09.933885
+ERROR:netmiko:Data validation error: 1 validation error for Model
+commands
+  Input should be a valid list [type=list_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/list_type
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:42:52.012015
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+ERROR:netmiko:Error co********ecting to 10.2.0.101, authentication error
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:43:03.011454
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:48:57.894005
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+ERROR:netmiko:Error connecting to 10.2.0.101, authentication error
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:49:09.743574
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface GigabitEthernet1/3', 'description aux interface', 'no switchport', 'ip address 192.168.1.1 255.255.255.0', 'no shutdown'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:50:37.794248
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+ERROR:netmiko:Error connecting to 10.2.0.101, authentication error
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:52:05.598487
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['ip address 192.168.1.2 255.255.255.0'] on device 10.2.0.101
+INFO:netmiko:Netmiko log entry created at 2025-02-12 21:53:12.419707
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+INFO:paramiko.transport:Auth banner: b"C\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:netmiko:Configuring the following commands ['interface giga1/3', 'ip address 192.168.1.2 255.255.255.0'] on device 10.2.0.101
