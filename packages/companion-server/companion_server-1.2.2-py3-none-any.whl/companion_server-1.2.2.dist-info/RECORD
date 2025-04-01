@@ -1,0 +1,12 @@
+companion/__init__.py,sha256=UmNr0TvEXPPzP6WnlT4bB4F4pSBdsEE64uchGSzkPTI,21
+companion/enums.py,sha256=5HA7PTAeZAzfEIEnBOwamXJFRi-MgELOk_84dSQWcwc,321
+companion/handler.py,sha256=oneVxogze4d1n5Qb7khO7BG0guTQLbq4MWjPoy94_s4,1819
+companion/parser.py,sha256=t-1w_ZlVbNmzT4cw1jqdXxEjU3HENhvPXdA1qw6KaEU,1227
+companion/request.py,sha256=_77gc2iMoWGSVJiA-DbpBa308Qg6vGi0hwvh_gCWML8,999
+companion/response.py,sha256=Bv3WgDrr-gmCLfsXPZpdoPCnxNB46bOCXT_UHefu8jY,1400
+companion/server.py,sha256=i17n5JCVcFNCJA9miJb415ox0uX7lmS5KEcrxU-iGNM,2635
+companion_server-1.2.2.dist-info/LICENSE,sha256=Jyx_RkTTJT1lAbzTpV3EDCR6B5s2tPH5ZO2qLc8CLdk,1074
+companion_server-1.2.2.dist-info/METADATA,sha256=HuR1zBzYqBzvcA4gcTPnOzLOAcvckJg3heDsCZRG8Ho,2267
+companion_server-1.2.2.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+companion_server-1.2.2.dist-info/entry_points.txt,sha256=4sQDAd9Qp0cCGwfMz0fzm0VrxgBbGdQgYZXaHTJTqjs,57
+companion_server-1.2.2.dist-info/RECORD,,
