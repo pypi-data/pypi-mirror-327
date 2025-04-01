@@ -1,0 +1,8 @@
+autoblock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoblock/middleware.py,sha256=KmdeFrGV5I0DDoXIFL1A9x_z5Fd1iIE85LpGXp5Bwu0,1238
+autoblock/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoblock-1.2.0.dist-info/LICENSE,sha256=Qlt5WjwpB-lCCwqbxPt7BgLOAZBpIe4iklNzFhsh0pI,1072
+autoblock-1.2.0.dist-info/METADATA,sha256=CO4CGwm_mwLVBXaNmpReOreKT9upUefEQ8M9XoGOXHE,804
+autoblock-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+autoblock-1.2.0.dist-info/top_level.txt,sha256=R9DCVZKPUcvCHjjZZMgRhbkIZZ6VZi8z1JeBxebTUts,10
+autoblock-1.2.0.dist-info/RECORD,,
