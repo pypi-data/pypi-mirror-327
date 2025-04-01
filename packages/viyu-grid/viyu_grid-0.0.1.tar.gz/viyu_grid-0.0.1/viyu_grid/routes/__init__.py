@@ -1,0 +1,1 @@
+from viyu_grid.routes.xmpp_urls import setup_grid_routes

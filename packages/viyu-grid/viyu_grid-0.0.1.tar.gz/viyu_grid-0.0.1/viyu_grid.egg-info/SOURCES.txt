@@ -1,0 +1,9 @@
+README.md
+setup.py
+viyu_grid/__init__.py
+viyu_grid.egg-info/PKG-INFO
+viyu_grid.egg-info/SOURCES.txt
+viyu_grid.egg-info/dependency_links.txt
+viyu_grid.egg-info/top_level.txt
+viyu_grid/routes/__init__.py
+viyu_grid/routes/xmpp_urls.py
