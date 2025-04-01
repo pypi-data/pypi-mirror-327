@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: ICEBEAR
+Version: 0.2.4
+Summary: ENOTION
+Author-email: Thai Toan <toan.nt@enotion.io>
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: decimal

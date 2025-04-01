@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ICEBEAR"
+version = "0.2.4"
+description = "ENOTION"
+authors = [
+    {name = "Thai Toan", email = "toan.nt@enotion.io"}
+]
+license = {text = "MIT"}
+dependencies = [
+    "numpy",
+    "decimal"
+]
