@@ -1,0 +1,206 @@
+Metadata-Version: 2.3
+Name: cli-automation
+Version: 1.0.3
+Summary: Network Automation from CLI using Netmiko & Scrapli
+Author: Ed Scrimaglia
+Author-email: edgardo.scrimaglia@gmail.com
+Requires-Python: >=3.10, <4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiofiles (>=24.1.0,<25.0.0)
+Requires-Dist: netmiko (==4.5.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: scrapli (>=2025.1.30,<2026.0.0)
+Requires-Dist: typer (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+# `cla`
+
+Libraries used for Network Automation
+
+**Usage**:
+
+```console
+$ cla [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `-V, --version`: Get the app version
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `netmiko`: SSH library for network automation
+* `scrapli`: Telnet, SSH or NETCONF library for network...
+
+## `cla netmiko`
+
+SSH library for network automation
+
+**Usage**:
+
+```console
+$ cla netmiko [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `pull-single`: Pull data from Single Host
+* `pull-multiple`: Pull data from Multiple Hosts
+* `push-single`: Push configuration to Single Host
+* `push-multiple`: Push configuration file to Multiple Hosts
+* `templates`: Download templates to create hosts and...
+
+### `cla netmiko pull-single`
+
+Pull data from Single Host
+
+**Usage**:
+
+```console
+$ cla netmiko pull-single [OPTIONS]
+```
+
+**Options**:
+
+* `-h, --host TEXT`: host ip address  [required]
+* `-u, --user TEXT`: username  [required]
+* `-c, --cmd TEXT`: commands to execute on device  [required]
+* `-t, --type [cisco_ios|cisco_xr|juniper_junos|arista_eos|huawei|alcatel_sros|autodetect]`: device type  [required]
+* `-s, --cfg TEXT`: ssh config file
+* `-v, --verbose`: Verbose level  [default: 0]
+* `-l, --log [info|debug|error|warning|critical]`: Log level
+* `--help`: Show this message and exit.
+
+### `cla netmiko pull-multiple`
+
+Pull data from Multiple Hosts
+
+**Usage**:
+
+```console
+$ cla netmiko pull-multiple [OPTIONS]
+```
+
+**Options**:
+
+* `-h, --hosts FILENAME Json file`: group of hosts  [required]
+* `-c, --cmd TEXT`: commands to execute on device  [required]
+* `-v, --verbose`: Verbose level  [default: 0]
+* `-l, --log [info|debug|error|warning|critical]`: Log level
+* `--help`: Show this message and exit.
+
+### `cla netmiko push-single`
+
+Push configuration to Single Host
+
+**Usage**:
+
+```console
+$ cla netmiko push-single [OPTIONS]
+```
+
+**Options**:
+
+* `-h, --host TEXT`: host ip address  [required]
+* `-u, --user TEXT`: username  [required]
+* `-t, --type [cisco_ios|cisco_xr|juniper_junos|arista_eos|huawei|alcatel_sros|autodetect]`: device type  [required]
+* `-c, --cmd TEXT`: commands to configure on device
+* `-f, --cmdf FILENAME Json file`: commands to configure on device
+* `-s, --cfg TEXT`: ssh config file
+* `-v, --verbose`: Verbose level  [default: 0]
+* `-l, --log [info|debug|error|warning|critical]`: Log level
+* `--help`: Show this message and exit.
+
+### `cla netmiko push-multiple`
+
+Push configuration file to Multiple Hosts
+
+**Usage**:
+
+```console
+$ cla netmiko push-multiple [OPTIONS]
+```
+
+**Options**:
+
+* `-h, --hosts FILENAME Json file`: group of hosts  [required]
+* `-f, --cmdf FILENAME Json file`: commands to configure on device  [required]
+* `-v, --verbose`: Verbose level  [default: 0]
+* `-l, --log [info|debug|error|warning|critical]`: Log level
+* `--help`: Show this message and exit.
+
+### `cla netmiko templates`
+
+Download templates to create hosts and config commands files with the necessary information
+
+**Usage**:
+
+```console
+$ cla netmiko templates [OPTIONS]
+```
+
+**Options**:
+
+* `-v, --verbose`: Verbose level  [default: 0]
+* `-l, --log [info|debug|error|warning|critical]`: Log level
+* `--help`: Show this message and exit.
+
+## `cla scrapli`
+
+Telnet, SSH or NETCONF library for network automation. Yet under development
+
+**Usage**:
+
+```console
+$ cla scrapli [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `pull-data`: Pull data from devices
+* `push-data`: Push data to devices
+
+### `cla scrapli pull-data`
+
+Pull data from devices
+
+**Usage**:
+
+```console
+$ cla scrapli pull-data [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+### `cla scrapli push-data`
+
+Push data to devices
+
+**Usage**:
+
+```console
+$ cla scrapli push-data [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
