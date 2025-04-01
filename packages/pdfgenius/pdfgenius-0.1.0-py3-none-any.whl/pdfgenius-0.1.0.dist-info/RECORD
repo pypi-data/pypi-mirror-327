@@ -1,0 +1,13 @@
+pdfgenius/__init__.py,sha256=vL2t47tgde6DLzlLSZ_OZQrTgDw8j-xGRwt4eCUin-k,108
+pdfgenius/cli.py,sha256=QR867KQ_atpRU1UalhuEm4XOjUeAoutUZvt0gJY3Onc,2828
+pdfgenius/key_manager.py,sha256=mZ8Y3EOUYIHFAl6Ez2JURM337xLkeG_dz4lc3vcDy68,2267
+pdfgenius/utils.py,sha256=bcC1cfUajGQ0NfV8MCD67qiPhmX1WJzvYXmhg2Scv2E,1188
+pdfgenius/extractors/__init__.py,sha256=UxF60p5EIu_u0vDFX5e-PZ8NMj5rMsDsHqilTFdByBw,191
+pdfgenius/extractors/base.py,sha256=Gtw8rDWUwXr93yHYZnH1jf0MBpEQqaiqaSrFOx3eC8Y,489
+pdfgenius/extractors/gemini_extractor.py,sha256=jNI5DXOLdcN0dAh1F0S4z-H0HgU2eYHHJolRw2_qM3o,688
+pdfgenius/extractors/openai_extractor.py,sha256=dXiMJ5DkmxJmgdDRudcuirg745gnAqG-OBFF3Y4us3s,1362
+pdfgenius-0.1.0.dist-info/METADATA,sha256=e2ELt44Lz29B7cxWkFHzY9LDhzKdn8xB2Ps0UaWUj20,4860
+pdfgenius-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pdfgenius-0.1.0.dist-info/entry_points.txt,sha256=E5IOyhcVog3s5WP6lnuBYa4vnKVcwTcWRu-hfALtvg8,51
+pdfgenius-0.1.0.dist-info/top_level.txt,sha256=evPkXa3OlFDT8sy-k_42-ydotci8W_48aRIwj0m2clc,10
+pdfgenius-0.1.0.dist-info/RECORD,,

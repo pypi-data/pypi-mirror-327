@@ -1,0 +1,2 @@
+[console_scripts]
+extract-pdf = pdfgenius.cli:main
