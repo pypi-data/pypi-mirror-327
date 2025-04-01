@@ -1,0 +1,8 @@
+manim_kodisc/__init__.py,sha256=9VkE61lf7HKe2ujF9g1RBVLUk7pmaoWicD-WxMROl1Q,94
+manim_kodisc/force_diagram.py,sha256=gF4pOZY6AdTu0iZ7KKA6Z67YNrl6QZjJb_Po4nWa-qI,1365
+manim_kodisc/particle_simulation.py,sha256=PrdluquYijTpeuLyEqB72KkPsHnv-wuzGyd8UW7rp7I,1827
+manim_kodisc/slope_field.py,sha256=svSB3hgpE4ZSLtTG_FZP0MF4yBop5JBtWO1oAEBDGho,1087
+manim_kodisc-1.0.1.dist-info/entry_points.txt,sha256=jxmfQ18aCo0B54KsyZEzr0mEAlCRntIBlWiAbWMndAQ,43
+manim_kodisc-1.0.1.dist-info/METADATA,sha256=sPQbqCIuS7F96BdHG7TafNTHi5ZGiVAo93vDRhDNMwk,414
+manim_kodisc-1.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+manim_kodisc-1.0.1.dist-info/RECORD,,
