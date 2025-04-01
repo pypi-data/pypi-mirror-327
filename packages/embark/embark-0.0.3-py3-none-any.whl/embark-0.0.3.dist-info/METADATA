@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: embark
+Version: 0.0.3
+Summary: embark anything.
+Home-page: https://github.com/nlile/embark
+Author: nlile
+Author-email: n@synthlabs.ai
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic-settings (>=2.7.1,<3.0.0)
+Project-URL: Documentation, https://nlile.github.io/embark/
+Project-URL: Repository, https://github.com/nlile/embark
+Description-Content-Type: text/markdown
+
+# embark
+
+[![Release](https://img.shields.io/github/v/release/nlile/embark)](https://img.shields.io/github/v/release/nlile/embark)
+[![Build status](https://img.shields.io/github/actions/workflow/status/nlile/embark/master.yml?branch=master)](https://github.com/nlile/embark/actions/workflows/master.yml?query=branch%3Amaster)
+[![codecov](https://codecov.io/gh/nlile/embark/branch/master/graph/badge.svg)](https://codecov.io/gh/nlile/embark)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/nlile/embark)](https://img.shields.io/github/commit-activity/m/nlile/embark)
+[![License](https://img.shields.io/github/license/nlile/embark)](https://img.shields.io/github/license/nlile/embark)
+
+embark anything.
+
+- **Github repository**: <https://github.com/nlile/embark/>
+- **Documentation** <https://nlile.github.io/embark/>
+
+## Getting started with your project
+
+First, create a repository on GitHub with the same name as this project, and then run the following commands:
+
+```bash
+git init -b master
+git add .
+git commit -m "init commit"
+git remote add origin git@github.com:nlile/embark.git
+git push -u origin master
+```
+
+Finally, install the environment and the pre-commit hooks with
+
+```bash
+make install
+```
+
+You are now ready to start development on your project!
+The CI/CD pipeline will be triggered when you open a pull request, merge to master, or when you create a new release.
+
+To finalize the set-up for publishing to PyPI or Artifactory, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/publishing/#set-up-for-pypi).
+For activating the automatic documentation with MkDocs, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/mkdocs/#enabling-the-documentation-on-github).
+To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/codecov/).
+
+## Releasing a new version
+
+- Create an API Token on [PyPI](https://pypi.org/).
+- Add the API Token to your projects secrets with the name `PYPI_TOKEN` by visiting [this page](https://github.com/nlile/embark/settings/secrets/actions/new).
+- Create a [new release](https://github.com/nlile/embark/releases/new) on Github.
+- Create a new tag in the form `*.*.*`.
+- For more details, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/cicd/#how-to-trigger-a-release).
+
+---
+
+Repository initiated with [fpgmaas/cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry).
+
