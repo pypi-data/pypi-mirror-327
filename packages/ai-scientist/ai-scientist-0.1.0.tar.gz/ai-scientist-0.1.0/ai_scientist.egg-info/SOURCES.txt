@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ai_scientist/__init__.py
+ai_scientist/run_research.py
+ai_scientist.egg-info/PKG-INFO
+ai_scientist.egg-info/SOURCES.txt
+ai_scientist.egg-info/dependency_links.txt
+ai_scientist.egg-info/entry_points.txt
+ai_scientist.egg-info/requires.txt
+ai_scientist.egg-info/top_level.txt
+ai_scientist/assets/prompts/mistake_prompt.txt
+ai_scientist/assets/prompts/research_prompt.txt
