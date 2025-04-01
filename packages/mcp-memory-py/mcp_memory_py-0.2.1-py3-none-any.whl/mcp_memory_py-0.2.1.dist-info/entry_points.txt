@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-memory-py = mcp_memory_py.server:main
