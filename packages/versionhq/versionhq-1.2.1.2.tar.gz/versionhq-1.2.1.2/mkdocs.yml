@@ -1,0 +1,140 @@
+site_name: versionHQ
+site_author: Version IO Sdn. Bhd.
+site_description: A Python framework for multi-agent systems that handle complex task automation.
+site_url: https://docs.versi0n.io/
+repo_url: https://github.com/versionhq/multi-agent-system/
+repo_name: multi-agent-system
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2024-2025 Version IO Sdn. Bhd.
+markdown_extensions:
+  - abbr
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+  name: material
+  language: en
+  favicon: _logos/favicon.ico
+  logo: _logos/logo192.png
+  font:
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    admonition:
+      note: octicons/light-bulb-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+nav:
+  - Home: 'index.md'
+  - Quick Start: 'quickstart.md'
+  - Core Components:
+    - Agent: 'core/agent.md'
+    - Task Graph: 'core/task-graph.md'
+    - Task:
+      - Overview: 'core/task.md'
+      - ResponseField: 'core/task/response-field.md'
+      - TaskOutput: 'core/task/task-output.md'
+    - Tool: 'core/tool.md'
+  #   - Compoio Tools: 'core/composio-tool.md'
+  - Examples:
+    - Playground: https://versi0n.io
+    - Experiment - Agent Performance: https://github.com/versionHQ/exp-agent-performance
+  - Change Log: https://github.com/versionHQ/multi-agent-system/releases
+
+extra_css:
+  - stylesheets/main.css
+
+plugins:
+  # - social
+  - search
+
+extra:
+  analytics:
+    provider: google
+    property: G-E19K228ENL
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/versionHQ/multi-agent-system
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/versionhq/?viewAsMember=true
