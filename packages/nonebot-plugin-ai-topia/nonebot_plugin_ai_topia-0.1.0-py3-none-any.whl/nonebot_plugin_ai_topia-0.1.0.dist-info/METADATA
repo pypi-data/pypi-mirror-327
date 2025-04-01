@@ -1,0 +1,101 @@
+Metadata-Version: 2.3
+Name: nonebot_plugin_ai_topia
+Version: 0.1.0
+Summary: nonebot2AI乌托邦pro对话插件
+License: MIT License
+         
+         Copyright (c) 2025 神崎
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Keywords: nonebot2,nonebot
+Author: kanzakiD
+Author-email: 1690800500@qq.com
+Requires-Python: >=3.13,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: httpx (>=0.28.1)
+Requires-Dist: nonebot-plugin-localstore (>=0.7.3)
+Requires-Dist: nonebot2 (>=2.4.1)
+Requires-Dist: pydantic (>=2.10.3)
+Project-URL: Homepage, https://github.com/kanzakiD/nonebot_plugin_ai_topia
+Description-Content-Type: text/markdown
+
+<!--
+ * @Author         : kanzakiD
+ * @Date           : 2024-02-10 00:00:00
+ * @LastEditors    : kanzakiD
+ * @LastEditTime   : 2021-02-10 00:00:00
+ * @Description    : None
+ * @GitHub         : https://github.com/KanzakiD/nonebot-plugin-ai-topia
+-->
+
+<p align="center">
+  <a href="https://v2.nonebot.dev/"><img src="https://v2.nonebot.dev/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
+# nonebot-plugin-ai-topia
+
+_✨ NoneBot2 AI乌托邦对话插件 ✨_
+
+
+</div>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/cscs181/QQ-Github-Bot/master/LICENSE">
+    <img src="https://img.shields.io/github/license/cscs181/QQ-Github-Bot.svg" alt="license">
+  </a>
+  <a href="https://pypi.python.org/pypi/nonebot_plugin_ai_topia">
+    <img src="https://img.shields.io/pypi/v/nonebot_plugin_ai_topia.svg" alt="pypi">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
+</p>
+
+## 更新记录
+2025/2/12
+整体功能已完成
+
+## 使用方式
+首先去插件目录找config.py 填写乌托邦的apikey、secret和roleId
+
+私聊或群聊@机器人 即可对话
+
+
+## 安装（没发到pypi和nonebot商店，以下都暂时用不了喵）
+
+1. 使用 nb-cli 安装，不需要手动添加入口，更新使用 pip (推荐)
+
+```
+nb plugin install nonebot_plugin_ai_topia
+```
+
+2. 使用 pip 安装和更新，初次安装需要手动添加入口 （新版默认不带 bot.py 文件）
+
+```
+pip install --upgrade nonebot_plugin_ai_topia
+```
+
+pip 安装后在 Nonebot2 入口文件（例如 bot.py ）增加：
+
+```python
+nonebot.load_plugin("nonebot_plugin_ai_topia")
+```
+
