@@ -1,0 +1,2 @@
+[console_scripts]
+genemapper = genemapper.cli:main
