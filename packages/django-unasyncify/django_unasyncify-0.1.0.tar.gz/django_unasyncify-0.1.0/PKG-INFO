@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: django-unasyncify
+Version: 0.1.0
+Summary: Add your description here
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: libcst>=1.6.0
+Description-Content-Type: text/x-rst
+
+django-unasyncify
+=================
+
+This project is meant to help maintain sync and async implementations of a Python project, following Django's "add ``a`` to async variants" pattern.
+
+Please check out the `documentation <https://django-unasyncify.readthedocs.io/en/latest/>`_  for more details on what this project does.

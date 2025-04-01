@@ -1,0 +1,26 @@
+[project]
+name = "django-unasyncify"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.rst"
+requires-python = ">=3.12"
+dependencies = [
+    "libcst>=1.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.14.1",
+    "pytest>=8.3.4",
+    "sphinx>=8.1.3",
+]
+
+[project.scripts]
+django-unasyncify = "django_unasyncify.cmd:main"
+
+[tool.mypy]
+check_untyped_defs = true
