@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+testprojectelt1/__init__.py
+testprojectelt1/base.py
+testprojectelt1.egg-info/PKG-INFO
+testprojectelt1.egg-info/SOURCES.txt
+testprojectelt1.egg-info/dependency_links.txt
+testprojectelt1.egg-info/top_level.txt

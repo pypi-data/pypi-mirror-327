@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testprojectelt1"
+version = "0.1.0"
+license = {file = "LICENSE.txt"}
+description = "Test project"
+authors = [{name = "Elliot Su", email = "sodinfeliz@google.com"}]
+requires-python = ">=3.8"
