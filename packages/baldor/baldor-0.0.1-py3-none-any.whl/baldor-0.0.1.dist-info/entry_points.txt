@@ -1,0 +1,3 @@
+[console_scripts]
+batch_solve = baldor.test:main
+solve = baldor.app:main
