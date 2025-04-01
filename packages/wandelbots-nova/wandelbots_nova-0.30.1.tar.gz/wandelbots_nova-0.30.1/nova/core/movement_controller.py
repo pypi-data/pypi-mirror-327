@@ -1,0 +1,151 @@
+from typing import Callable
+
+import wandelbots_api_client as wb
+from loguru import logger
+
+from nova.actions import MovementControllerContext
+from nova.core.exceptions import InitMovementFailed
+from nova.types import (
+    ExecuteTrajectoryRequestStream,
+    ExecuteTrajectoryResponseStream,
+    MotionState,
+    MovementControllerFunction,
+    Pose,
+    RobotState,
+)
+
+
+def movement_to_motion_state(movement: wb.models.Movement) -> MotionState | None:
+    """Convert a wb.models.Movement to a MotionState."""
+    if (
+        movement.movement.state is None
+        or movement.movement.state.motion_groups is None
+        or len(movement.movement.state.motion_groups) == 0
+        or movement.movement.current_location is None
+    ):
+        return None
+
+    # TODO: in which cases do we have more than one motion group here?
+    motion_group = movement.movement.state.motion_groups[0]
+    return motion_group_state_to_motion_state(
+        motion_group, float(movement.movement.current_location)
+    )
+
+
+def motion_group_state_to_motion_state(
+    motion_group_state: wb.models.MotionGroupState, path_parameter: float
+) -> MotionState:
+    tcp_pose = Pose(motion_group_state.tcp_pose)
+    joints = (
+        tuple(motion_group_state.joint_current.joints) if motion_group_state.joint_current else None
+    )
+    return MotionState(
+        path_parameter=path_parameter, state=RobotState(pose=tcp_pose, joints=joints)
+    )
+
+
+def move_forward(
+    context: MovementControllerContext, on_movement: Callable[[MotionState | None], None]
+) -> MovementControllerFunction:
+    """
+    movement_controller is an async function that yields requests to the server.
+    If a movement_consumer is provided, we'll asend() each wb.models.MovementMovement to it,
+    letting it produce MotionState objects.
+    """
+
+    async def movement_controller(
+        response_stream: ExecuteTrajectoryResponseStream,
+    ) -> ExecuteTrajectoryRequestStream:
+        # The first request is to initialize the movement
+        yield wb.models.InitializeMovementRequest(trajectory=context.motion_id, initial_location=0)  # type: ignore
+
+        # then we get the response
+        initialize_movement_response = await anext(response_stream)
+        if isinstance(
+            initialize_movement_response.actual_instance, wb.models.InitializeMovementResponse
+        ):
+            r1 = initialize_movement_response.actual_instance
+            if not r1.init_response.succeeded:
+                raise InitMovementFailed(r1.init_response)
+
+        # The second request is to start the movement
+        set_io_list = context.combined_actions.to_set_io()
+        yield wb.models.StartMovementRequest(
+            set_ios=set_io_list, start_on_io=None, pause_on_io=None
+        )  # type: ignore
+
+        # then we wait until the movement is finished
+        async for execute_trajectory_response in response_stream:
+            instance = execute_trajectory_response.actual_instance
+
+            # Send the current location to the consumer
+            if isinstance(instance, wb.models.Movement) and instance.movement:
+                motion_state = movement_to_motion_state(instance)
+                if motion_state:
+                    on_movement(motion_state)
+
+            # Stop when standstill indicates motion ended
+            if isinstance(instance, wb.models.Standstill):
+                if instance.standstill.reason == wb.models.StandstillReason.REASON_MOTION_ENDED:
+                    on_movement(None)
+                    return
+
+    return movement_controller
+
+
+def speed_up(
+    context: MovementControllerContext, on_movement: Callable[[MotionState | None], None]
+) -> MovementControllerFunction:
+    async def movement_controller(
+        response_stream: ExecuteTrajectoryResponseStream,
+    ) -> ExecuteTrajectoryRequestStream:
+        # The first request is to initialize the movement
+        yield wb.models.InitializeMovementRequest(trajectory=context.motion_id, initial_location=0)  # type: ignore
+
+        # then we get the response
+        initialize_movement_response = await anext(response_stream)
+        if isinstance(
+            initialize_movement_response.actual_instance, wb.models.InitializeMovementResponse
+        ):
+            r1 = initialize_movement_response.actual_instance
+            if not r1.init_response.succeeded:
+                raise InitMovementFailed(r1.init_response)
+
+        # The second request is to start the movement
+        set_io_list = context.combined_actions.to_set_io()
+        yield wb.models.StartMovementRequest(
+            set_ios=set_io_list, start_on_io=None, pause_on_io=None
+        )  # type: ignore
+
+        counter = 0
+        latest_speed = 10
+        # then we wait until the movement is finished
+        async for execute_trajectory_response in response_stream:
+            counter += 1
+            instance = execute_trajectory_response.actual_instance
+            # Send the current location to the consume
+            if isinstance(instance, wb.models.Movement):
+                motion_state = movement_to_motion_state(instance)
+                if motion_state:
+                    on_movement(motion_state)
+
+            # Terminate the generator
+            if isinstance(instance, wb.models.Standstill):
+                if instance.standstill.reason == wb.models.StandstillReason.REASON_MOTION_ENDED:
+                    on_movement(None)
+                    return
+
+            if isinstance(instance, wb.models.PlaybackSpeedResponse):
+                playback_speed = instance.playback_speed_response
+                logger.info(f"Current playback speed: {playback_speed}")
+
+            if counter % 10 == 0:
+                yield wb.models.ExecuteTrajectoryRequest(
+                    wb.models.PlaybackSpeedRequest(playback_speed_in_percent=latest_speed)
+                )
+                counter = 0
+                latest_speed += 5
+                if latest_speed > 100:
+                    latest_speed = 100
+
+    return movement_controller
