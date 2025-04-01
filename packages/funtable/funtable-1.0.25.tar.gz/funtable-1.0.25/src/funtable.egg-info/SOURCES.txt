@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/funtable/__init__.py
+src/funtable/snapshot.py
+src/funtable/table.py
+src/funtable.egg-info/PKG-INFO
+src/funtable.egg-info/SOURCES.txt
+src/funtable.egg-info/dependency_links.txt
+src/funtable.egg-info/requires.txt
+src/funtable.egg-info/top_level.txt
+src/funtable/kv/__init__.py
+src/funtable/kv/interface.py
+src/funtable/kv/sqlite_table.py
+src/funtable/kv/tinydb_table.py
+tests/test_table.py
