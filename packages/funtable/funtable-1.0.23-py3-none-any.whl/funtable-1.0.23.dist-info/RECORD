@@ -1,0 +1,12 @@
+funtable/__init__.py,sha256=GkCvJYbcP9BPuCs5N7Rd_2tN34IGSvt-Wch55TQCa28,109
+funtable/snapshot.py,sha256=Y1L0zHBUR8m8cGz9duweEZX6-EIQeJW9wkioTl5xyHE,1872
+funtable/table.py,sha256=vU9N5L7paVWeJzzcTz6HpbGfIDnaeLBH_9g0TMK8Pjo,3502
+funtable/kv/__init__.py,sha256=zPUHzkgkZ0yDsyFPtyxjvp7fRArsUhH5JCLWmWCejoo,387
+funtable/kv/interface.py,sha256=vHZeCAKTkkv1nPmQFCcoIU8J96hMJrdIze_PQNSTZ2c,6096
+funtable/kv/sqlite_table.py,sha256=LP1gUp0ljf5AF87h41_jOP5B1mmWJs5zhP9SLa750Co,13528
+funtable/kv/test_table.py,sha256=oqqKmBYSgKYEpe-FePmJ18VdxeFlG8GxqxWKcfzxwxs,12247
+funtable/kv/tinydb_table.py,sha256=-Q3aapGiNWiiveGtn-_bg9SVnjjCIOeSJXCwj9BIyOw,13415
+funtable-1.0.23.dist-info/METADATA,sha256=D3ehftvAHhxz3Fh_J-QTnhar3tEDb0GGdRQtas3L8ec,253
+funtable-1.0.23.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+funtable-1.0.23.dist-info/top_level.txt,sha256=vxWlwsIwsY1Mx6NCfrZqGAkUNulJqPhM0x2l-Vjh1YY,9
+funtable-1.0.23.dist-info/RECORD,,
