@@ -1,0 +1,10 @@
+spectra/__init__.py,sha256=JYcrLcYA9R99UlEop-4ePVmehAOhTp2fqUg-3fQlBi8,4083
+spectra/_version.py,sha256=C3j8bNp0OXFiR3kZPlWeUHbgUp9oD4qQbu5xzJQi9-A,72
+spectra/core.py,sha256=Lxm5_VWiTtc35EZ2LYOcvBEDJYwEjWFNi6uhru9Hy6Y,7296
+spectra/grapefruit.py,sha256=FS56Gq5rLiC5oIbaF9mgsZcacae_UZZVn_mekCxapME,55394
+spectra-0.1.0.dist-info/LICENSE.txt,sha256=DUiZTaTRMh45W15kpyTtTexj-5a4isW4j8AUdx5pCCE,1086
+spectra-0.1.0.dist-info/METADATA,sha256=KNFvM0pBZEX0flAQ6iw1YphZ-EnshOHKsl6gKiZHeeM,927
+spectra-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+spectra-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+spectra-0.1.0.dist-info/top_level.txt,sha256=hXyechLPcQFboy7DQhEEv-OUVmAu8hSHSaNMTR2cYRE,8
+spectra-0.1.0.dist-info/RECORD,,
