@@ -1,0 +1,17 @@
+mcp_server_imessage/AddressBook.py,sha256=2cIqalpw3vru1yYhsqy0sQL5F9RZlJUzk2fsr0g_vXE,4616
+mcp_server_imessage/SnowflakeComponents.py,sha256=RZu8gdYmVUbWdKhYn_dewhFnjEYzdAtEvBheWs4KPew,2371
+mcp_server_imessage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcp_server_imessage/__main__.py,sha256=Y-3wcbkSHpWd90fAsHO8ALHsuN77zZ_7T2e9G122tVw,3755
+mcp_server_imessage/iMessage.py,sha256=hKO6EEeAeIS5kQvlztbecaTfsfRTJfDD15Tb3lBbVYQ,8377
+mcp_server_imessage/server.py,sha256=b5Szcyx7cLimYT-xGI6Bri60jygpObrANje8fZ1VNWc,1979
+mcp_server_imessage/errors/__init__.py,sha256=9wNwEyTydzGwLrMZU90nPRGaE-bwEPBepu1ujcCmiXg,510
+mcp_server_imessage/models/__init__.py,sha256=bLNYPLtfrw_HaYw8qyLeQnIydzOeqnP1AuLZimwFh78,161
+mcp_server_imessage/models/base.py,sha256=cALqfpE8i_ulSGJRoDK0s0OJ8y9dHp9W722B_7YBkek,91
+mcp_server_imessage/models/chat.py,sha256=xHqIbtSLD2zo9Uxmvv_xCMrO1c4GDQjL1xGjPqGP89M,237
+mcp_server_imessage/models/handle.py,sha256=AttWhowAL0Lb77NOHpR7-xyORJUenzcMmAgn4B0VtL8,282
+mcp_server_imessage/models/message.py,sha256=rhniurYo4kvo35IkY3nEH4_02aCZbOOWA5MMK9JA_18,532
+mcp_server_imessage-0.0.1.dist-info/LICENSE,sha256=vbrMWa4VpPUqOlyRlw7RA5mIqYw9RUvHid6WC8iJEN0,1074
+mcp_server_imessage-0.0.1.dist-info/METADATA,sha256=PK4f4qS-3g0pN59vPD7aSz1q99uZZrSJ2_4KrdumXfs,841
+mcp_server_imessage-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mcp_server_imessage-0.0.1.dist-info/top_level.txt,sha256=8svIdlxZSt1ZU5LqI8ohkcoXhMid8Y6srv1zrZJh5AY,20
+mcp_server_imessage-0.0.1.dist-info/RECORD,,
