@@ -1,0 +1,10 @@
+alice_colorscheme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alice_colorscheme/__main__.py,sha256=HTOXreqvY8XPGjWUQO2FWxl5_cogbZAHp5yWZN2hNls,77
+alice_colorscheme/cli.py,sha256=hM2OlPuKyRLs01NynuKg69ZURMVjRnKyjaZSWY6NARE,3881
+alice_colorscheme/palette.py,sha256=ODtXwas4vU3y0sQfrWAZJzvi8yTKisNPDueR0VKaqfc,2023
+alice_colorscheme/util.py,sha256=IwDS-5mOFUkbGFJaNYS1ykTdOnS8RwiHb0F17L_WUJM,2028
+alice_colorscheme-0.0.1.dist-info/METADATA,sha256=x9bmdXmgVECgEHmF1ShVDhEf_Agd4C7T2t6u-Df-8Z4,1119
+alice_colorscheme-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+alice_colorscheme-0.0.1.dist-info/entry_points.txt,sha256=WdZ1AjrCnJH-grnmBPLl4apFfBDUFx6MUINV2qGuSE8,65
+alice_colorscheme-0.0.1.dist-info/licenses/LICENSE,sha256=hZjpTynbV1rflq77m6_v1EecOzWOY8jYGZC2OzysUyo,1285
+alice_colorscheme-0.0.1.dist-info/RECORD,,

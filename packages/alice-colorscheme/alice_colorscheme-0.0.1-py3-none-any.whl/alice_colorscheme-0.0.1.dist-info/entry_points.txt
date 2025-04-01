@@ -1,0 +1,2 @@
+[console_scripts]
+alice-colorscheme = alice_colorscheme.cli:main
