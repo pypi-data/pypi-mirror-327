@@ -1,0 +1,108 @@
+# Enclave SDK Test Script
+
+This script demonstrates how to interact with the Enclave SDK using Web3 to create a smart account, compute quotes, and submit transactions on the Optimism network.
+
+## Prerequisites
+
+Before running the script, ensure you have the following:
+
+- **Python 3.x**
+- **Required packages**:
+  - `web3`
+  - `python-dotenv`
+  - `eth-account`
+
+You can install the required packages using pip:
+
+```
+pip install web3 python-dotenv eth-account
+```
+
+## Environment Variables
+
+Create a `.env` file in the same directory as your script and set the following environment variables:
+
+```
+ALCHEMY_KEY=<your_alchemy_key>
+ENCLAVE_KEY=<your_enclave_key>
+PRIVATE_KEY=<your_private_key>
+```
+
+## Usage
+
+1. **Create a new instance of Web3**: Connect to the Optimism network using an Alchemy HTTP provider.
+
+    ```python
+    from web3 import Web3
+    import os
+
+    w3 = Web3(Web3.HTTPProvider(f"https://opt-mainnet.g.alchemy.com/v2/{os.getenv('ALCHEMY_KEY')}"))
+    ```
+
+2. **Create a new instance of Enclave**: Initialize the Enclave client with your Enclave key.
+
+    ```python
+    from app import Enclave
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    client = Enclave(os.getenv("ENCLAVE_KEY"))
+    ```
+
+3. **Generate a new Ethereum account**: Use your private key to generate an Ethereum account.
+
+    ```python
+    eoa = w3.eth.account.from_key(os.getenv("PRIVATE_KEY"))
+    ```
+
+4. **Create an Enclave Smart Contract Wallet**: Create a smart account for the generated Ethereum account.
+
+    ```python
+    account = client.create_smart_account(eoa.address)
+    ```
+
+5. **Get balance for the Enclave Account**: Retrieve and display the balance of the smart account.
+
+    ```python
+    balance = client.get_smart_balance(account.wallet.scw_address)
+    print('Smart Account Balance:', balance['netBalance'])
+    ```
+
+6. **Compute a quote**: Compute a transaction quote based on the user's willingness to spend.
+
+    ```python
+    quote = client.compute_quote(account.wallet.scw_address, network=10, amount=0.1 * 1e6, quote_type='AMOUNT_IN')
+    ```
+
+7. **Define transaction details**: Set up the recipient address and amount to transfer.
+
+    ```python
+    usdc_on_optimism = '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85' 
+    recipient_address = '0x4E2ef45077FB15Ef5f0FfF9E86B38991aA4bAe5C'  # Replace with the recipient's address
+    credit_amount = int(quote['total_credit']) + int(quote['userWithdrawal'])
+    ```
+
+8. **Build and sign the transaction**: Build and sign the transaction using the user's Ethereum account.
+
+    ```python
+    transaction_details = [{
+        'encodedData': usdc_contract.encode_abi("transfer", args=[recipient_address, credit_amount]),
+        'targetContractAddress': usdc_on_optimism,
+        'value': 0
+    }]
+    order_data = {'amount': str(int(amount)), 'type': 'AMOUNT_IN'}
+    built_txn = client.build_transaction(transaction_details, 10, account.wallet.scw_address, order_data, None, 1)
+
+    signature = eoa.sign_message(encode_defunct(hexstr=built_txn.message_to_sign))
+    ```
+
+9. **Submit the transaction**: Submit the transaction to the network.
+
+    ```python
+    response = client.submit_transaction("0x" + signature.signature.hex(), user_op_serializable, 10, account.wallet.scw_address, 1)
+    print('Transaction submitted successfully:', response)
+    ```
+
+## Conclusion
+
+This script serves as a basic example of how to use the Enclave SDK to interact with the Ethereum blockchain on the Optimism network. Make sure to replace the placeholder values in the environment variables with your actual keys before running the script.
