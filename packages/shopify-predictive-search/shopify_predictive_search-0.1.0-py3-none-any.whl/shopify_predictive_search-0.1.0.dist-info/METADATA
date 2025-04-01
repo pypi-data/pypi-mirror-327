@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: shopify-predictive-search
+Version: 0.1.0
+Summary: A Shopify search product using the Storefront API
+Home-page: https://gitlab.com/ysuren/pl9-tools
+Author: Truenary
+Author-email: marga.ghale@truenary.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: pydantic==2.5.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+A Shopify search product using the Storefront API
