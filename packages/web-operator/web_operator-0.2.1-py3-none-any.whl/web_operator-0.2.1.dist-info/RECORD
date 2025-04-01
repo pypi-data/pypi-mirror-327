@@ -1,0 +1,12 @@
+web_operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_operator/supervisor.py,sha256=vNEhylnH-pU2StzDo-5hUi9KZa6dDNXgZAIQJvRMv50,2909
+web_operator/utils.py,sha256=KCEUtBij2Sdfu95-nO8CLazKmEP1STK-XuMbSVmbbjM,4237
+web_operator/nodes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_operator/nodes/api_operation_node.py,sha256=EM-lcbp7YY7-4kb63IH1F-cZgCgvSNI0Yr2P9kTMAX0,142
+web_operator/nodes/computer_use_node.py,sha256=YGI45gdqP1hahkyS2QCq3G1RQH8O_4WhGxyAhzVoNk4,8644
+web_operator/nodes/router_node.py,sha256=J4sk-_-gMSjoJTklCBlNCTc4XS4EXl7lmjtzMcrHStA,908
+web_operator/nodes/tools.py,sha256=w5FR2Gu5f4iwYmLu34_qzCXbPHbuk07RZaJLjXarEPw,7998
+web_operator-0.2.1.dist-info/METADATA,sha256=qrBuiXtwpqicINnyn7h9qIAAoz7pRmUpQSUsVR_H5sc,2380
+web_operator-0.2.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+web_operator-0.2.1.dist-info/top_level.txt,sha256=IqQukryj8RtO-Jhhry4ApG4JITUAZ3F0EGlRQ4EAmTY,13
+web_operator-0.2.1.dist-info/RECORD,,
