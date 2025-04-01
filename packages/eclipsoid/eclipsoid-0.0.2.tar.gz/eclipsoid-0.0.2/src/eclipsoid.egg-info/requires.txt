@@ -1,0 +1,15 @@
+scipy
+numpy
+jaxoplanet
+zodiax>=0.4.1
+jaxlib<=0.4.32
+
+[dev]
+pytest
+
+[extras]
+matplotlib
+jupyter
+jupyterlab
+tqdm
+numpyro
