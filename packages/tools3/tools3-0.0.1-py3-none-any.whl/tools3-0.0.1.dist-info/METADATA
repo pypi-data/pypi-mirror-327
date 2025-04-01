@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tools3
+Version: 0.0.1
+Summary: develop tools
+Home-page: https://github.com/dev/tools
+Author: qq1060656096
+Author-email: 1060656096@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+```shell
+pip install unittest
+pip install python-json-logger
+
+```
+
+### 运行单元测试
+
+```shell
+python3.11 -m unittest discover tests
+```
+
+### 构建包上传包到PyPI
+```shell
+python3.10 setup.py sdist bdist_wheel
+python3.10 -m twine upload dist/*
+```
