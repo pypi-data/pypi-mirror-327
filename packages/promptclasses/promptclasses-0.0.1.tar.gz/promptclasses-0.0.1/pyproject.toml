@@ -1,0 +1,121 @@
+[project]
+
+# ------------------------------------------------------------------------
+# Base Metadata
+# ------------------------------------------------------------------------
+
+# promptclasses :)
+name = "promptclasses"
+version = "0.0.1"
+
+description = "🌳 | graph-like agents in the most pythonic & fun way possible"
+authors = [
+    { name = "Hammad Saeed", email = "hvmmad@gmail.com" }
+]
+
+readme = "README.md"
+license = { file = "LICENSE" }
+
+requires-python = ">=3.10"
+
+dependencies = [
+    "instructor>=1.7.2",
+    "litellm>=1.60.8",
+    "plum-dispatch>=2.5.7",
+    "toolz>=1.0.0",
+    "typedload>=2.37",
+    "uvloop>=0.21.0",
+    "wrapt>=1.17.2",
+]
+
+
+# optional dependencies
+[project.optional-dependencies]
+graph = [
+    "graphviz",
+    "networkx"
+]
+all = [
+    "graphviz",
+    "networkx",
+    "litellm"
+]
+
+
+# ------------------------------------------------------------------------
+# Dependency Groups
+# ------------------------------------------------------------------------
+
+
+[dependency-groups]
+dev = [
+    # core dev tools
+    # i love astral.sh
+    "ruff",
+    "uv",
+    # tests
+    "pytest",
+    "pytest-asyncio",
+    # docs
+    "mkdocstrings[python]",
+    "mkdocs-jupyter",
+    "mkdocs-material",
+    "mkdocs-material-extensions",
+    "mkdocs-git-revision-date-localized-plugin",
+    "mkdocs-git-revision-date-plugin",
+    "mkdocs-minify-plugin",
+    "mkdocs-awesome-pages-plugin",
+    "mkdocs-table-reader-plugin",
+]
+
+
+# ------------------------------------------------------------------------
+# Build System & Tools
+# ------------------------------------------------------------------------
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+# == addition for zed IDE's (could be removed in future) ==
+# this is used to tell zed what venv to use for the python interpreter
+# assumes venv is at the root of the project
+# this is purely for dev
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+
+# exclude docs/ dir
+[tool.hatch.build]
+exclude = ["docs/"]
+
+
+# ------------------------------------------------------------------------
+# RUFF
+# ------------------------------------------------------------------------
+
+
+# == ruff config ==
+[tool.ruff]
+# == base / core linting config ==
+target-version = "py310"
+# line length & indents
+line-length = 75
+indent-width = 4
+# == ruff linting config ==
+[tool.ruff.lint]
+# ensure '_' namespace is protected if vars are unused
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+# == ruff formatting config ==
+[tool.ruff.format]
+# strings in nanograph are double quoted
+quote-style = "double"
+# indent using spaces not tabs for consistency & more robust formatting
+indent-style = "space"
+# respect training commas
+skip-magic-trailing-comma = false
+# detect appropriate line ending
+line-ending = "auto"
