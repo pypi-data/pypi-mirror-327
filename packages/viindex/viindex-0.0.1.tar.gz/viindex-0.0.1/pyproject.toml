@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "viindex"
+version = "0.0.1"
+authors = [{ name = "Your Name", email = "youremail@example.com" }]
+description = "Viindex is a Python package that provides a video indexing database for fast and efficient querying of video content."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/torayeff/viindex"
+Issues = "https://github.com/torayeff/viindex/issues"
