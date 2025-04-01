@@ -1,0 +1,15 @@
+from pydantic import BaseModel,Field
+from typing import List, Optional
+
+class EvalArgs(BaseModel):
+    batch_size: int = 8
+    accumulation_steps: int = 128
+    dtype: str = Field("fp16", description="The dtype to use for training")
+    attention_implementation: str = Field(
+        "fa2", description="The attention implementation to use for training"
+    )
+    num_beams: int=1
+    max_samples: Optional[int]=None
+    quantization_bits: Optional[int] = Field(
+        4, description="The number of bits to use for quantization"
+    )
