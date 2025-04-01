@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+segments_runner/__init__.py
+segments_runner/segments_runner.py
+segments_runner.egg-info/PKG-INFO
+segments_runner.egg-info/SOURCES.txt
+segments_runner.egg-info/dependency_links.txt
+segments_runner.egg-info/requires.txt
+segments_runner.egg-info/top_level.txt
