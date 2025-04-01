@@ -1,0 +1,8 @@
+openpyxl
+pandas
+requests
+matplotlib
+pillow
+numpy
+requests_cache
+bs4
