@@ -1,0 +1,2 @@
+[console_scripts]
+wavlmmsdd = wavlmmsdd.main:main
