@@ -1,0 +1,105 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = false
+create = true
+prefer-active-python = true
+
+[tool.poetry]
+name = "bsrag_unstructured"
+version = "0.3.8"
+package-mode = true
+description = "A Python package with a built-in web application"
+authors = ["Dataelement <hanfeng@dataelem.com>"]
+packages = [{ include = "bisheng_unstructured", from = "src" }]
+# poetry build --no-cache
+# pip install dist/bisheng_unstructured-0.3.8-py3-none-any.whl
+
+[[tool.poetry.source]]
+name = "dataelem-index"
+url = "https://public:26rS9HRxDqaVy5T@nx.dataelem.com/repository/pypi-hosted/simple"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+filetype = "1.2.0"
+python = "^3.8"
+chardet = "5.1.0"
+python-magic = "0.4.27"
+nltk = "3.8.1"
+tabulate = "0.9.0"
+requests = "2.31.0"
+urllib3 = "1.26.16"
+beautifulsoup4 = "4.12.2"
+emoji = "2.8.0"
+types-pyyaml = "6.0.12.8"
+loguru = "0.7.1"
+rich = "13.4.2"
+lxml = "4.9.3"
+python-docx = "0.8.11"
+python-dateutil = "2.8.2"
+pytz = "2023.3"
+six = "1.16.0"
+tzdata = "2023.3"
+pyyaml = "^6.0.2"
+numpy = "1.24.4"
+pandas = "2.0.3"
+ebooklib = "0.18"
+importlib-metadata = "6.8.0"
+markdown = "3.4.4"
+zipp = "3.16.2"
+msg-parser = "1.2.0"
+olefile = "0.46"
+pypandoc = "1.11"
+pdf2image = "1.16.3"
+pdfminer-six = "20221105"
+pdfplumber = "0.10.2"
+wheel = "0.41.0"
+pypdf = "4.3.0"
+pymupdf = "1.23.8"
+opencv-python = "4.8.0.76"
+certifi = "2023.7.22"
+cffi = "1.15.1"
+charset-normalizer = "3.2.0"
+contourpy = "1.1.0"
+cryptography = "41.0.3"
+cycler = "0.11.0"
+fonttools = "4.42.1"
+idna = "3.4"
+shapely = "2.0.1"
+pydantic = "1.10.12"
+pillow = "10.0.0"
+python-pptx = "0.6.21"
+xlsxwriter = "3.1.2"
+et-xmlfile = "1.1.0"
+openpyxl = "3.1.2"
+xlrd = "2.0.1"
+fastapi = "^0.115.8"
+orjson = "^3.10.15"
+tritonclient = {version = "2.41.0", extras = ["http"]}
+
+[tool.codespell]
+# note: pre-commit passes explicit lists of files here, which this skip file list doesn't override -
+# this is only to allow you to run codespell interactively
+skip = "./.git,./.github"
+# ignore short words, and typename parameters like OffsetT
+ignore-regex = "\\b(.{1,4}|[A-Z]\\w*T)\\b"
+# ignore allowed words
+ignore-words-list = "passin"
+# use the 'clear' dictionary for unambiguous spelling mistakes
+builtin = "clear"
+# disable warnings about binary files and wrong encoding
+quiet-level = 3
+
+[tool.isort]
+profile = "black"
+use_parentheses = true
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+ensure_newline_before_comments = true
+line_length = 100
+balanced_wrapping = true
+indent = "    "
+skip = ["build"]
