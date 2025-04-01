@@ -1,0 +1,2 @@
+[hatch]
+msgfmt = hatch_msgfmt.hooks

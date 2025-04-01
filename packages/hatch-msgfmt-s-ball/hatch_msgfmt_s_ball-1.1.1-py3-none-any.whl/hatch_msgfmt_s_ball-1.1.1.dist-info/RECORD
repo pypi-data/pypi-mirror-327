@@ -1,0 +1,13 @@
+hatch_msgfmt/__about__.py,sha256=555zXx0WMgMs-7_MwEh1cHToYLEtOWua2NbSuiekmww,126
+hatch_msgfmt/__init__.py,sha256=9gc9CyGWr98kl8RQuO37oDe-eLZcMTPMxa-VdRzJt7E,176
+hatch_msgfmt/hooks.py,sha256=TEyULSpGPqJbFdZUwwEI4Oe2_Xk7NBtu6TWwC1GqKto,326
+hatch_msgfmt/plugin.py,sha256=QZtvAeUwgI-VZfPx4Xb3Eh8CxSgsr6zjX1LkfG9C_7E,4787
+hatch_msgfmt/vendor/LICENSE,sha256=_kQD9LRd7q1eqGgYGm5jEL_FGjVWQizPvLBLFYD7Avg,13017
+hatch_msgfmt/vendor/README.txt,sha256=XgBz7pIMHVLuNzsBan2ncP4uoLFVFQkjKliJQC8GfKQ,193
+hatch_msgfmt/vendor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_msgfmt/vendor/msgfmt.py,sha256=fya0DX6Yzjap2qFd8PVUikTmQ3dTrcQP2BaUG7g5eFw,9427
+hatch_msgfmt_s_ball-1.1.1.dist-info/METADATA,sha256=1YtA_JlemhpI-F8ttqIP8yj-ISeXnU4n_-a2T3ksx-A,6390
+hatch_msgfmt_s_ball-1.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+hatch_msgfmt_s_ball-1.1.1.dist-info/entry_points.txt,sha256=czTTvdDEmw91lp1yqFRmUrtYAoOqsCQI4jtN8pZnzQk,36
+hatch_msgfmt_s_ball-1.1.1.dist-info/licenses/LICENSE.txt,sha256=2avIZQSNRa8tvGoQYwJ1FcQ0PXgWPEm17I6q_OMMx8U,1101
+hatch_msgfmt_s_ball-1.1.1.dist-info/RECORD,,
