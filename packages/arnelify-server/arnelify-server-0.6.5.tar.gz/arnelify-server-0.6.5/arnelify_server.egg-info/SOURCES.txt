@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+arnelify_server/__init__.py
+arnelify_server/index.py
+arnelify_server.egg-info/PKG-INFO
+arnelify_server.egg-info/SOURCES.txt
+arnelify_server.egg-info/dependency_links.txt
+arnelify_server.egg-info/top_level.txt
+arnelify_server/bin/arnelify_server_amd64.so
+arnelify_server/bin/arnelify_server_arm64.so
+arnelify_server/contracts/__init__.py
+arnelify_server/contracts/res.py

@@ -1,0 +1,2 @@
+include arnelify_server/bin/arnelify_server_amd64.so
+include arnelify_server/bin/arnelify_server_arm64.so
