@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+autoblock.egg-info/PKG-INFO
+autoblock.egg-info/SOURCES.txt
+autoblock.egg-info/dependency_links.txt
+autoblock.egg-info/requires.txt
+autoblock.egg-info/top_level.txt
