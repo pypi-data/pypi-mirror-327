@@ -1,0 +1,11 @@
+sentry-sdk<3,>=2.14.0
+
+[dev]
+bandit
+flake8-bugbear
+flake8-datetimez
+flake8-isort
+flake8
+mypy
+pip-tools
+black
