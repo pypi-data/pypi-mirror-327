@@ -1,0 +1,16 @@
+[project]
+name = "wecom-worktool"
+version = "0.1.0"
+description = "企业微信WorkTool机器人API的封装。"
+readme = "README.md"
+authors = [
+    { name = "YiZixuan", email = "sqkkyzx@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
