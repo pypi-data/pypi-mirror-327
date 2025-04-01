@@ -1,0 +1,2 @@
+[console_scripts]
+atm_setup = hcautomation.post_install_setup:post_install
