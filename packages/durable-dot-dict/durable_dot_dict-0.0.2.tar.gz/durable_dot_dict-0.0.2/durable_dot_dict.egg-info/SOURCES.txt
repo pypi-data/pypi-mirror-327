@@ -1,0 +1,10 @@
+README.md
+setup.py
+durable_dot_dict/__init__.py
+durable_dot_dict/dotdict.py
+durable_dot_dict.egg-info/PKG-INFO
+durable_dot_dict.egg-info/SOURCES.txt
+durable_dot_dict.egg-info/dependency_links.txt
+durable_dot_dict.egg-info/requires.txt
+durable_dot_dict.egg-info/top_level.txt
+test/test_dotdict.py
