@@ -1,0 +1,12 @@
+README.md
+setup.py
+pybotforge/__init__.py
+pybotforge/client.py
+pybotforge/commands.py
+pybotforge/events.py
+pybotforge/utils.py
+pybotforge.egg-info/PKG-INFO
+pybotforge.egg-info/SOURCES.txt
+pybotforge.egg-info/dependency_links.txt
+pybotforge.egg-info/requires.txt
+pybotforge.egg-info/top_level.txt
