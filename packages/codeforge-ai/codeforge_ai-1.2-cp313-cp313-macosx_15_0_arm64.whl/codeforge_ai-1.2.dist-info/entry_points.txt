@@ -1,0 +1,8 @@
+[console_scripts]
+build=scripts:build_and_archive
+codeforge-ai=scripts:codeforge_ai
+dev=scripts:dev
+fbuild=scripts:frontend_build
+finstall=scripts:frontend_install
+fstart=scripts:frontend_start
+
