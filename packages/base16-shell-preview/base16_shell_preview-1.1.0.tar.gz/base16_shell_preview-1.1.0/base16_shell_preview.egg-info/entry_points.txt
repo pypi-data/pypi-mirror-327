@@ -1,0 +1,2 @@
+[console_scripts]
+base16-shell-preview = base16_shell_preview:main
