@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: houseteli_administrator
+Version: 0.1.14
+Summary: Helpers for houseteli microservices which use django
+Home-page: https://houseteli.github.io
+Author: Brian Onang'o
+Author-email: surgbc@gmail.com
+Project-URL: Homepage, https://github.com/houseteli/houseteli_administrator
+Project-URL: Issues, https://github.com/houseteli/houseteli_administrator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# houseteli_administrator
+
+## Usage
+
+- Add as submodule
+
+```bash
+git submodule add git@github.com:houseteli/houseteli_administrator.git houseteli_administrator
+```
+
+- Add to installed apps
+
+```python
+INSTALLED_APPS = [
+    # ...
+    'houseteli_administrator',
+]
+
+AUTHENTICATION_BACKENDS = [
+    'houseteli_administrator.backends.SessionEnhancingAuthBackend',
+    # ...
+]
+
+MIDDLEWARE = [
+    # ...,
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "houseteli_administrator.middleware.SharedSessionMiddleware",
+]
+
+
+### for auth services, you will not need to have houseteli_administrator.middleware.SharedSessionMiddleware in the main auth service
+HAS_ADMIN_LOGIN_PAGE = config('HAS_ADMIN_LOGIN_PAGE', default='False', cast=bool)
+if not HAS_ADMIN_LOGIN_PAGE:
+    MIDDLEWARE.insert(MIDDLEWARE.index('django.contrib.auth.middleware.AuthenticationMiddleware') + 1, 'houseteli_administrator.middleware.SharedSessionMiddleware')
+
+
+```
+
+- Add urls entry
+
+```python
+urlpatterns = [
+    #...
+    path('', include('houseteli_administrator.urls')),
+]
+```
+
+- Whitelabeling admin
+
+
+```python
+from houseteli_administrator import utils as admin_utils
+admin_utils.set_site_id()
+```
