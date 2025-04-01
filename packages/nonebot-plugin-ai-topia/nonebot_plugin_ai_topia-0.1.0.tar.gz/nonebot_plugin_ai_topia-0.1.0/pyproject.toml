@@ -1,0 +1,22 @@
+[project]
+name = "nonebot_plugin_ai_topia"
+version = "0.1.0"
+description = "nonebot2AI乌托邦pro对话插件"
+authors = [{name = "kanzakiD", email = "1690800500@qq.com"}]
+dependencies = [
+    "httpx>=0.28.1",
+    "nonebot2>=2.4.1",
+    "pydantic>=2.10.3",
+    "nonebot-plugin-localstore>=0.7.3",
+]
+requires-python = ">=3.13,<4.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["nonebot2","nonebot"]
+
+[project.urls]
+homepage = "https://github.com/kanzakiD/nonebot_plugin_ai_topia"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
