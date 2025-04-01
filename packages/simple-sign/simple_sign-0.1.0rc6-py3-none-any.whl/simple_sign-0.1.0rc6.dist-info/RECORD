@@ -1,0 +1,11 @@
+simple_sign/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_sign/backend.py,sha256=GPOQ0sRcvO6jjac6oxdPTDkKddP6OK_zsFIJnqUA8-A,10635
+simple_sign/sign.py,sha256=tp0wHU4csKn01UmTfbsF5c8WM-u28i-dpnuhds_a3XU,8424
+simple_sign/types.py,sha256=L2L-exbp00BaHFw0XWBFAfpYa8UuzK2BDjTw8BPefKM,151
+simple_sign/version.py,sha256=QcXfoEZgrL-zBfrZHvWMfQPkUn99HiZttcl6LYzwtD4,366
+simple_sign-0.1.0rc6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simple_sign-0.1.0rc6.dist-info/METADATA,sha256=EYCD0vy1aiz9s6LyMXYo9d6C1SndCDe1tO-vYWt-Sk8,7279
+simple_sign-0.1.0rc6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+simple_sign-0.1.0rc6.dist-info/entry_points.txt,sha256=yOHcco2iBv_oLwNjie8I763hVwN80Iy_yIH3tQxnCog,54
+simple_sign-0.1.0rc6.dist-info/top_level.txt,sha256=9QgpHICl9u70Ww7CrC_A1lIN1j_RN1dDSFaflA4DX1E,12
+simple_sign-0.1.0rc6.dist-info/RECORD,,
