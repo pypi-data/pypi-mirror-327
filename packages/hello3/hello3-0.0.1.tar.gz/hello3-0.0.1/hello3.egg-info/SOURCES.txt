@@ -1,0 +1,8 @@
+README.md
+setup.py
+hello3/__init__.py
+hello3/hello.py
+hello3.egg-info/PKG-INFO
+hello3.egg-info/SOURCES.txt
+hello3.egg-info/dependency_links.txt
+hello3.egg-info/top_level.txt
