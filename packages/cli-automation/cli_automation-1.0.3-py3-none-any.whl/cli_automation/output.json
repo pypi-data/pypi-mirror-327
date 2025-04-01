@@ -1,0 +1,91 @@
+{
+  "Device": "10.2.0.101",
+  "Output": [
+    [
+      {
+        "interface": "GigabitEthernet0/0",
+        "ip_address": "10.2.0.101",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet0/1",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet0/2",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet0/3",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet1/0",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet1/1",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "GigabitEthernet1/2",
+        "ip_address": "unassigned",
+        "status": "down",
+        "proto": "down"
+      },
+      {
+        "interface": "GigabitEthernet1/3",
+        "ip_address": "192.168.1.2",
+        "status": "down",
+        "proto": "down"
+      },
+      {
+        "interface": "Port-channel1",
+        "ip_address": "unassigned",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "Vlan1",
+        "ip_address": "unassigned",
+        "status": "administratively down",
+        "proto": "down"
+      },
+      {
+        "interface": "Vlan10",
+        "ip_address": "172.16.10.252",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "Vlan20",
+        "ip_address": "172.16.20.252",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "Vlan30",
+        "ip_address": "172.16.30.252",
+        "status": "up",
+        "proto": "up"
+      },
+      {
+        "interface": "Vlan100",
+        "ip_address": "172.16.100.252",
+        "status": "up",
+        "proto": "up"
+      }
+    ]
+  ]
+}

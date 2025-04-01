@@ -1,0 +1,6 @@
+INFO:netmiko:Netmiko log entry created at 2025-02-13 02:31:28.803250
+ERROR:netmiko:Template template_netmiko_hosts.json created
+ERROR:netmiko:Template template_netmiko_commands.json created
+INFO:netmiko:Netmiko log entry created at 2025-02-13 02:35:23.155495
+INFO:netmiko:Template template_netmiko_hosts.json created
+INFO:netmiko:Template template_netmiko_commands.json created
