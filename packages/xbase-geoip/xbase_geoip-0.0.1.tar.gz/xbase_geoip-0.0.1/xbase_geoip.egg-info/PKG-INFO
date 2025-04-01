@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: xbase_geoip
+Version: 0.0.1
+Summary: ip位置查询工具
+Home-page: https://gitee.com/jimonik/xbase_util.git
+Author: xyt
+Author-email: 2506564278@qq.com
+License: <MIT License>
+
+ip位置查询工具

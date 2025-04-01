@@ -1,0 +1,12 @@
+README.md
+setup.py
+xbase_geoip/__init__.py
+xbase_geoip/xbase_geo_constant.py
+xbase_geoip.egg-info/PKG-INFO
+xbase_geoip.egg-info/SOURCES.txt
+xbase_geoip.egg-info/dependency_links.txt
+xbase_geoip.egg-info/not-zip-safe
+xbase_geoip.egg-info/top_level.txt
+xbase_geoip/../xbase_geoip_assets/GeoLite2-City.mmdb
+xbase_geoip/../xbase_geoip_assets/GeoLite2-Country.mmdb
+xbase_geoip/../xbase_geoip_assets/arkimeparse.js
