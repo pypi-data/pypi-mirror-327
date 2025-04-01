@@ -1,0 +1,4 @@
+mcp[cli]>=1.2.0
+peewee>=3.17.0
+textual>=0.52.1
+types-peewee>=3.17.9.20250210
