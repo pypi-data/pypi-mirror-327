@@ -1,0 +1,10 @@
+README.md
+setup.py
+ghostdata/__init__.py
+ghostdata/cleaner.py
+ghostdata.egg-info/PKG-INFO
+ghostdata.egg-info/SOURCES.txt
+ghostdata.egg-info/dependency_links.txt
+ghostdata.egg-info/requires.txt
+ghostdata.egg-info/top_level.txt
+tests/test_ghostdata.py
