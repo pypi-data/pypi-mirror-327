@@ -1,0 +1,2 @@
+[console_scripts]
+launch = multi-crypto-exchanges-api.cli:app
