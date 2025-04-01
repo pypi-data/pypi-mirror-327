@@ -1,0 +1,14 @@
+setup.py
+AutoInspection.egg-info/PKG-INFO
+AutoInspection.egg-info/SOURCES.txt
+AutoInspection.egg-info/dependency_links.txt
+AutoInspection.egg-info/top_level.txt
+inspection/__init__.py
+inspection/adj_image.py
+inspection/auto_inspection.py
+inspection/pygame_function.py
+inspection/server.py
+inspection/summary_graphs.py
+inspection/textbox_surface.py
+inspection/theme.py
+inspection/training.py
