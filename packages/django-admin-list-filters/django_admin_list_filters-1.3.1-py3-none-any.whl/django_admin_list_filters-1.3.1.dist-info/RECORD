@@ -1,0 +1,15 @@
+django_admin_filters/__init__.py,sha256=f0CJ56XRot2ZtxoO-LyHqIllcPAHJjEaHdaS1RbXXI0,221
+django_admin_filters/base.py,sha256=KYEM7mP65bPJAd4pEjc0FoyAZHeKaVlK_LSIuXjRA6A,2498
+django_admin_filters/daterange.py,sha256=VWEJQCt7CogAqt5RZNCnRLYO0ewyuwzfA2RuOR8VSFg,6713
+django_admin_filters/multi_choice.py,sha256=TumFO_bmCk9QrrdIuf6ukCwb7aTQYUYwHyQZ9WVYdGw,3392
+django_admin_filters/static/css/datetimepicker.css,sha256=RnmoVbhLdbbK4M-a-8D9jgTsFCSNTWdkKfsPUjW9fYo,2559
+django_admin_filters/static/js/datetimepicker.js,sha256=V1Zsx015UqgoRg8Y11dmNyHharDu2Sewq3viAg68750,16785
+django_admin_filters/templates/base_admin_list_filter.html,sha256=nUgCYL9h3zzT1HS66xC1y1B0VwBVaMRy_--Dufvhln0,372
+django_admin_filters/templates/daterange.html,sha256=9QwdkcdNvFeTNRvshW5oRnD2l7q6wOgovdN9o8--u5g,1402
+django_admin_filters/templates/daterange_picker.html,sha256=FBqR1c-aZgWLCnrRF2GWQRMux7Hy-HnexA9w43bfmVI,2755
+django_admin_filters/templates/multi_choice.html,sha256=cwVQIUiw8GT3zx4gSP5Srd7rmEhq5fRNF7h2xDi05GY,1124
+django_admin_list_filters-1.3.1.dist-info/LICENSE,sha256=g5Xx2Elzj-E7D4CjN4iIUWM-3qUhABLP1NgVp0iAaWE,1094
+django_admin_list_filters-1.3.1.dist-info/METADATA,sha256=HdESxAg8BHsO6evJJa2jYffgph6gGWyWJt061K0KttI,14019
+django_admin_list_filters-1.3.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+django_admin_list_filters-1.3.1.dist-info/top_level.txt,sha256=mQR_QaCT61o8c0qH_BlYxYyEcEsIAzHx-V_U5GiS0M4,21
+django_admin_list_filters-1.3.1.dist-info/RECORD,,
