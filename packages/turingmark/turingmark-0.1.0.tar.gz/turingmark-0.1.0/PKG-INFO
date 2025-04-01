@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: turingmark
+Version: 0.1.0
+Summary: An evaluation framework for generative AI models.
+Author-email: Vincent Horvath <vhorvath2010@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.10

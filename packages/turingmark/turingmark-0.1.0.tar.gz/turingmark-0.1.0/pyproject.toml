@@ -1,0 +1,15 @@
+[project]
+name = "turingmark"
+version = "0.1.0"
+description = "An evaluation framework for generative AI models."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Vincent Horvath", email = "vhorvath2010@gmail.com" },
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
