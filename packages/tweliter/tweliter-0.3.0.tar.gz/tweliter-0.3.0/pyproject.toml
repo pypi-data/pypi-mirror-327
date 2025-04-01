@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tweliter"
+version = "0.3.0"
+description = "Write TWELITE BLUE/RED firmware (beta)"
+authors = ["alnasl <dev-alnasl@mono-wireless.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "tweliter" },
+    { include = "jn51xx_flasher/**/*.py" },
+]
+
+[tool.poetry.scripts]
+tweliter = "tweliter.__init__:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyserial = "^3.5"
+pyftdi = "^0.55.4"
+tqdm = "^4.67.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+mypy = "^1.11.0"
+ruff = "^0.5.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
