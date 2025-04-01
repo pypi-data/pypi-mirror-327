@@ -1,0 +1,9 @@
+numpy
+geopandas
+pandas
+
+[all]
+spatial-tda[extra]
+
+[extra]
+pandas
