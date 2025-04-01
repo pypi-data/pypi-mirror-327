@@ -1,0 +1,13 @@
+inspection/__init__.py,sha256=FU7aJOqsGbUlk6pQkAyx_d_3chad5zWWzkThfbpz4Zs,102
+inspection/adj_image.py,sha256=mEXUHEcxT3OVNCHTcKr4CvkZZFFrHcYFv3ChJzi8IQc,3944
+inspection/auto_inspection.py,sha256=ddvesi_28mRYeoE_HcMLFG7KO8hcXUeMt3Az69w5r7Q,40644
+inspection/pygame_function.py,sha256=kiKtkAW0VnJ_8PPnywZBWS1n7Bqm9E_X4-qLZ9AbnMY,1946
+inspection/server.py,sha256=-xmqEhL8Y83koj-gBC07zl31gZC2URpRJZfA6mOStAk,1703
+inspection/summary_graphs.py,sha256=NayKj1EeHvgfL44OllCbWoLy4cr1vhWlv7dDpvCYWqw,4363
+inspection/textbox_surface.py,sha256=iIrrgteamch5RAghPDZAJk1yvKioIQViRafAfNGd6Rc,6660
+inspection/theme.py,sha256=JOnyJsvV8dImIcXa4-RtBEM5tlJcay3gFpU5rKBIaiQ,10279
+inspection/training.py,sha256=PFZKYxzp97koll9axQWmWo1Rm0nSxkmDMHKalH7O4Uk,8589
+AutoInspection-0.0.1.dist-info/METADATA,sha256=b9CVlGgyUk9C0B-04hrhX0sUSQXAgyCM0yMMhTBXktY,118
+AutoInspection-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+AutoInspection-0.0.1.dist-info/top_level.txt,sha256=sq8Pihh7k9nLONWZ4e6w_fEd8iIU0zKOWywPinAflkc,11
+AutoInspection-0.0.1.dist-info/RECORD,,
