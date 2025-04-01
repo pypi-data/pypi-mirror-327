@@ -1,0 +1,11 @@
+depkit/__init__.py,sha256=agxU8ppyu0KuuSoJoxx6ApLX9EgkKUXK2tR1yN_3oF4,251
+depkit/async_read.py,sha256=l0AJ6rsNMnAMftMoxC81i3vmT4QTrifJCsqspSkLRMI,5890
+depkit/depmanager.py,sha256=mIiAAnDBUh8Jaip3s4ayTtxGqEDZUHFv7Cub10dgzqA,14182
+depkit/exceptions.py,sha256=trfglSM8NAYkUgVgPIWbYRHTXp3TaRg9YN1JmpXcj2o,302
+depkit/parser.py,sha256=9RJKFdMtOV5P3z0Rj9ILucATMAiNehnsUcnUNap-s6s,4113
+depkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depkit/utils.py,sha256=s9mBJNlOq93QD6q5F4uo6VPfoezYKY5lgcZWeeK8EP0,9035
+depkit-0.4.3.dist-info/METADATA,sha256=oT6lxDEmaHpwslVd7ahAlOF5mPMfvpy47yNyxi5Zzag,9255
+depkit-0.4.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+depkit-0.4.3.dist-info/licenses/LICENSE,sha256=AteGCH9r177TxxrOFEiOARrastASsf7yW6MQxlAHdwA,1078
+depkit-0.4.3.dist-info/RECORD,,
