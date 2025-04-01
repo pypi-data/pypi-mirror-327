@@ -1,0 +1,9 @@
+davidkhala/gcp/pubsub/__init__.py,sha256=lQ1hwmXj7NW6FsexMhuVo4iKKIsEZrLLXeb5_FTeVdU,932
+davidkhala/gcp/pubsub/__pycache__/__init__.cpython-312.pyc,sha256=NrQmM_ZYkZcsvc6-Y1TTJForcqZCW8bmgQ98habWo6c,1885
+davidkhala/gcp/pubsub/__pycache__/pub.cpython-312.pyc,sha256=WsUEmP7TV5FhTUoPCskJmEQX-tTktgfgfWU0JAkYDOE,2570
+davidkhala/gcp/pubsub/__pycache__/sub.cpython-312.pyc,sha256=1ncYy-CGlrrhg6l8HrCy4NJCSwkg2sYAQVAW8GX2NY0,5487
+davidkhala/gcp/pubsub/pub.py,sha256=HkTTDl2OHHV7oW9VjCG-rs-oQNwXMeLtdEZYUaffR9c,1192
+davidkhala/gcp/pubsub/sub.py,sha256=heaKmpLROl7MFuZ4kztWSOnBloyAPmG0ikFMfev2lBg,2870
+davidkhala_gcp_pubsub-0.0.5.dist-info/METADATA,sha256=y8UWej-aaLEFelV54EUZX3oGGpDg4IG_XHpeVxKAL1g,668
+davidkhala_gcp_pubsub-0.0.5.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+davidkhala_gcp_pubsub-0.0.5.dist-info/RECORD,,
