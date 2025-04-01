@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcautomation"
+version = "0.1.0"
+description = "A Python package for automating LMG processes"
+authors = [{ name = "Harshal", email = "hsarode04@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "setuptools",
+    "pandas",
+    "numpy",
+    "selenium",
+    "rsa",
+    "bs4",
+    "pywin32"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+atm_setup = "hcautomation.post_install_setup:post_install"
+
+[tool.setuptools]
+packages = ["hcautomation"]

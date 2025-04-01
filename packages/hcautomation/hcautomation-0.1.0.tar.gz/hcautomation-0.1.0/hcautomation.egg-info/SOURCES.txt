@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+hcautomation/__init__.py
+hcautomation/automation.py
+hcautomation/post_install_setup.py
+hcautomation.egg-info/PKG-INFO
+hcautomation.egg-info/SOURCES.txt
+hcautomation.egg-info/dependency_links.txt
+hcautomation.egg-info/entry_points.txt
+hcautomation.egg-info/requires.txt
+hcautomation.egg-info/top_level.txt
