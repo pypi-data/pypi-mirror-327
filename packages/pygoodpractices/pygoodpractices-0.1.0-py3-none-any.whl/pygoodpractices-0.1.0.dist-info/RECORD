@@ -1,0 +1,11 @@
+pygoodpractices/___init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygoodpractices/config_generator.py,sha256=O5l3VqR3fKwFsB8W9I1YO4rDK-YSUwICASxMjeJRlnY,2339
+pygoodpractices/initializer.py,sha256=93cwvlwvXIhjqS-7HN2E4N4FbkqYkXHqOJS-rdyOxFo,1111
+pygoodpractices/installer.py,sha256=4twpDTQiKrwXQgvD21F7E1rD1JP2xSlUZuCrO12WcwM,1362
+pygoodpractices/precommit_runner.py,sha256=N98Lr762xzrv3L36Xk4PrA40CM9gqnRZ-5S4kIK4lL0,1855
+pygoodpractices-0.1.0.dist-info/LICENSE,sha256=GUrD4GxHl82lNW3SYDjLtHGyCUdGkbxEON0dmWLadvM,565
+pygoodpractices-0.1.0.dist-info/METADATA,sha256=qNOJbAp3wKHU-jbHuumcujkvM_WUqkcuZT6U_acbSGA,3434
+pygoodpractices-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pygoodpractices-0.1.0.dist-info/entry_points.txt,sha256=n4PcnijAuk5fC8Ea24chTaLg7JbEax_HXHxScOezHk0,134
+pygoodpractices-0.1.0.dist-info/top_level.txt,sha256=BWM5-kYJhmYryrHoJzON4fzPcN57odFk5vq79fQAnls,16
+pygoodpractices-0.1.0.dist-info/RECORD,,

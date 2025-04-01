@@ -1,0 +1,3 @@
+[console_scripts]
+pygood = pygoodpractices.precommit_runner:main
+pygood-init = pygoodpractices.initializer:initialize_pygoodpractices
