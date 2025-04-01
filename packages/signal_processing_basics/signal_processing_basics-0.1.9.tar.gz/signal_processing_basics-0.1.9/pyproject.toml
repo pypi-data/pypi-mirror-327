@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "signal_processing_basics"
+version = "0.1.9"
+description = "Signal Processing Basics for Condition Monitoring Engineers"
+authors = ["Justin Smith <66smithjustin@gmail.com>"]
+readme = "README.md"
+maintainers = [
+"Justin Smith <66smithjustin@gmail.com>"
+]
+
+[tool.poetry.urls]
+#homepage = "https://python-poetry.org/"
+Repository = "https://github.com/JustinSmith66/Signal-Processing"
+#documentation = "https://python-poetry.org/docs/"
+#"Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "<2.2"
+matplotlib = "^3.10.0"
+statistics = "^1.0.3.5"
+scipy = "^1.15.1"
+scikit-learn = "^1.6.1"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
