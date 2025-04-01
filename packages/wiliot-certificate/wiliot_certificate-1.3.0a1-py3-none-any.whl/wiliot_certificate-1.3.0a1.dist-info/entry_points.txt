@@ -1,0 +1,2 @@
+[console_scripts]
+wlt-gw-certificate = gw_certificate.gw_certificate_cli:main
