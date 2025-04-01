@@ -1,0 +1,7 @@
+build
+deepseek-model
+html2text
+load_dotenv
+markdownify
+together
+twine
