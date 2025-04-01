@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: funtable
+Version: 1.0.23
+Summary: funtable
+Author-email: niuliangtao <farfarfun@qq.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fundrive>=1.2.18
+Requires-Dist: funutil>=1.0.5
+
+# funtable
