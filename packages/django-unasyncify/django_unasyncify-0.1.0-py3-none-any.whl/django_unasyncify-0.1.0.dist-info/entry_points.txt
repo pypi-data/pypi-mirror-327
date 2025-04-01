@@ -1,0 +1,2 @@
+[console_scripts]
+django-unasyncify = django_unasyncify.cmd:main
